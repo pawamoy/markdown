@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        
+        <meta name="author" content="The Python-Markdown Project">
+        <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/extensions/def_list/">
+        <link rel="shortcut icon" href="../../../../favicon.ico">
+        <link rel="search" title="Search" href="../../../../search.html" />
+        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extra" href="../extra/" />
+        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> codehilite" href="../codehilite/" />
+        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> def_list &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="stylesheet" href="../../../../static/nature.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../static/pygments.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../custom.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../mkdocstrings.css" type="text/css" />
+        <script type="text/javascript" src="../../../../static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../static/underscore.js"></script> 
+    </head>
+
+    <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+        <h3>Navigation</h3>
+        <ul>
+                <li class="right" style="margin-right: 10px">
+                    <a href="https://github.com/Python-Markdown/markdown" title="View this project on GitHub"><img src="../../../../static/github.png" width=16px style="vertical-align: middle; margin-top: -1px" /></a>
+                </li>
+            <li class="right" style="margin-right: 10px">
+                <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
+            </li>
+            <li class="right">
+                <a href="../extra/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extra" accesskey="N">next</a> |
+            </li>
+            <li class="right">
+                <a href="../codehilite/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> codehilite" accesskey="P">previous</a> |
+            </li>
+            <li><img src="../../../../py.png"
+            alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
+            <li class="nav-item nav-item-0">
+                <a href="../../../..">Python-Markdown 3.4.4 documentation</a> &#187;
+            </li>
+                    
+                    
+                    
+                    
+                    
+                    
+        <li class="nav-item">
+            API Reference
+         &#187; </li>
+                
+        <li class="nav-item">
+            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+         &#187; </li>
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> def_list</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+        </ul>
+    </div>
+
+        <div class="document">
+            <div class="documentwrapper">
+                <div class="bodywrapper">
+                    <div class="body" role="main"><div class="doc doc-object doc-module">
+
+
+
+<h1 id="markdown.extensions.def_list" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>          <span class="doc doc-object-name doc-module-name">markdown.extensions.def_list</span>
+
+
+<a href="#markdown.extensions.def_list" class="headerlink" title="Permanent link">&para;</a></h1>
+
+  <div class="doc doc-contents first">
+  
+      <h2 id="markdown.extensions.def_list--definition-list-extension-for-python-markdown">Definition List Extension for Python-Markdown<a class="headerlink" href="#markdown.extensions.def_list--definition-list-extension-for-python-markdown" title="Permanent link">&para;</a></h2>
+<p>Adds parsing of Definition Lists to Python-Markdown.</p>
+<p>See <a href="https://Python-Markdown.github.io/extensions/definition_lists">https://Python-Markdown.github.io/extensions/definition_lists</a>
+for documentation.</p>
+<p>Original code Copyright 2008 <a href="http://achinghead.com">Waylan Limberg</a></p>
+<p>All changes Copyright 2008-2014 The Python Markdown Project</p>
+<p>License: <a href="https://opensource.org/licenses/bsd-license.php">BSD</a></p>
+
+
+
+
+
+  <p>Classes:</p>
+  <ul>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.def_list.DefListProcessor" href="#markdown.extensions.def_list.DefListProcessor">DefListProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Process Definition Lists.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.def_list.DefListIndentProcessor" href="#markdown.extensions.def_list.DefListIndentProcessor">DefListIndentProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Process indented children of definition list items.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.def_list.DefListExtension" href="#markdown.extensions.def_list.DefListExtension">DefListExtension</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Add definition lists to Markdown.</p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="markdown.extensions.def_list.DefListExtension" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <span class="doc doc-object-name doc-class-name">markdown.extensions.def_list.DefListExtension</span>
+
+
+<a href="#markdown.extensions.def_list.DefListExtension" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+  <div class="doc doc-contents ">
+          <p class="doc doc-class-bases">
+            Bases: <code><a class="autorefs autorefs-internal" title="markdown.extensions.Extension" href="../#markdown.extensions.Extension">Extension</a></code></p>
+
+  
+      <p>Add definition lists to Markdown.</p>
+
+
+
+
+
+
+  <p>Methods:</p>
+  <ul>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.def_list.DefListExtension.getConfig" href="#markdown.extensions.def_list.DefListExtension.getConfig">getConfig</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return a setting for the given key or an empty string.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.def_list.DefListExtension.getConfigs" href="#markdown.extensions.def_list.DefListExtension.getConfigs">getConfigs</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return all configs settings as a dict.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.def_list.DefListExtension.getConfigInfo" href="#markdown.extensions.def_list.DefListExtension.getConfigInfo">getConfigInfo</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return all <code>config</code> descriptions as a list of tuples.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.def_list.DefListExtension.setConfig" href="#markdown.extensions.def_list.DefListExtension.setConfig">setConfig</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Set a <code>config</code> setting for <code>key</code> with the given <code>value</code>.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.def_list.DefListExtension.setConfigs" href="#markdown.extensions.def_list.DefListExtension.setConfigs">setConfigs</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Set multiple <code>config</code> settings given a dict or list of tuples.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.def_list.DefListExtension.extendMarkdown" href="#markdown.extensions.def_list.DefListExtension.extendMarkdown">extendMarkdown</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Add an instance of <code>DefListProcessor</code> to <code>BlockParser</code>.</p>
+          </div>
+        </li>
+  </ul>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.def_list.DefListExtension.extendMarkdown" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.def_list.DefListExtension.extendMarkdown</span>
+
+
+<a href="#markdown.extensions.def_list.DefListExtension.extendMarkdown" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.def_list.DefListExtension.extendMarkdown(md)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Add an instance of <code>DefListProcessor</code> to <code>BlockParser</code>.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.def_list.DefListExtension.getConfig" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.def_list.DefListExtension.getConfig</span>
+
+
+<a href="#markdown.extensions.def_list.DefListExtension.getConfig" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.def_list.DefListExtension.getConfig(key, default = '')</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return a setting for the given key or an empty string.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.def_list.DefListExtension.getConfigInfo" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.def_list.DefListExtension.getConfigInfo</span>
+
+
+<a href="#markdown.extensions.def_list.DefListExtension.getConfigInfo" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.def_list.DefListExtension.getConfigInfo()</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return all <code>config</code> descriptions as a list of tuples.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.def_list.DefListExtension.getConfigs" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.def_list.DefListExtension.getConfigs</span>
+
+
+<a href="#markdown.extensions.def_list.DefListExtension.getConfigs" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.def_list.DefListExtension.getConfigs()</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return all configs settings as a dict.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.def_list.DefListExtension.setConfig" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.def_list.DefListExtension.setConfig</span>
+
+
+<a href="#markdown.extensions.def_list.DefListExtension.setConfig" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.def_list.DefListExtension.setConfig(key, value)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Set a <code>config</code> setting for <code>key</code> with the given <code>value</code>.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.def_list.DefListExtension.setConfigs" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.def_list.DefListExtension.setConfigs</span>
+
+
+<a href="#markdown.extensions.def_list.DefListExtension.setConfigs" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.def_list.DefListExtension.setConfigs(items)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Set multiple <code>config</code> settings given a dict or list of tuples.</p>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="markdown.extensions.def_list.DefListIndentProcessor" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <span class="doc doc-object-name doc-class-name">markdown.extensions.def_list.DefListIndentProcessor</span>
+
+
+<a href="#markdown.extensions.def_list.DefListIndentProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+  <div class="doc doc-contents ">
+          <p class="doc doc-class-bases">
+            Bases: <code><a class="autorefs autorefs-internal" title="markdown.blockprocessors.ListIndentProcessor" href="../../blockprocessors/#markdown.blockprocessors.ListIndentProcessor">ListIndentProcessor</a></code></p>
+
+  
+      <p>Process indented children of definition list items.</p>
+
+
+
+
+
+
+  <p>Methods:</p>
+  <ul>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.def_list.DefListIndentProcessor.lastChild" href="#markdown.extensions.def_list.DefListIndentProcessor.lastChild">lastChild</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return the last child of an <code>etree</code> element.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.def_list.DefListIndentProcessor.detab" href="#markdown.extensions.def_list.DefListIndentProcessor.detab">detab</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Remove a tab from the front of each line of the given text.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.def_list.DefListIndentProcessor.looseDetab" href="#markdown.extensions.def_list.DefListIndentProcessor.looseDetab">looseDetab</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Remove a tab from front of lines but allowing dedented lines.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.def_list.DefListIndentProcessor.get_level" href="#markdown.extensions.def_list.DefListIndentProcessor.get_level">get_level</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Get level of indent based on list level.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.def_list.DefListIndentProcessor.create_item" href="#markdown.extensions.def_list.DefListIndentProcessor.create_item">create_item</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Create a new <code>dd</code> or <code>li</code> (depending on parent) and parse the block with it as the parent.</p>
+          </div>
+        </li>
+  </ul>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.def_list.DefListIndentProcessor.create_item" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.def_list.DefListIndentProcessor.create_item</span>
+
+
+<a href="#markdown.extensions.def_list.DefListIndentProcessor.create_item" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.def_list.DefListIndentProcessor.create_item(parent, block)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Create a new <code>dd</code> or <code>li</code> (depending on parent) and parse the block with it as the parent.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.def_list.DefListIndentProcessor.detab" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.def_list.DefListIndentProcessor.detab</span>
+
+
+<a href="#markdown.extensions.def_list.DefListIndentProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.def_list.DefListIndentProcessor.detab(text, length = None)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Remove a tab from the front of each line of the given text.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.def_list.DefListIndentProcessor.get_level" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.def_list.DefListIndentProcessor.get_level</span>
+
+
+<a href="#markdown.extensions.def_list.DefListIndentProcessor.get_level" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.def_list.DefListIndentProcessor.get_level(parent, block)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Get level of indent based on list level.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.def_list.DefListIndentProcessor.lastChild" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.def_list.DefListIndentProcessor.lastChild</span>
+
+
+<a href="#markdown.extensions.def_list.DefListIndentProcessor.lastChild" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.def_list.DefListIndentProcessor.lastChild(parent)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return the last child of an <code>etree</code> element.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.def_list.DefListIndentProcessor.looseDetab" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.def_list.DefListIndentProcessor.looseDetab</span>
+
+
+<a href="#markdown.extensions.def_list.DefListIndentProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.def_list.DefListIndentProcessor.looseDetab(text, level = 1)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Remove a tab from front of lines but allowing dedented lines.</p>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="markdown.extensions.def_list.DefListProcessor" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <span class="doc doc-object-name doc-class-name">markdown.extensions.def_list.DefListProcessor</span>
+
+
+<a href="#markdown.extensions.def_list.DefListProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+  <div class="doc doc-contents ">
+          <p class="doc doc-class-bases">
+            Bases: <code><a class="autorefs autorefs-internal" title="markdown.blockprocessors.BlockProcessor" href="../../blockprocessors/#markdown.blockprocessors.BlockProcessor">BlockProcessor</a></code></p>
+
+  
+      <p>Process Definition Lists.</p>
+
+
+
+
+
+
+  <p>Methods:</p>
+  <ul>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.def_list.DefListProcessor.lastChild" href="#markdown.extensions.def_list.DefListProcessor.lastChild">lastChild</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return the last child of an <code>etree</code> element.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.def_list.DefListProcessor.detab" href="#markdown.extensions.def_list.DefListProcessor.detab">detab</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Remove a tab from the front of each line of the given text.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.def_list.DefListProcessor.looseDetab" href="#markdown.extensions.def_list.DefListProcessor.looseDetab">looseDetab</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Remove a tab from front of lines but allowing dedented lines.</p>
+          </div>
+        </li>
+  </ul>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.def_list.DefListProcessor.detab" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.def_list.DefListProcessor.detab</span>
+
+
+<a href="#markdown.extensions.def_list.DefListProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.def_list.DefListProcessor.detab(text, length = None)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Remove a tab from the front of each line of the given text.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.def_list.DefListProcessor.lastChild" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.def_list.DefListProcessor.lastChild</span>
+
+
+<a href="#markdown.extensions.def_list.DefListProcessor.lastChild" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.def_list.DefListProcessor.lastChild(parent)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return the last child of an <code>etree</code> element.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.def_list.DefListProcessor.looseDetab" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.def_list.DefListProcessor.looseDetab</span>
+
+
+<a href="#markdown.extensions.def_list.DefListProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.def_list.DefListProcessor.looseDetab(text, level = 1)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Remove a tab from front of lines but allowing dedented lines.</p>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+                    </div>
+                </div>
+            </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Table Of Contents</a></h3>
+            <ul>
+                
+    <li>
+        <a class="reference internal" href="#markdown.extensions.def_list"><code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;def_list</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.def_list--definition-list-extension-for-python-markdown">Definition List Extension for Python-Markdown</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.def_list.DefListExtension"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;DefListExtension</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.def_list.DefListExtension.extendMarkdown"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;extendMarkdown</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.def_list.DefListExtension.getConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfig</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.def_list.DefListExtension.getConfigInfo"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfigInfo</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.def_list.DefListExtension.getConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfigs</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.def_list.DefListExtension.setConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;setConfig</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.def_list.DefListExtension.setConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;setConfigs</a>
+    </li>
+        </ul>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.def_list.DefListIndentProcessor"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;DefListIndentProcessor</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.def_list.DefListIndentProcessor.create_item"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;create_item</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.def_list.DefListIndentProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;detab</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.def_list.DefListIndentProcessor.get_level"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;get_level</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.def_list.DefListIndentProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;lastChild</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.def_list.DefListIndentProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;looseDetab</a>
+    </li>
+        </ul>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.def_list.DefListProcessor"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;DefListProcessor</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.def_list.DefListProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;detab</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.def_list.DefListProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;lastChild</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.def_list.DefListProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;looseDetab</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+            </ul>
+            
+            <h4>Previous topic</h4>
+            <p class="topless">
+                <a href="../codehilite/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> codehilite</a>
+            </p>
+
+            
+            <h4>Next topic</h4>
+            <p class="topless">
+                <a href="../extra/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extra</a>
+            </p>
+
+            <div role="note" aria-label="source link">
+                <h3>This Page</h3>
+                <ul class="this-page-menu">
+                    <li><a href="https://github.com/Python-Markdown/markdown/issues">Report a Bug</a></li>
+                    <li><a href="https://github.com/Python-Markdown/markdown/edit/master/markdown/extensions/def_list.py">Edit on GitHub</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+            <div class="clearer"></div>
+        </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+        <h3>Navigation</h3>
+        <ul>
+                <li class="right" style="margin-right: 10px">
+                    <a href="https://github.com/Python-Markdown/markdown" title="View this project on GitHub"><img src="../../../../static/github.png" width=16px style="vertical-align: middle; margin-top: -1px" /></a>
+                </li>
+            <li class="right" style="margin-right: 10px">
+                <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
+            </li>
+            <li class="right">
+                <a href="../extra/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extra" accesskey="N">next</a> |
+            </li>
+            <li class="right">
+                <a href="../codehilite/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> codehilite" accesskey="P">previous</a> |
+            </li>
+            <li><img src="../../../../py.png"
+            alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
+            <li class="nav-item nav-item-0">
+                <a href="../../../..">Python-Markdown 3.4.4 documentation</a> &#187;
+            </li>
+                    
+                    
+                    
+                    
+                    
+                    
+        <li class="nav-item">
+            API Reference
+         &#187; </li>
+                
+        <li class="nav-item">
+            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+         &#187; </li>
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> def_list</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+        </ul>
+    </div>
+        <div class="footer" role="contentinfo">Copyright &copy; 2010-2023, The Python-Markdown Project.
+        Created using <a href="https://www.mkdocs.org/">MkDocs</a> 1.5.2.
+        </div>
+        <script>var base_url = '../../../..';</script>
+
+        <!--
+        MkDocs version      : 1.5.2
+        Docs Build Date UTC : 2023-08-22 23:35:33.304196+00:00
+        -->
+    </body>
+</html>

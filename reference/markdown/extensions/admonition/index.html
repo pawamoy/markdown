@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        
+        <meta name="author" content="The Python-Markdown Project">
+        <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/extensions/admonition/">
+        <link rel="shortcut icon" href="../../../../favicon.ico">
+        <link rel="search" title="Search" href="../../../../search.html" />
+        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> attr_list" href="../attr_list/" />
+        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> abbr" href="../abbr/" />
+        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> admonition &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="stylesheet" href="../../../../static/nature.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../static/pygments.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../custom.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../mkdocstrings.css" type="text/css" />
+        <script type="text/javascript" src="../../../../static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../static/underscore.js"></script> 
+    </head>
+
+    <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+        <h3>Navigation</h3>
+        <ul>
+                <li class="right" style="margin-right: 10px">
+                    <a href="https://github.com/Python-Markdown/markdown" title="View this project on GitHub"><img src="../../../../static/github.png" width=16px style="vertical-align: middle; margin-top: -1px" /></a>
+                </li>
+            <li class="right" style="margin-right: 10px">
+                <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
+            </li>
+            <li class="right">
+                <a href="../attr_list/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> attr_list" accesskey="N">next</a> |
+            </li>
+            <li class="right">
+                <a href="../abbr/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> abbr" accesskey="P">previous</a> |
+            </li>
+            <li><img src="../../../../py.png"
+            alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
+            <li class="nav-item nav-item-0">
+                <a href="../../../..">Python-Markdown 3.4.4 documentation</a> &#187;
+            </li>
+                    
+                    
+                    
+                    
+                    
+                    
+        <li class="nav-item">
+            API Reference
+         &#187; </li>
+                
+        <li class="nav-item">
+            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+         &#187; </li>
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+         &#187; </li>
+                
+                
+        <li class="nav-item">
+            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> admonition</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+        </ul>
+    </div>
+
+        <div class="document">
+            <div class="documentwrapper">
+                <div class="bodywrapper">
+                    <div class="body" role="main"><div class="doc doc-object doc-module">
+
+
+
+<h1 id="markdown.extensions.admonition" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>          <span class="doc doc-object-name doc-module-name">markdown.extensions.admonition</span>
+
+
+<a href="#markdown.extensions.admonition" class="headerlink" title="Permanent link">&para;</a></h1>
+
+  <div class="doc doc-contents first">
+  
+      <h2 id="markdown.extensions.admonition--admonition-extension-for-python-markdown">Admonition extension for Python-Markdown<a class="headerlink" href="#markdown.extensions.admonition--admonition-extension-for-python-markdown" title="Permanent link">&para;</a></h2>
+<p>Adds rST-style admonitions. Inspired by <a href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#specific-admonitions">rST</a> feature with the same name.</p>
+<p>See <a href="https://Python-Markdown.github.io/extensions/admonition">https://Python-Markdown.github.io/extensions/admonition</a>
+for documentation.</p>
+<p>Original code Copyright <a href="https://www.tiagoserafim.com/">Tiago Serafim</a>.</p>
+<p>All changes Copyright The Python Markdown Project</p>
+<p>License: <a href="https://opensource.org/licenses/bsd-license.php">BSD</a></p>
+
+
+
+
+
+  <p>Classes:</p>
+  <ul>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.admonition.AdmonitionExtension" href="#markdown.extensions.admonition.AdmonitionExtension">AdmonitionExtension</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Admonition extension for Python-Markdown.</p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="markdown.extensions.admonition.AdmonitionExtension" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <span class="doc doc-object-name doc-class-name">markdown.extensions.admonition.AdmonitionExtension</span>
+
+
+<a href="#markdown.extensions.admonition.AdmonitionExtension" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+  <div class="doc doc-contents ">
+          <p class="doc doc-class-bases">
+            Bases: <code><a class="autorefs autorefs-internal" title="markdown.extensions.Extension" href="../#markdown.extensions.Extension">Extension</a></code></p>
+
+  
+      <p>Admonition extension for Python-Markdown.</p>
+
+
+
+
+
+
+  <p>Methods:</p>
+  <ul>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.admonition.AdmonitionExtension.getConfig" href="#markdown.extensions.admonition.AdmonitionExtension.getConfig">getConfig</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return a setting for the given key or an empty string.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.admonition.AdmonitionExtension.getConfigs" href="#markdown.extensions.admonition.AdmonitionExtension.getConfigs">getConfigs</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return all configs settings as a dict.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.admonition.AdmonitionExtension.getConfigInfo" href="#markdown.extensions.admonition.AdmonitionExtension.getConfigInfo">getConfigInfo</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return all <code>config</code> descriptions as a list of tuples.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.admonition.AdmonitionExtension.setConfig" href="#markdown.extensions.admonition.AdmonitionExtension.setConfig">setConfig</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Set a <code>config</code> setting for <code>key</code> with the given <code>value</code>.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.admonition.AdmonitionExtension.setConfigs" href="#markdown.extensions.admonition.AdmonitionExtension.setConfigs">setConfigs</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Set multiple <code>config</code> settings given a dict or list of tuples.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.admonition.AdmonitionExtension.extendMarkdown" href="#markdown.extensions.admonition.AdmonitionExtension.extendMarkdown">extendMarkdown</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Add Admonition to Markdown instance.</p>
+          </div>
+        </li>
+  </ul>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.admonition.AdmonitionExtension.extendMarkdown" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.admonition.AdmonitionExtension.extendMarkdown</span>
+
+
+<a href="#markdown.extensions.admonition.AdmonitionExtension.extendMarkdown" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.admonition.AdmonitionExtension.extendMarkdown(md)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Add Admonition to Markdown instance.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.admonition.AdmonitionExtension.getConfig" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.admonition.AdmonitionExtension.getConfig</span>
+
+
+<a href="#markdown.extensions.admonition.AdmonitionExtension.getConfig" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.admonition.AdmonitionExtension.getConfig(key, default = '')</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return a setting for the given key or an empty string.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.admonition.AdmonitionExtension.getConfigInfo" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.admonition.AdmonitionExtension.getConfigInfo</span>
+
+
+<a href="#markdown.extensions.admonition.AdmonitionExtension.getConfigInfo" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.admonition.AdmonitionExtension.getConfigInfo()</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return all <code>config</code> descriptions as a list of tuples.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.admonition.AdmonitionExtension.getConfigs" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.admonition.AdmonitionExtension.getConfigs</span>
+
+
+<a href="#markdown.extensions.admonition.AdmonitionExtension.getConfigs" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.admonition.AdmonitionExtension.getConfigs()</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return all configs settings as a dict.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.admonition.AdmonitionExtension.setConfig" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.admonition.AdmonitionExtension.setConfig</span>
+
+
+<a href="#markdown.extensions.admonition.AdmonitionExtension.setConfig" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.admonition.AdmonitionExtension.setConfig(key, value)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Set a <code>config</code> setting for <code>key</code> with the given <code>value</code>.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.admonition.AdmonitionExtension.setConfigs" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.admonition.AdmonitionExtension.setConfigs</span>
+
+
+<a href="#markdown.extensions.admonition.AdmonitionExtension.setConfigs" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.admonition.AdmonitionExtension.setConfigs(items)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Set multiple <code>config</code> settings given a dict or list of tuples.</p>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="markdown.extensions.admonition.AdmonitionProcessor" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <span class="doc doc-object-name doc-class-name">markdown.extensions.admonition.AdmonitionProcessor</span>
+
+
+<a href="#markdown.extensions.admonition.AdmonitionProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
+<pre class="codehilite"><code class="language-python">markdown.extensions.admonition.AdmonitionProcessor(parser)</code></pre>
+
+  <div class="doc doc-contents ">
+          <p class="doc doc-class-bases">
+            Bases: <code><a class="autorefs autorefs-internal" title="markdown.blockprocessors.BlockProcessor" href="../../blockprocessors/#markdown.blockprocessors.BlockProcessor">BlockProcessor</a></code></p>
+
+
+
+
+
+
+
+  <p>Methods:</p>
+  <ul>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.admonition.AdmonitionProcessor.lastChild" href="#markdown.extensions.admonition.AdmonitionProcessor.lastChild">lastChild</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return the last child of an <code>etree</code> element.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.admonition.AdmonitionProcessor.detab" href="#markdown.extensions.admonition.AdmonitionProcessor.detab">detab</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Remove a tab from the front of each line of the given text.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.admonition.AdmonitionProcessor.looseDetab" href="#markdown.extensions.admonition.AdmonitionProcessor.looseDetab">looseDetab</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Remove a tab from front of lines but allowing dedented lines.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.admonition.AdmonitionProcessor.parse_content" href="#markdown.extensions.admonition.AdmonitionProcessor.parse_content">parse_content</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Get sibling admonition.</p>
+          </div>
+        </li>
+  </ul>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.admonition.AdmonitionProcessor.detab" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.admonition.AdmonitionProcessor.detab</span>
+
+
+<a href="#markdown.extensions.admonition.AdmonitionProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.admonition.AdmonitionProcessor.detab(text, length = None)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Remove a tab from the front of each line of the given text.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.admonition.AdmonitionProcessor.lastChild" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.admonition.AdmonitionProcessor.lastChild</span>
+
+
+<a href="#markdown.extensions.admonition.AdmonitionProcessor.lastChild" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.admonition.AdmonitionProcessor.lastChild(parent)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return the last child of an <code>etree</code> element.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.admonition.AdmonitionProcessor.looseDetab" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.admonition.AdmonitionProcessor.looseDetab</span>
+
+
+<a href="#markdown.extensions.admonition.AdmonitionProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.admonition.AdmonitionProcessor.looseDetab(text, level = 1)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Remove a tab from front of lines but allowing dedented lines.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.admonition.AdmonitionProcessor.parse_content" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.admonition.AdmonitionProcessor.parse_content</span>
+
+
+<a href="#markdown.extensions.admonition.AdmonitionProcessor.parse_content" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.admonition.AdmonitionProcessor.parse_content(parent, block)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Get sibling admonition.</p>
+<p>Retrieve the appropriate sibling element. This can get tricky when
+dealing with lists.</p>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+                    </div>
+                </div>
+            </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Table Of Contents</a></h3>
+            <ul>
+                
+    <li>
+        <a class="reference internal" href="#markdown.extensions.admonition"><code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;admonition</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.admonition--admonition-extension-for-python-markdown">Admonition extension for Python-Markdown</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.admonition.AdmonitionExtension"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;AdmonitionExtension</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.admonition.AdmonitionExtension.extendMarkdown"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;extendMarkdown</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.admonition.AdmonitionExtension.getConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfig</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.admonition.AdmonitionExtension.getConfigInfo"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfigInfo</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.admonition.AdmonitionExtension.getConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfigs</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.admonition.AdmonitionExtension.setConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;setConfig</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.admonition.AdmonitionExtension.setConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;setConfigs</a>
+    </li>
+        </ul>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.admonition.AdmonitionProcessor"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;AdmonitionProcessor</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.admonition.AdmonitionProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;detab</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.admonition.AdmonitionProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;lastChild</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.admonition.AdmonitionProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;looseDetab</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.admonition.AdmonitionProcessor.parse_content"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;parse_content</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+            </ul>
+            
+            <h4>Previous topic</h4>
+            <p class="topless">
+                <a href="../abbr/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> abbr</a>
+            </p>
+
+            
+            <h4>Next topic</h4>
+            <p class="topless">
+                <a href="../attr_list/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> attr_list</a>
+            </p>
+
+            <div role="note" aria-label="source link">
+                <h3>This Page</h3>
+                <ul class="this-page-menu">
+                    <li><a href="https://github.com/Python-Markdown/markdown/issues">Report a Bug</a></li>
+                    <li><a href="https://github.com/Python-Markdown/markdown/edit/master/markdown/extensions/admonition.py">Edit on GitHub</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+            <div class="clearer"></div>
+        </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+        <h3>Navigation</h3>
+        <ul>
+                <li class="right" style="margin-right: 10px">
+                    <a href="https://github.com/Python-Markdown/markdown" title="View this project on GitHub"><img src="../../../../static/github.png" width=16px style="vertical-align: middle; margin-top: -1px" /></a>
+                </li>
+            <li class="right" style="margin-right: 10px">
+                <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
+            </li>
+            <li class="right">
+                <a href="../attr_list/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> attr_list" accesskey="N">next</a> |
+            </li>
+            <li class="right">
+                <a href="../abbr/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> abbr" accesskey="P">previous</a> |
+            </li>
+            <li><img src="../../../../py.png"
+            alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
+            <li class="nav-item nav-item-0">
+                <a href="../../../..">Python-Markdown 3.4.4 documentation</a> &#187;
+            </li>
+                    
+                    
+                    
+                    
+                    
+                    
+        <li class="nav-item">
+            API Reference
+         &#187; </li>
+                
+        <li class="nav-item">
+            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+         &#187; </li>
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+         &#187; </li>
+                
+                
+        <li class="nav-item">
+            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> admonition</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+        </ul>
+    </div>
+        <div class="footer" role="contentinfo">Copyright &copy; 2010-2023, The Python-Markdown Project.
+        Created using <a href="https://www.mkdocs.org/">MkDocs</a> 1.5.2.
+        </div>
+        <script>var base_url = '../../../..';</script>
+
+        <!--
+        MkDocs version      : 1.5.2
+        Docs Build Date UTC : 2023-08-22 23:35:33.301687+00:00
+        -->
+    </body>
+</html>

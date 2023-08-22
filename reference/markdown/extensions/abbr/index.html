@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        
+        <meta name="author" content="The Python-Markdown Project">
+        <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/extensions/abbr/">
+        <link rel="shortcut icon" href="../../../../favicon.ico">
+        <link rel="search" title="Search" href="../../../../search.html" />
+        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> admonition" href="../admonition/" />
+        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions" href="../" />
+        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> abbr &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="stylesheet" href="../../../../static/nature.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../static/pygments.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../custom.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../mkdocstrings.css" type="text/css" />
+        <script type="text/javascript" src="../../../../static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../static/underscore.js"></script> 
+    </head>
+
+    <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+        <h3>Navigation</h3>
+        <ul>
+                <li class="right" style="margin-right: 10px">
+                    <a href="https://github.com/Python-Markdown/markdown" title="View this project on GitHub"><img src="../../../../static/github.png" width=16px style="vertical-align: middle; margin-top: -1px" /></a>
+                </li>
+            <li class="right" style="margin-right: 10px">
+                <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
+            </li>
+            <li class="right">
+                <a href="../admonition/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> admonition" accesskey="N">next</a> |
+            </li>
+            <li class="right">
+                <a href="../" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions" accesskey="P">previous</a> |
+            </li>
+            <li><img src="../../../../py.png"
+            alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
+            <li class="nav-item nav-item-0">
+                <a href="../../../..">Python-Markdown 3.4.4 documentation</a> &#187;
+            </li>
+                    
+                    
+                    
+                    
+                    
+                    
+        <li class="nav-item">
+            API Reference
+         &#187; </li>
+                
+        <li class="nav-item">
+            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+         &#187; </li>
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+         &#187; </li>
+                
+        <li class="nav-item">
+            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> abbr</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+        </ul>
+    </div>
+
+        <div class="document">
+            <div class="documentwrapper">
+                <div class="bodywrapper">
+                    <div class="body" role="main"><div class="doc doc-object doc-module">
+
+
+
+<h1 id="markdown.extensions.abbr" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>          <span class="doc doc-object-name doc-module-name">markdown.extensions.abbr</span>
+
+
+<a href="#markdown.extensions.abbr" class="headerlink" title="Permanent link">&para;</a></h1>
+
+  <div class="doc doc-contents first">
+  
+      <h2 id="markdown.extensions.abbr--abbreviation-extension-for-python-markdown">Abbreviation Extension for Python-Markdown<a class="headerlink" href="#markdown.extensions.abbr--abbreviation-extension-for-python-markdown" title="Permanent link">&para;</a></h2>
+<p>This extension adds abbreviation handling to Python-Markdown.</p>
+<p>See <a href="https://Python-Markdown.github.io/extensions/abbreviations">https://Python-Markdown.github.io/extensions/abbreviations</a>
+for documentation.</p>
+<p>Original code Copyright 2007-2008 <a href="http://achinghead.com/">Waylan Limberg</a> and
+ <a href="http://www.kulleen.org/">Seemant Kulleen</a></p>
+<p>All changes Copyright 2008-2014 The Python Markdown Project</p>
+<p>License: <a href="https://opensource.org/licenses/bsd-license.php">BSD</a></p>
+
+
+
+
+
+  <p>Classes:</p>
+  <ul>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.abbr.AbbrExtension" href="#markdown.extensions.abbr.AbbrExtension">AbbrExtension</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Abbreviation Extension for Python-Markdown.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.abbr.AbbrPreprocessor" href="#markdown.extensions.abbr.AbbrPreprocessor">AbbrPreprocessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Abbreviation Preprocessor - parse text for abbr references.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.abbr.AbbrInlineProcessor" href="#markdown.extensions.abbr.AbbrInlineProcessor">AbbrInlineProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Abbreviation inline pattern.</p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="markdown.extensions.abbr.AbbrExtension" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <span class="doc doc-object-name doc-class-name">markdown.extensions.abbr.AbbrExtension</span>
+
+
+<a href="#markdown.extensions.abbr.AbbrExtension" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+  <div class="doc doc-contents ">
+          <p class="doc doc-class-bases">
+            Bases: <code><a class="autorefs autorefs-internal" title="markdown.extensions.Extension" href="../#markdown.extensions.Extension">Extension</a></code></p>
+
+  
+      <p>Abbreviation Extension for Python-Markdown.</p>
+
+
+
+
+
+
+  <p>Methods:</p>
+  <ul>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.abbr.AbbrExtension.getConfig" href="#markdown.extensions.abbr.AbbrExtension.getConfig">getConfig</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return a setting for the given key or an empty string.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.abbr.AbbrExtension.getConfigs" href="#markdown.extensions.abbr.AbbrExtension.getConfigs">getConfigs</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return all configs settings as a dict.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.abbr.AbbrExtension.getConfigInfo" href="#markdown.extensions.abbr.AbbrExtension.getConfigInfo">getConfigInfo</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return all <code>config</code> descriptions as a list of tuples.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.abbr.AbbrExtension.setConfig" href="#markdown.extensions.abbr.AbbrExtension.setConfig">setConfig</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Set a <code>config</code> setting for <code>key</code> with the given <code>value</code>.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.abbr.AbbrExtension.setConfigs" href="#markdown.extensions.abbr.AbbrExtension.setConfigs">setConfigs</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Set multiple <code>config</code> settings given a dict or list of tuples.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.abbr.AbbrExtension.extendMarkdown" href="#markdown.extensions.abbr.AbbrExtension.extendMarkdown">extendMarkdown</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Insert <code>AbbrPreprocessor</code> before <code>ReferencePreprocessor</code>.</p>
+          </div>
+        </li>
+  </ul>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.abbr.AbbrExtension.extendMarkdown" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.abbr.AbbrExtension.extendMarkdown</span>
+
+
+<a href="#markdown.extensions.abbr.AbbrExtension.extendMarkdown" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.abbr.AbbrExtension.extendMarkdown(md)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Insert <code>AbbrPreprocessor</code> before <code>ReferencePreprocessor</code>.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.abbr.AbbrExtension.getConfig" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.abbr.AbbrExtension.getConfig</span>
+
+
+<a href="#markdown.extensions.abbr.AbbrExtension.getConfig" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.abbr.AbbrExtension.getConfig(key, default = '')</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return a setting for the given key or an empty string.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.abbr.AbbrExtension.getConfigInfo" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.abbr.AbbrExtension.getConfigInfo</span>
+
+
+<a href="#markdown.extensions.abbr.AbbrExtension.getConfigInfo" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.abbr.AbbrExtension.getConfigInfo()</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return all <code>config</code> descriptions as a list of tuples.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.abbr.AbbrExtension.getConfigs" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.abbr.AbbrExtension.getConfigs</span>
+
+
+<a href="#markdown.extensions.abbr.AbbrExtension.getConfigs" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.abbr.AbbrExtension.getConfigs()</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return all configs settings as a dict.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.abbr.AbbrExtension.setConfig" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.abbr.AbbrExtension.setConfig</span>
+
+
+<a href="#markdown.extensions.abbr.AbbrExtension.setConfig" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.abbr.AbbrExtension.setConfig(key, value)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Set a <code>config</code> setting for <code>key</code> with the given <code>value</code>.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.abbr.AbbrExtension.setConfigs" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.abbr.AbbrExtension.setConfigs</span>
+
+
+<a href="#markdown.extensions.abbr.AbbrExtension.setConfigs" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.abbr.AbbrExtension.setConfigs(items)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Set multiple <code>config</code> settings given a dict or list of tuples.</p>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="markdown.extensions.abbr.AbbrInlineProcessor" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <span class="doc doc-object-name doc-class-name">markdown.extensions.abbr.AbbrInlineProcessor</span>
+
+
+<a href="#markdown.extensions.abbr.AbbrInlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
+<pre class="codehilite"><code class="language-python">markdown.extensions.abbr.AbbrInlineProcessor(pattern, title)</code></pre>
+
+  <div class="doc doc-contents ">
+          <p class="doc doc-class-bases">
+            Bases: <code><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.InlineProcessor" href="../../inlinepatterns/#markdown.inlinepatterns.InlineProcessor">InlineProcessor</a></code></p>
+
+  
+      <p>Abbreviation inline pattern.</p>
+
+
+
+
+
+
+  <p>Methods:</p>
+  <ul>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.abbr.AbbrInlineProcessor.getCompiledRegExp" href="#markdown.extensions.abbr.AbbrInlineProcessor.getCompiledRegExp">getCompiledRegExp</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return a compiled regular expression.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.abbr.AbbrInlineProcessor.type" href="#markdown.extensions.abbr.AbbrInlineProcessor.type">type</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return class name, to define pattern type</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.abbr.AbbrInlineProcessor.unescape" href="#markdown.extensions.abbr.AbbrInlineProcessor.unescape">unescape</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return unescaped text given text with an inline placeholder.</p>
+          </div>
+        </li>
+  </ul>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.abbr.AbbrInlineProcessor.getCompiledRegExp" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.abbr.AbbrInlineProcessor.getCompiledRegExp</span>
+
+
+<a href="#markdown.extensions.abbr.AbbrInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.abbr.AbbrInlineProcessor.getCompiledRegExp()</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return a compiled regular expression.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.abbr.AbbrInlineProcessor.type" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.abbr.AbbrInlineProcessor.type</span>
+
+
+<a href="#markdown.extensions.abbr.AbbrInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.abbr.AbbrInlineProcessor.type()</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return class name, to define pattern type</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.abbr.AbbrInlineProcessor.unescape" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.abbr.AbbrInlineProcessor.unescape</span>
+
+
+<a href="#markdown.extensions.abbr.AbbrInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.abbr.AbbrInlineProcessor.unescape(text)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return unescaped text given text with an inline placeholder.</p>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="markdown.extensions.abbr.AbbrPreprocessor" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <span class="doc doc-object-name doc-class-name">markdown.extensions.abbr.AbbrPreprocessor</span>
+
+
+<a href="#markdown.extensions.abbr.AbbrPreprocessor" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+  <div class="doc doc-contents ">
+          <p class="doc doc-class-bases">
+            Bases: <code><a class="autorefs autorefs-internal" title="markdown.blockprocessors.BlockProcessor" href="../../blockprocessors/#markdown.blockprocessors.BlockProcessor">BlockProcessor</a></code></p>
+
+  
+      <p>Abbreviation Preprocessor - parse text for abbr references.</p>
+
+
+
+
+
+
+  <p>Methods:</p>
+  <ul>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.abbr.AbbrPreprocessor.lastChild" href="#markdown.extensions.abbr.AbbrPreprocessor.lastChild">lastChild</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return the last child of an <code>etree</code> element.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.abbr.AbbrPreprocessor.detab" href="#markdown.extensions.abbr.AbbrPreprocessor.detab">detab</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Remove a tab from the front of each line of the given text.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.abbr.AbbrPreprocessor.looseDetab" href="#markdown.extensions.abbr.AbbrPreprocessor.looseDetab">looseDetab</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Remove a tab from front of lines but allowing dedented lines.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.abbr.AbbrPreprocessor.run" href="#markdown.extensions.abbr.AbbrPreprocessor.run">run</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Find and remove all Abbreviation references from the text.</p>
+          </div>
+        </li>
+  </ul>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.abbr.AbbrPreprocessor.detab" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.abbr.AbbrPreprocessor.detab</span>
+
+
+<a href="#markdown.extensions.abbr.AbbrPreprocessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.abbr.AbbrPreprocessor.detab(text, length = None)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Remove a tab from the front of each line of the given text.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.abbr.AbbrPreprocessor.lastChild" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.abbr.AbbrPreprocessor.lastChild</span>
+
+
+<a href="#markdown.extensions.abbr.AbbrPreprocessor.lastChild" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.abbr.AbbrPreprocessor.lastChild(parent)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return the last child of an <code>etree</code> element.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.abbr.AbbrPreprocessor.looseDetab" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.abbr.AbbrPreprocessor.looseDetab</span>
+
+
+<a href="#markdown.extensions.abbr.AbbrPreprocessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.abbr.AbbrPreprocessor.looseDetab(text, level = 1)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Remove a tab from front of lines but allowing dedented lines.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.abbr.AbbrPreprocessor.run" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.abbr.AbbrPreprocessor.run</span>
+
+
+<a href="#markdown.extensions.abbr.AbbrPreprocessor.run" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.abbr.AbbrPreprocessor.run(parent, blocks)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Find and remove all Abbreviation references from the text.
+Each reference is set as a new <code>AbbrPattern</code> in the markdown instance.</p>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+                    </div>
+                </div>
+            </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Table Of Contents</a></h3>
+            <ul>
+                
+    <li>
+        <a class="reference internal" href="#markdown.extensions.abbr"><code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;abbr</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.abbr--abbreviation-extension-for-python-markdown">Abbreviation Extension for Python-Markdown</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.abbr.AbbrExtension"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;AbbrExtension</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.abbr.AbbrExtension.extendMarkdown"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;extendMarkdown</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.abbr.AbbrExtension.getConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfig</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.abbr.AbbrExtension.getConfigInfo"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfigInfo</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.abbr.AbbrExtension.getConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfigs</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.abbr.AbbrExtension.setConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;setConfig</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.abbr.AbbrExtension.setConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;setConfigs</a>
+    </li>
+        </ul>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.abbr.AbbrInlineProcessor"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;AbbrInlineProcessor</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.abbr.AbbrInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.abbr.AbbrInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.abbr.AbbrInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+    </li>
+        </ul>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.abbr.AbbrPreprocessor"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;AbbrPreprocessor</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.abbr.AbbrPreprocessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;detab</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.abbr.AbbrPreprocessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;lastChild</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.abbr.AbbrPreprocessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;looseDetab</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.abbr.AbbrPreprocessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;run</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+            </ul>
+            
+            <h4>Previous topic</h4>
+            <p class="topless">
+                <a href="../" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+            </p>
+
+            
+            <h4>Next topic</h4>
+            <p class="topless">
+                <a href="../admonition/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> admonition</a>
+            </p>
+
+            <div role="note" aria-label="source link">
+                <h3>This Page</h3>
+                <ul class="this-page-menu">
+                    <li><a href="https://github.com/Python-Markdown/markdown/issues">Report a Bug</a></li>
+                    <li><a href="https://github.com/Python-Markdown/markdown/edit/master/markdown/extensions/abbr.py">Edit on GitHub</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+            <div class="clearer"></div>
+        </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+        <h3>Navigation</h3>
+        <ul>
+                <li class="right" style="margin-right: 10px">
+                    <a href="https://github.com/Python-Markdown/markdown" title="View this project on GitHub"><img src="../../../../static/github.png" width=16px style="vertical-align: middle; margin-top: -1px" /></a>
+                </li>
+            <li class="right" style="margin-right: 10px">
+                <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
+            </li>
+            <li class="right">
+                <a href="../admonition/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> admonition" accesskey="N">next</a> |
+            </li>
+            <li class="right">
+                <a href="../" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions" accesskey="P">previous</a> |
+            </li>
+            <li><img src="../../../../py.png"
+            alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
+            <li class="nav-item nav-item-0">
+                <a href="../../../..">Python-Markdown 3.4.4 documentation</a> &#187;
+            </li>
+                    
+                    
+                    
+                    
+                    
+                    
+        <li class="nav-item">
+            API Reference
+         &#187; </li>
+                
+        <li class="nav-item">
+            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+         &#187; </li>
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+         &#187; </li>
+                
+        <li class="nav-item">
+            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> abbr</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+        </ul>
+    </div>
+        <div class="footer" role="contentinfo">Copyright &copy; 2010-2023, The Python-Markdown Project.
+        Created using <a href="https://www.mkdocs.org/">MkDocs</a> 1.5.2.
+        </div>
+        <script>var base_url = '../../../..';</script>
+
+        <!--
+        MkDocs version      : 1.5.2
+        Docs Build Date UTC : 2023-08-22 23:35:33.300811+00:00
+        -->
+    </body>
+</html>

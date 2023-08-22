@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        
+        <meta name="author" content="The Python-Markdown Project">
+        <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/extensions/wikilinks/">
+        <link rel="shortcut icon" href="../../../../favicon.ico">
+        <link rel="search" title="Search" href="../../../../search.html" />
+        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> htmlparser" href="../../htmlparser/" />
+        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> toc" href="../toc/" />
+        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> wikilinks &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="stylesheet" href="../../../../static/nature.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../static/pygments.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../custom.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../mkdocstrings.css" type="text/css" />
+        <script type="text/javascript" src="../../../../static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../static/underscore.js"></script> 
+    </head>
+
+    <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+        <h3>Navigation</h3>
+        <ul>
+                <li class="right" style="margin-right: 10px">
+                    <a href="https://github.com/Python-Markdown/markdown" title="View this project on GitHub"><img src="../../../../static/github.png" width=16px style="vertical-align: middle; margin-top: -1px" /></a>
+                </li>
+            <li class="right" style="margin-right: 10px">
+                <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
+            </li>
+            <li class="right">
+                <a href="../../htmlparser/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> htmlparser" accesskey="N">next</a> |
+            </li>
+            <li class="right">
+                <a href="../toc/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> toc" accesskey="P">previous</a> |
+            </li>
+            <li><img src="../../../../py.png"
+            alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
+            <li class="nav-item nav-item-0">
+                <a href="../../../..">Python-Markdown 3.4.4 documentation</a> &#187;
+            </li>
+                    
+                    
+                    
+                    
+                    
+                    
+        <li class="nav-item">
+            API Reference
+         &#187; </li>
+                
+        <li class="nav-item">
+            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+         &#187; </li>
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> wikilinks</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+        </ul>
+    </div>
+
+        <div class="document">
+            <div class="documentwrapper">
+                <div class="bodywrapper">
+                    <div class="body" role="main"><div class="doc doc-object doc-module">
+
+
+
+<h1 id="markdown.extensions.wikilinks" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>          <span class="doc doc-object-name doc-module-name">markdown.extensions.wikilinks</span>
+
+
+<a href="#markdown.extensions.wikilinks" class="headerlink" title="Permanent link">&para;</a></h1>
+
+  <div class="doc doc-contents first">
+  
+      <h2 id="markdown.extensions.wikilinks--wikilinks-extension-for-python-markdown">WikiLinks Extension for Python-Markdown<a class="headerlink" href="#markdown.extensions.wikilinks--wikilinks-extension-for-python-markdown" title="Permanent link">&para;</a></h2>
+<p>Converts [[WikiLinks]] to relative links.</p>
+<p>See <a href="https://Python-Markdown.github.io/extensions/wikilinks">https://Python-Markdown.github.io/extensions/wikilinks</a>
+for documentation.</p>
+<p>Original code Copyright <a href="http://achinghead.com/">Waylan Limberg</a>.</p>
+<p>All changes Copyright The Python Markdown Project</p>
+<p>License: <a href="https://opensource.org/licenses/bsd-license.php">BSD</a></p>
+
+
+
+
+
+
+  <p>Functions:</p>
+  <ul>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.wikilinks.build_url" href="#markdown.extensions.wikilinks.build_url">build_url</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Build a URL from the label, a base, and an end.</p>
+          </div>
+        </li>
+  </ul>
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="markdown.extensions.wikilinks.WikiLinksInlineProcessor" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <span class="doc doc-object-name doc-class-name">markdown.extensions.wikilinks.WikiLinksInlineProcessor</span>
+
+
+<a href="#markdown.extensions.wikilinks.WikiLinksInlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
+<pre class="codehilite"><code class="language-python">markdown.extensions.wikilinks.WikiLinksInlineProcessor(pattern, config)</code></pre>
+
+  <div class="doc doc-contents ">
+          <p class="doc doc-class-bases">
+            Bases: <code><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.InlineProcessor" href="../../inlinepatterns/#markdown.inlinepatterns.InlineProcessor">InlineProcessor</a></code></p>
+
+
+
+
+
+
+
+  <p>Methods:</p>
+  <ul>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.wikilinks.WikiLinksInlineProcessor.getCompiledRegExp" href="#markdown.extensions.wikilinks.WikiLinksInlineProcessor.getCompiledRegExp">getCompiledRegExp</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return a compiled regular expression.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.wikilinks.WikiLinksInlineProcessor.type" href="#markdown.extensions.wikilinks.WikiLinksInlineProcessor.type">type</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return class name, to define pattern type</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.wikilinks.WikiLinksInlineProcessor.unescape" href="#markdown.extensions.wikilinks.WikiLinksInlineProcessor.unescape">unescape</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return unescaped text given text with an inline placeholder.</p>
+          </div>
+        </li>
+  </ul>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.wikilinks.WikiLinksInlineProcessor.getCompiledRegExp" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.wikilinks.WikiLinksInlineProcessor.getCompiledRegExp</span>
+
+
+<a href="#markdown.extensions.wikilinks.WikiLinksInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.wikilinks.WikiLinksInlineProcessor.getCompiledRegExp()</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return a compiled regular expression.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.wikilinks.WikiLinksInlineProcessor.type" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.wikilinks.WikiLinksInlineProcessor.type</span>
+
+
+<a href="#markdown.extensions.wikilinks.WikiLinksInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.wikilinks.WikiLinksInlineProcessor.type()</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return class name, to define pattern type</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.wikilinks.WikiLinksInlineProcessor.unescape" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.wikilinks.WikiLinksInlineProcessor.unescape</span>
+
+
+<a href="#markdown.extensions.wikilinks.WikiLinksInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.wikilinks.WikiLinksInlineProcessor.unescape(text)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return unescaped text given text with an inline placeholder.</p>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="markdown.extensions.wikilinks.build_url" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.wikilinks.build_url</span>
+
+
+<a href="#markdown.extensions.wikilinks.build_url" class="headerlink" title="Permanent link">&para;</a></h2>
+<pre class="codehilite"><code class="language-python">markdown.extensions.wikilinks.build_url(label, base, end)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Build a URL from the label, a base, and an end.</p>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+                    </div>
+                </div>
+            </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Table Of Contents</a></h3>
+            <ul>
+                
+    <li>
+        <a class="reference internal" href="#markdown.extensions.wikilinks"><code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;wikilinks</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.wikilinks--wikilinks-extension-for-python-markdown">WikiLinks Extension for Python-Markdown</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.wikilinks.WikiLinksInlineProcessor"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;WikiLinksInlineProcessor</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.wikilinks.WikiLinksInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.wikilinks.WikiLinksInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.wikilinks.WikiLinksInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+    </li>
+        </ul>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.wikilinks.build_url"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;build_url</a>
+    </li>
+        </ul>
+    </li>
+            </ul>
+            
+            <h4>Previous topic</h4>
+            <p class="topless">
+                <a href="../toc/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> toc</a>
+            </p>
+
+            
+            <h4>Next topic</h4>
+            <p class="topless">
+                <a href="../../htmlparser/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> htmlparser</a>
+            </p>
+
+            <div role="note" aria-label="source link">
+                <h3>This Page</h3>
+                <ul class="this-page-menu">
+                    <li><a href="https://github.com/Python-Markdown/markdown/issues">Report a Bug</a></li>
+                    <li><a href="https://github.com/Python-Markdown/markdown/edit/master/markdown/extensions/wikilinks.py">Edit on GitHub</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+            <div class="clearer"></div>
+        </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+        <h3>Navigation</h3>
+        <ul>
+                <li class="right" style="margin-right: 10px">
+                    <a href="https://github.com/Python-Markdown/markdown" title="View this project on GitHub"><img src="../../../../static/github.png" width=16px style="vertical-align: middle; margin-top: -1px" /></a>
+                </li>
+            <li class="right" style="margin-right: 10px">
+                <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
+            </li>
+            <li class="right">
+                <a href="../../htmlparser/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> htmlparser" accesskey="N">next</a> |
+            </li>
+            <li class="right">
+                <a href="../toc/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> toc" accesskey="P">previous</a> |
+            </li>
+            <li><img src="../../../../py.png"
+            alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
+            <li class="nav-item nav-item-0">
+                <a href="../../../..">Python-Markdown 3.4.4 documentation</a> &#187;
+            </li>
+                    
+                    
+                    
+                    
+                    
+                    
+        <li class="nav-item">
+            API Reference
+         &#187; </li>
+                
+        <li class="nav-item">
+            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+         &#187; </li>
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> wikilinks</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+        </ul>
+    </div>
+        <div class="footer" role="contentinfo">Copyright &copy; 2010-2023, The Python-Markdown Project.
+        Created using <a href="https://www.mkdocs.org/">MkDocs</a> 1.5.2.
+        </div>
+        <script>var base_url = '../../../..';</script>
+
+        <!--
+        MkDocs version      : 1.5.2
+        Docs Build Date UTC : 2023-08-22 23:35:33.314956+00:00
+        -->
+    </body>
+</html>

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        
+        <meta name="author" content="The Python-Markdown Project">
+        <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/extensions/">
+        <link rel="shortcut icon" href="../../../favicon.ico">
+        <link rel="search" title="Search" href="../../../search.html" />
+        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> abbr" href="abbr/" />
+        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> core" href="../core/" />
+        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="stylesheet" href="../../../static/nature.css" type="text/css" />
+        <link rel="stylesheet" href="../../../static/pygments.css" type="text/css" />
+        <link rel="stylesheet" href="../../../assets/_mkdocstrings.css" type="text/css" />
+        <link rel="stylesheet" href="../../../custom.css" type="text/css" />
+        <link rel="stylesheet" href="../../../mkdocstrings.css" type="text/css" />
+        <script type="text/javascript" src="../../../static/jquery.js"></script>
+        <script type="text/javascript" src="../../../static/underscore.js"></script> 
+    </head>
+
+    <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+        <h3>Navigation</h3>
+        <ul>
+                <li class="right" style="margin-right: 10px">
+                    <a href="https://github.com/Python-Markdown/markdown" title="View this project on GitHub"><img src="../../../static/github.png" width=16px style="vertical-align: middle; margin-top: -1px" /></a>
+                </li>
+            <li class="right" style="margin-right: 10px">
+                <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
+            </li>
+            <li class="right">
+                <a href="abbr/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> abbr" accesskey="N">next</a> |
+            </li>
+            <li class="right">
+                <a href="../core/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> core" accesskey="P">previous</a> |
+            </li>
+            <li><img src="../../../py.png"
+            alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
+            <li class="nav-item nav-item-0">
+                <a href="../../..">Python-Markdown 3.4.4 documentation</a> &#187;
+            </li>
+                    
+                    
+                    
+                    
+                    
+                    
+        <li class="nav-item">
+            API Reference
+         &#187; </li>
+                
+        <li class="nav-item">
+            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+         &#187; </li>
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+        </ul>
+    </div>
+
+        <div class="document">
+            <div class="documentwrapper">
+                <div class="bodywrapper">
+                    <div class="body" role="main"><div class="doc doc-object doc-module">
+
+
+
+<h1 id="markdown.extensions" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>          <span class="doc doc-object-name doc-module-name">markdown.extensions</span>
+
+
+<a href="#markdown.extensions" class="headerlink" title="Permanent link">&para;</a></h1>
+
+  <div class="doc doc-contents first">
+  
+      <p>Python Markdown</p>
+<p>A Python implementation of John Gruber&rsquo;s Markdown.</p>
+<p>Documentation: https://python-markdown.github.io/
+GitHub: https://github.com/Python-Markdown/markdown/
+PyPI: https://pypi.org/project/Markdown/</p>
+<p>Started by Manfred Stienstra (http://www.dwerg.net/).
+Maintained for a few years by Yuri Takhteyev (http://www.freewisdom.org).
+Currently maintained by Waylan Limberg (https://github.com/waylan),
+Dmitry Shachnev (https://github.com/mitya57) and Isaac Muse (https://github.com/facelessuser).</p>
+<p>Copyright 2007-2018 The Python Markdown Project (v. 1.7 and later)
+Copyright 2004, 2005, 2006 Yuri Takhteyev (v. 0.2-1.6b)
+Copyright 2004 Manfred Stienstra (the original version)</p>
+<p>License: BSD (see LICENSE.md for details).</p>
+
+
+
+
+  <p>Modules:</p>
+  <ul>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.admonition" href="admonition/#markdown.extensions.admonition">admonition</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Admonition extension for Python-Markdown</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_attrs" href="legacy_attrs/#markdown.extensions.legacy_attrs">legacy_attrs</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Python Markdown</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.smarty" href="smarty/#markdown.extensions.smarty">smarty</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Smarty extension for Python-Markdown</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.nl2br" href="nl2br/#markdown.extensions.nl2br">nl2br</a></b>
+        –
+        <div class="doc-md-description">
+          <p><code>NL2BR</code> Extension</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.def_list" href="def_list/#markdown.extensions.def_list">def_list</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Definition List Extension for Python-Markdown</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.fenced_code" href="fenced_code/#markdown.extensions.fenced_code">fenced_code</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Fenced Code Extension for Python Markdown</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.abbr" href="abbr/#markdown.extensions.abbr">abbr</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Abbreviation Extension for Python-Markdown</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.codehilite" href="codehilite/#markdown.extensions.codehilite">codehilite</a></b>
+        –
+        <div class="doc-md-description">
+          <p>CodeHilite Extension for Python-Markdown</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.toc" href="toc/#markdown.extensions.toc">toc</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Table of Contents Extension for Python-Markdown</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes" href="footnotes/#markdown.extensions.footnotes">footnotes</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Footnotes Extension for Python-Markdown</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables" href="tables/#markdown.extensions.tables">tables</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Tables Extension for Python-Markdown</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.sane_lists" href="sane_lists/#markdown.extensions.sane_lists">sane_lists</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Sane List Extension for Python-Markdown</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.meta" href="meta/#markdown.extensions.meta">meta</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Meta Data Extension for Python-Markdown</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_em" href="legacy_em/#markdown.extensions.legacy_em">legacy_em</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Legacy Em Extension for Python-Markdown</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.md_in_html" href="md_in_html/#markdown.extensions.md_in_html">md_in_html</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Python-Markdown Markdown in HTML Extension</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.extra" href="extra/#markdown.extensions.extra">extra</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Python-Markdown Extra Extension</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.wikilinks" href="wikilinks/#markdown.extensions.wikilinks">wikilinks</a></b>
+        –
+        <div class="doc-md-description">
+          <p>WikiLinks Extension for Python-Markdown</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.attr_list" href="attr_list/#markdown.extensions.attr_list">attr_list</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Attribute List Extension for Python-Markdown</p>
+        </div>
+      </li>
+  </ul>
+
+
+
+
+  <p>Classes:</p>
+  <ul>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.Extension" href="#markdown.extensions.Extension">Extension</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Base class for extensions to subclass.</p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="markdown.extensions.Extension" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <span class="doc doc-object-name doc-class-name">markdown.extensions.Extension</span>
+
+
+<a href="#markdown.extensions.Extension" class="headerlink" title="Permanent link">&para;</a></h2>
+<pre class="codehilite"><code class="language-python">markdown.extensions.Extension(**kwargs)</code></pre>
+
+  <div class="doc doc-contents ">
+
+  
+      <p>Base class for extensions to subclass.</p>
+
+
+
+
+
+
+  <p>Methods:</p>
+  <ul>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.Extension.getConfig" href="#markdown.extensions.Extension.getConfig">getConfig</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return a setting for the given key or an empty string.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.Extension.getConfigs" href="#markdown.extensions.Extension.getConfigs">getConfigs</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return all configs settings as a dict.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.Extension.getConfigInfo" href="#markdown.extensions.Extension.getConfigInfo">getConfigInfo</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return all <code>config</code> descriptions as a list of tuples.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.Extension.setConfig" href="#markdown.extensions.Extension.setConfig">setConfig</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Set a <code>config</code> setting for <code>key</code> with the given <code>value</code>.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.Extension.setConfigs" href="#markdown.extensions.Extension.setConfigs">setConfigs</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Set multiple <code>config</code> settings given a dict or list of tuples.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.Extension.extendMarkdown" href="#markdown.extensions.Extension.extendMarkdown">extendMarkdown</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Add the various processors and patterns to the Markdown Instance.</p>
+          </div>
+        </li>
+  </ul>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.Extension.extendMarkdown" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.Extension.extendMarkdown</span>
+
+
+<a href="#markdown.extensions.Extension.extendMarkdown" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.Extension.extendMarkdown(md: <a class="autorefs autorefs-internal" title="markdown.Markdown" href="../#markdown.Markdown">Markdown</a>)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Add the various processors and patterns to the Markdown Instance.</p>
+<p>This method must be overridden by every extension.</p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b>md</b>
+            (<code><a class="autorefs autorefs-internal" title="markdown.Markdown" href="../#markdown.Markdown">Markdown</a></code>)
+        –
+        <div class="doc-md-description">
+          <p>The Markdown instance.</p>
+        </div>
+      </li>
+  </ul>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.Extension.getConfig" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.Extension.getConfig</span>
+
+
+<a href="#markdown.extensions.Extension.getConfig" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.Extension.getConfig(key, default = '')</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return a setting for the given key or an empty string.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.Extension.getConfigInfo" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.Extension.getConfigInfo</span>
+
+
+<a href="#markdown.extensions.Extension.getConfigInfo" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.Extension.getConfigInfo()</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return all <code>config</code> descriptions as a list of tuples.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.Extension.getConfigs" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.Extension.getConfigs</span>
+
+
+<a href="#markdown.extensions.Extension.getConfigs" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.Extension.getConfigs()</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return all configs settings as a dict.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.Extension.setConfig" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.Extension.setConfig</span>
+
+
+<a href="#markdown.extensions.Extension.setConfig" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.Extension.setConfig(key, value)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Set a <code>config</code> setting for <code>key</code> with the given <code>value</code>.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.Extension.setConfigs" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.Extension.setConfigs</span>
+
+
+<a href="#markdown.extensions.Extension.setConfigs" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.Extension.setConfigs(items)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Set multiple <code>config</code> settings given a dict or list of tuples.</p>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+                    </div>
+                </div>
+            </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Table Of Contents</a></h3>
+            <ul>
+                
+    <li>
+        <a class="reference internal" href="#markdown.extensions"><code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;extensions</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.Extension"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;Extension</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.Extension.extendMarkdown"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;extendMarkdown</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.Extension.getConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfig</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.Extension.getConfigInfo"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfigInfo</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.Extension.getConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfigs</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.Extension.setConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;setConfig</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.Extension.setConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;setConfigs</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+            </ul>
+            
+            <h4>Previous topic</h4>
+            <p class="topless">
+                <a href="../core/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> core</a>
+            </p>
+
+            
+            <h4>Next topic</h4>
+            <p class="topless">
+                <a href="abbr/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> abbr</a>
+            </p>
+
+            <div role="note" aria-label="source link">
+                <h3>This Page</h3>
+                <ul class="this-page-menu">
+                    <li><a href="https://github.com/Python-Markdown/markdown/issues">Report a Bug</a></li>
+                    <li><a href="https://github.com/Python-Markdown/markdown/edit/master/markdown/extensions/__init__.py">Edit on GitHub</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+            <div class="clearer"></div>
+        </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+        <h3>Navigation</h3>
+        <ul>
+                <li class="right" style="margin-right: 10px">
+                    <a href="https://github.com/Python-Markdown/markdown" title="View this project on GitHub"><img src="../../../static/github.png" width=16px style="vertical-align: middle; margin-top: -1px" /></a>
+                </li>
+            <li class="right" style="margin-right: 10px">
+                <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
+            </li>
+            <li class="right">
+                <a href="abbr/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> abbr" accesskey="N">next</a> |
+            </li>
+            <li class="right">
+                <a href="../core/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> core" accesskey="P">previous</a> |
+            </li>
+            <li><img src="../../../py.png"
+            alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
+            <li class="nav-item nav-item-0">
+                <a href="../../..">Python-Markdown 3.4.4 documentation</a> &#187;
+            </li>
+                    
+                    
+                    
+                    
+                    
+                    
+        <li class="nav-item">
+            API Reference
+         &#187; </li>
+                
+        <li class="nav-item">
+            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+         &#187; </li>
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+        </ul>
+    </div>
+        <div class="footer" role="contentinfo">Copyright &copy; 2010-2023, The Python-Markdown Project.
+        Created using <a href="https://www.mkdocs.org/">MkDocs</a> 1.5.2.
+        </div>
+        <script>var base_url = '../../..';</script>
+
+        <!--
+        MkDocs version      : 1.5.2
+        Docs Build Date UTC : 2023-08-22 23:35:33.299923+00:00
+        -->
+    </body>
+</html>

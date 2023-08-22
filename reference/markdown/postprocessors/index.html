@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        
+        <meta name="author" content="The Python-Markdown Project">
+        <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/postprocessors/">
+        <link rel="shortcut icon" href="../../../favicon.ico">
+        <link rel="search" title="Search" href="../../../search.html" />
+        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> preprocessors" href="../preprocessors/" />
+        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> inlinepatterns" href="../inlinepatterns/" />
+        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> postprocessors &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="stylesheet" href="../../../static/nature.css" type="text/css" />
+        <link rel="stylesheet" href="../../../static/pygments.css" type="text/css" />
+        <link rel="stylesheet" href="../../../assets/_mkdocstrings.css" type="text/css" />
+        <link rel="stylesheet" href="../../../custom.css" type="text/css" />
+        <link rel="stylesheet" href="../../../mkdocstrings.css" type="text/css" />
+        <script type="text/javascript" src="../../../static/jquery.js"></script>
+        <script type="text/javascript" src="../../../static/underscore.js"></script> 
+    </head>
+
+    <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+        <h3>Navigation</h3>
+        <ul>
+                <li class="right" style="margin-right: 10px">
+                    <a href="https://github.com/Python-Markdown/markdown" title="View this project on GitHub"><img src="../../../static/github.png" width=16px style="vertical-align: middle; margin-top: -1px" /></a>
+                </li>
+            <li class="right" style="margin-right: 10px">
+                <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
+            </li>
+            <li class="right">
+                <a href="../preprocessors/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> preprocessors" accesskey="N">next</a> |
+            </li>
+            <li class="right">
+                <a href="../inlinepatterns/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> inlinepatterns" accesskey="P">previous</a> |
+            </li>
+            <li><img src="../../../py.png"
+            alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
+            <li class="nav-item nav-item-0">
+                <a href="../../..">Python-Markdown 3.4.4 documentation</a> &#187;
+            </li>
+                    
+                    
+                    
+                    
+                    
+                    
+        <li class="nav-item">
+            API Reference
+         &#187; </li>
+                
+        <li class="nav-item">
+            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> postprocessors</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+        </ul>
+    </div>
+
+        <div class="document">
+            <div class="documentwrapper">
+                <div class="bodywrapper">
+                    <div class="body" role="main"><div class="doc doc-object doc-module">
+
+
+
+<h1 id="markdown.postprocessors" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>          <span class="doc doc-object-name doc-module-name">markdown.postprocessors</span>
+
+
+<a href="#markdown.postprocessors" class="headerlink" title="Permanent link">&para;</a></h1>
+
+  <div class="doc doc-contents first">
+  
+      <p>Python Markdown</p>
+<p>A Python implementation of John Gruber&rsquo;s Markdown.</p>
+<p>Documentation: https://python-markdown.github.io/
+GitHub: https://github.com/Python-Markdown/markdown/
+PyPI: https://pypi.org/project/Markdown/</p>
+<p>Started by Manfred Stienstra (http://www.dwerg.net/).
+Maintained for a few years by Yuri Takhteyev (http://www.freewisdom.org).
+Currently maintained by Waylan Limberg (https://github.com/waylan),
+Dmitry Shachnev (https://github.com/mitya57) and Isaac Muse (https://github.com/facelessuser).</p>
+<p>Copyright 2007-2018 The Python Markdown Project (v. 1.7 and later)
+Copyright 2004, 2005, 2006 Yuri Takhteyev (v. 0.2-1.6b)
+Copyright 2004 Manfred Stienstra (the original version)</p>
+<p>License: BSD (see LICENSE.md for details).</p>
+<h2 id="markdown.postprocessors--post-processors">POST-PROCESSORS<a class="headerlink" href="#markdown.postprocessors--post-processors" title="Permanent link">&para;</a></h2>
+<p>Markdown also allows post-processors, which are similar to preprocessors in
+that they need to implement a &ldquo;run&rdquo; method. However, they are run after core
+processing.</p>
+
+
+
+
+
+  <p>Classes:</p>
+  <ul>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.postprocessors.Postprocessor" href="#markdown.postprocessors.Postprocessor">Postprocessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Postprocessors are run after the ElementTree it converted back into text.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.postprocessors.RawHtmlPostprocessor" href="#markdown.postprocessors.RawHtmlPostprocessor">RawHtmlPostprocessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Restore raw html to the document.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.postprocessors.AndSubstitutePostprocessor" href="#markdown.postprocessors.AndSubstitutePostprocessor">AndSubstitutePostprocessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Restore valid entities</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.postprocessors.UnescapePostprocessor" href="#markdown.postprocessors.UnescapePostprocessor">UnescapePostprocessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Restore escaped chars</p>
+        </div>
+      </li>
+  </ul>
+
+
+
+
+  <p>Functions:</p>
+  <ul>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.postprocessors.build_postprocessors" href="#markdown.postprocessors.build_postprocessors">build_postprocessors</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Build the default postprocessors for Markdown.</p>
+          </div>
+        </li>
+  </ul>
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="markdown.postprocessors.AndSubstitutePostprocessor" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <span class="doc doc-object-name doc-class-name">markdown.postprocessors.AndSubstitutePostprocessor</span>
+
+
+<a href="#markdown.postprocessors.AndSubstitutePostprocessor" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+  <div class="doc doc-contents ">
+          <p class="doc doc-class-bases">
+            Bases: <code><a class="autorefs autorefs-internal" title="markdown.postprocessors.Postprocessor" href="#markdown.postprocessors.Postprocessor">Postprocessor</a></code></p>
+
+  
+      <p>Restore valid entities</p>
+
+
+
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="markdown.postprocessors.Postprocessor" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <span class="doc doc-object-name doc-class-name">markdown.postprocessors.Postprocessor</span>
+
+
+<a href="#markdown.postprocessors.Postprocessor" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+  <div class="doc doc-contents ">
+          <p class="doc doc-class-bases">
+            Bases: <code><span title="markdown.util.Processor">Processor</span></code></p>
+
+  
+      <p>Postprocessors are run after the ElementTree it converted back into text.</p>
+<p>Each Postprocessor implements a &ldquo;run&rdquo; method that takes a pointer to a
+text string, modifies it as necessary and returns a text string.</p>
+<p>Postprocessors must extend markdown.Postprocessor.</p>
+
+
+
+
+
+
+  <p>Methods:</p>
+  <ul>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.postprocessors.Postprocessor.run" href="#markdown.postprocessors.Postprocessor.run">run</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Subclasses of Postprocessor should implement a <code>run</code> method, which</p>
+          </div>
+        </li>
+  </ul>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.postprocessors.Postprocessor.run" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.postprocessors.Postprocessor.run</span>
+
+
+<a href="#markdown.postprocessors.Postprocessor.run" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.postprocessors.Postprocessor.run(text)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Subclasses of Postprocessor should implement a <code>run</code> method, which
+takes the html document as a single text string and returns a
+(possibly modified) string.</p>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="markdown.postprocessors.RawHtmlPostprocessor" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <span class="doc doc-object-name doc-class-name">markdown.postprocessors.RawHtmlPostprocessor</span>
+
+
+<a href="#markdown.postprocessors.RawHtmlPostprocessor" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+  <div class="doc doc-contents ">
+          <p class="doc doc-class-bases">
+            Bases: <code><a class="autorefs autorefs-internal" title="markdown.postprocessors.Postprocessor" href="#markdown.postprocessors.Postprocessor">Postprocessor</a></code></p>
+
+  
+      <p>Restore raw html to the document.</p>
+
+
+
+
+
+
+  <p>Methods:</p>
+  <ul>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.postprocessors.RawHtmlPostprocessor.run" href="#markdown.postprocessors.RawHtmlPostprocessor.run">run</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Iterate over html stash and restore html.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.postprocessors.RawHtmlPostprocessor.stash_to_string" href="#markdown.postprocessors.RawHtmlPostprocessor.stash_to_string">stash_to_string</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Convert a stashed object to a string.</p>
+          </div>
+        </li>
+  </ul>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.postprocessors.RawHtmlPostprocessor.run" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.postprocessors.RawHtmlPostprocessor.run</span>
+
+
+<a href="#markdown.postprocessors.RawHtmlPostprocessor.run" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.postprocessors.RawHtmlPostprocessor.run(text)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Iterate over html stash and restore html.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.postprocessors.RawHtmlPostprocessor.stash_to_string" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.postprocessors.RawHtmlPostprocessor.stash_to_string</span>
+
+
+<a href="#markdown.postprocessors.RawHtmlPostprocessor.stash_to_string" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.postprocessors.RawHtmlPostprocessor.stash_to_string(text)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Convert a stashed object to a string.</p>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="markdown.postprocessors.UnescapePostprocessor" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <span class="doc doc-object-name doc-class-name">markdown.postprocessors.UnescapePostprocessor</span>
+
+
+<a href="#markdown.postprocessors.UnescapePostprocessor" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+  <div class="doc doc-contents ">
+          <p class="doc doc-class-bases">
+            Bases: <code><a class="autorefs autorefs-internal" title="markdown.postprocessors.Postprocessor" href="#markdown.postprocessors.Postprocessor">Postprocessor</a></code></p>
+
+  
+      <p>Restore escaped chars</p>
+
+
+
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="markdown.postprocessors.build_postprocessors" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.postprocessors.build_postprocessors</span>
+
+
+<a href="#markdown.postprocessors.build_postprocessors" class="headerlink" title="Permanent link">&para;</a></h2>
+<pre class="codehilite"><code class="language-python">markdown.postprocessors.build_postprocessors(md, **kwargs)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Build the default postprocessors for Markdown.</p>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+                    </div>
+                </div>
+            </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Table Of Contents</a></h3>
+            <ul>
+                
+    <li>
+        <a class="reference internal" href="#markdown.postprocessors"><code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;postprocessors</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.postprocessors--post-processors">POST-PROCESSORS</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.postprocessors.AndSubstitutePostprocessor"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;AndSubstitutePostprocessor</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.postprocessors.Postprocessor"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;Postprocessor</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.postprocessors.Postprocessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;run</a>
+    </li>
+        </ul>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.postprocessors.RawHtmlPostprocessor"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;RawHtmlPostprocessor</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.postprocessors.RawHtmlPostprocessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;run</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.postprocessors.RawHtmlPostprocessor.stash_to_string"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;stash_to_string</a>
+    </li>
+        </ul>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.postprocessors.UnescapePostprocessor"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;UnescapePostprocessor</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.postprocessors.build_postprocessors"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;build_postprocessors</a>
+    </li>
+        </ul>
+    </li>
+            </ul>
+            
+            <h4>Previous topic</h4>
+            <p class="topless">
+                <a href="../inlinepatterns/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> inlinepatterns</a>
+            </p>
+
+            
+            <h4>Next topic</h4>
+            <p class="topless">
+                <a href="../preprocessors/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> preprocessors</a>
+            </p>
+
+            <div role="note" aria-label="source link">
+                <h3>This Page</h3>
+                <ul class="this-page-menu">
+                    <li><a href="https://github.com/Python-Markdown/markdown/issues">Report a Bug</a></li>
+                    <li><a href="https://github.com/Python-Markdown/markdown/edit/master/markdown/postprocessors.py">Edit on GitHub</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+            <div class="clearer"></div>
+        </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+        <h3>Navigation</h3>
+        <ul>
+                <li class="right" style="margin-right: 10px">
+                    <a href="https://github.com/Python-Markdown/markdown" title="View this project on GitHub"><img src="../../../static/github.png" width=16px style="vertical-align: middle; margin-top: -1px" /></a>
+                </li>
+            <li class="right" style="margin-right: 10px">
+                <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
+            </li>
+            <li class="right">
+                <a href="../preprocessors/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> preprocessors" accesskey="N">next</a> |
+            </li>
+            <li class="right">
+                <a href="../inlinepatterns/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> inlinepatterns" accesskey="P">previous</a> |
+            </li>
+            <li><img src="../../../py.png"
+            alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
+            <li class="nav-item nav-item-0">
+                <a href="../../..">Python-Markdown 3.4.4 documentation</a> &#187;
+            </li>
+                    
+                    
+                    
+                    
+                    
+                    
+        <li class="nav-item">
+            API Reference
+         &#187; </li>
+                
+        <li class="nav-item">
+            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> postprocessors</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+        </ul>
+    </div>
+        <div class="footer" role="contentinfo">Copyright &copy; 2010-2023, The Python-Markdown Project.
+        Created using <a href="https://www.mkdocs.org/">MkDocs</a> 1.5.2.
+        </div>
+        <script>var base_url = '../../..';</script>
+
+        <!--
+        MkDocs version      : 1.5.2
+        Docs Build Date UTC : 2023-08-22 23:35:33.295816+00:00
+        -->
+    </body>
+</html>

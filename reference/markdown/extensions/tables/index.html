@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        
+        <meta name="author" content="The Python-Markdown Project">
+        <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/extensions/tables/">
+        <link rel="shortcut icon" href="../../../../favicon.ico">
+        <link rel="search" title="Search" href="../../../../search.html" />
+        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> toc" href="../toc/" />
+        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> smarty" href="../smarty/" />
+        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> tables &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="stylesheet" href="../../../../static/nature.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../static/pygments.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../custom.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../mkdocstrings.css" type="text/css" />
+        <script type="text/javascript" src="../../../../static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../static/underscore.js"></script> 
+    </head>
+
+    <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+        <h3>Navigation</h3>
+        <ul>
+                <li class="right" style="margin-right: 10px">
+                    <a href="https://github.com/Python-Markdown/markdown" title="View this project on GitHub"><img src="../../../../static/github.png" width=16px style="vertical-align: middle; margin-top: -1px" /></a>
+                </li>
+            <li class="right" style="margin-right: 10px">
+                <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
+            </li>
+            <li class="right">
+                <a href="../toc/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> toc" accesskey="N">next</a> |
+            </li>
+            <li class="right">
+                <a href="../smarty/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> smarty" accesskey="P">previous</a> |
+            </li>
+            <li><img src="../../../../py.png"
+            alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
+            <li class="nav-item nav-item-0">
+                <a href="../../../..">Python-Markdown 3.4.4 documentation</a> &#187;
+            </li>
+                    
+                    
+                    
+                    
+                    
+                    
+        <li class="nav-item">
+            API Reference
+         &#187; </li>
+                
+        <li class="nav-item">
+            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+         &#187; </li>
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> tables</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+        </ul>
+    </div>
+
+        <div class="document">
+            <div class="documentwrapper">
+                <div class="bodywrapper">
+                    <div class="body" role="main"><div class="doc doc-object doc-module">
+
+
+
+<h1 id="markdown.extensions.tables" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>          <span class="doc doc-object-name doc-module-name">markdown.extensions.tables</span>
+
+
+<a href="#markdown.extensions.tables" class="headerlink" title="Permanent link">&para;</a></h1>
+
+  <div class="doc doc-contents first">
+  
+      <h2 id="markdown.extensions.tables--tables-extension-for-python-markdown">Tables Extension for Python-Markdown<a class="headerlink" href="#markdown.extensions.tables--tables-extension-for-python-markdown" title="Permanent link">&para;</a></h2>
+<p>Added parsing of tables to Python-Markdown.</p>
+<p>See <a href="https://Python-Markdown.github.io/extensions/tables">https://Python-Markdown.github.io/extensions/tables</a>
+for documentation.</p>
+<p>Original code Copyright 2009 <a href="http://achinghead.com">Waylan Limberg</a></p>
+<p>All changes Copyright 2008-2014 The Python Markdown Project</p>
+<p>License: <a href="https://opensource.org/licenses/bsd-license.php">BSD</a></p>
+
+
+
+
+
+  <p>Classes:</p>
+  <ul>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableProcessor" href="#markdown.extensions.tables.TableProcessor">TableProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Process Tables.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableExtension" href="#markdown.extensions.tables.TableExtension">TableExtension</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Add tables to Markdown.</p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="markdown.extensions.tables.TableExtension" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <span class="doc doc-object-name doc-class-name">markdown.extensions.tables.TableExtension</span>
+
+
+<a href="#markdown.extensions.tables.TableExtension" class="headerlink" title="Permanent link">&para;</a></h2>
+<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableExtension(**kwargs)</code></pre>
+
+  <div class="doc doc-contents ">
+          <p class="doc doc-class-bases">
+            Bases: <code><a class="autorefs autorefs-internal" title="markdown.extensions.Extension" href="../#markdown.extensions.Extension">Extension</a></code></p>
+
+  
+      <p>Add tables to Markdown.</p>
+
+
+
+
+
+
+  <p>Methods:</p>
+  <ul>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableExtension.getConfig" href="#markdown.extensions.tables.TableExtension.getConfig">getConfig</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return a setting for the given key or an empty string.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableExtension.getConfigs" href="#markdown.extensions.tables.TableExtension.getConfigs">getConfigs</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return all configs settings as a dict.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableExtension.getConfigInfo" href="#markdown.extensions.tables.TableExtension.getConfigInfo">getConfigInfo</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return all <code>config</code> descriptions as a list of tuples.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableExtension.setConfig" href="#markdown.extensions.tables.TableExtension.setConfig">setConfig</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Set a <code>config</code> setting for <code>key</code> with the given <code>value</code>.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableExtension.setConfigs" href="#markdown.extensions.tables.TableExtension.setConfigs">setConfigs</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Set multiple <code>config</code> settings given a dict or list of tuples.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableExtension.extendMarkdown" href="#markdown.extensions.tables.TableExtension.extendMarkdown">extendMarkdown</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Add an instance of <code>TableProcessor</code> to <code>BlockParser</code>.</p>
+          </div>
+        </li>
+  </ul>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.tables.TableExtension.extendMarkdown" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableExtension.extendMarkdown</span>
+
+
+<a href="#markdown.extensions.tables.TableExtension.extendMarkdown" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableExtension.extendMarkdown(md)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Add an instance of <code>TableProcessor</code> to <code>BlockParser</code>.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.tables.TableExtension.getConfig" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableExtension.getConfig</span>
+
+
+<a href="#markdown.extensions.tables.TableExtension.getConfig" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableExtension.getConfig(key, default = '')</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return a setting for the given key or an empty string.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.tables.TableExtension.getConfigInfo" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableExtension.getConfigInfo</span>
+
+
+<a href="#markdown.extensions.tables.TableExtension.getConfigInfo" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableExtension.getConfigInfo()</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return all <code>config</code> descriptions as a list of tuples.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.tables.TableExtension.getConfigs" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableExtension.getConfigs</span>
+
+
+<a href="#markdown.extensions.tables.TableExtension.getConfigs" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableExtension.getConfigs()</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return all configs settings as a dict.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.tables.TableExtension.setConfig" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableExtension.setConfig</span>
+
+
+<a href="#markdown.extensions.tables.TableExtension.setConfig" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableExtension.setConfig(key, value)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Set a <code>config</code> setting for <code>key</code> with the given <code>value</code>.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.tables.TableExtension.setConfigs" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableExtension.setConfigs</span>
+
+
+<a href="#markdown.extensions.tables.TableExtension.setConfigs" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableExtension.setConfigs(items)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Set multiple <code>config</code> settings given a dict or list of tuples.</p>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="markdown.extensions.tables.TableProcessor" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <span class="doc doc-object-name doc-class-name">markdown.extensions.tables.TableProcessor</span>
+
+
+<a href="#markdown.extensions.tables.TableProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
+<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableProcessor(parser, config)</code></pre>
+
+  <div class="doc doc-contents ">
+          <p class="doc doc-class-bases">
+            Bases: <code><a class="autorefs autorefs-internal" title="markdown.blockprocessors.BlockProcessor" href="../../blockprocessors/#markdown.blockprocessors.BlockProcessor">BlockProcessor</a></code></p>
+
+  
+      <p>Process Tables.</p>
+
+
+
+
+
+
+  <p>Methods:</p>
+  <ul>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableProcessor.lastChild" href="#markdown.extensions.tables.TableProcessor.lastChild">lastChild</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return the last child of an <code>etree</code> element.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableProcessor.detab" href="#markdown.extensions.tables.TableProcessor.detab">detab</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Remove a tab from the front of each line of the given text.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableProcessor.looseDetab" href="#markdown.extensions.tables.TableProcessor.looseDetab">looseDetab</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Remove a tab from front of lines but allowing dedented lines.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableProcessor.test" href="#markdown.extensions.tables.TableProcessor.test">test</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Ensure first two rows (column header and separator row) are valid table rows.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableProcessor.run" href="#markdown.extensions.tables.TableProcessor.run">run</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Parse a table block and build table.</p>
+          </div>
+        </li>
+  </ul>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.tables.TableProcessor.detab" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableProcessor.detab</span>
+
+
+<a href="#markdown.extensions.tables.TableProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableProcessor.detab(text, length = None)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Remove a tab from the front of each line of the given text.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.tables.TableProcessor.lastChild" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableProcessor.lastChild</span>
+
+
+<a href="#markdown.extensions.tables.TableProcessor.lastChild" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableProcessor.lastChild(parent)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return the last child of an <code>etree</code> element.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.tables.TableProcessor.looseDetab" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableProcessor.looseDetab</span>
+
+
+<a href="#markdown.extensions.tables.TableProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableProcessor.looseDetab(text, level = 1)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Remove a tab from front of lines but allowing dedented lines.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.tables.TableProcessor.run" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableProcessor.run</span>
+
+
+<a href="#markdown.extensions.tables.TableProcessor.run" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableProcessor.run(parent, blocks)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Parse a table block and build table.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.tables.TableProcessor.test" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableProcessor.test</span>
+
+
+<a href="#markdown.extensions.tables.TableProcessor.test" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableProcessor.test(parent, block)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Ensure first two rows (column header and separator row) are valid table rows.</p>
+<p>Keep border check and separator row do avoid repeating the work.</p>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+                    </div>
+                </div>
+            </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Table Of Contents</a></h3>
+            <ul>
+                
+    <li>
+        <a class="reference internal" href="#markdown.extensions.tables"><code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;tables</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.tables--tables-extension-for-python-markdown">Tables Extension for Python-Markdown</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.tables.TableExtension"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;TableExtension</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.tables.TableExtension.extendMarkdown"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;extendMarkdown</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.tables.TableExtension.getConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfig</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.tables.TableExtension.getConfigInfo"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfigInfo</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.tables.TableExtension.getConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfigs</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.tables.TableExtension.setConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;setConfig</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.tables.TableExtension.setConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;setConfigs</a>
+    </li>
+        </ul>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.tables.TableProcessor"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;TableProcessor</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.tables.TableProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;detab</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.tables.TableProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;lastChild</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.tables.TableProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;looseDetab</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.tables.TableProcessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;run</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.tables.TableProcessor.test"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;test</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+            </ul>
+            
+            <h4>Previous topic</h4>
+            <p class="topless">
+                <a href="../smarty/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> smarty</a>
+            </p>
+
+            
+            <h4>Next topic</h4>
+            <p class="topless">
+                <a href="../toc/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> toc</a>
+            </p>
+
+            <div role="note" aria-label="source link">
+                <h3>This Page</h3>
+                <ul class="this-page-menu">
+                    <li><a href="https://github.com/Python-Markdown/markdown/issues">Report a Bug</a></li>
+                    <li><a href="https://github.com/Python-Markdown/markdown/edit/master/markdown/extensions/tables.py">Edit on GitHub</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+            <div class="clearer"></div>
+        </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+        <h3>Navigation</h3>
+        <ul>
+                <li class="right" style="margin-right: 10px">
+                    <a href="https://github.com/Python-Markdown/markdown" title="View this project on GitHub"><img src="../../../../static/github.png" width=16px style="vertical-align: middle; margin-top: -1px" /></a>
+                </li>
+            <li class="right" style="margin-right: 10px">
+                <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
+            </li>
+            <li class="right">
+                <a href="../toc/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> toc" accesskey="N">next</a> |
+            </li>
+            <li class="right">
+                <a href="../smarty/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> smarty" accesskey="P">previous</a> |
+            </li>
+            <li><img src="../../../../py.png"
+            alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
+            <li class="nav-item nav-item-0">
+                <a href="../../../..">Python-Markdown 3.4.4 documentation</a> &#187;
+            </li>
+                    
+                    
+                    
+                    
+                    
+                    
+        <li class="nav-item">
+            API Reference
+         &#187; </li>
+                
+        <li class="nav-item">
+            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+         &#187; </li>
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> tables</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+        </ul>
+    </div>
+        <div class="footer" role="contentinfo">Copyright &copy; 2010-2023, The Python-Markdown Project.
+        Created using <a href="https://www.mkdocs.org/">MkDocs</a> 1.5.2.
+        </div>
+        <script>var base_url = '../../../..';</script>
+
+        <!--
+        MkDocs version      : 1.5.2
+        Docs Build Date UTC : 2023-08-22 23:35:33.313344+00:00
+        -->
+    </body>
+</html>

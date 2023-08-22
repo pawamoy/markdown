@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        
+        <meta name="author" content="The Python-Markdown Project">
+        <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/util/">
+        <link rel="shortcut icon" href="../../../favicon.ico">
+        <link rel="search" title="Search" href="../../../search.html" />
+        <link rel="next" title="Abbreviations" href="../../../extensions/abbreviations/" />
+        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> treeprocessors" href="../treeprocessors/" />
+        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> util &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="stylesheet" href="../../../static/nature.css" type="text/css" />
+        <link rel="stylesheet" href="../../../static/pygments.css" type="text/css" />
+        <link rel="stylesheet" href="../../../assets/_mkdocstrings.css" type="text/css" />
+        <link rel="stylesheet" href="../../../custom.css" type="text/css" />
+        <link rel="stylesheet" href="../../../mkdocstrings.css" type="text/css" />
+        <script type="text/javascript" src="../../../static/jquery.js"></script>
+        <script type="text/javascript" src="../../../static/underscore.js"></script> 
+    </head>
+
+    <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+        <h3>Navigation</h3>
+        <ul>
+                <li class="right" style="margin-right: 10px">
+                    <a href="https://github.com/Python-Markdown/markdown" title="View this project on GitHub"><img src="../../../static/github.png" width=16px style="vertical-align: middle; margin-top: -1px" /></a>
+                </li>
+            <li class="right" style="margin-right: 10px">
+                <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
+            </li>
+            <li class="right">
+                <a href="../../../extensions/abbreviations/" title="Abbreviations" accesskey="N">next</a> |
+            </li>
+            <li class="right">
+                <a href="../treeprocessors/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> treeprocessors" accesskey="P">previous</a> |
+            </li>
+            <li><img src="../../../py.png"
+            alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
+            <li class="nav-item nav-item-0">
+                <a href="../../..">Python-Markdown 3.4.4 documentation</a> &#187;
+            </li>
+                    
+                    
+                    
+                    
+                    
+                    
+        <li class="nav-item">
+            API Reference
+         &#187; </li>
+                
+        <li class="nav-item">
+            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> util</a>
+         &#187; </li>
+                    
+                    
+                    
+                    
+                    
+                    
+        </ul>
+    </div>
+
+        <div class="document">
+            <div class="documentwrapper">
+                <div class="bodywrapper">
+                    <div class="body" role="main"><div class="doc doc-object doc-module">
+
+
+
+<h1 id="markdown.util" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>          <span class="doc doc-object-name doc-module-name">markdown.util</span>
+
+
+<a href="#markdown.util" class="headerlink" title="Permanent link">&para;</a></h1>
+
+  <div class="doc doc-contents first">
+  
+      <p>Python Markdown</p>
+<p>A Python implementation of John Gruber&rsquo;s Markdown.</p>
+<p>Documentation: https://python-markdown.github.io/
+GitHub: https://github.com/Python-Markdown/markdown/
+PyPI: https://pypi.org/project/Markdown/</p>
+<p>Started by Manfred Stienstra (http://www.dwerg.net/).
+Maintained for a few years by Yuri Takhteyev (http://www.freewisdom.org).
+Currently maintained by Waylan Limberg (https://github.com/waylan),
+Dmitry Shachnev (https://github.com/mitya57) and Isaac Muse (https://github.com/facelessuser).</p>
+<p>Copyright 2007-2018 The Python Markdown Project (v. 1.7 and later)
+Copyright 2004, 2005, 2006 Yuri Takhteyev (v. 0.2-1.6b)
+Copyright 2004 Manfred Stienstra (the original version)</p>
+<p>License: BSD (see LICENSE.md for details).</p>
+
+
+
+
+
+  <p>Classes:</p>
+  <ul>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.util.AtomicString" href="#markdown.util.AtomicString">AtomicString</a></b>
+        –
+        <div class="doc-md-description">
+          <p>A string which should not be further processed.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.util.HtmlStash" href="#markdown.util.HtmlStash">HtmlStash</a></b>
+        –
+        <div class="doc-md-description">
+          <p>This class is used for stashing HTML objects that we extract</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.util.Registry" href="#markdown.util.Registry">Registry</a></b>
+        –
+        <div class="doc-md-description">
+          <p>A priority sorted registry.</p>
+        </div>
+      </li>
+  </ul>
+
+
+
+
+  <p>Functions:</p>
+  <ul>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.util.deprecated" href="#markdown.util.deprecated">deprecated</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Raise a <code>DeprecationWarning</code> when wrapped function/method is called.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.util.parseBoolValue" href="#markdown.util.parseBoolValue">parseBoolValue</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Parses a string representing boolean value. If parsing was successful,</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.util.code_escape" href="#markdown.util.code_escape">code_escape</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Escape code.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.util.nearing_recursion_limit" href="#markdown.util.nearing_recursion_limit">nearing_recursion_limit</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return true if current stack depth is within 100 of maximum limit.</p>
+          </div>
+        </li>
+  </ul>
+
+
+
+
+  <p>Attributes:</p>
+  <ul>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.util.TAG_PLACEHOLDER" href="#markdown.util.TAG_PLACEHOLDER">TAG_PLACEHOLDER</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Constants you probably do not need to change</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.util.RTL_BIDI_RANGES" href="#markdown.util.RTL_BIDI_RANGES">RTL_BIDI_RANGES</a></b>
+        –
+        <div class="doc-md-description">
+          <p>AUXILIARY GLOBAL FUNCTIONS</p>
+        </div>
+      </li>
+  </ul>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="markdown.util.RTL_BIDI_RANGES" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>          <span class="doc doc-object-name doc-attribute-name">markdown.util.RTL_BIDI_RANGES</span>
+
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+<a href="#markdown.util.RTL_BIDI_RANGES" class="headerlink" title="Permanent link">&para;</a></h2>
+<pre class="codehilite"><code class="language-python doc-signature">markdown.util.RTL_BIDI_RANGES = (('\u0590', '߿'), ('ⴰ', '⵿'))</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <h3 id="markdown.util.RTL_BIDI_RANGES--auxiliary-global-functions">AUXILIARY GLOBAL FUNCTIONS<a class="headerlink" href="#markdown.util.RTL_BIDI_RANGES--auxiliary-global-functions" title="Permanent link">&para;</a></h3>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="markdown.util.TAG_PLACEHOLDER" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>          <span class="doc doc-object-name doc-attribute-name">markdown.util.TAG_PLACEHOLDER</span>
+
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+<a href="#markdown.util.TAG_PLACEHOLDER" class="headerlink" title="Permanent link">&para;</a></h2>
+<pre class="codehilite"><code class="language-python doc-signature">markdown.util.TAG_PLACEHOLDER = STX + 'hzzhzkh:%s' + ETX</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <h4 id="markdown.util.TAG_PLACEHOLDER--constants-you-probably-do-not-need-to-change">Constants you probably do not need to change<a class="headerlink" href="#markdown.util.TAG_PLACEHOLDER--constants-you-probably-do-not-need-to-change" title="Permanent link">&para;</a></h4>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="markdown.util.AtomicString" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <span class="doc doc-object-name doc-class-name">markdown.util.AtomicString</span>
+
+
+<a href="#markdown.util.AtomicString" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+  <div class="doc doc-contents ">
+          <p class="doc doc-class-bases">
+            Bases: <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code></p>
+
+  
+      <p>A string which should not be further processed.</p>
+
+
+
+
+
+
+  </div>
+
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="markdown.util.HtmlStash" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <span class="doc doc-object-name doc-class-name">markdown.util.HtmlStash</span>
+
+
+<a href="#markdown.util.HtmlStash" class="headerlink" title="Permanent link">&para;</a></h2>
+<pre class="codehilite"><code class="language-python">markdown.util.HtmlStash()</code></pre>
+
+  <div class="doc doc-contents ">
+
+  
+      <p>This class is used for stashing HTML objects that we extract
+in the beginning and replace with place-holders.</p>
+
+
+
+
+
+
+  <p>Methods:</p>
+  <ul>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.util.HtmlStash.store" href="#markdown.util.HtmlStash.store">store</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Saves an HTML segment for later reinsertion.  Returns a</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.util.HtmlStash.store_tag" href="#markdown.util.HtmlStash.store_tag">store_tag</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Store tag data and return a placeholder.</p>
+          </div>
+        </li>
+  </ul>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.util.HtmlStash.store" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.util.HtmlStash.store</span>
+
+
+<a href="#markdown.util.HtmlStash.store" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.util.HtmlStash.store(html: <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>) -&gt; <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Saves an HTML segment for later reinsertion.  Returns a
+placeholder string that needs to be inserted into the
+document.</p>
+
+
+
+  <p>Other Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b>html</b>
+            (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>)
+        –
+        <div class="doc-md-description">
+          <p>An html segment.</p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+            <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+        –
+        <div class="doc-md-description">
+          <p>A placeholder string.</p>
+      </div>
+      </li>
+  </ul>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.util.HtmlStash.store_tag" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.util.HtmlStash.store_tag</span>
+
+
+<a href="#markdown.util.HtmlStash.store_tag" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.util.HtmlStash.store_tag(tag, attrs, left_index, right_index)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Store tag data and return a placeholder.</p>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="markdown.util.Registry" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <span class="doc doc-object-name doc-class-name">markdown.util.Registry</span>
+
+
+<a href="#markdown.util.Registry" class="headerlink" title="Permanent link">&para;</a></h2>
+<pre class="codehilite"><code class="language-python">markdown.util.Registry()</code></pre>
+
+  <div class="doc doc-contents ">
+
+  
+      <p>A priority sorted registry.</p>
+<p>A <code>Registry</code> instance provides two public methods to alter the data of the
+registry: <code>register</code> and <code>deregister</code>. Use <code>register</code> to add items and
+<code>deregister</code> to remove items. See each method for specifics.</p>
+<p>When registering an item, a &ldquo;name&rdquo; and a &ldquo;priority&rdquo; must be provided. All
+items are automatically sorted by &ldquo;priority&rdquo; from highest to lowest. The
+&ldquo;name&rdquo; is used to remove (&ldquo;deregister&rdquo;) and get items.</p>
+<p>A <code>Registry</code> instance it like a list (which maintains order) when reading
+data. You may iterate over the items, get an item and get a count (length)
+of all items. You may also check that the registry contains an item.</p>
+<p>When getting an item you may use either the index of the item or the
+string-based &ldquo;name&rdquo;. For example:</p>
+<pre class="codehilite"><code>registry = Registry()
+registry.register(SomeItem(), 'itemname', 20)
+# Get the item by index
+item = registry[0]
+# Get the item by name
+item = registry['itemname']
+</code></pre>
+
+<p>When checking that the registry contains an item, you may use either the
+string-based &ldquo;name&rdquo;, or a reference to the actual item. For example:</p>
+<pre class="codehilite"><code>someitem = SomeItem()
+registry.register(someitem, 'itemname', 20)
+# Contains the name
+assert 'itemname' in registry
+# Contains the item instance
+assert someitem in registry
+</code></pre>
+
+<p>The method <code>get_index_for_name</code> is also available to obtain the index of
+an item using that item&rsquo;s assigned &ldquo;name&rdquo;.</p>
+
+
+
+
+
+
+  <p>Methods:</p>
+  <ul>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.util.Registry.get_index_for_name" href="#markdown.util.Registry.get_index_for_name">get_index_for_name</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return the index of the given name.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.util.Registry.register" href="#markdown.util.Registry.register">register</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Add an item to the registry with the given name and priority.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.util.Registry.deregister" href="#markdown.util.Registry.deregister">deregister</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Remove an item from the registry.</p>
+          </div>
+        </li>
+  </ul>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.util.Registry.deregister" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.util.Registry.deregister</span>
+
+
+<a href="#markdown.util.Registry.deregister" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.util.Registry.deregister(name, strict = True)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Remove an item from the registry.</p>
+<p>Set <code>strict=False</code> to fail silently.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.util.Registry.get_index_for_name" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.util.Registry.get_index_for_name</span>
+
+
+<a href="#markdown.util.Registry.get_index_for_name" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.util.Registry.get_index_for_name(name)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return the index of the given name.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.util.Registry.register" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.util.Registry.register</span>
+
+
+<a href="#markdown.util.Registry.register" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.util.Registry.register(item: <a class="autorefs autorefs-external" title="typing.Any" href="https://docs.python.org/3/library/typing.html#typing.Any">Any</a>, name: <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, priority: <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Add an item to the registry with the given name and priority.</p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b>item</b>
+            (<code><a class="autorefs autorefs-external" title="typing.Any" href="https://docs.python.org/3/library/typing.html#typing.Any">Any</a></code>)
+        –
+        <div class="doc-md-description">
+          <p>The item being registered.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b>name</b>
+            (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>)
+        –
+        <div class="doc-md-description">
+          <p>A string used to reference the item.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b>priority</b>
+            (<code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>)
+        –
+        <div class="doc-md-description">
+          <p>An integer or float used to sort against all items.</p>
+        </div>
+      </li>
+  </ul>
+      <p>If an item is registered with a &ldquo;name&rdquo; which already exists, the
+existing item is replaced with the new item. Treat carefully as the
+old item is lost with no way to recover it. The new item will be
+sorted according to its priority and will <strong>not</strong> retain the position
+of the old item.</p>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="markdown.util.code_escape" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.util.code_escape</span>
+
+
+<a href="#markdown.util.code_escape" class="headerlink" title="Permanent link">&para;</a></h2>
+<pre class="codehilite"><code class="language-python">markdown.util.code_escape(text)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Escape code.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="markdown.util.deprecated" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.util.deprecated</span>
+
+
+<a href="#markdown.util.deprecated" class="headerlink" title="Permanent link">&para;</a></h2>
+<pre class="codehilite"><code class="language-python">markdown.util.deprecated(message, stacklevel = 2)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Raise a <code>DeprecationWarning</code> when wrapped function/method is called.</p>
+
+<details class="usage" open>
+  <summary>Usage</summary>
+  <p><a class="gh-link gh-mention" href="https://github.com/deprecated" title="GitHub User: @deprecated">@deprecated</a>(&ldquo;This method will be removed in version X; use Y instead.&rdquo;)
+def some_method()&rdquo;
+    pass</p>
+</details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="markdown.util.nearing_recursion_limit" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.util.nearing_recursion_limit</span>
+
+
+<a href="#markdown.util.nearing_recursion_limit" class="headerlink" title="Permanent link">&para;</a></h2>
+<pre class="codehilite"><code class="language-python">markdown.util.nearing_recursion_limit()</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return true if current stack depth is within 100 of maximum limit.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="markdown.util.parseBoolValue" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.util.parseBoolValue</span>
+
+
+<a href="#markdown.util.parseBoolValue" class="headerlink" title="Permanent link">&para;</a></h2>
+<pre class="codehilite"><code class="language-python">markdown.util.parseBoolValue(value, fail_on_errors = True, preserve_none = False)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Parses a string representing boolean value. If parsing was successful,
+returns True or False. If <code>preserve_none=True</code>, returns <code>True</code>, <code>False</code>,
+or <code>None</code>. If parsing was not successful, raises <code>ValueError</code>, or, if
+<code>fail_on_errors=False</code>, returns <code>None</code>.</p>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+                    </div>
+                </div>
+            </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Table Of Contents</a></h3>
+            <ul>
+                
+    <li>
+        <a class="reference internal" href="#markdown.util"><code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;util</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.util.RTL_BIDI_RANGES"><code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;RTL_BIDI_RANGES</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.util.RTL_BIDI_RANGES--auxiliary-global-functions">AUXILIARY GLOBAL FUNCTIONS</a>
+    </li>
+        </ul>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.util.TAG_PLACEHOLDER"><code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;TAG_PLACEHOLDER</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.util.TAG_PLACEHOLDER--constants-you-probably-do-not-need-to-change">Constants you probably do not need to change</a>
+    </li>
+        </ul>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.util.AtomicString"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;AtomicString</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.util.HtmlStash"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;HtmlStash</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.util.HtmlStash.store"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;store</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.util.HtmlStash.store_tag"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;store_tag</a>
+    </li>
+        </ul>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.util.Registry"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;Registry</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.util.Registry.deregister"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;deregister</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.util.Registry.get_index_for_name"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;get_index_for_name</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.util.Registry.register"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;register</a>
+    </li>
+        </ul>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.util.code_escape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;code_escape</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.util.deprecated"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;deprecated</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.util.nearing_recursion_limit"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;nearing_recursion_limit</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.util.parseBoolValue"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;parseBoolValue</a>
+    </li>
+        </ul>
+    </li>
+            </ul>
+            
+            <h4>Previous topic</h4>
+            <p class="topless">
+                <a href="../treeprocessors/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> treeprocessors</a>
+            </p>
+
+            
+            <h4>Next topic</h4>
+            <p class="topless">
+                <a href="../../../extensions/abbreviations/" title="next page">Abbreviations</a>
+            </p>
+
+            <div role="note" aria-label="source link">
+                <h3>This Page</h3>
+                <ul class="this-page-menu">
+                    <li><a href="https://github.com/Python-Markdown/markdown/issues">Report a Bug</a></li>
+                    <li><a href="https://github.com/Python-Markdown/markdown/edit/master/markdown/util.py">Edit on GitHub</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+            <div class="clearer"></div>
+        </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+        <h3>Navigation</h3>
+        <ul>
+                <li class="right" style="margin-right: 10px">
+                    <a href="https://github.com/Python-Markdown/markdown" title="View this project on GitHub"><img src="../../../static/github.png" width=16px style="vertical-align: middle; margin-top: -1px" /></a>
+                </li>
+            <li class="right" style="margin-right: 10px">
+                <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
+            </li>
+            <li class="right">
+                <a href="../../../extensions/abbreviations/" title="Abbreviations" accesskey="N">next</a> |
+            </li>
+            <li class="right">
+                <a href="../treeprocessors/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> treeprocessors" accesskey="P">previous</a> |
+            </li>
+            <li><img src="../../../py.png"
+            alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
+            <li class="nav-item nav-item-0">
+                <a href="../../..">Python-Markdown 3.4.4 documentation</a> &#187;
+            </li>
+                    
+                    
+                    
+                    
+                    
+                    
+        <li class="nav-item">
+            API Reference
+         &#187; </li>
+                
+        <li class="nav-item">
+            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> util</a>
+         &#187; </li>
+                    
+                    
+                    
+                    
+                    
+                    
+        </ul>
+    </div>
+        <div class="footer" role="contentinfo">Copyright &copy; 2010-2023, The Python-Markdown Project.
+        Created using <a href="https://www.mkdocs.org/">MkDocs</a> 1.5.2.
+        </div>
+        <script>var base_url = '../../..';</script>
+
+        <!--
+        MkDocs version      : 1.5.2
+        Docs Build Date UTC : 2023-08-22 23:35:33.299133+00:00
+        -->
+    </body>
+</html>

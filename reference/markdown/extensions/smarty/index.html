@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        
+        <meta name="author" content="The Python-Markdown Project">
+        <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/extensions/smarty/">
+        <link rel="shortcut icon" href="../../../../favicon.ico">
+        <link rel="search" title="Search" href="../../../../search.html" />
+        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> tables" href="../tables/" />
+        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> sane_lists" href="../sane_lists/" />
+        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> smarty &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="stylesheet" href="../../../../static/nature.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../static/pygments.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../custom.css" type="text/css" />
+        <link rel="stylesheet" href="../../../../mkdocstrings.css" type="text/css" />
+        <script type="text/javascript" src="../../../../static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../static/underscore.js"></script> 
+    </head>
+
+    <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+        <h3>Navigation</h3>
+        <ul>
+                <li class="right" style="margin-right: 10px">
+                    <a href="https://github.com/Python-Markdown/markdown" title="View this project on GitHub"><img src="../../../../static/github.png" width=16px style="vertical-align: middle; margin-top: -1px" /></a>
+                </li>
+            <li class="right" style="margin-right: 10px">
+                <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
+            </li>
+            <li class="right">
+                <a href="../tables/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> tables" accesskey="N">next</a> |
+            </li>
+            <li class="right">
+                <a href="../sane_lists/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> sane_lists" accesskey="P">previous</a> |
+            </li>
+            <li><img src="../../../../py.png"
+            alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
+            <li class="nav-item nav-item-0">
+                <a href="../../../..">Python-Markdown 3.4.4 documentation</a> &#187;
+            </li>
+                    
+                    
+                    
+                    
+                    
+                    
+        <li class="nav-item">
+            API Reference
+         &#187; </li>
+                
+        <li class="nav-item">
+            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+         &#187; </li>
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> smarty</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+        </ul>
+    </div>
+
+        <div class="document">
+            <div class="documentwrapper">
+                <div class="bodywrapper">
+                    <div class="body" role="main"><div class="doc doc-object doc-module">
+
+
+
+<h1 id="markdown.extensions.smarty" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>          <span class="doc doc-object-name doc-module-name">markdown.extensions.smarty</span>
+
+
+<a href="#markdown.extensions.smarty" class="headerlink" title="Permanent link">&para;</a></h1>
+
+  <div class="doc doc-contents first">
+  
+      <h2 id="markdown.extensions.smarty--smarty-extension-for-python-markdown">Smarty extension for Python-Markdown<a class="headerlink" href="#markdown.extensions.smarty--smarty-extension-for-python-markdown" title="Permanent link">&para;</a></h2>
+<p>Adds conversion of ASCII dashes, quotes and ellipses to their HTML
+entity equivalents.</p>
+<p>See <a href="https://Python-Markdown.github.io/extensions/smarty">https://Python-Markdown.github.io/extensions/smarty</a>
+for documentation.</p>
+<p>Author: 2013, Dmitry Shachnev <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#105;&#116;&#121;&#97;&#53;&#55;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#109;&#105;&#116;&#121;&#97;&#53;&#55;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></p>
+<p>All changes Copyright 2013-2014 The Python Markdown Project</p>
+<p>License: <a href="https://opensource.org/licenses/bsd-license.php">BSD</a></p>
+
+<details class="smartypants-license" open>
+  <summary>SmartyPants license</summary>
+  <p>Copyright (c) 2003 John Gruber <a href="https://daringfireball.net/">https://daringfireball.net/</a>
+All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:</p>
+<ul>
+<li>
+<p>Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.</p>
+</li>
+<li>
+<p>Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in
+   the documentation and/or other materials provided with the
+   distribution.</p>
+</li>
+<li>
+<p>Neither the name &ldquo;SmartyPants&rdquo; nor the names of its contributors
+   may be used to endorse or promote products derived from this
+   software without specific prior written permission.</p>
+</li>
+</ul>
+<p>This software is provided by the copyright holders and contributors &ldquo;as
+is&rdquo; and any express or implied warranties, including, but not limited
+to, the implied warranties of merchantability and fitness for a
+particular purpose are disclaimed. In no event shall the copyright
+owner or contributors be liable for any direct, indirect, incidental,
+special, exemplary, or consequential damages (including, but not
+limited to, procurement of substitute goods or services; loss of use,
+data, or profits; or business interruption) however caused and on any
+theory of liability, whether in contract, strict liability, or tort
+(including negligence or otherwise) arising in any way out of the use
+of this software, even if advised of the possibility of such damage.</p>
+</details>      <p><code>smartypants.py</code> license:</p>
+<p><code>smartypants.py</code> is a derivative work of SmartyPants.
+   Copyright (c) 2004, 2007 Chad Miller <a href="http://web.chad.org/">http://web.chad.org/</a></p>
+<p>Redistribution and use in source and binary forms, with or without
+   modification, are permitted provided that the following conditions are
+   met:</p>
+<ul>
+<li>
+<p>Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.</p>
+</li>
+<li>
+<p>Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in
+      the documentation and/or other materials provided with the
+      distribution.</p>
+</li>
+</ul>
+<p>This software is provided by the copyright holders and contributors &ldquo;as
+   is&rdquo; and any express or implied warranties, including, but not limited
+   to, the implied warranties of merchantability and fitness for a
+   particular purpose are disclaimed. In no event shall the copyright
+   owner or contributors be liable for any direct, indirect, incidental,
+   special, exemplary, or consequential damages (including, but not
+   limited to, procurement of substitute goods or services; loss of use,
+   data, or profits; or business interruption) however caused and on any
+   theory of liability, whether in contract, strict liability, or tort
+   (including negligence or otherwise) arising in any way out of the use
+   of this software, even if advised of the possibility of such damage.</p>
+
+
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="markdown.extensions.smarty.SubstituteTextPattern" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <span class="doc doc-object-name doc-class-name">markdown.extensions.smarty.SubstituteTextPattern</span>
+
+
+<a href="#markdown.extensions.smarty.SubstituteTextPattern" class="headerlink" title="Permanent link">&para;</a></h2>
+<pre class="codehilite"><code class="language-python">markdown.extensions.smarty.SubstituteTextPattern(pattern, replace, md)</code></pre>
+
+  <div class="doc doc-contents ">
+          <p class="doc doc-class-bases">
+            Bases: <code><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.HtmlInlineProcessor" href="../../inlinepatterns/#markdown.inlinepatterns.HtmlInlineProcessor">HtmlInlineProcessor</a></code></p>
+
+
+
+
+
+
+
+  <p>Methods:</p>
+  <ul>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.smarty.SubstituteTextPattern.getCompiledRegExp" href="#markdown.extensions.smarty.SubstituteTextPattern.getCompiledRegExp">getCompiledRegExp</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return a compiled regular expression.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.smarty.SubstituteTextPattern.type" href="#markdown.extensions.smarty.SubstituteTextPattern.type">type</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return class name, to define pattern type</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.smarty.SubstituteTextPattern.unescape" href="#markdown.extensions.smarty.SubstituteTextPattern.unescape">unescape</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return unescaped text given text with an inline placeholder.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.smarty.SubstituteTextPattern.backslash_unescape" href="#markdown.extensions.smarty.SubstituteTextPattern.backslash_unescape">backslash_unescape</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return text with backslash escapes undone (backslashes are restored).</p>
+          </div>
+        </li>
+  </ul>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.smarty.SubstituteTextPattern.backslash_unescape" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.smarty.SubstituteTextPattern.backslash_unescape</span>
+
+
+<a href="#markdown.extensions.smarty.SubstituteTextPattern.backslash_unescape" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.smarty.SubstituteTextPattern.backslash_unescape(text)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return text with backslash escapes undone (backslashes are restored).</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.smarty.SubstituteTextPattern.getCompiledRegExp" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.smarty.SubstituteTextPattern.getCompiledRegExp</span>
+
+
+<a href="#markdown.extensions.smarty.SubstituteTextPattern.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.smarty.SubstituteTextPattern.getCompiledRegExp()</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return a compiled regular expression.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.smarty.SubstituteTextPattern.type" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.smarty.SubstituteTextPattern.type</span>
+
+
+<a href="#markdown.extensions.smarty.SubstituteTextPattern.type" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.smarty.SubstituteTextPattern.type()</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return class name, to define pattern type</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="markdown.extensions.smarty.SubstituteTextPattern.unescape" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.smarty.SubstituteTextPattern.unescape</span>
+
+
+<a href="#markdown.extensions.smarty.SubstituteTextPattern.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-python">markdown.extensions.smarty.SubstituteTextPattern.unescape(text)</code></pre>
+
+  <div class="doc doc-contents ">
+  
+      <p>Return unescaped text given text with an inline placeholder.</p>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+                    </div>
+                </div>
+            </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Table Of Contents</a></h3>
+            <ul>
+                
+    <li>
+        <a class="reference internal" href="#markdown.extensions.smarty"><code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;smarty</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.smarty--smarty-extension-for-python-markdown">Smarty extension for Python-Markdown</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.smarty.SubstituteTextPattern"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;SubstituteTextPattern</a>
+        <ul>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.smarty.SubstituteTextPattern.backslash_unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;backslash_unescape</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.smarty.SubstituteTextPattern.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.smarty.SubstituteTextPattern.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+    </li>
+            
+    <li>
+        <a class="reference internal" href="#markdown.extensions.smarty.SubstituteTextPattern.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+            </ul>
+            
+            <h4>Previous topic</h4>
+            <p class="topless">
+                <a href="../sane_lists/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> sane_lists</a>
+            </p>
+
+            
+            <h4>Next topic</h4>
+            <p class="topless">
+                <a href="../tables/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> tables</a>
+            </p>
+
+            <div role="note" aria-label="source link">
+                <h3>This Page</h3>
+                <ul class="this-page-menu">
+                    <li><a href="https://github.com/Python-Markdown/markdown/issues">Report a Bug</a></li>
+                    <li><a href="https://github.com/Python-Markdown/markdown/edit/master/markdown/extensions/smarty.py">Edit on GitHub</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+            <div class="clearer"></div>
+        </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+        <h3>Navigation</h3>
+        <ul>
+                <li class="right" style="margin-right: 10px">
+                    <a href="https://github.com/Python-Markdown/markdown" title="View this project on GitHub"><img src="../../../../static/github.png" width=16px style="vertical-align: middle; margin-top: -1px" /></a>
+                </li>
+            <li class="right" style="margin-right: 10px">
+                <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
+            </li>
+            <li class="right">
+                <a href="../tables/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> tables" accesskey="N">next</a> |
+            </li>
+            <li class="right">
+                <a href="../sane_lists/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> sane_lists" accesskey="P">previous</a> |
+            </li>
+            <li><img src="../../../../py.png"
+            alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
+            <li class="nav-item nav-item-0">
+                <a href="../../../..">Python-Markdown 3.4.4 documentation</a> &#187;
+            </li>
+                    
+                    
+                    
+                    
+                    
+                    
+        <li class="nav-item">
+            API Reference
+         &#187; </li>
+                
+        <li class="nav-item">
+            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+         &#187; </li>
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+        <li class="nav-item">
+            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> smarty</a>
+         &#187; </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+        </ul>
+    </div>
+        <div class="footer" role="contentinfo">Copyright &copy; 2010-2023, The Python-Markdown Project.
+        Created using <a href="https://www.mkdocs.org/">MkDocs</a> 1.5.2.
+        </div>
+        <script>var base_url = '../../../..';</script>
+
+        <!--
+        MkDocs version      : 1.5.2
+        Docs Build Date UTC : 2023-08-22 23:35:33.312640+00:00
+        -->
+    </body>
+</html>
