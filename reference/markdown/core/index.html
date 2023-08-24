@@ -9,8 +9,8 @@
         <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/core/">
         <link rel="shortcut icon" href="../../../favicon.ico">
         <link rel="search" title="Search" href="../../../search.html" />
-        <link rel="next" title="extensions" href="../extensions/" />
-        <link rel="prev" title="blockprocessors" href="../blockprocessors/" />
+        <link rel="next" title="preprocessors" href="../preprocessors/" />
+        <link rel="prev" title="markdown" href="../" />
         <title>core &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../../static/nature.css" type="text/css" />
         <link rel="stylesheet" href="../../../static/pygments.css" type="text/css" />
@@ -32,10 +32,10 @@
                 <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../extensions/" title="extensions" accesskey="N">next</a> |
+                <a href="../preprocessors/" title="preprocessors" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../blockprocessors/" title="blockprocessors" accesskey="P">previous</a> |
+                <a href="../" title="markdown" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -59,11 +59,11 @@
             <a href="../">markdown</a>
          &#187; </li>
                 
-                
-                
         <li class="nav-item">
             <a href="./">core</a>
          &#187; </li>
+                
+                
                 
                 
                 
@@ -338,7 +338,7 @@ the <code>Extension</code> instance returned by that function.</p>
 
 
 <h3 id="markdown.core.Markdown.convert" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.core.Markdown.convert(source)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.core.Markdown.convert(source: str)</code>
 
 <a href="#markdown.core.Markdown.convert" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -383,7 +383,7 @@ the <code>Extension</code> instance returned by that function.</p>
 
 
 <h3 id="markdown.core.Markdown.convertFile" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.core.Markdown.convertFile(input=None, output=None, encoding=None)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.core.Markdown.convertFile(input: str | TextIO | None = None, output: str | TextIO | None = None, encoding: str | None = None)</code>
 
 <a href="#markdown.core.Markdown.convertFile" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -484,7 +484,7 @@ Unicode-out.)</p>
 
 
 <h3 id="markdown.core.Markdown.registerExtensions" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.core.Markdown.registerExtensions(extensions, configs)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.core.Markdown.registerExtensions(extensions: list[str | Extension], configs: dict[str, dict[str, Any]]) -&gt; Markdown</code>
 
 <a href="#markdown.core.Markdown.registerExtensions" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -573,7 +573,7 @@ Unicode-out.)</p>
 
 
 <h2 id="markdown.core.markdown" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code><code class="codehilite language-python">markdown.core.markdown(text, **kwargs)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code><code class="codehilite language-python">markdown.core.markdown(text: str, **kwargs: Any) -&gt; str</code>
 
 <a href="#markdown.core.markdown" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -636,7 +636,7 @@ necessary extensions and runs the parser on the given text.</p>
 
 
 <h2 id="markdown.core.markdownFromFile" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code><code class="codehilite language-python">markdown.core.markdownFromFile(**kwargs)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code><code class="codehilite language-python">markdown.core.markdownFromFile(**kwargs: Any)</code>
 
 <a href="#markdown.core.markdownFromFile" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -772,13 +772,13 @@ and calls the <code>convertFile</code> method rather than <code>convert</code>.<
             
             <h4>Previous topic</h4>
             <p class="topless">
-                <a href="../blockprocessors/" title="previous page">blockprocessors</a>
+                <a href="../" title="previous page">markdown</a>
             </p>
 
             
             <h4>Next topic</h4>
             <p class="topless">
-                <a href="../extensions/" title="next page">extensions</a>
+                <a href="../preprocessors/" title="next page">preprocessors</a>
             </p>
 
             <div role="note" aria-label="source link">
@@ -804,10 +804,10 @@ and calls the <code>convertFile</code> method rather than <code>convert</code>.<
                 <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../extensions/" title="extensions" accesskey="N">next</a> |
+                <a href="../preprocessors/" title="preprocessors" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../blockprocessors/" title="blockprocessors" accesskey="P">previous</a> |
+                <a href="../" title="markdown" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -831,11 +831,11 @@ and calls the <code>convertFile</code> method rather than <code>convert</code>.<
             <a href="../">markdown</a>
          &#187; </li>
                 
-                
-                
         <li class="nav-item">
             <a href="./">core</a>
          &#187; </li>
+                
+                
                 
                 
                 
@@ -857,7 +857,7 @@ and calls the <code>convertFile</code> method rather than <code>convert</code>.<
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-24 16:58:36.855449+00:00
+        Docs Build Date UTC : 2023-08-24 18:45:30.125635+00:00
         -->
     </body>
 </html>

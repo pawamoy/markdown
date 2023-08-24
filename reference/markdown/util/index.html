@@ -9,8 +9,8 @@
         <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/util/">
         <link rel="shortcut icon" href="../../../favicon.ico">
         <link rel="search" title="Search" href="../../../search.html" />
-        <link rel="next" title="Contributing to Python-Markdown" href="../../../contributing/" />
-        <link rel="prev" title="treeprocessors" href="../treeprocessors/" />
+        <link rel="next" title="htmlparser" href="../htmlparser/" />
+        <link rel="prev" title="serializers" href="../serializers/" />
         <title>util &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../../static/nature.css" type="text/css" />
         <link rel="stylesheet" href="../../../static/pygments.css" type="text/css" />
@@ -32,10 +32,10 @@
                 <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../../../contributing/" title="Contributing to Python-Markdown" accesskey="N">next</a> |
+                <a href="../htmlparser/" title="htmlparser" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../treeprocessors/" title="treeprocessors" accesskey="P">previous</a> |
+                <a href="../serializers/" title="serializers" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -67,12 +67,12 @@
                 
                 
                 
-                
-                
-                
         <li class="nav-item">
             <a href="./">util</a>
          &#187; </li>
+                
+                
+                
                     
                     
                     
@@ -318,7 +318,7 @@ in the beginning and replace with place-holders.</p>
 
 
 <h3 id="markdown.util.HtmlStash.store" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.util.HtmlStash.store(html)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.util.HtmlStash.store(html: str) -&gt; str</code>
 
 <a href="#markdown.util.HtmlStash.store" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -484,7 +484,7 @@ an item using that item&rsquo;s assigned &ldquo;name&rdquo;.</p>
 
 
 <h3 id="markdown.util.Registry.deregister" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.util.Registry.deregister(name, strict=True)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.util.Registry.deregister(name, strict = True)</code>
 
 <a href="#markdown.util.Registry.deregister" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -523,7 +523,7 @@ an item using that item&rsquo;s assigned &ldquo;name&rdquo;.</p>
 
 
 <h3 id="markdown.util.Registry.register" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.util.Registry.register(item, name, priority)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.util.Registry.register(item: Any, name: str, priority: int)</code>
 
 <a href="#markdown.util.Registry.register" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -606,7 +606,7 @@ of the old item.</p>
 
 
 <h2 id="markdown.util.deprecated" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code><code class="codehilite language-python">markdown.util.deprecated(message, stacklevel=2)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code><code class="codehilite language-python">markdown.util.deprecated(message, stacklevel = 2)</code>
 
 <a href="#markdown.util.deprecated" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -650,7 +650,7 @@ def some_method()&rdquo;
 
 
 <h2 id="markdown.util.parseBoolValue" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code><code class="codehilite language-python">markdown.util.parseBoolValue(value, fail_on_errors=True, preserve_none=False)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code><code class="codehilite language-python">markdown.util.parseBoolValue(value, fail_on_errors = True, preserve_none = False)</code>
 
 <a href="#markdown.util.parseBoolValue" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -763,13 +763,13 @@ or <code>None</code>. If parsing was not successful, raises <code>ValueError</co
             
             <h4>Previous topic</h4>
             <p class="topless">
-                <a href="../treeprocessors/" title="previous page">treeprocessors</a>
+                <a href="../serializers/" title="previous page">serializers</a>
             </p>
 
             
             <h4>Next topic</h4>
             <p class="topless">
-                <a href="../../../contributing/" title="next page">Contributing to Python-Markdown</a>
+                <a href="../htmlparser/" title="next page">htmlparser</a>
             </p>
 
             <div role="note" aria-label="source link">
@@ -795,10 +795,10 @@ or <code>None</code>. If parsing was not successful, raises <code>ValueError</co
                 <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../../../contributing/" title="Contributing to Python-Markdown" accesskey="N">next</a> |
+                <a href="../htmlparser/" title="htmlparser" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../treeprocessors/" title="treeprocessors" accesskey="P">previous</a> |
+                <a href="../serializers/" title="serializers" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -830,12 +830,12 @@ or <code>None</code>. If parsing was not successful, raises <code>ValueError</co
                 
                 
                 
-                
-                
-                
         <li class="nav-item">
             <a href="./">util</a>
          &#187; </li>
+                
+                
+                
                     
                     
                     
@@ -848,7 +848,7 @@ or <code>None</code>. If parsing was not successful, raises <code>ValueError</co
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-24 16:58:36.863013+00:00
+        Docs Build Date UTC : 2023-08-24 18:45:30.133216+00:00
         -->
     </body>
 </html>

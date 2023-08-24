@@ -10,7 +10,7 @@
         <link rel="shortcut icon" href="../../../favicon.ico">
         <link rel="search" title="Search" href="../../../search.html" />
         <link rel="next" title="postprocessors" href="../postprocessors/" />
-        <link rel="prev" title="htmlparser" href="../htmlparser/" />
+        <link rel="prev" title="treeprocessors" href="../treeprocessors/" />
         <title>inlinepatterns &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../../static/nature.css" type="text/css" />
         <link rel="stylesheet" href="../../../static/pygments.css" type="text/css" />
@@ -35,7 +35,7 @@
                 <a href="../postprocessors/" title="postprocessors" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../htmlparser/" title="htmlparser" accesskey="P">previous</a> |
+                <a href="../treeprocessors/" title="treeprocessors" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -1974,7 +1974,7 @@ resolving nested square brackets.</p>
 
 
 <h2 id="markdown.inlinepatterns.InlineProcessor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code class="codehilite language-python">markdown.inlinepatterns.InlineProcessor(pattern, md=None)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code class="codehilite language-python">markdown.inlinepatterns.InlineProcessor(pattern: str, md: Markdown | None = None)</code>
 
 <a href="#markdown.inlinepatterns.InlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -2079,7 +2079,7 @@ efficient and flexible search approach.</p>
 
 
 <h3 id="markdown.inlinepatterns.InlineProcessor.handleMatch" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.InlineProcessor.handleMatch(m, data)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.InlineProcessor.handleMatch(m: Match, data: str) -&gt; tuple[etree.ElementTree | str | None, int | None, int | None]</code>
 
 <a href="#markdown.inlinepatterns.InlineProcessor.handleMatch" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2377,7 +2377,7 @@ resolving nested square brackets.</p>
 
 
 <h2 id="markdown.inlinepatterns.Pattern" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code class="codehilite language-python">markdown.inlinepatterns.Pattern(pattern, md=None)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code class="codehilite language-python">markdown.inlinepatterns.Pattern(pattern: str, md: Markdown | None = None)</code>
 
 <a href="#markdown.inlinepatterns.Pattern" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -2478,7 +2478,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.Pattern.handleMatch" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.Pattern.handleMatch(m)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.Pattern.handleMatch(m: Match)</code>
 
 <a href="#markdown.inlinepatterns.Pattern.handleMatch" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -4845,7 +4845,7 @@ of a Pattern.</p>
             
             <h4>Previous topic</h4>
             <p class="topless">
-                <a href="../htmlparser/" title="previous page">htmlparser</a>
+                <a href="../treeprocessors/" title="previous page">treeprocessors</a>
             </p>
 
             
@@ -4880,7 +4880,7 @@ of a Pattern.</p>
                 <a href="../postprocessors/" title="postprocessors" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../htmlparser/" title="htmlparser" accesskey="P">previous</a> |
+                <a href="../treeprocessors/" title="treeprocessors" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -4930,7 +4930,7 @@ of a Pattern.</p>
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-24 16:58:36.857045+00:00
+        Docs Build Date UTC : 2023-08-24 18:45:30.127207+00:00
         -->
     </body>
 </html>

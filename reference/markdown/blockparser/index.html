@@ -10,7 +10,7 @@
         <link rel="shortcut icon" href="../../../favicon.ico">
         <link rel="search" title="Search" href="../../../search.html" />
         <link rel="next" title="blockprocessors" href="../blockprocessors/" />
-        <link rel="prev" title="markdown" href="../" />
+        <link rel="prev" title="preprocessors" href="../preprocessors/" />
         <title>blockparser &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../../static/nature.css" type="text/css" />
         <link rel="stylesheet" href="../../../static/pygments.css" type="text/css" />
@@ -35,7 +35,7 @@
                 <a href="../blockprocessors/" title="blockprocessors" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../" title="markdown" accesskey="P">previous</a> |
+                <a href="../preprocessors/" title="preprocessors" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -59,11 +59,11 @@
             <a href="../">markdown</a>
          &#187; </li>
                 
+                
+                
         <li class="nav-item">
             <a href="./">blockparser</a>
          &#187; </li>
-                
-                
                 
                 
                 
@@ -134,7 +134,7 @@
 
 
 <h2 id="markdown.blockparser.BlockParser" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code class="codehilite language-python">markdown.blockparser.BlockParser(md)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code class="codehilite language-python">markdown.blockparser.BlockParser(md: Markdown)</code>
 
 <a href="#markdown.blockparser.BlockParser" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -211,7 +211,7 @@ looping through them and creating an <code>ElementTree</code> object.</p>
 
 
 <h3 id="markdown.blockparser.BlockParser.parseBlocks" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockparser.BlockParser.parseBlocks(parent, blocks)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockparser.BlockParser.parseBlocks(parent: etree.Element, blocks: Sequence[str])</code>
 
 <a href="#markdown.blockparser.BlockParser.parseBlocks" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -259,7 +259,7 @@ parse a nested block.</p>
 
 
 <h3 id="markdown.blockparser.BlockParser.parseChunk" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockparser.BlockParser.parseChunk(parent, text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockparser.BlockParser.parseChunk(parent: etree.Element, text: str)</code>
 
 <a href="#markdown.blockparser.BlockParser.parseChunk" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -306,7 +306,7 @@ Nothing is returned.</p>
 
 
 <h3 id="markdown.blockparser.BlockParser.parseDocument" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockparser.BlockParser.parseDocument(lines)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockparser.BlockParser.parseDocument(lines: Sequence[str]) -&gt; etree.ElementTree</code>
 
 <a href="#markdown.blockparser.BlockParser.parseDocument" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -558,7 +558,7 @@ defined below need be used.</p>
             
             <h4>Previous topic</h4>
             <p class="topless">
-                <a href="../" title="previous page">markdown</a>
+                <a href="../preprocessors/" title="previous page">preprocessors</a>
             </p>
 
             
@@ -593,7 +593,7 @@ defined below need be used.</p>
                 <a href="../blockprocessors/" title="blockprocessors" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../" title="markdown" accesskey="P">previous</a> |
+                <a href="../preprocessors/" title="preprocessors" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -617,11 +617,11 @@ defined below need be used.</p>
             <a href="../">markdown</a>
          &#187; </li>
                 
+                
+                
         <li class="nav-item">
             <a href="./">blockparser</a>
          &#187; </li>
-                
-                
                 
                 
                 
@@ -643,7 +643,7 @@ defined below need be used.</p>
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-24 16:58:36.853293+00:00
+        Docs Build Date UTC : 2023-08-24 18:45:30.123506+00:00
         -->
     </body>
 </html>

@@ -9,7 +9,7 @@
         <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/blockprocessors/">
         <link rel="shortcut icon" href="../../../favicon.ico">
         <link rel="search" title="Search" href="../../../search.html" />
-        <link rel="next" title="core" href="../core/" />
+        <link rel="next" title="treeprocessors" href="../treeprocessors/" />
         <link rel="prev" title="blockparser" href="../blockparser/" />
         <title>blockprocessors &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../../static/nature.css" type="text/css" />
@@ -32,7 +32,7 @@
                 <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../core/" title="core" accesskey="N">next</a> |
+                <a href="../treeprocessors/" title="treeprocessors" accesskey="N">next</a> |
             </li>
             <li class="right">
                 <a href="../blockparser/" title="blockparser" accesskey="P">previous</a> |
@@ -60,11 +60,11 @@
          &#187; </li>
                 
                 
+                
+                
         <li class="nav-item">
             <a href="./">blockprocessors</a>
          &#187; </li>
-                
-                
                 
                 
                 
@@ -304,7 +304,7 @@ test passes, the parser will call the processors <code>run</code> method.</p>
 
 
 <h3 id="markdown.blockprocessors.BlockProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.BlockProcessor.detab(text, length=None)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.BlockProcessor.detab(text, length = None)</code>
 
 <a href="#markdown.blockprocessors.BlockProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -342,7 +342,7 @@ test passes, the parser will call the processors <code>run</code> method.</p>
 
 
 <h3 id="markdown.blockprocessors.BlockProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.BlockProcessor.looseDetab(text, level=1)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.BlockProcessor.looseDetab(text, level = 1)</code>
 
 <a href="#markdown.blockprocessors.BlockProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -523,7 +523,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.BlockQuoteProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.BlockQuoteProcessor.detab(text, length=None)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.BlockQuoteProcessor.detab(text, length = None)</code>
 
 <a href="#markdown.blockprocessors.BlockQuoteProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -561,7 +561,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.BlockQuoteProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.BlockQuoteProcessor.looseDetab(text, level=1)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.BlockQuoteProcessor.looseDetab(text, level = 1)</code>
 
 <a href="#markdown.blockprocessors.BlockQuoteProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -650,7 +650,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.CodeBlockProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.CodeBlockProcessor.detab(text, length=None)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.CodeBlockProcessor.detab(text, length = None)</code>
 
 <a href="#markdown.blockprocessors.CodeBlockProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -688,7 +688,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.CodeBlockProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.CodeBlockProcessor.looseDetab(text, level=1)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.CodeBlockProcessor.looseDetab(text, level = 1)</code>
 
 <a href="#markdown.blockprocessors.CodeBlockProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -777,7 +777,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.EmptyBlockProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.EmptyBlockProcessor.detab(text, length=None)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.EmptyBlockProcessor.detab(text, length = None)</code>
 
 <a href="#markdown.blockprocessors.EmptyBlockProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -815,7 +815,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.EmptyBlockProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.EmptyBlockProcessor.looseDetab(text, level=1)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.EmptyBlockProcessor.looseDetab(text, level = 1)</code>
 
 <a href="#markdown.blockprocessors.EmptyBlockProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -904,7 +904,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.HRProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.HRProcessor.detab(text, length=None)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.HRProcessor.detab(text, length = None)</code>
 
 <a href="#markdown.blockprocessors.HRProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -942,7 +942,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.HRProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.HRProcessor.looseDetab(text, level=1)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.HRProcessor.looseDetab(text, level = 1)</code>
 
 <a href="#markdown.blockprocessors.HRProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1031,7 +1031,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.HashHeaderProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.HashHeaderProcessor.detab(text, length=None)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.HashHeaderProcessor.detab(text, length = None)</code>
 
 <a href="#markdown.blockprocessors.HashHeaderProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1069,7 +1069,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.HashHeaderProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.HashHeaderProcessor.looseDetab(text, level=1)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.HashHeaderProcessor.looseDetab(text, level = 1)</code>
 
 <a href="#markdown.blockprocessors.HashHeaderProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1201,7 +1201,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.ListIndentProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.ListIndentProcessor.detab(text, length=None)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.ListIndentProcessor.detab(text, length = None)</code>
 
 <a href="#markdown.blockprocessors.ListIndentProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1258,7 +1258,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.ListIndentProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.ListIndentProcessor.looseDetab(text, level=1)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.ListIndentProcessor.looseDetab(text, level = 1)</code>
 
 <a href="#markdown.blockprocessors.ListIndentProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1354,7 +1354,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.OListProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.OListProcessor.detab(text, length=None)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.OListProcessor.detab(text, length = None)</code>
 
 <a href="#markdown.blockprocessors.OListProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1411,7 +1411,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.OListProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.OListProcessor.looseDetab(text, level=1)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.OListProcessor.looseDetab(text, level = 1)</code>
 
 <a href="#markdown.blockprocessors.OListProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1500,7 +1500,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.ParagraphProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.ParagraphProcessor.detab(text, length=None)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.ParagraphProcessor.detab(text, length = None)</code>
 
 <a href="#markdown.blockprocessors.ParagraphProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1538,7 +1538,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.ParagraphProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.ParagraphProcessor.looseDetab(text, level=1)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.ParagraphProcessor.looseDetab(text, level = 1)</code>
 
 <a href="#markdown.blockprocessors.ParagraphProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1627,7 +1627,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.ReferenceProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.ReferenceProcessor.detab(text, length=None)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.ReferenceProcessor.detab(text, length = None)</code>
 
 <a href="#markdown.blockprocessors.ReferenceProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1665,7 +1665,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.ReferenceProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.ReferenceProcessor.looseDetab(text, level=1)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.ReferenceProcessor.looseDetab(text, level = 1)</code>
 
 <a href="#markdown.blockprocessors.ReferenceProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1754,7 +1754,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.SetextHeaderProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.SetextHeaderProcessor.detab(text, length=None)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.SetextHeaderProcessor.detab(text, length = None)</code>
 
 <a href="#markdown.blockprocessors.SetextHeaderProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1792,7 +1792,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.SetextHeaderProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.SetextHeaderProcessor.looseDetab(text, level=1)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.SetextHeaderProcessor.looseDetab(text, level = 1)</code>
 
 <a href="#markdown.blockprocessors.SetextHeaderProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1888,7 +1888,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.UListProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.UListProcessor.detab(text, length=None)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.UListProcessor.detab(text, length = None)</code>
 
 <a href="#markdown.blockprocessors.UListProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1945,7 +1945,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.UListProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.UListProcessor.looseDetab(text, level=1)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.blockprocessors.UListProcessor.looseDetab(text, level = 1)</code>
 
 <a href="#markdown.blockprocessors.UListProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2270,7 +2270,7 @@ depending on the parent of the block (i.e. inside a list), the parent
             
             <h4>Next topic</h4>
             <p class="topless">
-                <a href="../core/" title="next page">core</a>
+                <a href="../treeprocessors/" title="next page">treeprocessors</a>
             </p>
 
             <div role="note" aria-label="source link">
@@ -2296,7 +2296,7 @@ depending on the parent of the block (i.e. inside a list), the parent
                 <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../core/" title="core" accesskey="N">next</a> |
+                <a href="../treeprocessors/" title="treeprocessors" accesskey="N">next</a> |
             </li>
             <li class="right">
                 <a href="../blockparser/" title="blockparser" accesskey="P">previous</a> |
@@ -2324,11 +2324,11 @@ depending on the parent of the block (i.e. inside a list), the parent
          &#187; </li>
                 
                 
+                
+                
         <li class="nav-item">
             <a href="./">blockprocessors</a>
          &#187; </li>
-                
-                
                 
                 
                 
@@ -2349,7 +2349,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-24 16:58:36.854039+00:00
+        Docs Build Date UTC : 2023-08-24 18:45:30.124239+00:00
         -->
     </body>
 </html>

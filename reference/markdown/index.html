@@ -9,7 +9,7 @@
         <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/">
         <link rel="shortcut icon" href="../../favicon.ico">
         <link rel="search" title="Search" href="../../search.html" />
-        <link rel="next" title="blockparser" href="blockparser/" />
+        <link rel="next" title="core" href="core/" />
         <link rel="prev" title="Test Tools" href="../../test_tools/" />
         <title>markdown &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../static/nature.css" type="text/css" />
@@ -32,7 +32,7 @@
                 <a href="../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="blockparser/" title="blockparser" accesskey="N">next</a> |
+                <a href="core/" title="core" accesskey="N">next</a> |
             </li>
             <li class="right">
                 <a href="../../test_tools/" title="Test Tools" accesskey="P">previous</a> |
@@ -441,7 +441,7 @@ the <code>Extension</code> instance returned by that function.</p>
 
 
 <h3 id="markdown.Markdown.convert" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.Markdown.convert(source)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.Markdown.convert(source: str)</code>
 
 <a href="#markdown.Markdown.convert" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -486,7 +486,7 @@ the <code>Extension</code> instance returned by that function.</p>
 
 
 <h3 id="markdown.Markdown.convertFile" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.Markdown.convertFile(input=None, output=None, encoding=None)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.Markdown.convertFile(input: str | TextIO | None = None, output: str | TextIO | None = None, encoding: str | None = None)</code>
 
 <a href="#markdown.Markdown.convertFile" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -587,7 +587,7 @@ Unicode-out.)</p>
 
 
 <h3 id="markdown.Markdown.registerExtensions" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.Markdown.registerExtensions(extensions, configs)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.Markdown.registerExtensions(extensions: list[str | Extension], configs: dict[str, dict[str, Any]]) -&gt; Markdown</code>
 
 <a href="#markdown.Markdown.registerExtensions" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -676,7 +676,7 @@ Unicode-out.)</p>
 
 
 <h2 id="markdown.markdown" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code><code class="codehilite language-python">markdown.markdown(text, **kwargs)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code><code class="codehilite language-python">markdown.markdown(text: str, **kwargs: Any) -&gt; str</code>
 
 <a href="#markdown.markdown" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -739,7 +739,7 @@ necessary extensions and runs the parser on the given text.</p>
 
 
 <h2 id="markdown.markdownFromFile" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code><code class="codehilite language-python">markdown.markdownFromFile(**kwargs)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code><code class="codehilite language-python">markdown.markdownFromFile(**kwargs: Any)</code>
 
 <a href="#markdown.markdownFromFile" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -881,7 +881,7 @@ and calls the <code>convertFile</code> method rather than <code>convert</code>.<
             
             <h4>Next topic</h4>
             <p class="topless">
-                <a href="blockparser/" title="next page">blockparser</a>
+                <a href="core/" title="next page">core</a>
             </p>
 
             <div role="note" aria-label="source link">
@@ -907,7 +907,7 @@ and calls the <code>convertFile</code> method rather than <code>convert</code>.<
                 <a href="../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="blockparser/" title="blockparser" accesskey="N">next</a> |
+                <a href="core/" title="core" accesskey="N">next</a> |
             </li>
             <li class="right">
                 <a href="../../test_tools/" title="Test Tools" accesskey="P">previous</a> |
@@ -957,7 +957,7 @@ and calls the <code>convertFile</code> method rather than <code>convert</code>.<
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-24 16:58:36.852172+00:00
+        Docs Build Date UTC : 2023-08-24 18:45:30.122378+00:00
         -->
     </body>
 </html>
