@@ -9,9 +9,9 @@
         <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/extensions/tables/">
         <link rel="shortcut icon" href="../../../../favicon.ico">
         <link rel="search" title="Search" href="../../../../search.html" />
-        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> toc" href="../toc/" />
-        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> smarty" href="../smarty/" />
-        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> tables &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="next" title="toc" href="../toc/" />
+        <link rel="prev" title="smarty" href="../smarty/" />
+        <title>tables &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../../../static/nature.css" type="text/css" />
         <link rel="stylesheet" href="../../../../static/pygments.css" type="text/css" />
         <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css" type="text/css" />
@@ -32,10 +32,10 @@
                 <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../toc/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> toc" accesskey="N">next</a> |
+                <a href="../toc/" title="toc" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../smarty/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> smarty" accesskey="P">previous</a> |
+                <a href="../smarty/" title="smarty" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -48,19 +48,22 @@
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../../">markdown</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+            <a href="../">extensions</a>
          &#187; </li>
                 
                 
@@ -79,7 +82,7 @@
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> tables</a>
+            <a href="./">tables</a>
          &#187; </li>
                 
                 
@@ -91,9 +94,6 @@
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -117,7 +117,7 @@
   
       <h2 id="markdown.extensions.tables--tables-extension-for-python-markdown">Tables Extension for Python-Markdown<a class="headerlink" href="#markdown.extensions.tables--tables-extension-for-python-markdown" title="Permanent link">&para;</a></h2>
 <p>Added parsing of tables to Python-Markdown.</p>
-<p>See <a href="https://Python-Markdown.github.io/extensions/tables">https://Python-Markdown.github.io/extensions/tables</a>
+<p>See https://Python-Markdown.github.io/extensions/tables
 for documentation.</p>
 <p>Original code Copyright 2009 <a href="http://achinghead.com">Waylan Limberg</a></p>
 <p>All changes Copyright 2008-2014 The Python Markdown Project</p>
@@ -130,17 +130,17 @@ for documentation.</p>
   <p>Classes:</p>
   <ul>
       <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableProcessor" href="#markdown.extensions.tables.TableProcessor">TableProcessor</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Process Tables.</p>
-        </div>
-      </li>
-      <li class="field-body">
         <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableExtension" href="#markdown.extensions.tables.TableExtension">TableExtension</a></b>
         –
         <div class="doc-md-description">
           <p>Add tables to Markdown.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableProcessor" href="#markdown.extensions.tables.TableProcessor">TableProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Process Tables.</p>
         </div>
       </li>
   </ul>
@@ -167,7 +167,7 @@ for documentation.</p>
 
 
 <a href="#markdown.extensions.tables.TableExtension" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableExtension(**kwargs)</code></pre>
+<pre class="codehilite"><code class="language-python">TableExtension(**kwargs)</code></pre>
 
   <div class="doc doc-contents ">
           <p class="doc doc-class-bases">
@@ -184,6 +184,13 @@ for documentation.</p>
   <p>Methods:</p>
   <ul>
         <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableExtension.extendMarkdown" href="#markdown.extensions.tables.TableExtension.extendMarkdown">extendMarkdown</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Add an instance of <code>TableProcessor</code> to <code>BlockParser</code>.</p>
+          </div>
+        </li>
+        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableExtension.getConfig" href="#markdown.extensions.tables.TableExtension.getConfig">getConfig</a></b>
           –
           <div class="doc-md-description">
@@ -191,17 +198,17 @@ for documentation.</p>
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableExtension.getConfigs" href="#markdown.extensions.tables.TableExtension.getConfigs">getConfigs</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return all configs settings as a dict.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableExtension.getConfigInfo" href="#markdown.extensions.tables.TableExtension.getConfigInfo">getConfigInfo</a></b>
           –
           <div class="doc-md-description">
             <p>Return all <code>config</code> descriptions as a list of tuples.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableExtension.getConfigs" href="#markdown.extensions.tables.TableExtension.getConfigs">getConfigs</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return all configs settings as a dict.</p>
           </div>
         </li>
         <li class="field-body">
@@ -216,13 +223,6 @@ for documentation.</p>
           –
           <div class="doc-md-description">
             <p>Set multiple <code>config</code> settings given a dict or list of tuples.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableExtension.extendMarkdown" href="#markdown.extensions.tables.TableExtension.extendMarkdown">extendMarkdown</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Add an instance of <code>TableProcessor</code> to <code>BlockParser</code>.</p>
           </div>
         </li>
   </ul>
@@ -247,11 +247,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.tables.TableExtension.extendMarkdown" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableExtension.extendMarkdown</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableExtension.extendMarkdown</span>
 
 
 <a href="#markdown.extensions.tables.TableExtension.extendMarkdown" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableExtension.extendMarkdown(md)</code></pre>
+<pre class="codehilite"><code class="language-python">extendMarkdown(md)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -267,11 +267,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.tables.TableExtension.getConfig" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableExtension.getConfig</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableExtension.getConfig</span>
 
 
 <a href="#markdown.extensions.tables.TableExtension.getConfig" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableExtension.getConfig(key, default = '')</code></pre>
+<pre class="codehilite"><code class="language-python">getConfig(key, default = '')</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -287,11 +287,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.tables.TableExtension.getConfigInfo" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableExtension.getConfigInfo</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableExtension.getConfigInfo</span>
 
 
 <a href="#markdown.extensions.tables.TableExtension.getConfigInfo" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableExtension.getConfigInfo()</code></pre>
+<pre class="codehilite"><code class="language-python">getConfigInfo()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -307,11 +307,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.tables.TableExtension.getConfigs" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableExtension.getConfigs</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableExtension.getConfigs</span>
 
 
 <a href="#markdown.extensions.tables.TableExtension.getConfigs" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableExtension.getConfigs()</code></pre>
+<pre class="codehilite"><code class="language-python">getConfigs()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -327,11 +327,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.tables.TableExtension.setConfig" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableExtension.setConfig</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableExtension.setConfig</span>
 
 
 <a href="#markdown.extensions.tables.TableExtension.setConfig" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableExtension.setConfig(key, value)</code></pre>
+<pre class="codehilite"><code class="language-python">setConfig(key, value)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -347,11 +347,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.tables.TableExtension.setConfigs" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableExtension.setConfigs</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableExtension.setConfigs</span>
 
 
 <a href="#markdown.extensions.tables.TableExtension.setConfigs" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableExtension.setConfigs(items)</code></pre>
+<pre class="codehilite"><code class="language-python">setConfigs(items)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -379,7 +379,7 @@ for documentation.</p>
 
 
 <a href="#markdown.extensions.tables.TableProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableProcessor(parser, config)</code></pre>
+<pre class="codehilite"><code class="language-python">TableProcessor(parser, config)</code></pre>
 
   <div class="doc doc-contents ">
           <p class="doc doc-class-bases">
@@ -396,17 +396,17 @@ for documentation.</p>
   <p>Methods:</p>
   <ul>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableProcessor.lastChild" href="#markdown.extensions.tables.TableProcessor.lastChild">lastChild</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return the last child of an <code>etree</code> element.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableProcessor.detab" href="#markdown.extensions.tables.TableProcessor.detab">detab</a></b>
           –
           <div class="doc-md-description">
             <p>Remove a tab from the front of each line of the given text.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableProcessor.lastChild" href="#markdown.extensions.tables.TableProcessor.lastChild">lastChild</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return the last child of an <code>etree</code> element.</p>
           </div>
         </li>
         <li class="field-body">
@@ -417,17 +417,17 @@ for documentation.</p>
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableProcessor.test" href="#markdown.extensions.tables.TableProcessor.test">test</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Ensure first two rows (column header and separator row) are valid table rows.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableProcessor.run" href="#markdown.extensions.tables.TableProcessor.run">run</a></b>
           –
           <div class="doc-md-description">
             <p>Parse a table block and build table.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.tables.TableProcessor.test" href="#markdown.extensions.tables.TableProcessor.test">test</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Ensure first two rows (column header and separator row) are valid table rows.</p>
           </div>
         </li>
   </ul>
@@ -452,11 +452,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.tables.TableProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableProcessor.detab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableProcessor.detab</span>
 
 
 <a href="#markdown.extensions.tables.TableProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableProcessor.detab(text, length = None)</code></pre>
+<pre class="codehilite"><code class="language-python">detab(text, length = None)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -472,11 +472,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.tables.TableProcessor.lastChild" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableProcessor.lastChild</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableProcessor.lastChild</span>
 
 
 <a href="#markdown.extensions.tables.TableProcessor.lastChild" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableProcessor.lastChild(parent)</code></pre>
+<pre class="codehilite"><code class="language-python">lastChild(parent)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -492,11 +492,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.tables.TableProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableProcessor.looseDetab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableProcessor.looseDetab</span>
 
 
 <a href="#markdown.extensions.tables.TableProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableProcessor.looseDetab(text, level = 1)</code></pre>
+<pre class="codehilite"><code class="language-python">looseDetab(text, level = 1)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -512,11 +512,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.tables.TableProcessor.run" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableProcessor.run</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableProcessor.run</span>
 
 
 <a href="#markdown.extensions.tables.TableProcessor.run" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableProcessor.run(parent, blocks)</code></pre>
+<pre class="codehilite"><code class="language-python">run(parent, blocks)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -532,11 +532,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.tables.TableProcessor.test" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableProcessor.test</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.tables.TableProcessor.test</span>
 
 
 <a href="#markdown.extensions.tables.TableProcessor.test" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.tables.TableProcessor.test(parent, block)</code></pre>
+<pre class="codehilite"><code class="language-python">test(parent, block)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -586,27 +586,27 @@ for documentation.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.tables.TableExtension.extendMarkdown"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;extendMarkdown</a>
+        <a class="reference internal" href="#markdown.extensions.tables.TableExtension.extendMarkdown"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;extendMarkdown</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.tables.TableExtension.getConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfig</a>
+        <a class="reference internal" href="#markdown.extensions.tables.TableExtension.getConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getConfig</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.tables.TableExtension.getConfigInfo"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfigInfo</a>
+        <a class="reference internal" href="#markdown.extensions.tables.TableExtension.getConfigInfo"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getConfigInfo</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.tables.TableExtension.getConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfigs</a>
+        <a class="reference internal" href="#markdown.extensions.tables.TableExtension.getConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getConfigs</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.tables.TableExtension.setConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;setConfig</a>
+        <a class="reference internal" href="#markdown.extensions.tables.TableExtension.setConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;setConfig</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.tables.TableExtension.setConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;setConfigs</a>
+        <a class="reference internal" href="#markdown.extensions.tables.TableExtension.setConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;setConfigs</a>
     </li>
         </ul>
     </li>
@@ -616,23 +616,23 @@ for documentation.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.tables.TableProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;detab</a>
+        <a class="reference internal" href="#markdown.extensions.tables.TableProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;detab</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.tables.TableProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;lastChild</a>
+        <a class="reference internal" href="#markdown.extensions.tables.TableProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;lastChild</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.tables.TableProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;looseDetab</a>
+        <a class="reference internal" href="#markdown.extensions.tables.TableProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;looseDetab</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.tables.TableProcessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;run</a>
+        <a class="reference internal" href="#markdown.extensions.tables.TableProcessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;run</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.tables.TableProcessor.test"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;test</a>
+        <a class="reference internal" href="#markdown.extensions.tables.TableProcessor.test"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;test</a>
     </li>
         </ul>
     </li>
@@ -642,13 +642,13 @@ for documentation.</p>
             
             <h4>Previous topic</h4>
             <p class="topless">
-                <a href="../smarty/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> smarty</a>
+                <a href="../smarty/" title="previous page">smarty</a>
             </p>
 
             
             <h4>Next topic</h4>
             <p class="topless">
-                <a href="../toc/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> toc</a>
+                <a href="../toc/" title="next page">toc</a>
             </p>
 
             <div role="note" aria-label="source link">
@@ -674,10 +674,10 @@ for documentation.</p>
                 <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../toc/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> toc" accesskey="N">next</a> |
+                <a href="../toc/" title="toc" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../smarty/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> smarty" accesskey="P">previous</a> |
+                <a href="../smarty/" title="smarty" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -690,19 +690,22 @@ for documentation.</p>
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../../">markdown</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+            <a href="../">extensions</a>
          &#187; </li>
                 
                 
@@ -721,7 +724,7 @@ for documentation.</p>
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> tables</a>
+            <a href="./">tables</a>
          &#187; </li>
                 
                 
@@ -733,9 +736,6 @@ for documentation.</p>
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -748,7 +748,7 @@ for documentation.</p>
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-22 23:35:33.313344+00:00
+        Docs Build Date UTC : 2023-08-24 13:24:36.135336+00:00
         -->
     </body>
 </html>

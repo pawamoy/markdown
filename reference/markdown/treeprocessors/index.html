@@ -9,9 +9,9 @@
         <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/treeprocessors/">
         <link rel="shortcut icon" href="../../../favicon.ico">
         <link rel="search" title="Search" href="../../../search.html" />
-        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> util" href="../util/" />
-        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> test_tools" href="../test_tools/" />
-        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> treeprocessors &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="next" title="util" href="../util/" />
+        <link rel="prev" title="test_tools" href="../test_tools/" />
+        <title>treeprocessors &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../../static/nature.css" type="text/css" />
         <link rel="stylesheet" href="../../../static/pygments.css" type="text/css" />
         <link rel="stylesheet" href="../../../assets/_mkdocstrings.css" type="text/css" />
@@ -32,10 +32,10 @@
                 <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../util/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> util" accesskey="N">next</a> |
+                <a href="../util/" title="util" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../test_tools/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> test_tools" accesskey="P">previous</a> |
+                <a href="../test_tools/" title="test_tools" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -48,12 +48,15 @@
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../">markdown</a>
          &#187; </li>
                 
                 
@@ -67,12 +70,9 @@
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> treeprocessors</a>
+            <a href="./">treeprocessors</a>
          &#187; </li>
                 
-                    
-                    
-                    
                     
                     
                     
@@ -93,20 +93,6 @@
 <a href="#markdown.treeprocessors" class="headerlink" title="Permanent link">&para;</a></h1>
 
   <div class="doc doc-contents first">
-  
-      <p>Python Markdown</p>
-<p>A Python implementation of John Gruber&rsquo;s Markdown.</p>
-<p>Documentation: https://python-markdown.github.io/
-GitHub: https://github.com/Python-Markdown/markdown/
-PyPI: https://pypi.org/project/Markdown/</p>
-<p>Started by Manfred Stienstra (http://www.dwerg.net/).
-Maintained for a few years by Yuri Takhteyev (http://www.freewisdom.org).
-Currently maintained by Waylan Limberg (https://github.com/waylan),
-Dmitry Shachnev (https://github.com/mitya57) and Isaac Muse (https://github.com/facelessuser).</p>
-<p>Copyright 2007-2018 The Python Markdown Project (v. 1.7 and later)
-Copyright 2004, 2005, 2006 Yuri Takhteyev (v. 0.2-1.6b)
-Copyright 2004 Manfred Stienstra (the original version)</p>
-<p>License: BSD (see LICENSE.md for details).</p>
 
 
 
@@ -114,13 +100,6 @@ Copyright 2004 Manfred Stienstra (the original version)</p>
 
   <p>Classes:</p>
   <ul>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.treeprocessors.Treeprocessor" href="#markdown.treeprocessors.Treeprocessor">Treeprocessor</a></b>
-        –
-        <div class="doc-md-description">
-          <p><code>Treeprocessor</code>s are run on the <code>ElementTree</code> object before serialization.</p>
-        </div>
-      </li>
       <li class="field-body">
         <b><a class="autorefs autorefs-internal" title="markdown.treeprocessors.InlineProcessor" href="#markdown.treeprocessors.InlineProcessor">InlineProcessor</a></b>
         –
@@ -133,6 +112,13 @@ Copyright 2004 Manfred Stienstra (the original version)</p>
         –
         <div class="doc-md-description">
           <p>Add line breaks to the html document.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.treeprocessors.Treeprocessor" href="#markdown.treeprocessors.Treeprocessor">Treeprocessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p><code>Treeprocessor</code>s are run on the <code>ElementTree</code> object before serialization.</p>
         </div>
       </li>
       <li class="field-body">
@@ -186,7 +172,7 @@ Copyright 2004 Manfred Stienstra (the original version)</p>
 
 
 <a href="#markdown.treeprocessors.InlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.treeprocessors.InlineProcessor(md)</code></pre>
+<pre class="codehilite"><code class="language-python">InlineProcessor(md)</code></pre>
 
   <div class="doc doc-contents ">
           <p class="doc doc-class-bases">
@@ -231,11 +217,11 @@ Copyright 2004 Manfred Stienstra (the original version)</p>
 
 
 <h3 id="markdown.treeprocessors.InlineProcessor.run" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.treeprocessors.InlineProcessor.run</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.treeprocessors.InlineProcessor.run</span>
 
 
 <a href="#markdown.treeprocessors.InlineProcessor.run" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.treeprocessors.InlineProcessor.run(tree: <span title="xml.ElementTree">ElementTree</span>, ancestors: <a class="autorefs autorefs-external" title="typing.Sequence" href="https://docs.python.org/3/library/typing.html#typing.Sequence">Sequence</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>] | None = None) -&gt; <span title="xml.ElementTree">ElementTree</span></code></pre>
+<pre class="codehilite"><code class="language-python">run(tree: <span title="xml.ElementTree">ElementTree</span>, ancestors: <a class="autorefs autorefs-external" title="typing.Sequence" href="https://docs.python.org/3/library/typing.html#typing.Sequence">Sequence</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>] | None = None) -&gt; <span title="xml.ElementTree">ElementTree</span></code></pre>
 
   <div class="doc doc-contents ">
   
@@ -351,11 +337,11 @@ string, use subclass <code>AtomicString</code>:</p>
 
 
 <h3 id="markdown.treeprocessors.PrettifyTreeprocessor.run" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.treeprocessors.PrettifyTreeprocessor.run</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.treeprocessors.PrettifyTreeprocessor.run</span>
 
 
 <a href="#markdown.treeprocessors.PrettifyTreeprocessor.run" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.treeprocessors.PrettifyTreeprocessor.run(root)</code></pre>
+<pre class="codehilite"><code class="language-python">run(root)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -432,11 +418,11 @@ object.</p>
 
 
 <h3 id="markdown.treeprocessors.Treeprocessor.run" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.treeprocessors.Treeprocessor.run</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.treeprocessors.Treeprocessor.run</span>
 
 
 <a href="#markdown.treeprocessors.Treeprocessor.run" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.treeprocessors.Treeprocessor.run(root)</code></pre>
+<pre class="codehilite"><code class="language-python">run(root)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -512,11 +498,11 @@ modify the current tree and return <code>None</code>.</p>
 
 
 <h3 id="markdown.treeprocessors.UnescapeTreeprocessor.run" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.treeprocessors.UnescapeTreeprocessor.run</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.treeprocessors.UnescapeTreeprocessor.run</span>
 
 
 <a href="#markdown.treeprocessors.UnescapeTreeprocessor.run" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.treeprocessors.UnescapeTreeprocessor.run(root)</code></pre>
+<pre class="codehilite"><code class="language-python">run(root)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -546,7 +532,7 @@ modify the current tree and return <code>None</code>.</p>
 
 
 <a href="#markdown.treeprocessors.build_treeprocessors" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.treeprocessors.build_treeprocessors(md, **kwargs)</code></pre>
+<pre class="codehilite"><code class="language-python">build_treeprocessors(md, **kwargs)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -566,7 +552,7 @@ modify the current tree and return <code>None</code>.</p>
 
 
 <a href="#markdown.treeprocessors.isString" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.treeprocessors.isString(s)</code></pre>
+<pre class="codehilite"><code class="language-python">isString(s)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -601,7 +587,7 @@ modify the current tree and return <code>None</code>.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.treeprocessors.InlineProcessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;run</a>
+        <a class="reference internal" href="#markdown.treeprocessors.InlineProcessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;run</a>
     </li>
         </ul>
     </li>
@@ -611,7 +597,7 @@ modify the current tree and return <code>None</code>.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.treeprocessors.PrettifyTreeprocessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;run</a>
+        <a class="reference internal" href="#markdown.treeprocessors.PrettifyTreeprocessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;run</a>
     </li>
         </ul>
     </li>
@@ -621,7 +607,7 @@ modify the current tree and return <code>None</code>.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.treeprocessors.Treeprocessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;run</a>
+        <a class="reference internal" href="#markdown.treeprocessors.Treeprocessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;run</a>
     </li>
         </ul>
     </li>
@@ -631,7 +617,7 @@ modify the current tree and return <code>None</code>.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.treeprocessors.UnescapeTreeprocessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;run</a>
+        <a class="reference internal" href="#markdown.treeprocessors.UnescapeTreeprocessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;run</a>
     </li>
         </ul>
     </li>
@@ -649,13 +635,13 @@ modify the current tree and return <code>None</code>.</p>
             
             <h4>Previous topic</h4>
             <p class="topless">
-                <a href="../test_tools/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> test_tools</a>
+                <a href="../test_tools/" title="previous page">test_tools</a>
             </p>
 
             
             <h4>Next topic</h4>
             <p class="topless">
-                <a href="../util/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> util</a>
+                <a href="../util/" title="next page">util</a>
             </p>
 
             <div role="note" aria-label="source link">
@@ -681,10 +667,10 @@ modify the current tree and return <code>None</code>.</p>
                 <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../util/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> util" accesskey="N">next</a> |
+                <a href="../util/" title="util" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../test_tools/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> test_tools" accesskey="P">previous</a> |
+                <a href="../test_tools/" title="test_tools" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -697,12 +683,15 @@ modify the current tree and return <code>None</code>.</p>
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../">markdown</a>
          &#187; </li>
                 
                 
@@ -716,12 +705,9 @@ modify the current tree and return <code>None</code>.</p>
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> treeprocessors</a>
+            <a href="./">treeprocessors</a>
          &#187; </li>
                 
-                    
-                    
-                    
                     
                     
                     
@@ -734,7 +720,7 @@ modify the current tree and return <code>None</code>.</p>
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-22 23:35:33.298307+00:00
+        Docs Build Date UTC : 2023-08-24 13:24:36.119953+00:00
         -->
     </body>
 </html>

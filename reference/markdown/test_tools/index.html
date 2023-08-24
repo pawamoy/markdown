@@ -9,9 +9,9 @@
         <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/test_tools/">
         <link rel="shortcut icon" href="../../../favicon.ico">
         <link rel="search" title="Search" href="../../../search.html" />
-        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> treeprocessors" href="../treeprocessors/" />
-        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> serializers" href="../serializers/" />
-        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> test_tools &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="next" title="treeprocessors" href="../treeprocessors/" />
+        <link rel="prev" title="serializers" href="../serializers/" />
+        <title>test_tools &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../../static/nature.css" type="text/css" />
         <link rel="stylesheet" href="../../../static/pygments.css" type="text/css" />
         <link rel="stylesheet" href="../../../assets/_mkdocstrings.css" type="text/css" />
@@ -32,10 +32,10 @@
                 <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../treeprocessors/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> treeprocessors" accesskey="N">next</a> |
+                <a href="../treeprocessors/" title="treeprocessors" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../serializers/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> serializers" accesskey="P">previous</a> |
+                <a href="../serializers/" title="serializers" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -48,12 +48,15 @@
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../">markdown</a>
          &#187; </li>
                 
                 
@@ -66,13 +69,10 @@
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> test_tools</a>
+            <a href="./">test_tools</a>
          &#187; </li>
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -93,20 +93,6 @@
 <a href="#markdown.test_tools" class="headerlink" title="Permanent link">&para;</a></h1>
 
   <div class="doc doc-contents first">
-  
-      <p>Python Markdown</p>
-<p>A Python implementation of John Gruber&rsquo;s Markdown.</p>
-<p>Documentation: https://python-markdown.github.io/
-GitHub: https://github.com/Python-Markdown/markdown/
-PyPI: https://pypi.org/project/Markdown/</p>
-<p>Started by Manfred Stienstra (http://www.dwerg.net/).
-Maintained for a few years by Yuri Takhteyev (http://www.freewisdom.org).
-Currently maintained by Waylan Limberg (https://github.com/waylan),
-Dmitry Shachnev (https://github.com/mitya57) and Isaac Muse (https://github.com/facelessuser).</p>
-<p>Copyright 2007-2018 The Python Markdown Project (v. 1.7 and later)
-Copyright 2004, 2005, 2006 Yuri Takhteyev (v. 0.2-1.6b)
-Copyright 2004 Manfred Stienstra (the original version)</p>
-<p>License: BSD (see LICENSE.md for details).</p>
 
 
 
@@ -114,20 +100,6 @@ Copyright 2004 Manfred Stienstra (the original version)</p>
 
   <p>Classes:</p>
   <ul>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.test_tools.TestCase" href="#markdown.test_tools.TestCase">TestCase</a></b>
-        –
-        <div class="doc-md-description">
-          <p>A <code>unittest.TestCase</code> subclass with helpers for testing Markdown output.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.test_tools.recursionlimit" href="#markdown.test_tools.recursionlimit">recursionlimit</a></b>
-        –
-        <div class="doc-md-description">
-          <p>A context manager which temporarily modifies the Python recursion limit.</p>
-        </div>
-      </li>
       <li class="field-body">
         <b><a class="autorefs autorefs-internal" title="markdown.test_tools.Kwargs" href="#markdown.test_tools.Kwargs">Kwargs</a></b>
         –
@@ -140,6 +112,20 @@ Copyright 2004 Manfred Stienstra (the original version)</p>
         –
         <div class="doc-md-description">
           <p>A <code>unittest.TestCase</code> subclass for running Markdown&rsquo;s legacy file-based tests.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.test_tools.TestCase" href="#markdown.test_tools.TestCase">TestCase</a></b>
+        –
+        <div class="doc-md-description">
+          <p>A <code>unittest.TestCase</code> subclass with helpers for testing Markdown output.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.test_tools.recursionlimit" href="#markdown.test_tools.recursionlimit">recursionlimit</a></b>
+        –
+        <div class="doc-md-description">
+          <p>A context manager which temporarily modifies the Python recursion limit.</p>
         </div>
       </li>
   </ul>
@@ -306,11 +292,11 @@ necessary.</p>
 
 
 <h3 id="markdown.test_tools.TestCase.assertMarkdownRenders" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.test_tools.TestCase.assertMarkdownRenders</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.test_tools.TestCase.assertMarkdownRenders</span>
 
 
 <a href="#markdown.test_tools.TestCase.assertMarkdownRenders" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.test_tools.TestCase.assertMarkdownRenders(source, expected, expected_attrs = None, **kwargs)</code></pre>
+<pre class="codehilite"><code class="language-python">assertMarkdownRenders(source, expected, expected_attrs = None, **kwargs)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -331,11 +317,11 @@ attribute of the <code>Markdown</code> instance using <code>TestCase.assertEqual
 
 
 <h3 id="markdown.test_tools.TestCase.dedent" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.test_tools.TestCase.dedent</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.test_tools.TestCase.dedent</span>
 
 
 <a href="#markdown.test_tools.TestCase.dedent" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.test_tools.TestCase.dedent(text)</code></pre>
+<pre class="codehilite"><code class="language-python">dedent(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -363,7 +349,7 @@ attribute of the <code>Markdown</code> instance using <code>TestCase.assertEqual
 
 
 <a href="#markdown.test_tools.recursionlimit" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.test_tools.recursionlimit(limit)</code></pre>
+<pre class="codehilite"><code class="language-python">recursionlimit(limit)</code></pre>
 
   <div class="doc doc-contents ">
 
@@ -438,11 +424,11 @@ in the tests, the current stack depth is determined when called, then added to t
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.test_tools.TestCase.assertMarkdownRenders"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;assertMarkdownRenders</a>
+        <a class="reference internal" href="#markdown.test_tools.TestCase.assertMarkdownRenders"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;assertMarkdownRenders</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.test_tools.TestCase.dedent"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;dedent</a>
+        <a class="reference internal" href="#markdown.test_tools.TestCase.dedent"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;dedent</a>
     </li>
         </ul>
     </li>
@@ -456,13 +442,13 @@ in the tests, the current stack depth is determined when called, then added to t
             
             <h4>Previous topic</h4>
             <p class="topless">
-                <a href="../serializers/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> serializers</a>
+                <a href="../serializers/" title="previous page">serializers</a>
             </p>
 
             
             <h4>Next topic</h4>
             <p class="topless">
-                <a href="../treeprocessors/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> treeprocessors</a>
+                <a href="../treeprocessors/" title="next page">treeprocessors</a>
             </p>
 
             <div role="note" aria-label="source link">
@@ -488,10 +474,10 @@ in the tests, the current stack depth is determined when called, then added to t
                 <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../treeprocessors/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> treeprocessors" accesskey="N">next</a> |
+                <a href="../treeprocessors/" title="treeprocessors" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../serializers/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> serializers" accesskey="P">previous</a> |
+                <a href="../serializers/" title="serializers" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -504,12 +490,15 @@ in the tests, the current stack depth is determined when called, then added to t
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../">markdown</a>
          &#187; </li>
                 
                 
@@ -522,13 +511,10 @@ in the tests, the current stack depth is determined when called, then added to t
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> test_tools</a>
+            <a href="./">test_tools</a>
          &#187; </li>
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -541,7 +527,7 @@ in the tests, the current stack depth is determined when called, then added to t
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-22 23:35:33.297664+00:00
+        Docs Build Date UTC : 2023-08-24 13:24:36.119245+00:00
         -->
     </body>
 </html>

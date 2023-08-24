@@ -9,9 +9,9 @@
         <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/extensions/smarty/">
         <link rel="shortcut icon" href="../../../../favicon.ico">
         <link rel="search" title="Search" href="../../../../search.html" />
-        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> tables" href="../tables/" />
-        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> sane_lists" href="../sane_lists/" />
-        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> smarty &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="next" title="tables" href="../tables/" />
+        <link rel="prev" title="sane_lists" href="../sane_lists/" />
+        <title>smarty &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../../../static/nature.css" type="text/css" />
         <link rel="stylesheet" href="../../../../static/pygments.css" type="text/css" />
         <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css" type="text/css" />
@@ -32,10 +32,10 @@
                 <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../tables/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> tables" accesskey="N">next</a> |
+                <a href="../tables/" title="tables" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../sane_lists/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> sane_lists" accesskey="P">previous</a> |
+                <a href="../sane_lists/" title="sane_lists" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -48,19 +48,22 @@
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../../">markdown</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+            <a href="../">extensions</a>
          &#187; </li>
                 
                 
@@ -78,7 +81,7 @@
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> smarty</a>
+            <a href="./">smarty</a>
          &#187; </li>
                 
                 
@@ -91,9 +94,6 @@
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -118,7 +118,7 @@
       <h2 id="markdown.extensions.smarty--smarty-extension-for-python-markdown">Smarty extension for Python-Markdown<a class="headerlink" href="#markdown.extensions.smarty--smarty-extension-for-python-markdown" title="Permanent link">&para;</a></h2>
 <p>Adds conversion of ASCII dashes, quotes and ellipses to their HTML
 entity equivalents.</p>
-<p>See <a href="https://Python-Markdown.github.io/extensions/smarty">https://Python-Markdown.github.io/extensions/smarty</a>
+<p>See https://Python-Markdown.github.io/extensions/smarty
 for documentation.</p>
 <p>Author: 2013, Dmitry Shachnev <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#105;&#116;&#121;&#97;&#53;&#55;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#109;&#105;&#116;&#121;&#97;&#53;&#55;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></p>
 <p>All changes Copyright 2013-2014 The Python Markdown Project</p>
@@ -193,6 +193,19 @@ of this software, even if advised of the possibility of such damage.</p>
 
 
 
+  <p>Classes:</p>
+  <ul>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.smarty.SubstituteTextPattern" href="#markdown.extensions.smarty.SubstituteTextPattern">SubstituteTextPattern</a></b>
+        –
+        <div class="doc-md-description">
+          
+        </div>
+      </li>
+  </ul>
+
+
+
   
 
   <div class="doc doc-children">
@@ -213,7 +226,7 @@ of this software, even if advised of the possibility of such damage.</p>
 
 
 <a href="#markdown.extensions.smarty.SubstituteTextPattern" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.smarty.SubstituteTextPattern(pattern, replace, md)</code></pre>
+<pre class="codehilite"><code class="language-python">SubstituteTextPattern(pattern, replace, md)</code></pre>
 
   <div class="doc doc-contents ">
           <p class="doc doc-class-bases">
@@ -227,6 +240,13 @@ of this software, even if advised of the possibility of such damage.</p>
 
   <p>Methods:</p>
   <ul>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.smarty.SubstituteTextPattern.backslash_unescape" href="#markdown.extensions.smarty.SubstituteTextPattern.backslash_unescape">backslash_unescape</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return text with backslash escapes undone (backslashes are restored).</p>
+          </div>
+        </li>
         <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.extensions.smarty.SubstituteTextPattern.getCompiledRegExp" href="#markdown.extensions.smarty.SubstituteTextPattern.getCompiledRegExp">getCompiledRegExp</a></b>
           –
@@ -246,13 +266,6 @@ of this software, even if advised of the possibility of such damage.</p>
           –
           <div class="doc-md-description">
             <p>Return unescaped text given text with an inline placeholder.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.smarty.SubstituteTextPattern.backslash_unescape" href="#markdown.extensions.smarty.SubstituteTextPattern.backslash_unescape">backslash_unescape</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return text with backslash escapes undone (backslashes are restored).</p>
           </div>
         </li>
   </ul>
@@ -277,11 +290,11 @@ of this software, even if advised of the possibility of such damage.</p>
 
 
 <h3 id="markdown.extensions.smarty.SubstituteTextPattern.backslash_unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.smarty.SubstituteTextPattern.backslash_unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.smarty.SubstituteTextPattern.backslash_unescape</span>
 
 
 <a href="#markdown.extensions.smarty.SubstituteTextPattern.backslash_unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.smarty.SubstituteTextPattern.backslash_unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">backslash_unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -297,11 +310,11 @@ of this software, even if advised of the possibility of such damage.</p>
 
 
 <h3 id="markdown.extensions.smarty.SubstituteTextPattern.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.smarty.SubstituteTextPattern.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.smarty.SubstituteTextPattern.getCompiledRegExp</span>
 
 
 <a href="#markdown.extensions.smarty.SubstituteTextPattern.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.smarty.SubstituteTextPattern.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -317,11 +330,11 @@ of this software, even if advised of the possibility of such damage.</p>
 
 
 <h3 id="markdown.extensions.smarty.SubstituteTextPattern.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.smarty.SubstituteTextPattern.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.smarty.SubstituteTextPattern.type</span>
 
 
 <a href="#markdown.extensions.smarty.SubstituteTextPattern.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.smarty.SubstituteTextPattern.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -337,11 +350,11 @@ of this software, even if advised of the possibility of such damage.</p>
 
 
 <h3 id="markdown.extensions.smarty.SubstituteTextPattern.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.smarty.SubstituteTextPattern.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.smarty.SubstituteTextPattern.unescape</span>
 
 
 <a href="#markdown.extensions.smarty.SubstituteTextPattern.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.smarty.SubstituteTextPattern.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -390,19 +403,19 @@ of this software, even if advised of the possibility of such damage.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.smarty.SubstituteTextPattern.backslash_unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;backslash_unescape</a>
+        <a class="reference internal" href="#markdown.extensions.smarty.SubstituteTextPattern.backslash_unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;backslash_unescape</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.smarty.SubstituteTextPattern.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.extensions.smarty.SubstituteTextPattern.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.smarty.SubstituteTextPattern.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.extensions.smarty.SubstituteTextPattern.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.smarty.SubstituteTextPattern.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.extensions.smarty.SubstituteTextPattern.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -412,13 +425,13 @@ of this software, even if advised of the possibility of such damage.</p>
             
             <h4>Previous topic</h4>
             <p class="topless">
-                <a href="../sane_lists/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> sane_lists</a>
+                <a href="../sane_lists/" title="previous page">sane_lists</a>
             </p>
 
             
             <h4>Next topic</h4>
             <p class="topless">
-                <a href="../tables/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> tables</a>
+                <a href="../tables/" title="next page">tables</a>
             </p>
 
             <div role="note" aria-label="source link">
@@ -444,10 +457,10 @@ of this software, even if advised of the possibility of such damage.</p>
                 <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../tables/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> tables" accesskey="N">next</a> |
+                <a href="../tables/" title="tables" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../sane_lists/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> sane_lists" accesskey="P">previous</a> |
+                <a href="../sane_lists/" title="sane_lists" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -460,19 +473,22 @@ of this software, even if advised of the possibility of such damage.</p>
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../../">markdown</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+            <a href="../">extensions</a>
          &#187; </li>
                 
                 
@@ -490,7 +506,7 @@ of this software, even if advised of the possibility of such damage.</p>
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> smarty</a>
+            <a href="./">smarty</a>
          &#187; </li>
                 
                 
@@ -503,9 +519,6 @@ of this software, even if advised of the possibility of such damage.</p>
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -518,7 +531,7 @@ of this software, even if advised of the possibility of such damage.</p>
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-22 23:35:33.312640+00:00
+        Docs Build Date UTC : 2023-08-24 13:24:36.134619+00:00
         -->
     </body>
 </html>

@@ -9,9 +9,9 @@
         <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/extensions/wikilinks/">
         <link rel="shortcut icon" href="../../../../favicon.ico">
         <link rel="search" title="Search" href="../../../../search.html" />
-        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> htmlparser" href="../../htmlparser/" />
-        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> toc" href="../toc/" />
-        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> wikilinks &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="next" title="htmlparser" href="../../htmlparser/" />
+        <link rel="prev" title="toc" href="../toc/" />
+        <title>wikilinks &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../../../static/nature.css" type="text/css" />
         <link rel="stylesheet" href="../../../../static/pygments.css" type="text/css" />
         <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css" type="text/css" />
@@ -32,10 +32,10 @@
                 <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../../htmlparser/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> htmlparser" accesskey="N">next</a> |
+                <a href="../../htmlparser/" title="htmlparser" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../toc/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> toc" accesskey="P">previous</a> |
+                <a href="../toc/" title="toc" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -48,19 +48,22 @@
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../../">markdown</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+            <a href="../">extensions</a>
          &#187; </li>
                 
                 
@@ -81,7 +84,7 @@
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> wikilinks</a>
+            <a href="./">wikilinks</a>
          &#187; </li>
                 
                 
@@ -91,9 +94,6 @@
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -117,13 +117,26 @@
   
       <h2 id="markdown.extensions.wikilinks--wikilinks-extension-for-python-markdown">WikiLinks Extension for Python-Markdown<a class="headerlink" href="#markdown.extensions.wikilinks--wikilinks-extension-for-python-markdown" title="Permanent link">&para;</a></h2>
 <p>Converts [[WikiLinks]] to relative links.</p>
-<p>See <a href="https://Python-Markdown.github.io/extensions/wikilinks">https://Python-Markdown.github.io/extensions/wikilinks</a>
+<p>See https://Python-Markdown.github.io/extensions/wikilinks
 for documentation.</p>
 <p>Original code Copyright <a href="http://achinghead.com/">Waylan Limberg</a>.</p>
 <p>All changes Copyright The Python Markdown Project</p>
 <p>License: <a href="https://opensource.org/licenses/bsd-license.php">BSD</a></p>
 
 
+
+
+
+  <p>Classes:</p>
+  <ul>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.wikilinks.WikiLinksInlineProcessor" href="#markdown.extensions.wikilinks.WikiLinksInlineProcessor">WikiLinksInlineProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          
+        </div>
+      </li>
+  </ul>
 
 
 
@@ -160,7 +173,7 @@ for documentation.</p>
 
 
 <a href="#markdown.extensions.wikilinks.WikiLinksInlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.wikilinks.WikiLinksInlineProcessor(pattern, config)</code></pre>
+<pre class="codehilite"><code class="language-python">WikiLinksInlineProcessor(pattern, config)</code></pre>
 
   <div class="doc doc-contents ">
           <p class="doc doc-class-bases">
@@ -217,11 +230,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.wikilinks.WikiLinksInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.wikilinks.WikiLinksInlineProcessor.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.wikilinks.WikiLinksInlineProcessor.getCompiledRegExp</span>
 
 
 <a href="#markdown.extensions.wikilinks.WikiLinksInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.wikilinks.WikiLinksInlineProcessor.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -237,11 +250,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.wikilinks.WikiLinksInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.wikilinks.WikiLinksInlineProcessor.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.wikilinks.WikiLinksInlineProcessor.type</span>
 
 
 <a href="#markdown.extensions.wikilinks.WikiLinksInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.wikilinks.WikiLinksInlineProcessor.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -257,11 +270,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.wikilinks.WikiLinksInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.wikilinks.WikiLinksInlineProcessor.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.wikilinks.WikiLinksInlineProcessor.unescape</span>
 
 
 <a href="#markdown.extensions.wikilinks.WikiLinksInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.wikilinks.WikiLinksInlineProcessor.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -291,7 +304,7 @@ for documentation.</p>
 
 
 <a href="#markdown.extensions.wikilinks.build_url" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.wikilinks.build_url(label, base, end)</code></pre>
+<pre class="codehilite"><code class="language-python">build_url(label, base, end)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -330,15 +343,15 @@ for documentation.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.wikilinks.WikiLinksInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.extensions.wikilinks.WikiLinksInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.wikilinks.WikiLinksInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.extensions.wikilinks.WikiLinksInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.wikilinks.WikiLinksInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.extensions.wikilinks.WikiLinksInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -352,13 +365,13 @@ for documentation.</p>
             
             <h4>Previous topic</h4>
             <p class="topless">
-                <a href="../toc/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> toc</a>
+                <a href="../toc/" title="previous page">toc</a>
             </p>
 
             
             <h4>Next topic</h4>
             <p class="topless">
-                <a href="../../htmlparser/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> htmlparser</a>
+                <a href="../../htmlparser/" title="next page">htmlparser</a>
             </p>
 
             <div role="note" aria-label="source link">
@@ -384,10 +397,10 @@ for documentation.</p>
                 <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../../htmlparser/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> htmlparser" accesskey="N">next</a> |
+                <a href="../../htmlparser/" title="htmlparser" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../toc/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> toc" accesskey="P">previous</a> |
+                <a href="../toc/" title="toc" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -400,19 +413,22 @@ for documentation.</p>
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../../">markdown</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+            <a href="../">extensions</a>
          &#187; </li>
                 
                 
@@ -433,7 +449,7 @@ for documentation.</p>
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> wikilinks</a>
+            <a href="./">wikilinks</a>
          &#187; </li>
                 
                 
@@ -443,9 +459,6 @@ for documentation.</p>
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -458,7 +471,7 @@ for documentation.</p>
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-22 23:35:33.314956+00:00
+        Docs Build Date UTC : 2023-08-24 13:24:36.136958+00:00
         -->
     </body>
 </html>

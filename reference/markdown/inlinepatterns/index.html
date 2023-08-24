@@ -9,9 +9,9 @@
         <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/inlinepatterns/">
         <link rel="shortcut icon" href="../../../favicon.ico">
         <link rel="search" title="Search" href="../../../search.html" />
-        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> postprocessors" href="../postprocessors/" />
-        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> htmlparser" href="../htmlparser/" />
-        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> inlinepatterns &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="next" title="postprocessors" href="../postprocessors/" />
+        <link rel="prev" title="htmlparser" href="../htmlparser/" />
+        <title>inlinepatterns &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../../static/nature.css" type="text/css" />
         <link rel="stylesheet" href="../../../static/pygments.css" type="text/css" />
         <link rel="stylesheet" href="../../../assets/_mkdocstrings.css" type="text/css" />
@@ -32,10 +32,10 @@
                 <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../postprocessors/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> postprocessors" accesskey="N">next</a> |
+                <a href="../postprocessors/" title="postprocessors" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../htmlparser/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> htmlparser" accesskey="P">previous</a> |
+                <a href="../htmlparser/" title="htmlparser" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -48,12 +48,15 @@
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../">markdown</a>
          &#187; </li>
                 
                 
@@ -62,7 +65,7 @@
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> inlinepatterns</a>
+            <a href="./">inlinepatterns</a>
          &#187; </li>
                 
                 
@@ -70,9 +73,6 @@
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -94,20 +94,7 @@
 
   <div class="doc doc-contents first">
   
-      <p>Python Markdown</p>
-<p>A Python implementation of John Gruber&rsquo;s Markdown.</p>
-<p>Documentation: https://python-markdown.github.io/
-GitHub: https://github.com/Python-Markdown/markdown/
-PyPI: https://pypi.org/project/Markdown/</p>
-<p>Started by Manfred Stienstra (http://www.dwerg.net/).
-Maintained for a few years by Yuri Takhteyev (http://www.freewisdom.org).
-Currently maintained by Waylan Limberg (https://github.com/waylan),
-Dmitry Shachnev (https://github.com/mitya57) and Isaac Muse (https://github.com/facelessuser).</p>
-<p>Copyright 2007-2018 The Python Markdown Project (v. 1.7 and later)
-Copyright 2004, 2005, 2006 Yuri Takhteyev (v. 0.2-1.6b)
-Copyright 2004 Manfred Stienstra (the original version)</p>
-<p>License: BSD (see LICENSE.md for details).</p>
-<h2 id="markdown.inlinepatterns--inline-patterns">INLINE PATTERNS<a class="headerlink" href="#markdown.inlinepatterns--inline-patterns" title="Permanent link">&para;</a></h2>
+      <h2 id="markdown.inlinepatterns--inline-patterns">INLINE PATTERNS<a class="headerlink" href="#markdown.inlinepatterns--inline-patterns" title="Permanent link">&para;</a></h2>
 <p>Inline patterns such as <em>emphasis</em> are handled by means of auxiliary
 objects, one per pattern.  Pattern objects must be instances of classes
 that extend markdown.Pattern.  Each pattern object uses a single regular</p>
@@ -158,157 +145,10 @@ So, we apply the expressions in the following order:</p>
   <p>Classes:</p>
   <ul>
       <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.EmStrongItem" href="#markdown.inlinepatterns.EmStrongItem">EmStrongItem</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Emphasis/strong pattern item.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.Pattern" href="#markdown.inlinepatterns.Pattern">Pattern</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Base class that inline patterns subclass.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.InlineProcessor" href="#markdown.inlinepatterns.InlineProcessor">InlineProcessor</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Base class that inline patterns subclass.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.SimpleTextPattern" href="#markdown.inlinepatterns.SimpleTextPattern">SimpleTextPattern</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Return a simple text of group(2) of a Pattern.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.SimpleTextInlineProcessor" href="#markdown.inlinepatterns.SimpleTextInlineProcessor">SimpleTextInlineProcessor</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Return a simple text of group(1) of a Pattern.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.EscapeInlineProcessor" href="#markdown.inlinepatterns.EscapeInlineProcessor">EscapeInlineProcessor</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Return an escaped character.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.SimpleTagPattern" href="#markdown.inlinepatterns.SimpleTagPattern">SimpleTagPattern</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Return element of type <code>tag</code> with a text attribute of group(3)</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.SimpleTagInlineProcessor" href="#markdown.inlinepatterns.SimpleTagInlineProcessor">SimpleTagInlineProcessor</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Return element of type <code>tag</code> with a text attribute of group(2)</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.SubstituteTagPattern" href="#markdown.inlinepatterns.SubstituteTagPattern">SubstituteTagPattern</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Return an element of type <code>tag</code> with no children.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.SubstituteTagInlineProcessor" href="#markdown.inlinepatterns.SubstituteTagInlineProcessor">SubstituteTagInlineProcessor</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Return an element of type <code>tag</code> with no children.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.BacktickInlineProcessor" href="#markdown.inlinepatterns.BacktickInlineProcessor">BacktickInlineProcessor</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Return a <code>&lt;code&gt;</code> element containing the matching text.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.DoubleTagPattern" href="#markdown.inlinepatterns.DoubleTagPattern">DoubleTagPattern</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Return a ElementTree element nested in tag2 nested in tag1.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.DoubleTagInlineProcessor" href="#markdown.inlinepatterns.DoubleTagInlineProcessor">DoubleTagInlineProcessor</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Return a ElementTree element nested in tag2 nested in tag1.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.HtmlInlineProcessor" href="#markdown.inlinepatterns.HtmlInlineProcessor">HtmlInlineProcessor</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Store raw inline html and return a placeholder.</p>
-        </div>
-      </li>
-      <li class="field-body">
         <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.AsteriskProcessor" href="#markdown.inlinepatterns.AsteriskProcessor">AsteriskProcessor</a></b>
         –
         <div class="doc-md-description">
           <p>Emphasis processor for handling strong and em matches inside asterisks.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.UnderscoreProcessor" href="#markdown.inlinepatterns.UnderscoreProcessor">UnderscoreProcessor</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Emphasis processor for handling strong and em matches inside underscores.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.LinkInlineProcessor" href="#markdown.inlinepatterns.LinkInlineProcessor">LinkInlineProcessor</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Return a link element from the given match.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ImageInlineProcessor" href="#markdown.inlinepatterns.ImageInlineProcessor">ImageInlineProcessor</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Return a <code>img</code> element from the given match.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ReferenceInlineProcessor" href="#markdown.inlinepatterns.ReferenceInlineProcessor">ReferenceInlineProcessor</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Match to a stored reference and return link element.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ShortReferenceInlineProcessor" href="#markdown.inlinepatterns.ShortReferenceInlineProcessor">ShortReferenceInlineProcessor</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Short form of reference: [google].</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ImageReferenceInlineProcessor" href="#markdown.inlinepatterns.ImageReferenceInlineProcessor">ImageReferenceInlineProcessor</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Match to a stored reference and return <code>img</code> element.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ShortImageReferenceInlineProcessor" href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor">ShortImageReferenceInlineProcessor</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Short form of image reference: <code>![ref]</code>.</p>
         </div>
       </li>
       <li class="field-body">
@@ -323,6 +163,153 @@ So, we apply the expressions in the following order:</p>
         –
         <div class="doc-md-description">
           <p>Return a <code>mailto</code> link Element given an auto-mail link (<code>&lt;foo@example.com&gt;</code>).</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.BacktickInlineProcessor" href="#markdown.inlinepatterns.BacktickInlineProcessor">BacktickInlineProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Return a <code>&lt;code&gt;</code> element containing the matching text.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.DoubleTagInlineProcessor" href="#markdown.inlinepatterns.DoubleTagInlineProcessor">DoubleTagInlineProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Return a ElementTree element nested in tag2 nested in tag1.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.DoubleTagPattern" href="#markdown.inlinepatterns.DoubleTagPattern">DoubleTagPattern</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Return a ElementTree element nested in tag2 nested in tag1.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.EmStrongItem" href="#markdown.inlinepatterns.EmStrongItem">EmStrongItem</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Emphasis/strong pattern item.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.EscapeInlineProcessor" href="#markdown.inlinepatterns.EscapeInlineProcessor">EscapeInlineProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Return an escaped character.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.HtmlInlineProcessor" href="#markdown.inlinepatterns.HtmlInlineProcessor">HtmlInlineProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Store raw inline html and return a placeholder.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ImageInlineProcessor" href="#markdown.inlinepatterns.ImageInlineProcessor">ImageInlineProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Return a <code>img</code> element from the given match.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ImageReferenceInlineProcessor" href="#markdown.inlinepatterns.ImageReferenceInlineProcessor">ImageReferenceInlineProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Match to a stored reference and return <code>img</code> element.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.InlineProcessor" href="#markdown.inlinepatterns.InlineProcessor">InlineProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Base class that inline patterns subclass.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.LinkInlineProcessor" href="#markdown.inlinepatterns.LinkInlineProcessor">LinkInlineProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Return a link element from the given match.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.Pattern" href="#markdown.inlinepatterns.Pattern">Pattern</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Base class that inline patterns subclass.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ReferenceInlineProcessor" href="#markdown.inlinepatterns.ReferenceInlineProcessor">ReferenceInlineProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Match to a stored reference and return link element.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ShortImageReferenceInlineProcessor" href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor">ShortImageReferenceInlineProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Short form of image reference: <code>![ref]</code>.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ShortReferenceInlineProcessor" href="#markdown.inlinepatterns.ShortReferenceInlineProcessor">ShortReferenceInlineProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Short form of reference: [google].</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.SimpleTagInlineProcessor" href="#markdown.inlinepatterns.SimpleTagInlineProcessor">SimpleTagInlineProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Return element of type <code>tag</code> with a text attribute of group(2)</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.SimpleTagPattern" href="#markdown.inlinepatterns.SimpleTagPattern">SimpleTagPattern</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Return element of type <code>tag</code> with a text attribute of group(3)</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.SimpleTextInlineProcessor" href="#markdown.inlinepatterns.SimpleTextInlineProcessor">SimpleTextInlineProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Return a simple text of group(1) of a Pattern.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.SimpleTextPattern" href="#markdown.inlinepatterns.SimpleTextPattern">SimpleTextPattern</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Return a simple text of group(2) of a Pattern.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.SubstituteTagInlineProcessor" href="#markdown.inlinepatterns.SubstituteTagInlineProcessor">SubstituteTagInlineProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Return an element of type <code>tag</code> with no children.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.SubstituteTagPattern" href="#markdown.inlinepatterns.SubstituteTagPattern">SubstituteTagPattern</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Return an element of type <code>tag</code> with no children.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.UnderscoreProcessor" href="#markdown.inlinepatterns.UnderscoreProcessor">UnderscoreProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Emphasis processor for handling strong and em matches inside underscores.</p>
         </div>
       </li>
   </ul>
@@ -386,34 +373,6 @@ So, we apply the expressions in the following order:</p>
   <p>Methods:</p>
   <ul>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.AsteriskProcessor.getCompiledRegExp" href="#markdown.inlinepatterns.AsteriskProcessor.getCompiledRegExp">getCompiledRegExp</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return a compiled regular expression.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.AsteriskProcessor.type" href="#markdown.inlinepatterns.AsteriskProcessor.type">type</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return class name, to define pattern type</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.AsteriskProcessor.unescape" href="#markdown.inlinepatterns.AsteriskProcessor.unescape">unescape</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return unescaped text given text with an inline placeholder.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.AsteriskProcessor.build_single" href="#markdown.inlinepatterns.AsteriskProcessor.build_single">build_single</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return single tag.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.AsteriskProcessor.build_double" href="#markdown.inlinepatterns.AsteriskProcessor.build_double">build_double</a></b>
           –
           <div class="doc-md-description">
@@ -428,13 +387,6 @@ So, we apply the expressions in the following order:</p>
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.AsteriskProcessor.parse_sub_patterns" href="#markdown.inlinepatterns.AsteriskProcessor.parse_sub_patterns">parse_sub_patterns</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Parses sub patterns.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.AsteriskProcessor.build_element" href="#markdown.inlinepatterns.AsteriskProcessor.build_element">build_element</a></b>
           –
           <div class="doc-md-description">
@@ -442,10 +394,45 @@ So, we apply the expressions in the following order:</p>
           </div>
         </li>
         <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.AsteriskProcessor.build_single" href="#markdown.inlinepatterns.AsteriskProcessor.build_single">build_single</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return single tag.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.AsteriskProcessor.getCompiledRegExp" href="#markdown.inlinepatterns.AsteriskProcessor.getCompiledRegExp">getCompiledRegExp</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return a compiled regular expression.</p>
+          </div>
+        </li>
+        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.AsteriskProcessor.handleMatch" href="#markdown.inlinepatterns.AsteriskProcessor.handleMatch">handleMatch</a></b>
           –
           <div class="doc-md-description">
             <p>Parse patterns.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.AsteriskProcessor.parse_sub_patterns" href="#markdown.inlinepatterns.AsteriskProcessor.parse_sub_patterns">parse_sub_patterns</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Parses sub patterns.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.AsteriskProcessor.type" href="#markdown.inlinepatterns.AsteriskProcessor.type">type</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return class name, to define pattern type</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.AsteriskProcessor.unescape" href="#markdown.inlinepatterns.AsteriskProcessor.unescape">unescape</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return unescaped text given text with an inline placeholder.</p>
           </div>
         </li>
   </ul>
@@ -470,11 +457,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AsteriskProcessor.build_double" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AsteriskProcessor.build_double</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AsteriskProcessor.build_double</span>
 
 
 <a href="#markdown.inlinepatterns.AsteriskProcessor.build_double" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.AsteriskProcessor.build_double(m, tags, idx)</code></pre>
+<pre class="codehilite"><code class="language-python">build_double(m, tags, idx)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -490,11 +477,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AsteriskProcessor.build_double2" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AsteriskProcessor.build_double2</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AsteriskProcessor.build_double2</span>
 
 
 <a href="#markdown.inlinepatterns.AsteriskProcessor.build_double2" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.AsteriskProcessor.build_double2(m, tags, idx)</code></pre>
+<pre class="codehilite"><code class="language-python">build_double2(m, tags, idx)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -510,11 +497,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AsteriskProcessor.build_element" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AsteriskProcessor.build_element</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AsteriskProcessor.build_element</span>
 
 
 <a href="#markdown.inlinepatterns.AsteriskProcessor.build_element" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.AsteriskProcessor.build_element(m, builder, tags, index)</code></pre>
+<pre class="codehilite"><code class="language-python">build_element(m, builder, tags, index)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -530,11 +517,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AsteriskProcessor.build_single" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AsteriskProcessor.build_single</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AsteriskProcessor.build_single</span>
 
 
 <a href="#markdown.inlinepatterns.AsteriskProcessor.build_single" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.AsteriskProcessor.build_single(m, tag, idx)</code></pre>
+<pre class="codehilite"><code class="language-python">build_single(m, tag, idx)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -550,11 +537,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AsteriskProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AsteriskProcessor.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AsteriskProcessor.getCompiledRegExp</span>
 
 
 <a href="#markdown.inlinepatterns.AsteriskProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.AsteriskProcessor.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -570,11 +557,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AsteriskProcessor.handleMatch" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AsteriskProcessor.handleMatch</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AsteriskProcessor.handleMatch</span>
 
 
 <a href="#markdown.inlinepatterns.AsteriskProcessor.handleMatch" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.AsteriskProcessor.handleMatch(m, data)</code></pre>
+<pre class="codehilite"><code class="language-python">handleMatch(m, data)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -590,11 +577,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AsteriskProcessor.parse_sub_patterns" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AsteriskProcessor.parse_sub_patterns</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AsteriskProcessor.parse_sub_patterns</span>
 
 
 <a href="#markdown.inlinepatterns.AsteriskProcessor.parse_sub_patterns" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.AsteriskProcessor.parse_sub_patterns(data, parent, last, idx)</code></pre>
+<pre class="codehilite"><code class="language-python">parse_sub_patterns(data, parent, last, idx)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -618,11 +605,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AsteriskProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AsteriskProcessor.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AsteriskProcessor.type</span>
 
 
 <a href="#markdown.inlinepatterns.AsteriskProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.AsteriskProcessor.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -638,11 +625,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AsteriskProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AsteriskProcessor.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AsteriskProcessor.unescape</span>
 
 
 <a href="#markdown.inlinepatterns.AsteriskProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.AsteriskProcessor.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -729,11 +716,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AutolinkInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AutolinkInlineProcessor.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AutolinkInlineProcessor.getCompiledRegExp</span>
 
 
 <a href="#markdown.inlinepatterns.AutolinkInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.AutolinkInlineProcessor.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -749,11 +736,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AutolinkInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AutolinkInlineProcessor.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AutolinkInlineProcessor.type</span>
 
 
 <a href="#markdown.inlinepatterns.AutolinkInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.AutolinkInlineProcessor.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -769,11 +756,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AutolinkInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AutolinkInlineProcessor.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AutolinkInlineProcessor.unescape</span>
 
 
 <a href="#markdown.inlinepatterns.AutolinkInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.AutolinkInlineProcessor.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -860,11 +847,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AutomailInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AutomailInlineProcessor.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AutomailInlineProcessor.getCompiledRegExp</span>
 
 
 <a href="#markdown.inlinepatterns.AutomailInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.AutomailInlineProcessor.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -880,11 +867,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AutomailInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AutomailInlineProcessor.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AutomailInlineProcessor.type</span>
 
 
 <a href="#markdown.inlinepatterns.AutomailInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.AutomailInlineProcessor.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -900,11 +887,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AutomailInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AutomailInlineProcessor.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.AutomailInlineProcessor.unescape</span>
 
 
 <a href="#markdown.inlinepatterns.AutomailInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.AutomailInlineProcessor.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -932,7 +919,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <a href="#markdown.inlinepatterns.BacktickInlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.BacktickInlineProcessor(pattern)</code></pre>
+<pre class="codehilite"><code class="language-python">BacktickInlineProcessor(pattern)</code></pre>
 
   <div class="doc doc-contents ">
           <p class="doc doc-class-bases">
@@ -991,11 +978,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.BacktickInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.BacktickInlineProcessor.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.BacktickInlineProcessor.getCompiledRegExp</span>
 
 
 <a href="#markdown.inlinepatterns.BacktickInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.BacktickInlineProcessor.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1011,11 +998,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.BacktickInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.BacktickInlineProcessor.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.BacktickInlineProcessor.type</span>
 
 
 <a href="#markdown.inlinepatterns.BacktickInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.BacktickInlineProcessor.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1031,11 +1018,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.BacktickInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.BacktickInlineProcessor.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.BacktickInlineProcessor.unescape</span>
 
 
 <a href="#markdown.inlinepatterns.BacktickInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.BacktickInlineProcessor.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1123,11 +1110,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.DoubleTagInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.DoubleTagInlineProcessor.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.DoubleTagInlineProcessor.getCompiledRegExp</span>
 
 
 <a href="#markdown.inlinepatterns.DoubleTagInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.DoubleTagInlineProcessor.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1143,11 +1130,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.DoubleTagInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.DoubleTagInlineProcessor.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.DoubleTagInlineProcessor.type</span>
 
 
 <a href="#markdown.inlinepatterns.DoubleTagInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.DoubleTagInlineProcessor.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1163,11 +1150,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.DoubleTagInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.DoubleTagInlineProcessor.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.DoubleTagInlineProcessor.unescape</span>
 
 
 <a href="#markdown.inlinepatterns.DoubleTagInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.DoubleTagInlineProcessor.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1255,11 +1242,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.DoubleTagPattern.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.DoubleTagPattern.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.DoubleTagPattern.getCompiledRegExp</span>
 
 
 <a href="#markdown.inlinepatterns.DoubleTagPattern.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.DoubleTagPattern.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1275,11 +1262,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.DoubleTagPattern.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.DoubleTagPattern.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.DoubleTagPattern.type</span>
 
 
 <a href="#markdown.inlinepatterns.DoubleTagPattern.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.DoubleTagPattern.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1295,11 +1282,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.DoubleTagPattern.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.DoubleTagPattern.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.DoubleTagPattern.unescape</span>
 
 
 <a href="#markdown.inlinepatterns.DoubleTagPattern.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.DoubleTagPattern.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1414,11 +1401,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.EscapeInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.EscapeInlineProcessor.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.EscapeInlineProcessor.getCompiledRegExp</span>
 
 
 <a href="#markdown.inlinepatterns.EscapeInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.EscapeInlineProcessor.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1434,11 +1421,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.EscapeInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.EscapeInlineProcessor.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.EscapeInlineProcessor.type</span>
 
 
 <a href="#markdown.inlinepatterns.EscapeInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.EscapeInlineProcessor.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1454,11 +1441,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.EscapeInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.EscapeInlineProcessor.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.EscapeInlineProcessor.unescape</span>
 
 
 <a href="#markdown.inlinepatterns.EscapeInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.EscapeInlineProcessor.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1503,6 +1490,13 @@ So, we apply the expressions in the following order:</p>
   <p>Methods:</p>
   <ul>
         <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.HtmlInlineProcessor.backslash_unescape" href="#markdown.inlinepatterns.HtmlInlineProcessor.backslash_unescape">backslash_unescape</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return text with backslash escapes undone (backslashes are restored).</p>
+          </div>
+        </li>
+        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.HtmlInlineProcessor.getCompiledRegExp" href="#markdown.inlinepatterns.HtmlInlineProcessor.getCompiledRegExp">getCompiledRegExp</a></b>
           –
           <div class="doc-md-description">
@@ -1521,13 +1515,6 @@ So, we apply the expressions in the following order:</p>
           –
           <div class="doc-md-description">
             <p>Return unescaped text given text with an inline placeholder.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.HtmlInlineProcessor.backslash_unescape" href="#markdown.inlinepatterns.HtmlInlineProcessor.backslash_unescape">backslash_unescape</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return text with backslash escapes undone (backslashes are restored).</p>
           </div>
         </li>
   </ul>
@@ -1552,11 +1539,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.HtmlInlineProcessor.backslash_unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.HtmlInlineProcessor.backslash_unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.HtmlInlineProcessor.backslash_unescape</span>
 
 
 <a href="#markdown.inlinepatterns.HtmlInlineProcessor.backslash_unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.HtmlInlineProcessor.backslash_unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">backslash_unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1572,11 +1559,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.HtmlInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.HtmlInlineProcessor.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.HtmlInlineProcessor.getCompiledRegExp</span>
 
 
 <a href="#markdown.inlinepatterns.HtmlInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.HtmlInlineProcessor.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1592,11 +1579,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.HtmlInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.HtmlInlineProcessor.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.HtmlInlineProcessor.type</span>
 
 
 <a href="#markdown.inlinepatterns.HtmlInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.HtmlInlineProcessor.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1612,11 +1599,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.HtmlInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.HtmlInlineProcessor.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.HtmlInlineProcessor.unescape</span>
 
 
 <a href="#markdown.inlinepatterns.HtmlInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.HtmlInlineProcessor.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1668,20 +1655,6 @@ So, we apply the expressions in the following order:</p>
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ImageInlineProcessor.type" href="#markdown.inlinepatterns.ImageInlineProcessor.type">type</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return class name, to define pattern type</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ImageInlineProcessor.unescape" href="#markdown.inlinepatterns.ImageInlineProcessor.unescape">unescape</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return unescaped text given text with an inline placeholder.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ImageInlineProcessor.getLink" href="#markdown.inlinepatterns.ImageInlineProcessor.getLink">getLink</a></b>
           –
           <div class="doc-md-description">
@@ -1693,6 +1666,20 @@ So, we apply the expressions in the following order:</p>
           –
           <div class="doc-md-description">
             <p>Parse the content between <code>[]</code> of the start of an image or link</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ImageInlineProcessor.type" href="#markdown.inlinepatterns.ImageInlineProcessor.type">type</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return class name, to define pattern type</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ImageInlineProcessor.unescape" href="#markdown.inlinepatterns.ImageInlineProcessor.unescape">unescape</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return unescaped text given text with an inline placeholder.</p>
           </div>
         </li>
   </ul>
@@ -1717,11 +1704,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.ImageInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ImageInlineProcessor.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ImageInlineProcessor.getCompiledRegExp</span>
 
 
 <a href="#markdown.inlinepatterns.ImageInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ImageInlineProcessor.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1737,11 +1724,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.ImageInlineProcessor.getLink" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ImageInlineProcessor.getLink</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ImageInlineProcessor.getLink</span>
 
 
 <a href="#markdown.inlinepatterns.ImageInlineProcessor.getLink" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ImageInlineProcessor.getLink(data, index)</code></pre>
+<pre class="codehilite"><code class="language-python">getLink(data, index)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1757,11 +1744,11 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.ImageInlineProcessor.getText" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ImageInlineProcessor.getText</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ImageInlineProcessor.getText</span>
 
 
 <a href="#markdown.inlinepatterns.ImageInlineProcessor.getText" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ImageInlineProcessor.getText(data, index)</code></pre>
+<pre class="codehilite"><code class="language-python">getText(data, index)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1778,11 +1765,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ImageInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ImageInlineProcessor.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ImageInlineProcessor.type</span>
 
 
 <a href="#markdown.inlinepatterns.ImageInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ImageInlineProcessor.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1798,11 +1785,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ImageInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ImageInlineProcessor.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ImageInlineProcessor.unescape</span>
 
 
 <a href="#markdown.inlinepatterns.ImageInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ImageInlineProcessor.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1847,24 +1834,17 @@ resolving nested square brackets.</p>
   <p>Methods:</p>
   <ul>
         <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ImageReferenceInlineProcessor.evalId" href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.evalId">evalId</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Evaluate the id portion of <code>[ref][id]</code>.</p>
+          </div>
+        </li>
+        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ImageReferenceInlineProcessor.getCompiledRegExp" href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.getCompiledRegExp">getCompiledRegExp</a></b>
           –
           <div class="doc-md-description">
             <p>Return a compiled regular expression.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ImageReferenceInlineProcessor.type" href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.type">type</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return class name, to define pattern type</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ImageReferenceInlineProcessor.unescape" href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.unescape">unescape</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return unescaped text given text with an inline placeholder.</p>
           </div>
         </li>
         <li class="field-body">
@@ -1882,10 +1862,17 @@ resolving nested square brackets.</p>
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ImageReferenceInlineProcessor.evalId" href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.evalId">evalId</a></b>
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ImageReferenceInlineProcessor.type" href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.type">type</a></b>
           –
           <div class="doc-md-description">
-            <p>Evaluate the id portion of <code>[ref][id]</code>.</p>
+            <p>Return class name, to define pattern type</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ImageReferenceInlineProcessor.unescape" href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.unescape">unescape</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return unescaped text given text with an inline placeholder.</p>
           </div>
         </li>
   </ul>
@@ -1910,11 +1897,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ImageReferenceInlineProcessor.evalId" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ImageReferenceInlineProcessor.evalId</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ImageReferenceInlineProcessor.evalId</span>
 
 
 <a href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.evalId" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ImageReferenceInlineProcessor.evalId(data, index, text)</code></pre>
+<pre class="codehilite"><code class="language-python">evalId(data, index, text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1931,11 +1918,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ImageReferenceInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ImageReferenceInlineProcessor.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ImageReferenceInlineProcessor.getCompiledRegExp</span>
 
 
 <a href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ImageReferenceInlineProcessor.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1951,11 +1938,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ImageReferenceInlineProcessor.getLink" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ImageReferenceInlineProcessor.getLink</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ImageReferenceInlineProcessor.getLink</span>
 
 
 <a href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.getLink" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ImageReferenceInlineProcessor.getLink(data, index)</code></pre>
+<pre class="codehilite"><code class="language-python">getLink(data, index)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1971,11 +1958,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ImageReferenceInlineProcessor.getText" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ImageReferenceInlineProcessor.getText</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ImageReferenceInlineProcessor.getText</span>
 
 
 <a href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.getText" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ImageReferenceInlineProcessor.getText(data, index)</code></pre>
+<pre class="codehilite"><code class="language-python">getText(data, index)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1992,11 +1979,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ImageReferenceInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ImageReferenceInlineProcessor.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ImageReferenceInlineProcessor.type</span>
 
 
 <a href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ImageReferenceInlineProcessor.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2012,11 +1999,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ImageReferenceInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ImageReferenceInlineProcessor.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ImageReferenceInlineProcessor.unescape</span>
 
 
 <a href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ImageReferenceInlineProcessor.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2044,7 +2031,7 @@ resolving nested square brackets.</p>
 
 
 <a href="#markdown.inlinepatterns.InlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.InlineProcessor(pattern: <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, md: <a class="autorefs autorefs-internal" title="markdown.Markdown" href="../#markdown.Markdown">Markdown</a> | None = None)</code></pre>
+<pre class="codehilite"><code class="language-python">InlineProcessor(pattern: <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, md: <a class="autorefs autorefs-internal" title="markdown.Markdown" href="../#markdown.Markdown">Markdown</a> | None = None)</code></pre>
 
   <div class="doc doc-contents ">
           <p class="doc doc-class-bases">
@@ -2085,6 +2072,13 @@ efficient and flexible search approach.</p>
           </div>
         </li>
         <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.InlineProcessor.handleMatch" href="#markdown.inlinepatterns.InlineProcessor.handleMatch">handleMatch</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return a ElementTree element from the given match and the</p>
+          </div>
+        </li>
+        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.InlineProcessor.type" href="#markdown.inlinepatterns.InlineProcessor.type">type</a></b>
           –
           <div class="doc-md-description">
@@ -2096,13 +2090,6 @@ efficient and flexible search approach.</p>
           –
           <div class="doc-md-description">
             <p>Return unescaped text given text with an inline placeholder.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.InlineProcessor.handleMatch" href="#markdown.inlinepatterns.InlineProcessor.handleMatch">handleMatch</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return a ElementTree element from the given match and the</p>
           </div>
         </li>
   </ul>
@@ -2127,11 +2114,11 @@ efficient and flexible search approach.</p>
 
 
 <h3 id="markdown.inlinepatterns.InlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.InlineProcessor.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.InlineProcessor.getCompiledRegExp</span>
 
 
 <a href="#markdown.inlinepatterns.InlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.InlineProcessor.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2147,11 +2134,11 @@ efficient and flexible search approach.</p>
 
 
 <h3 id="markdown.inlinepatterns.InlineProcessor.handleMatch" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.InlineProcessor.handleMatch</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.InlineProcessor.handleMatch</span>
 
 
 <a href="#markdown.inlinepatterns.InlineProcessor.handleMatch" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.InlineProcessor.handleMatch(m: <a class="autorefs autorefs-external" title="typing.Match" href="https://docs.python.org/3/library/typing.html#typing.Match">Match</a>, data: <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>) -&gt; <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#tuple">tuple</a>[<span title="xml.ElementTree">ElementTree</span> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a> | None, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a> | None, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a> | None]</code></pre>
+<pre class="codehilite"><code class="language-python">handleMatch(m: <a class="autorefs autorefs-external" title="typing.Match" href="https://docs.python.org/3/library/typing.html#typing.Match">Match</a>, data: <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>) -&gt; <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#tuple">tuple</a>[<span title="xml.ElementTree">ElementTree</span> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a> | None, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a> | None, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a> | None]</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2220,11 +2207,11 @@ assumed that the processor did not find a valid region of text.</p>
 
 
 <h3 id="markdown.inlinepatterns.InlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.InlineProcessor.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.InlineProcessor.type</span>
 
 
 <a href="#markdown.inlinepatterns.InlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.InlineProcessor.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2240,11 +2227,11 @@ assumed that the processor did not find a valid region of text.</p>
 
 
 <h3 id="markdown.inlinepatterns.InlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.InlineProcessor.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.InlineProcessor.unescape</span>
 
 
 <a href="#markdown.inlinepatterns.InlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.InlineProcessor.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2296,20 +2283,6 @@ assumed that the processor did not find a valid region of text.</p>
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.LinkInlineProcessor.type" href="#markdown.inlinepatterns.LinkInlineProcessor.type">type</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return class name, to define pattern type</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.LinkInlineProcessor.unescape" href="#markdown.inlinepatterns.LinkInlineProcessor.unescape">unescape</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return unescaped text given text with an inline placeholder.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.LinkInlineProcessor.getLink" href="#markdown.inlinepatterns.LinkInlineProcessor.getLink">getLink</a></b>
           –
           <div class="doc-md-description">
@@ -2321,6 +2294,20 @@ assumed that the processor did not find a valid region of text.</p>
           –
           <div class="doc-md-description">
             <p>Parse the content between <code>[]</code> of the start of an image or link</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.LinkInlineProcessor.type" href="#markdown.inlinepatterns.LinkInlineProcessor.type">type</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return class name, to define pattern type</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.LinkInlineProcessor.unescape" href="#markdown.inlinepatterns.LinkInlineProcessor.unescape">unescape</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return unescaped text given text with an inline placeholder.</p>
           </div>
         </li>
   </ul>
@@ -2345,11 +2332,11 @@ assumed that the processor did not find a valid region of text.</p>
 
 
 <h3 id="markdown.inlinepatterns.LinkInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.LinkInlineProcessor.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.LinkInlineProcessor.getCompiledRegExp</span>
 
 
 <a href="#markdown.inlinepatterns.LinkInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.LinkInlineProcessor.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2365,11 +2352,11 @@ assumed that the processor did not find a valid region of text.</p>
 
 
 <h3 id="markdown.inlinepatterns.LinkInlineProcessor.getLink" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.LinkInlineProcessor.getLink</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.LinkInlineProcessor.getLink</span>
 
 
 <a href="#markdown.inlinepatterns.LinkInlineProcessor.getLink" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.LinkInlineProcessor.getLink(data, index)</code></pre>
+<pre class="codehilite"><code class="language-python">getLink(data, index)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2385,11 +2372,11 @@ assumed that the processor did not find a valid region of text.</p>
 
 
 <h3 id="markdown.inlinepatterns.LinkInlineProcessor.getText" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.LinkInlineProcessor.getText</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.LinkInlineProcessor.getText</span>
 
 
 <a href="#markdown.inlinepatterns.LinkInlineProcessor.getText" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.LinkInlineProcessor.getText(data, index)</code></pre>
+<pre class="codehilite"><code class="language-python">getText(data, index)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2406,11 +2393,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.LinkInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.LinkInlineProcessor.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.LinkInlineProcessor.type</span>
 
 
 <a href="#markdown.inlinepatterns.LinkInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.LinkInlineProcessor.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2426,11 +2413,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.LinkInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.LinkInlineProcessor.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.LinkInlineProcessor.unescape</span>
 
 
 <a href="#markdown.inlinepatterns.LinkInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.LinkInlineProcessor.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2458,7 +2445,7 @@ resolving nested square brackets.</p>
 
 
 <a href="#markdown.inlinepatterns.Pattern" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.Pattern(pattern: <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, md: <a class="autorefs autorefs-internal" title="markdown.Markdown" href="../#markdown.Markdown">Markdown</a> | None = None)</code></pre>
+<pre class="codehilite"><code class="language-python">Pattern(pattern: <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, md: <a class="autorefs autorefs-internal" title="markdown.Markdown" href="../#markdown.Markdown">Markdown</a> | None = None)</code></pre>
 
   <div class="doc doc-contents ">
 
@@ -2537,11 +2524,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.Pattern.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.Pattern.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.Pattern.getCompiledRegExp</span>
 
 
 <a href="#markdown.inlinepatterns.Pattern.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.Pattern.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2557,11 +2544,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.Pattern.handleMatch" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.Pattern.handleMatch</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.Pattern.handleMatch</span>
 
 
 <a href="#markdown.inlinepatterns.Pattern.handleMatch" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.Pattern.handleMatch(m: <a class="autorefs autorefs-external" title="typing.Match" href="https://docs.python.org/3/library/typing.html#typing.Match">Match</a>)</code></pre>
+<pre class="codehilite"><code class="language-python">handleMatch(m: <a class="autorefs autorefs-external" title="typing.Match" href="https://docs.python.org/3/library/typing.html#typing.Match">Match</a>)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2592,11 +2579,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.Pattern.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.Pattern.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.Pattern.type</span>
 
 
 <a href="#markdown.inlinepatterns.Pattern.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.Pattern.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2612,11 +2599,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.Pattern.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.Pattern.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.Pattern.unescape</span>
 
 
 <a href="#markdown.inlinepatterns.Pattern.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.Pattern.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2661,24 +2648,17 @@ resolving nested square brackets.</p>
   <p>Methods:</p>
   <ul>
         <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ReferenceInlineProcessor.evalId" href="#markdown.inlinepatterns.ReferenceInlineProcessor.evalId">evalId</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Evaluate the id portion of <code>[ref][id]</code>.</p>
+          </div>
+        </li>
+        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ReferenceInlineProcessor.getCompiledRegExp" href="#markdown.inlinepatterns.ReferenceInlineProcessor.getCompiledRegExp">getCompiledRegExp</a></b>
           –
           <div class="doc-md-description">
             <p>Return a compiled regular expression.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ReferenceInlineProcessor.type" href="#markdown.inlinepatterns.ReferenceInlineProcessor.type">type</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return class name, to define pattern type</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ReferenceInlineProcessor.unescape" href="#markdown.inlinepatterns.ReferenceInlineProcessor.unescape">unescape</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return unescaped text given text with an inline placeholder.</p>
           </div>
         </li>
         <li class="field-body">
@@ -2696,10 +2676,17 @@ resolving nested square brackets.</p>
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ReferenceInlineProcessor.evalId" href="#markdown.inlinepatterns.ReferenceInlineProcessor.evalId">evalId</a></b>
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ReferenceInlineProcessor.type" href="#markdown.inlinepatterns.ReferenceInlineProcessor.type">type</a></b>
           –
           <div class="doc-md-description">
-            <p>Evaluate the id portion of <code>[ref][id]</code>.</p>
+            <p>Return class name, to define pattern type</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ReferenceInlineProcessor.unescape" href="#markdown.inlinepatterns.ReferenceInlineProcessor.unescape">unescape</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return unescaped text given text with an inline placeholder.</p>
           </div>
         </li>
   </ul>
@@ -2724,11 +2711,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ReferenceInlineProcessor.evalId" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ReferenceInlineProcessor.evalId</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ReferenceInlineProcessor.evalId</span>
 
 
 <a href="#markdown.inlinepatterns.ReferenceInlineProcessor.evalId" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ReferenceInlineProcessor.evalId(data, index, text)</code></pre>
+<pre class="codehilite"><code class="language-python">evalId(data, index, text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2745,11 +2732,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ReferenceInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ReferenceInlineProcessor.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ReferenceInlineProcessor.getCompiledRegExp</span>
 
 
 <a href="#markdown.inlinepatterns.ReferenceInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ReferenceInlineProcessor.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2765,11 +2752,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ReferenceInlineProcessor.getLink" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ReferenceInlineProcessor.getLink</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ReferenceInlineProcessor.getLink</span>
 
 
 <a href="#markdown.inlinepatterns.ReferenceInlineProcessor.getLink" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ReferenceInlineProcessor.getLink(data, index)</code></pre>
+<pre class="codehilite"><code class="language-python">getLink(data, index)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2785,11 +2772,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ReferenceInlineProcessor.getText" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ReferenceInlineProcessor.getText</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ReferenceInlineProcessor.getText</span>
 
 
 <a href="#markdown.inlinepatterns.ReferenceInlineProcessor.getText" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ReferenceInlineProcessor.getText(data, index)</code></pre>
+<pre class="codehilite"><code class="language-python">getText(data, index)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2806,11 +2793,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ReferenceInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ReferenceInlineProcessor.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ReferenceInlineProcessor.type</span>
 
 
 <a href="#markdown.inlinepatterns.ReferenceInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ReferenceInlineProcessor.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2826,11 +2813,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ReferenceInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ReferenceInlineProcessor.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ReferenceInlineProcessor.unescape</span>
 
 
 <a href="#markdown.inlinepatterns.ReferenceInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ReferenceInlineProcessor.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2875,24 +2862,17 @@ resolving nested square brackets.</p>
   <p>Methods:</p>
   <ul>
         <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ShortImageReferenceInlineProcessor.evalId" href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.evalId">evalId</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Evaluate the id from of [ref]</p>
+          </div>
+        </li>
+        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getCompiledRegExp" href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getCompiledRegExp">getCompiledRegExp</a></b>
           –
           <div class="doc-md-description">
             <p>Return a compiled regular expression.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ShortImageReferenceInlineProcessor.type" href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.type">type</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return class name, to define pattern type</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ShortImageReferenceInlineProcessor.unescape" href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.unescape">unescape</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return unescaped text given text with an inline placeholder.</p>
           </div>
         </li>
         <li class="field-body">
@@ -2910,10 +2890,17 @@ resolving nested square brackets.</p>
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ShortImageReferenceInlineProcessor.evalId" href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.evalId">evalId</a></b>
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ShortImageReferenceInlineProcessor.type" href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.type">type</a></b>
           –
           <div class="doc-md-description">
-            <p>Evaluate the id from of [ref]</p>
+            <p>Return class name, to define pattern type</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ShortImageReferenceInlineProcessor.unescape" href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.unescape">unescape</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return unescaped text given text with an inline placeholder.</p>
           </div>
         </li>
   </ul>
@@ -2938,11 +2925,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ShortImageReferenceInlineProcessor.evalId" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ShortImageReferenceInlineProcessor.evalId</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ShortImageReferenceInlineProcessor.evalId</span>
 
 
 <a href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.evalId" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ShortImageReferenceInlineProcessor.evalId(data, index, text)</code></pre>
+<pre class="codehilite"><code class="language-python">evalId(data, index, text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2958,11 +2945,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getCompiledRegExp</span>
 
 
 <a href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2978,11 +2965,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getLink" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getLink</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getLink</span>
 
 
 <a href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getLink" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getLink(data, index)</code></pre>
+<pre class="codehilite"><code class="language-python">getLink(data, index)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2998,11 +2985,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getText" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getText</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getText</span>
 
 
 <a href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getText" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getText(data, index)</code></pre>
+<pre class="codehilite"><code class="language-python">getText(data, index)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -3019,11 +3006,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ShortImageReferenceInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ShortImageReferenceInlineProcessor.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ShortImageReferenceInlineProcessor.type</span>
 
 
 <a href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ShortImageReferenceInlineProcessor.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -3039,11 +3026,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ShortImageReferenceInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ShortImageReferenceInlineProcessor.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ShortImageReferenceInlineProcessor.unescape</span>
 
 
 <a href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ShortImageReferenceInlineProcessor.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -3088,24 +3075,17 @@ resolving nested square brackets.</p>
   <p>Methods:</p>
   <ul>
         <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ShortReferenceInlineProcessor.evalId" href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.evalId">evalId</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Evaluate the id from of [ref]</p>
+          </div>
+        </li>
+        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ShortReferenceInlineProcessor.getCompiledRegExp" href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.getCompiledRegExp">getCompiledRegExp</a></b>
           –
           <div class="doc-md-description">
             <p>Return a compiled regular expression.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ShortReferenceInlineProcessor.type" href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.type">type</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return class name, to define pattern type</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ShortReferenceInlineProcessor.unescape" href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.unescape">unescape</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return unescaped text given text with an inline placeholder.</p>
           </div>
         </li>
         <li class="field-body">
@@ -3123,10 +3103,17 @@ resolving nested square brackets.</p>
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ShortReferenceInlineProcessor.evalId" href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.evalId">evalId</a></b>
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ShortReferenceInlineProcessor.type" href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.type">type</a></b>
           –
           <div class="doc-md-description">
-            <p>Evaluate the id from of [ref]</p>
+            <p>Return class name, to define pattern type</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.ShortReferenceInlineProcessor.unescape" href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.unescape">unescape</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return unescaped text given text with an inline placeholder.</p>
           </div>
         </li>
   </ul>
@@ -3151,11 +3138,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ShortReferenceInlineProcessor.evalId" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ShortReferenceInlineProcessor.evalId</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ShortReferenceInlineProcessor.evalId</span>
 
 
 <a href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.evalId" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ShortReferenceInlineProcessor.evalId(data, index, text)</code></pre>
+<pre class="codehilite"><code class="language-python">evalId(data, index, text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -3171,11 +3158,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ShortReferenceInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ShortReferenceInlineProcessor.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ShortReferenceInlineProcessor.getCompiledRegExp</span>
 
 
 <a href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ShortReferenceInlineProcessor.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -3191,11 +3178,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ShortReferenceInlineProcessor.getLink" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ShortReferenceInlineProcessor.getLink</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ShortReferenceInlineProcessor.getLink</span>
 
 
 <a href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.getLink" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ShortReferenceInlineProcessor.getLink(data, index)</code></pre>
+<pre class="codehilite"><code class="language-python">getLink(data, index)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -3211,11 +3198,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ShortReferenceInlineProcessor.getText" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ShortReferenceInlineProcessor.getText</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ShortReferenceInlineProcessor.getText</span>
 
 
 <a href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.getText" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ShortReferenceInlineProcessor.getText(data, index)</code></pre>
+<pre class="codehilite"><code class="language-python">getText(data, index)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -3232,11 +3219,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ShortReferenceInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ShortReferenceInlineProcessor.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ShortReferenceInlineProcessor.type</span>
 
 
 <a href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ShortReferenceInlineProcessor.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -3252,11 +3239,11 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ShortReferenceInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ShortReferenceInlineProcessor.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.ShortReferenceInlineProcessor.unescape</span>
 
 
 <a href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.ShortReferenceInlineProcessor.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -3284,7 +3271,7 @@ resolving nested square brackets.</p>
 
 
 <a href="#markdown.inlinepatterns.SimpleTagInlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.SimpleTagInlineProcessor(pattern, tag)</code></pre>
+<pre class="codehilite"><code class="language-python">SimpleTagInlineProcessor(pattern, tag)</code></pre>
 
   <div class="doc doc-contents ">
           <p class="doc doc-class-bases">
@@ -3344,11 +3331,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SimpleTagInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SimpleTagInlineProcessor.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SimpleTagInlineProcessor.getCompiledRegExp</span>
 
 
 <a href="#markdown.inlinepatterns.SimpleTagInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.SimpleTagInlineProcessor.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -3364,11 +3351,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SimpleTagInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SimpleTagInlineProcessor.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SimpleTagInlineProcessor.type</span>
 
 
 <a href="#markdown.inlinepatterns.SimpleTagInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.SimpleTagInlineProcessor.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -3384,11 +3371,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SimpleTagInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SimpleTagInlineProcessor.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SimpleTagInlineProcessor.unescape</span>
 
 
 <a href="#markdown.inlinepatterns.SimpleTagInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.SimpleTagInlineProcessor.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -3416,7 +3403,7 @@ of a Pattern.</p>
 
 
 <a href="#markdown.inlinepatterns.SimpleTagPattern" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.SimpleTagPattern(pattern, tag)</code></pre>
+<pre class="codehilite"><code class="language-python">SimpleTagPattern(pattern, tag)</code></pre>
 
   <div class="doc doc-contents ">
           <p class="doc doc-class-bases">
@@ -3476,11 +3463,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SimpleTagPattern.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SimpleTagPattern.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SimpleTagPattern.getCompiledRegExp</span>
 
 
 <a href="#markdown.inlinepatterns.SimpleTagPattern.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.SimpleTagPattern.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -3496,11 +3483,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SimpleTagPattern.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SimpleTagPattern.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SimpleTagPattern.type</span>
 
 
 <a href="#markdown.inlinepatterns.SimpleTagPattern.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.SimpleTagPattern.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -3516,11 +3503,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SimpleTagPattern.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SimpleTagPattern.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SimpleTagPattern.unescape</span>
 
 
 <a href="#markdown.inlinepatterns.SimpleTagPattern.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.SimpleTagPattern.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -3607,11 +3594,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SimpleTextInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SimpleTextInlineProcessor.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SimpleTextInlineProcessor.getCompiledRegExp</span>
 
 
 <a href="#markdown.inlinepatterns.SimpleTextInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.SimpleTextInlineProcessor.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -3627,11 +3614,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SimpleTextInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SimpleTextInlineProcessor.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SimpleTextInlineProcessor.type</span>
 
 
 <a href="#markdown.inlinepatterns.SimpleTextInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.SimpleTextInlineProcessor.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -3647,11 +3634,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SimpleTextInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SimpleTextInlineProcessor.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SimpleTextInlineProcessor.unescape</span>
 
 
 <a href="#markdown.inlinepatterns.SimpleTextInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.SimpleTextInlineProcessor.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -3738,11 +3725,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SimpleTextPattern.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SimpleTextPattern.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SimpleTextPattern.getCompiledRegExp</span>
 
 
 <a href="#markdown.inlinepatterns.SimpleTextPattern.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.SimpleTextPattern.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -3758,11 +3745,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SimpleTextPattern.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SimpleTextPattern.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SimpleTextPattern.type</span>
 
 
 <a href="#markdown.inlinepatterns.SimpleTextPattern.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.SimpleTextPattern.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -3778,11 +3765,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SimpleTextPattern.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SimpleTextPattern.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SimpleTextPattern.unescape</span>
 
 
 <a href="#markdown.inlinepatterns.SimpleTextPattern.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.SimpleTextPattern.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -3869,11 +3856,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SubstituteTagInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SubstituteTagInlineProcessor.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SubstituteTagInlineProcessor.getCompiledRegExp</span>
 
 
 <a href="#markdown.inlinepatterns.SubstituteTagInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.SubstituteTagInlineProcessor.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -3889,11 +3876,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SubstituteTagInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SubstituteTagInlineProcessor.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SubstituteTagInlineProcessor.type</span>
 
 
 <a href="#markdown.inlinepatterns.SubstituteTagInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.SubstituteTagInlineProcessor.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -3909,11 +3896,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SubstituteTagInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SubstituteTagInlineProcessor.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SubstituteTagInlineProcessor.unescape</span>
 
 
 <a href="#markdown.inlinepatterns.SubstituteTagInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.SubstituteTagInlineProcessor.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -4000,11 +3987,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SubstituteTagPattern.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SubstituteTagPattern.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SubstituteTagPattern.getCompiledRegExp</span>
 
 
 <a href="#markdown.inlinepatterns.SubstituteTagPattern.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.SubstituteTagPattern.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -4020,11 +4007,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SubstituteTagPattern.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SubstituteTagPattern.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SubstituteTagPattern.type</span>
 
 
 <a href="#markdown.inlinepatterns.SubstituteTagPattern.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.SubstituteTagPattern.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -4040,11 +4027,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SubstituteTagPattern.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SubstituteTagPattern.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.SubstituteTagPattern.unescape</span>
 
 
 <a href="#markdown.inlinepatterns.SubstituteTagPattern.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.SubstituteTagPattern.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -4089,41 +4076,6 @@ of a Pattern.</p>
   <p>Methods:</p>
   <ul>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.UnderscoreProcessor.getCompiledRegExp" href="#markdown.inlinepatterns.UnderscoreProcessor.getCompiledRegExp">getCompiledRegExp</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return a compiled regular expression.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.UnderscoreProcessor.handleMatch" href="#markdown.inlinepatterns.UnderscoreProcessor.handleMatch">handleMatch</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Parse patterns.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.UnderscoreProcessor.type" href="#markdown.inlinepatterns.UnderscoreProcessor.type">type</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return class name, to define pattern type</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.UnderscoreProcessor.unescape" href="#markdown.inlinepatterns.UnderscoreProcessor.unescape">unescape</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return unescaped text given text with an inline placeholder.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.UnderscoreProcessor.build_single" href="#markdown.inlinepatterns.UnderscoreProcessor.build_single">build_single</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return single tag.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.UnderscoreProcessor.build_double" href="#markdown.inlinepatterns.UnderscoreProcessor.build_double">build_double</a></b>
           –
           <div class="doc-md-description">
@@ -4138,6 +4090,34 @@ of a Pattern.</p>
           </div>
         </li>
         <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.UnderscoreProcessor.build_element" href="#markdown.inlinepatterns.UnderscoreProcessor.build_element">build_element</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Element builder.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.UnderscoreProcessor.build_single" href="#markdown.inlinepatterns.UnderscoreProcessor.build_single">build_single</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return single tag.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.UnderscoreProcessor.getCompiledRegExp" href="#markdown.inlinepatterns.UnderscoreProcessor.getCompiledRegExp">getCompiledRegExp</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return a compiled regular expression.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.UnderscoreProcessor.handleMatch" href="#markdown.inlinepatterns.UnderscoreProcessor.handleMatch">handleMatch</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Parse patterns.</p>
+          </div>
+        </li>
+        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.UnderscoreProcessor.parse_sub_patterns" href="#markdown.inlinepatterns.UnderscoreProcessor.parse_sub_patterns">parse_sub_patterns</a></b>
           –
           <div class="doc-md-description">
@@ -4145,10 +4125,17 @@ of a Pattern.</p>
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.UnderscoreProcessor.build_element" href="#markdown.inlinepatterns.UnderscoreProcessor.build_element">build_element</a></b>
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.UnderscoreProcessor.type" href="#markdown.inlinepatterns.UnderscoreProcessor.type">type</a></b>
           –
           <div class="doc-md-description">
-            <p>Element builder.</p>
+            <p>Return class name, to define pattern type</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.inlinepatterns.UnderscoreProcessor.unescape" href="#markdown.inlinepatterns.UnderscoreProcessor.unescape">unescape</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return unescaped text given text with an inline placeholder.</p>
           </div>
         </li>
   </ul>
@@ -4173,11 +4160,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.UnderscoreProcessor.build_double" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.UnderscoreProcessor.build_double</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.UnderscoreProcessor.build_double</span>
 
 
 <a href="#markdown.inlinepatterns.UnderscoreProcessor.build_double" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.UnderscoreProcessor.build_double(m, tags, idx)</code></pre>
+<pre class="codehilite"><code class="language-python">build_double(m, tags, idx)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -4193,11 +4180,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.UnderscoreProcessor.build_double2" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.UnderscoreProcessor.build_double2</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.UnderscoreProcessor.build_double2</span>
 
 
 <a href="#markdown.inlinepatterns.UnderscoreProcessor.build_double2" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.UnderscoreProcessor.build_double2(m, tags, idx)</code></pre>
+<pre class="codehilite"><code class="language-python">build_double2(m, tags, idx)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -4213,11 +4200,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.UnderscoreProcessor.build_element" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.UnderscoreProcessor.build_element</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.UnderscoreProcessor.build_element</span>
 
 
 <a href="#markdown.inlinepatterns.UnderscoreProcessor.build_element" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.UnderscoreProcessor.build_element(m, builder, tags, index)</code></pre>
+<pre class="codehilite"><code class="language-python">build_element(m, builder, tags, index)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -4233,11 +4220,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.UnderscoreProcessor.build_single" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.UnderscoreProcessor.build_single</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.UnderscoreProcessor.build_single</span>
 
 
 <a href="#markdown.inlinepatterns.UnderscoreProcessor.build_single" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.UnderscoreProcessor.build_single(m, tag, idx)</code></pre>
+<pre class="codehilite"><code class="language-python">build_single(m, tag, idx)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -4253,11 +4240,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.UnderscoreProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.UnderscoreProcessor.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.UnderscoreProcessor.getCompiledRegExp</span>
 
 
 <a href="#markdown.inlinepatterns.UnderscoreProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.UnderscoreProcessor.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -4273,11 +4260,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.UnderscoreProcessor.handleMatch" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.UnderscoreProcessor.handleMatch</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.UnderscoreProcessor.handleMatch</span>
 
 
 <a href="#markdown.inlinepatterns.UnderscoreProcessor.handleMatch" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.UnderscoreProcessor.handleMatch(m, data)</code></pre>
+<pre class="codehilite"><code class="language-python">handleMatch(m, data)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -4293,11 +4280,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.UnderscoreProcessor.parse_sub_patterns" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.UnderscoreProcessor.parse_sub_patterns</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.UnderscoreProcessor.parse_sub_patterns</span>
 
 
 <a href="#markdown.inlinepatterns.UnderscoreProcessor.parse_sub_patterns" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.UnderscoreProcessor.parse_sub_patterns(data, parent, last, idx)</code></pre>
+<pre class="codehilite"><code class="language-python">parse_sub_patterns(data, parent, last, idx)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -4321,11 +4308,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.UnderscoreProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.UnderscoreProcessor.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.UnderscoreProcessor.type</span>
 
 
 <a href="#markdown.inlinepatterns.UnderscoreProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.UnderscoreProcessor.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -4341,11 +4328,11 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.UnderscoreProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.UnderscoreProcessor.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.inlinepatterns.UnderscoreProcessor.unescape</span>
 
 
 <a href="#markdown.inlinepatterns.UnderscoreProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.UnderscoreProcessor.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -4375,7 +4362,7 @@ of a Pattern.</p>
 
 
 <a href="#markdown.inlinepatterns.build_inlinepatterns" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.build_inlinepatterns(md, **kwargs)</code></pre>
+<pre class="codehilite"><code class="language-python">build_inlinepatterns(md, **kwargs)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -4395,7 +4382,7 @@ of a Pattern.</p>
 
 
 <a href="#markdown.inlinepatterns.dequote" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.inlinepatterns.dequote(string)</code></pre>
+<pre class="codehilite"><code class="language-python">dequote(string)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -4434,39 +4421,39 @@ of a Pattern.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.AsteriskProcessor.build_double"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;build_double</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.AsteriskProcessor.build_double"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;build_double</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.AsteriskProcessor.build_double2"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;build_double2</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.AsteriskProcessor.build_double2"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;build_double2</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.AsteriskProcessor.build_element"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;build_element</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.AsteriskProcessor.build_element"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;build_element</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.AsteriskProcessor.build_single"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;build_single</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.AsteriskProcessor.build_single"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;build_single</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.AsteriskProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.AsteriskProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.AsteriskProcessor.handleMatch"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;handleMatch</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.AsteriskProcessor.handleMatch"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;handleMatch</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.AsteriskProcessor.parse_sub_patterns"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;parse_sub_patterns</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.AsteriskProcessor.parse_sub_patterns"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;parse_sub_patterns</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.AsteriskProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.AsteriskProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.AsteriskProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.AsteriskProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -4476,15 +4463,15 @@ of a Pattern.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.AutolinkInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.AutolinkInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.AutolinkInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.AutolinkInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.AutolinkInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.AutolinkInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -4494,15 +4481,15 @@ of a Pattern.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.AutomailInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.AutomailInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.AutomailInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.AutomailInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.AutomailInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.AutomailInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -4512,15 +4499,15 @@ of a Pattern.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.BacktickInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.BacktickInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.BacktickInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.BacktickInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.BacktickInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.BacktickInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -4530,15 +4517,15 @@ of a Pattern.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.DoubleTagInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.DoubleTagInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.DoubleTagInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.DoubleTagInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.DoubleTagInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.DoubleTagInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -4548,15 +4535,15 @@ of a Pattern.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.DoubleTagPattern.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.DoubleTagPattern.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.DoubleTagPattern.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.DoubleTagPattern.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.DoubleTagPattern.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.DoubleTagPattern.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -4570,15 +4557,15 @@ of a Pattern.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.EscapeInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.EscapeInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.EscapeInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.EscapeInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.EscapeInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.EscapeInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -4588,19 +4575,19 @@ of a Pattern.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.HtmlInlineProcessor.backslash_unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;backslash_unescape</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.HtmlInlineProcessor.backslash_unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;backslash_unescape</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.HtmlInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.HtmlInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.HtmlInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.HtmlInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.HtmlInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.HtmlInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -4610,23 +4597,23 @@ of a Pattern.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ImageInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ImageInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ImageInlineProcessor.getLink"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getLink</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ImageInlineProcessor.getLink"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getLink</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ImageInlineProcessor.getText"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getText</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ImageInlineProcessor.getText"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getText</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ImageInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ImageInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ImageInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ImageInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -4636,27 +4623,27 @@ of a Pattern.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.evalId"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;evalId</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.evalId"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;evalId</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.getLink"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getLink</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.getLink"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getLink</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.getText"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getText</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.getText"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getText</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -4666,19 +4653,19 @@ of a Pattern.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.InlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.InlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.InlineProcessor.handleMatch"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;handleMatch</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.InlineProcessor.handleMatch"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;handleMatch</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.InlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.InlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.InlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.InlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -4688,23 +4675,23 @@ of a Pattern.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.LinkInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.LinkInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.LinkInlineProcessor.getLink"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getLink</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.LinkInlineProcessor.getLink"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getLink</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.LinkInlineProcessor.getText"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getText</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.LinkInlineProcessor.getText"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getText</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.LinkInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.LinkInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.LinkInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.LinkInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -4714,19 +4701,19 @@ of a Pattern.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.Pattern.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.Pattern.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.Pattern.handleMatch"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;handleMatch</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.Pattern.handleMatch"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;handleMatch</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.Pattern.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.Pattern.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.Pattern.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.Pattern.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -4736,27 +4723,27 @@ of a Pattern.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ReferenceInlineProcessor.evalId"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;evalId</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ReferenceInlineProcessor.evalId"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;evalId</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ReferenceInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ReferenceInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ReferenceInlineProcessor.getLink"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getLink</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ReferenceInlineProcessor.getLink"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getLink</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ReferenceInlineProcessor.getText"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getText</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ReferenceInlineProcessor.getText"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getText</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ReferenceInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ReferenceInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ReferenceInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ReferenceInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -4766,27 +4753,27 @@ of a Pattern.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.evalId"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;evalId</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.evalId"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;evalId</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getLink"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getLink</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getLink"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getLink</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getText"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getText</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getText"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getText</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -4796,27 +4783,27 @@ of a Pattern.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.evalId"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;evalId</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.evalId"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;evalId</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.getLink"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getLink</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.getLink"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getLink</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.getText"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getText</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.getText"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getText</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -4826,15 +4813,15 @@ of a Pattern.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.SimpleTagInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.SimpleTagInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.SimpleTagInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.SimpleTagInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.SimpleTagInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.SimpleTagInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -4844,15 +4831,15 @@ of a Pattern.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.SimpleTagPattern.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.SimpleTagPattern.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.SimpleTagPattern.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.SimpleTagPattern.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.SimpleTagPattern.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.SimpleTagPattern.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -4862,15 +4849,15 @@ of a Pattern.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.SimpleTextInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.SimpleTextInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.SimpleTextInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.SimpleTextInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.SimpleTextInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.SimpleTextInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -4880,15 +4867,15 @@ of a Pattern.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.SimpleTextPattern.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.SimpleTextPattern.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.SimpleTextPattern.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.SimpleTextPattern.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.SimpleTextPattern.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.SimpleTextPattern.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -4898,15 +4885,15 @@ of a Pattern.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.SubstituteTagInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.SubstituteTagInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.SubstituteTagInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.SubstituteTagInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.SubstituteTagInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.SubstituteTagInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -4916,15 +4903,15 @@ of a Pattern.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.SubstituteTagPattern.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.SubstituteTagPattern.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.SubstituteTagPattern.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.SubstituteTagPattern.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.SubstituteTagPattern.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.SubstituteTagPattern.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -4934,39 +4921,39 @@ of a Pattern.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.UnderscoreProcessor.build_double"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;build_double</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.UnderscoreProcessor.build_double"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;build_double</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.UnderscoreProcessor.build_double2"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;build_double2</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.UnderscoreProcessor.build_double2"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;build_double2</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.UnderscoreProcessor.build_element"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;build_element</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.UnderscoreProcessor.build_element"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;build_element</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.UnderscoreProcessor.build_single"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;build_single</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.UnderscoreProcessor.build_single"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;build_single</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.UnderscoreProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.UnderscoreProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.UnderscoreProcessor.handleMatch"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;handleMatch</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.UnderscoreProcessor.handleMatch"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;handleMatch</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.UnderscoreProcessor.parse_sub_patterns"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;parse_sub_patterns</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.UnderscoreProcessor.parse_sub_patterns"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;parse_sub_patterns</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.UnderscoreProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.UnderscoreProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.inlinepatterns.UnderscoreProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.inlinepatterns.UnderscoreProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -4984,13 +4971,13 @@ of a Pattern.</p>
             
             <h4>Previous topic</h4>
             <p class="topless">
-                <a href="../htmlparser/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> htmlparser</a>
+                <a href="../htmlparser/" title="previous page">htmlparser</a>
             </p>
 
             
             <h4>Next topic</h4>
             <p class="topless">
-                <a href="../postprocessors/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> postprocessors</a>
+                <a href="../postprocessors/" title="next page">postprocessors</a>
             </p>
 
             <div role="note" aria-label="source link">
@@ -5016,10 +5003,10 @@ of a Pattern.</p>
                 <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../postprocessors/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> postprocessors" accesskey="N">next</a> |
+                <a href="../postprocessors/" title="postprocessors" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../htmlparser/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> htmlparser" accesskey="P">previous</a> |
+                <a href="../htmlparser/" title="htmlparser" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -5032,12 +5019,15 @@ of a Pattern.</p>
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../">markdown</a>
          &#187; </li>
                 
                 
@@ -5046,7 +5036,7 @@ of a Pattern.</p>
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> inlinepatterns</a>
+            <a href="./">inlinepatterns</a>
          &#187; </li>
                 
                 
@@ -5054,9 +5044,6 @@ of a Pattern.</p>
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -5069,7 +5056,7 @@ of a Pattern.</p>
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-22 23:35:33.293156+00:00
+        Docs Build Date UTC : 2023-08-24 13:24:36.114624+00:00
         -->
     </body>
 </html>

@@ -9,9 +9,9 @@
         <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/blockparser/">
         <link rel="shortcut icon" href="../../../favicon.ico">
         <link rel="search" title="Search" href="../../../search.html" />
-        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> blockprocessors" href="../blockprocessors/" />
-        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown" href="../" />
-        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> blockparser &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="next" title="blockprocessors" href="../blockprocessors/" />
+        <link rel="prev" title="markdown" href="../" />
+        <title>blockparser &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../../static/nature.css" type="text/css" />
         <link rel="stylesheet" href="../../../static/pygments.css" type="text/css" />
         <link rel="stylesheet" href="../../../assets/_mkdocstrings.css" type="text/css" />
@@ -32,10 +32,10 @@
                 <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../blockprocessors/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> blockprocessors" accesskey="N">next</a> |
+                <a href="../blockprocessors/" title="blockprocessors" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown" accesskey="P">previous</a> |
+                <a href="../" title="markdown" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -48,16 +48,19 @@
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../">markdown</a>
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> blockparser</a>
+            <a href="./">blockparser</a>
          &#187; </li>
                 
                 
@@ -70,9 +73,6 @@
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -93,20 +93,6 @@
 <a href="#markdown.blockparser" class="headerlink" title="Permanent link">&para;</a></h1>
 
   <div class="doc doc-contents first">
-  
-      <p>Python Markdown</p>
-<p>A Python implementation of John Gruber&rsquo;s Markdown.</p>
-<p>Documentation: https://python-markdown.github.io/
-GitHub: https://github.com/Python-Markdown/markdown/
-PyPI: https://pypi.org/project/Markdown/</p>
-<p>Started by Manfred Stienstra (http://www.dwerg.net/).
-Maintained for a few years by Yuri Takhteyev (http://www.freewisdom.org).
-Currently maintained by Waylan Limberg (https://github.com/waylan),
-Dmitry Shachnev (https://github.com/mitya57) and Isaac Muse (https://github.com/facelessuser).</p>
-<p>Copyright 2007-2018 The Python Markdown Project (v. 1.7 and later)
-Copyright 2004, 2005, 2006 Yuri Takhteyev (v. 0.2-1.6b)
-Copyright 2004 Manfred Stienstra (the original version)</p>
-<p>License: BSD (see LICENSE.md for details).</p>
 
 
 
@@ -115,17 +101,17 @@ Copyright 2004 Manfred Stienstra (the original version)</p>
   <p>Classes:</p>
   <ul>
       <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.blockparser.State" href="#markdown.blockparser.State">State</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Track the current and nested state of the parser.</p>
-        </div>
-      </li>
-      <li class="field-body">
         <b><a class="autorefs autorefs-internal" title="markdown.blockparser.BlockParser" href="#markdown.blockparser.BlockParser">BlockParser</a></b>
         –
         <div class="doc-md-description">
           <p>Parse Markdown blocks into an <code>ElementTree</code> object.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.blockparser.State" href="#markdown.blockparser.State">State</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Track the current and nested state of the parser.</p>
         </div>
       </li>
   </ul>
@@ -152,7 +138,7 @@ Copyright 2004 Manfred Stienstra (the original version)</p>
 
 
 <a href="#markdown.blockparser.BlockParser" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.blockparser.BlockParser(md: <a class="autorefs autorefs-internal" title="markdown.Markdown" href="../#markdown.Markdown">Markdown</a>)</code></pre>
+<pre class="codehilite"><code class="language-python">BlockParser(md: <a class="autorefs autorefs-internal" title="markdown.Markdown" href="../#markdown.Markdown">Markdown</a>)</code></pre>
 
   <div class="doc doc-contents ">
 
@@ -184,10 +170,10 @@ looping through them and creating an <code>ElementTree</code> object.</p>
   <p>Methods:</p>
   <ul>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.blockparser.BlockParser.parseDocument" href="#markdown.blockparser.BlockParser.parseDocument">parseDocument</a></b>
+          <b><a class="autorefs autorefs-internal" title="markdown.blockparser.BlockParser.parseBlocks" href="#markdown.blockparser.BlockParser.parseBlocks">parseBlocks</a></b>
           –
           <div class="doc-md-description">
-            <p>Parse a markdown document into an ElementTree.</p>
+            <p>Process blocks of markdown text and attach to given <code>etree</code> node.</p>
           </div>
         </li>
         <li class="field-body">
@@ -198,10 +184,10 @@ looping through them and creating an <code>ElementTree</code> object.</p>
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.blockparser.BlockParser.parseBlocks" href="#markdown.blockparser.BlockParser.parseBlocks">parseBlocks</a></b>
+          <b><a class="autorefs autorefs-internal" title="markdown.blockparser.BlockParser.parseDocument" href="#markdown.blockparser.BlockParser.parseDocument">parseDocument</a></b>
           –
           <div class="doc-md-description">
-            <p>Process blocks of markdown text and attach to given <code>etree</code> node.</p>
+            <p>Parse a markdown document into an ElementTree.</p>
           </div>
         </li>
   </ul>
@@ -226,11 +212,11 @@ looping through them and creating an <code>ElementTree</code> object.</p>
 
 
 <h3 id="markdown.blockparser.BlockParser.parseBlocks" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockparser.BlockParser.parseBlocks</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockparser.BlockParser.parseBlocks</span>
 
 
 <a href="#markdown.blockparser.BlockParser.parseBlocks" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockparser.BlockParser.parseBlocks(parent: <span title="xml.Element">Element</span>, blocks: <a class="autorefs autorefs-external" title="typing.Sequence" href="https://docs.python.org/3/library/typing.html#typing.Sequence">Sequence</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>])</code></pre>
+<pre class="codehilite"><code class="language-python">parseBlocks(parent: <span title="xml.Element">Element</span>, blocks: <a class="autorefs autorefs-external" title="typing.Sequence" href="https://docs.python.org/3/library/typing.html#typing.Sequence">Sequence</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>])</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -275,11 +261,11 @@ parse a nested block.</p>
 
 
 <h3 id="markdown.blockparser.BlockParser.parseChunk" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockparser.BlockParser.parseChunk</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockparser.BlockParser.parseChunk</span>
 
 
 <a href="#markdown.blockparser.BlockParser.parseChunk" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockparser.BlockParser.parseChunk(parent: <span title="xml.Element">Element</span>, text: <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>)</code></pre>
+<pre class="codehilite"><code class="language-python">parseChunk(parent: <span title="xml.Element">Element</span>, text: <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -323,11 +309,11 @@ Nothing is returned.</p>
 
 
 <h3 id="markdown.blockparser.BlockParser.parseDocument" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockparser.BlockParser.parseDocument</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockparser.BlockParser.parseDocument</span>
 
 
 <a href="#markdown.blockparser.BlockParser.parseDocument" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockparser.BlockParser.parseDocument(lines: <a class="autorefs autorefs-external" title="typing.Sequence" href="https://docs.python.org/3/library/typing.html#typing.Sequence">Sequence</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]) -&gt; <span title="xml.ElementTree">ElementTree</span></code></pre>
+<pre class="codehilite"><code class="language-python">parseDocument(lines: <a class="autorefs autorefs-external" title="typing.Sequence" href="https://docs.python.org/3/library/typing.html#typing.Sequence">Sequence</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]) -&gt; <span title="xml.ElementTree">ElementTree</span></code></pre>
 
   <div class="doc doc-contents ">
   
@@ -413,10 +399,10 @@ defined below need be used.</p>
   <p>Methods:</p>
   <ul>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.blockparser.State.set" href="#markdown.blockparser.State.set">set</a></b>
+          <b><a class="autorefs autorefs-internal" title="markdown.blockparser.State.isstate" href="#markdown.blockparser.State.isstate">isstate</a></b>
           –
           <div class="doc-md-description">
-            <p>Set a new state.</p>
+            <p>Test that top (current) level is of given state.</p>
           </div>
         </li>
         <li class="field-body">
@@ -427,10 +413,10 @@ defined below need be used.</p>
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.blockparser.State.isstate" href="#markdown.blockparser.State.isstate">isstate</a></b>
+          <b><a class="autorefs autorefs-internal" title="markdown.blockparser.State.set" href="#markdown.blockparser.State.set">set</a></b>
           –
           <div class="doc-md-description">
-            <p>Test that top (current) level is of given state.</p>
+            <p>Set a new state.</p>
           </div>
         </li>
   </ul>
@@ -455,11 +441,11 @@ defined below need be used.</p>
 
 
 <h3 id="markdown.blockparser.State.isstate" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockparser.State.isstate</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockparser.State.isstate</span>
 
 
 <a href="#markdown.blockparser.State.isstate" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockparser.State.isstate(state)</code></pre>
+<pre class="codehilite"><code class="language-python">isstate(state)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -475,11 +461,11 @@ defined below need be used.</p>
 
 
 <h3 id="markdown.blockparser.State.reset" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockparser.State.reset</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockparser.State.reset</span>
 
 
 <a href="#markdown.blockparser.State.reset" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockparser.State.reset()</code></pre>
+<pre class="codehilite"><code class="language-python">reset()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -495,11 +481,11 @@ defined below need be used.</p>
 
 
 <h3 id="markdown.blockparser.State.set" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockparser.State.set</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockparser.State.set</span>
 
 
 <a href="#markdown.blockparser.State.set" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockparser.State.set(state)</code></pre>
+<pre class="codehilite"><code class="language-python">set(state)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -544,15 +530,15 @@ defined below need be used.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.blockparser.BlockParser.parseBlocks"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;parseBlocks</a>
+        <a class="reference internal" href="#markdown.blockparser.BlockParser.parseBlocks"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;parseBlocks</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockparser.BlockParser.parseChunk"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;parseChunk</a>
+        <a class="reference internal" href="#markdown.blockparser.BlockParser.parseChunk"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;parseChunk</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockparser.BlockParser.parseDocument"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;parseDocument</a>
+        <a class="reference internal" href="#markdown.blockparser.BlockParser.parseDocument"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;parseDocument</a>
     </li>
         </ul>
     </li>
@@ -562,15 +548,15 @@ defined below need be used.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.blockparser.State.isstate"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;isstate</a>
+        <a class="reference internal" href="#markdown.blockparser.State.isstate"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;isstate</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockparser.State.reset"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;reset</a>
+        <a class="reference internal" href="#markdown.blockparser.State.reset"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;reset</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockparser.State.set"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;set</a>
+        <a class="reference internal" href="#markdown.blockparser.State.set"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;set</a>
     </li>
         </ul>
     </li>
@@ -580,13 +566,13 @@ defined below need be used.</p>
             
             <h4>Previous topic</h4>
             <p class="topless">
-                <a href="../" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+                <a href="../" title="previous page">markdown</a>
             </p>
 
             
             <h4>Next topic</h4>
             <p class="topless">
-                <a href="../blockprocessors/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> blockprocessors</a>
+                <a href="../blockprocessors/" title="next page">blockprocessors</a>
             </p>
 
             <div role="note" aria-label="source link">
@@ -612,10 +598,10 @@ defined below need be used.</p>
                 <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../blockprocessors/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> blockprocessors" accesskey="N">next</a> |
+                <a href="../blockprocessors/" title="blockprocessors" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown" accesskey="P">previous</a> |
+                <a href="../" title="markdown" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -628,16 +614,19 @@ defined below need be used.</p>
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../">markdown</a>
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> blockparser</a>
+            <a href="./">blockparser</a>
          &#187; </li>
                 
                 
@@ -650,9 +639,6 @@ defined below need be used.</p>
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -665,7 +651,7 @@ defined below need be used.</p>
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-22 23:35:33.289309+00:00
+        Docs Build Date UTC : 2023-08-24 13:24:36.110770+00:00
         -->
     </body>
 </html>

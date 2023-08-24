@@ -9,9 +9,9 @@
         <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/extensions/legacy_attrs/">
         <link rel="shortcut icon" href="../../../../favicon.ico">
         <link rel="search" title="Search" href="../../../../search.html" />
-        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> legacy_em" href="../legacy_em/" />
-        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> footnotes" href="../footnotes/" />
-        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> legacy_attrs &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="next" title="legacy_em" href="../legacy_em/" />
+        <link rel="prev" title="footnotes" href="../footnotes/" />
+        <title>legacy_attrs &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../../../static/nature.css" type="text/css" />
         <link rel="stylesheet" href="../../../../static/pygments.css" type="text/css" />
         <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css" type="text/css" />
@@ -32,10 +32,10 @@
                 <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../legacy_em/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> legacy_em" accesskey="N">next</a> |
+                <a href="../legacy_em/" title="legacy_em" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../footnotes/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> footnotes" accesskey="P">previous</a> |
+                <a href="../footnotes/" title="footnotes" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -48,19 +48,22 @@
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../../">markdown</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+            <a href="../">extensions</a>
          &#187; </li>
                 
                 
@@ -72,7 +75,7 @@
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> legacy_attrs</a>
+            <a href="./">legacy_attrs</a>
          &#187; </li>
                 
                 
@@ -91,9 +94,6 @@
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -115,20 +115,7 @@
 
   <div class="doc doc-contents first">
   
-      <p>Python Markdown</p>
-<p>A Python implementation of John Gruber&rsquo;s Markdown.</p>
-<p>Documentation: https://python-markdown.github.io/
-GitHub: https://github.com/Python-Markdown/markdown/
-PyPI: https://pypi.org/project/Markdown/</p>
-<p>Started by Manfred Stienstra (http://www.dwerg.net/).
-Maintained for a few years by Yuri Takhteyev (http://www.freewisdom.org).
-Currently maintained by Waylan Limberg (https://github.com/waylan),
-Dmitry Shachnev (https://github.com/mitya57) and Isaac Muse (https://github.com/facelessuser).</p>
-<p>Copyright 2007-2018 The Python Markdown Project (v. 1.7 and later)
-Copyright 2004, 2005, 2006 Yuri Takhteyev (v. 0.2-1.6b)
-Copyright 2004 Manfred Stienstra (the original version)</p>
-<p>License: BSD (see LICENSE.md for details).</p>
-<h2 id="markdown.extensions.legacy_attrs--legacy-attributes-extension">Legacy Attributes Extension<a class="headerlink" href="#markdown.extensions.legacy_attrs--legacy-attributes-extension" title="Permanent link">&para;</a></h2>
+      <h2 id="markdown.extensions.legacy_attrs--legacy-attributes-extension">Legacy Attributes Extension<a class="headerlink" href="#markdown.extensions.legacy_attrs--legacy-attributes-extension" title="Permanent link">&para;</a></h2>
 <p>An extension to Python Markdown which implements legacy attributes.</p>
 <p>Prior to Python-Markdown version 3.0, the Markdown class had an <code>enable_attributes</code>
 keyword which was on by default and provided for attributes to be defined for elements
@@ -138,6 +125,19 @@ numerous documents exist which have been using the old attribute format for many
 years. This extension can be used to continue to render those documents correctly.</p>
 
 
+
+
+
+  <p>Classes:</p>
+  <ul>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_attrs.LegacyAttrs" href="#markdown.extensions.legacy_attrs.LegacyAttrs">LegacyAttrs</a></b>
+        –
+        <div class="doc-md-description">
+          
+        </div>
+      </li>
+  </ul>
 
 
 
@@ -176,17 +176,17 @@ years. This extension can be used to continue to render those documents correctl
   <p>Methods:</p>
   <ul>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_attrs.LegacyAttrs.run" href="#markdown.extensions.legacy_attrs.LegacyAttrs.run">run</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Find and set values of attributes ({<a class="gh-link gh-mention" href="https://github.com/key" title="GitHub User: @key">@key</a>=value}).</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_attrs.LegacyAttrs.handleAttributes" href="#markdown.extensions.legacy_attrs.LegacyAttrs.handleAttributes">handleAttributes</a></b>
           –
           <div class="doc-md-description">
             <p>Set attributes and return text without definitions.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_attrs.LegacyAttrs.run" href="#markdown.extensions.legacy_attrs.LegacyAttrs.run">run</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Find and set values of attributes ({<a class="gh-link gh-mention" href="https://github.com/key" title="GitHub User: @key">@key</a>=value}).</p>
           </div>
         </li>
   </ul>
@@ -211,11 +211,11 @@ years. This extension can be used to continue to render those documents correctl
 
 
 <h3 id="markdown.extensions.legacy_attrs.LegacyAttrs.handleAttributes" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_attrs.LegacyAttrs.handleAttributes</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_attrs.LegacyAttrs.handleAttributes</span>
 
 
 <a href="#markdown.extensions.legacy_attrs.LegacyAttrs.handleAttributes" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.legacy_attrs.LegacyAttrs.handleAttributes(el, txt)</code></pre>
+<pre class="codehilite"><code class="language-python">handleAttributes(el, txt)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -231,11 +231,11 @@ years. This extension can be used to continue to render those documents correctl
 
 
 <h3 id="markdown.extensions.legacy_attrs.LegacyAttrs.run" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_attrs.LegacyAttrs.run</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_attrs.LegacyAttrs.run</span>
 
 
 <a href="#markdown.extensions.legacy_attrs.LegacyAttrs.run" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.legacy_attrs.LegacyAttrs.run(doc)</code></pre>
+<pre class="codehilite"><code class="language-python">run(doc)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -284,11 +284,11 @@ years. This extension can be used to continue to render those documents correctl
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.legacy_attrs.LegacyAttrs.handleAttributes"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;handleAttributes</a>
+        <a class="reference internal" href="#markdown.extensions.legacy_attrs.LegacyAttrs.handleAttributes"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;handleAttributes</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.legacy_attrs.LegacyAttrs.run"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;run</a>
+        <a class="reference internal" href="#markdown.extensions.legacy_attrs.LegacyAttrs.run"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;run</a>
     </li>
         </ul>
     </li>
@@ -298,13 +298,13 @@ years. This extension can be used to continue to render those documents correctl
             
             <h4>Previous topic</h4>
             <p class="topless">
-                <a href="../footnotes/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> footnotes</a>
+                <a href="../footnotes/" title="previous page">footnotes</a>
             </p>
 
             
             <h4>Next topic</h4>
             <p class="topless">
-                <a href="../legacy_em/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> legacy_em</a>
+                <a href="../legacy_em/" title="next page">legacy_em</a>
             </p>
 
             <div role="note" aria-label="source link">
@@ -330,10 +330,10 @@ years. This extension can be used to continue to render those documents correctl
                 <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../legacy_em/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> legacy_em" accesskey="N">next</a> |
+                <a href="../legacy_em/" title="legacy_em" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../footnotes/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> footnotes" accesskey="P">previous</a> |
+                <a href="../footnotes/" title="footnotes" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -346,19 +346,22 @@ years. This extension can be used to continue to render those documents correctl
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../../">markdown</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+            <a href="../">extensions</a>
          &#187; </li>
                 
                 
@@ -370,7 +373,7 @@ years. This extension can be used to continue to render those documents correctl
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> legacy_attrs</a>
+            <a href="./">legacy_attrs</a>
          &#187; </li>
                 
                 
@@ -389,9 +392,6 @@ years. This extension can be used to continue to render those documents correctl
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -404,7 +404,7 @@ years. This extension can be used to continue to render those documents correctl
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-22 23:35:33.307840+00:00
+        Docs Build Date UTC : 2023-08-24 13:24:36.129797+00:00
         -->
     </body>
 </html>

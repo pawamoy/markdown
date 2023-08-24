@@ -9,9 +9,9 @@
         <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/htmlparser/">
         <link rel="shortcut icon" href="../../../favicon.ico">
         <link rel="search" title="Search" href="../../../search.html" />
-        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> inlinepatterns" href="../inlinepatterns/" />
-        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> wikilinks" href="../extensions/wikilinks/" />
-        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> htmlparser &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="next" title="inlinepatterns" href="../inlinepatterns/" />
+        <link rel="prev" title="wikilinks" href="../extensions/wikilinks/" />
+        <title>htmlparser &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../../static/nature.css" type="text/css" />
         <link rel="stylesheet" href="../../../static/pygments.css" type="text/css" />
         <link rel="stylesheet" href="../../../assets/_mkdocstrings.css" type="text/css" />
@@ -32,10 +32,10 @@
                 <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../inlinepatterns/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> inlinepatterns" accesskey="N">next</a> |
+                <a href="../inlinepatterns/" title="inlinepatterns" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../extensions/wikilinks/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> wikilinks" accesskey="P">previous</a> |
+                <a href="../extensions/wikilinks/" title="wikilinks" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -48,12 +48,15 @@
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../">markdown</a>
          &#187; </li>
                 
                 
@@ -61,7 +64,7 @@
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> htmlparser</a>
+            <a href="./">htmlparser</a>
          &#187; </li>
                 
                 
@@ -70,9 +73,6 @@
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -93,20 +93,6 @@
 <a href="#markdown.htmlparser" class="headerlink" title="Permanent link">&para;</a></h1>
 
   <div class="doc doc-contents first">
-  
-      <p>Python Markdown</p>
-<p>A Python implementation of John Gruber&rsquo;s Markdown.</p>
-<p>Documentation: https://python-markdown.github.io/
-GitHub: https://github.com/Python-Markdown/markdown/
-PyPI: https://pypi.org/project/Markdown/</p>
-<p>Started by Manfred Stienstra (http://www.dwerg.net/).
-Maintained for a few years by Yuri Takhteyev (http://www.freewisdom.org).
-Currently maintained by Waylan Limberg (https://github.com/waylan),
-Dmitry Shachnev (https://github.com/mitya57) and Isaac Muse (https://github.com/facelessuser).</p>
-<p>Copyright 2007-2020 The Python Markdown Project (v. 1.7 and later)
-Copyright 2004, 2005, 2006 Yuri Takhteyev (v. 0.2-1.6b)
-Copyright 2004 Manfred Stienstra (the original version)</p>
-<p>License: BSD (see LICENSE.md for details).</p>
 
 
 
@@ -145,7 +131,7 @@ Copyright 2004 Manfred Stienstra (the original version)</p>
 
 
 <a href="#markdown.htmlparser.HTMLExtractor" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.htmlparser.HTMLExtractor(md, *args, **kwargs)</code></pre>
+<pre class="codehilite"><code class="language-python">HTMLExtractor(md, *args, **kwargs)</code></pre>
 
   <div class="doc doc-contents ">
           <p class="doc doc-class-bases">
@@ -164,10 +150,10 @@ to <code>md</code> and the remaining text is stored in <code>cleandoc</code> as 
   <p>Methods:</p>
   <ul>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.htmlparser.HTMLExtractor.reset" href="#markdown.htmlparser.HTMLExtractor.reset">reset</a></b>
+          <b><a class="autorefs autorefs-internal" title="markdown.htmlparser.HTMLExtractor.at_line_start" href="#markdown.htmlparser.HTMLExtractor.at_line_start">at_line_start</a></b>
           –
           <div class="doc-md-description">
-            <p>Reset this instance.  Loses all unprocessed data.</p>
+            <p>Returns True if current position is at start of line.</p>
           </div>
         </li>
         <li class="field-body">
@@ -178,17 +164,17 @@ to <code>md</code> and the remaining text is stored in <code>cleandoc</code> as 
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.htmlparser.HTMLExtractor.at_line_start" href="#markdown.htmlparser.HTMLExtractor.at_line_start">at_line_start</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Returns True if current position is at start of line.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.htmlparser.HTMLExtractor.get_endtag_text" href="#markdown.htmlparser.HTMLExtractor.get_endtag_text">get_endtag_text</a></b>
           –
           <div class="doc-md-description">
             <p>Returns the text of the end tag.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.htmlparser.HTMLExtractor.get_starttag_text" href="#markdown.htmlparser.HTMLExtractor.get_starttag_text">get_starttag_text</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return full source of start tag: <code>&lt;...&gt;</code>.</p>
           </div>
         </li>
         <li class="field-body">
@@ -199,10 +185,10 @@ to <code>md</code> and the remaining text is stored in <code>cleandoc</code> as 
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.htmlparser.HTMLExtractor.get_starttag_text" href="#markdown.htmlparser.HTMLExtractor.get_starttag_text">get_starttag_text</a></b>
+          <b><a class="autorefs autorefs-internal" title="markdown.htmlparser.HTMLExtractor.reset" href="#markdown.htmlparser.HTMLExtractor.reset">reset</a></b>
           –
           <div class="doc-md-description">
-            <p>Return full source of start tag: <code>&lt;...&gt;</code>.</p>
+            <p>Reset this instance.  Loses all unprocessed data.</p>
           </div>
         </li>
   </ul>
@@ -245,7 +231,7 @@ to <code>md</code> and the remaining text is stored in <code>cleandoc</code> as 
   </span>
 
 <a href="#markdown.htmlparser.HTMLExtractor.line_offset" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python doc-signature">markdown.htmlparser.HTMLExtractor.line_offset</code></pre>
+<pre class="codehilite"><code class="language-python doc-signature">line_offset</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -262,11 +248,11 @@ to <code>md</code> and the remaining text is stored in <code>cleandoc</code> as 
 
 
 <h3 id="markdown.htmlparser.HTMLExtractor.at_line_start" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.htmlparser.HTMLExtractor.at_line_start</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.htmlparser.HTMLExtractor.at_line_start</span>
 
 
 <a href="#markdown.htmlparser.HTMLExtractor.at_line_start" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.htmlparser.HTMLExtractor.at_line_start()</code></pre>
+<pre class="codehilite"><code class="language-python">at_line_start()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -283,11 +269,11 @@ to <code>md</code> and the remaining text is stored in <code>cleandoc</code> as 
 
 
 <h3 id="markdown.htmlparser.HTMLExtractor.close" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.htmlparser.HTMLExtractor.close</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.htmlparser.HTMLExtractor.close</span>
 
 
 <a href="#markdown.htmlparser.HTMLExtractor.close" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.htmlparser.HTMLExtractor.close()</code></pre>
+<pre class="codehilite"><code class="language-python">close()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -303,11 +289,11 @@ to <code>md</code> and the remaining text is stored in <code>cleandoc</code> as 
 
 
 <h3 id="markdown.htmlparser.HTMLExtractor.get_endtag_text" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.htmlparser.HTMLExtractor.get_endtag_text</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.htmlparser.HTMLExtractor.get_endtag_text</span>
 
 
 <a href="#markdown.htmlparser.HTMLExtractor.get_endtag_text" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.htmlparser.HTMLExtractor.get_endtag_text(tag)</code></pre>
+<pre class="codehilite"><code class="language-python">get_endtag_text(tag)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -324,11 +310,11 @@ to <code>md</code> and the remaining text is stored in <code>cleandoc</code> as 
 
 
 <h3 id="markdown.htmlparser.HTMLExtractor.get_starttag_text" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.htmlparser.HTMLExtractor.get_starttag_text</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.htmlparser.HTMLExtractor.get_starttag_text</span>
 
 
 <a href="#markdown.htmlparser.HTMLExtractor.get_starttag_text" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.htmlparser.HTMLExtractor.get_starttag_text()</code></pre>
+<pre class="codehilite"><code class="language-python">get_starttag_text()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -344,11 +330,11 @@ to <code>md</code> and the remaining text is stored in <code>cleandoc</code> as 
 
 
 <h3 id="markdown.htmlparser.HTMLExtractor.handle_empty_tag" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.htmlparser.HTMLExtractor.handle_empty_tag</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.htmlparser.HTMLExtractor.handle_empty_tag</span>
 
 
 <a href="#markdown.htmlparser.HTMLExtractor.handle_empty_tag" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.htmlparser.HTMLExtractor.handle_empty_tag(data, is_block)</code></pre>
+<pre class="codehilite"><code class="language-python">handle_empty_tag(data, is_block)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -364,11 +350,11 @@ to <code>md</code> and the remaining text is stored in <code>cleandoc</code> as 
 
 
 <h3 id="markdown.htmlparser.HTMLExtractor.reset" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.htmlparser.HTMLExtractor.reset</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.htmlparser.HTMLExtractor.reset</span>
 
 
 <a href="#markdown.htmlparser.HTMLExtractor.reset" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.htmlparser.HTMLExtractor.reset()</code></pre>
+<pre class="codehilite"><code class="language-python">reset()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -417,27 +403,27 @@ to <code>md</code> and the remaining text is stored in <code>cleandoc</code> as 
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.htmlparser.HTMLExtractor.at_line_start"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;at_line_start</a>
+        <a class="reference internal" href="#markdown.htmlparser.HTMLExtractor.at_line_start"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;at_line_start</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.htmlparser.HTMLExtractor.close"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;close</a>
+        <a class="reference internal" href="#markdown.htmlparser.HTMLExtractor.close"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;close</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.htmlparser.HTMLExtractor.get_endtag_text"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;get_endtag_text</a>
+        <a class="reference internal" href="#markdown.htmlparser.HTMLExtractor.get_endtag_text"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;get_endtag_text</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.htmlparser.HTMLExtractor.get_starttag_text"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;get_starttag_text</a>
+        <a class="reference internal" href="#markdown.htmlparser.HTMLExtractor.get_starttag_text"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;get_starttag_text</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.htmlparser.HTMLExtractor.handle_empty_tag"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;handle_empty_tag</a>
+        <a class="reference internal" href="#markdown.htmlparser.HTMLExtractor.handle_empty_tag"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;handle_empty_tag</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.htmlparser.HTMLExtractor.reset"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;reset</a>
+        <a class="reference internal" href="#markdown.htmlparser.HTMLExtractor.reset"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;reset</a>
     </li>
         </ul>
     </li>
@@ -447,13 +433,13 @@ to <code>md</code> and the remaining text is stored in <code>cleandoc</code> as 
             
             <h4>Previous topic</h4>
             <p class="topless">
-                <a href="../extensions/wikilinks/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> wikilinks</a>
+                <a href="../extensions/wikilinks/" title="previous page">wikilinks</a>
             </p>
 
             
             <h4>Next topic</h4>
             <p class="topless">
-                <a href="../inlinepatterns/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> inlinepatterns</a>
+                <a href="../inlinepatterns/" title="next page">inlinepatterns</a>
             </p>
 
             <div role="note" aria-label="source link">
@@ -479,10 +465,10 @@ to <code>md</code> and the remaining text is stored in <code>cleandoc</code> as 
                 <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../inlinepatterns/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> inlinepatterns" accesskey="N">next</a> |
+                <a href="../inlinepatterns/" title="inlinepatterns" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../extensions/wikilinks/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> wikilinks" accesskey="P">previous</a> |
+                <a href="../extensions/wikilinks/" title="wikilinks" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -495,12 +481,15 @@ to <code>md</code> and the remaining text is stored in <code>cleandoc</code> as 
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../">markdown</a>
          &#187; </li>
                 
                 
@@ -508,7 +497,7 @@ to <code>md</code> and the remaining text is stored in <code>cleandoc</code> as 
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> htmlparser</a>
+            <a href="./">htmlparser</a>
          &#187; </li>
                 
                 
@@ -517,9 +506,6 @@ to <code>md</code> and the remaining text is stored in <code>cleandoc</code> as 
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -532,7 +518,7 @@ to <code>md</code> and the remaining text is stored in <code>cleandoc</code> as 
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-22 23:35:33.292480+00:00
+        Docs Build Date UTC : 2023-08-24 13:24:36.113908+00:00
         -->
     </body>
 </html>

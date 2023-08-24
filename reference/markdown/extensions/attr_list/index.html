@@ -9,9 +9,9 @@
         <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/extensions/attr_list/">
         <link rel="shortcut icon" href="../../../../favicon.ico">
         <link rel="search" title="Search" href="../../../../search.html" />
-        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> codehilite" href="../codehilite/" />
-        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> admonition" href="../admonition/" />
-        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> attr_list &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="next" title="codehilite" href="../codehilite/" />
+        <link rel="prev" title="admonition" href="../admonition/" />
+        <title>attr_list &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../../../static/nature.css" type="text/css" />
         <link rel="stylesheet" href="../../../../static/pygments.css" type="text/css" />
         <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css" type="text/css" />
@@ -32,10 +32,10 @@
                 <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../codehilite/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> codehilite" accesskey="N">next</a> |
+                <a href="../codehilite/" title="codehilite" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../admonition/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> admonition" accesskey="P">previous</a> |
+                <a href="../admonition/" title="admonition" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -48,25 +48,28 @@
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../../">markdown</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+            <a href="../">extensions</a>
          &#187; </li>
                 
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> attr_list</a>
+            <a href="./">attr_list</a>
          &#187; </li>
                 
                 
@@ -91,9 +94,6 @@
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -119,13 +119,26 @@
 <p>Adds attribute list syntax. Inspired by
 <a href="http://maruku.rubyforge.org/proposal.html#attribute_lists">Maruku</a>&rsquo;s
 feature of the same name.</p>
-<p>See <a href="https://Python-Markdown.github.io/extensions/attr_list">https://Python-Markdown.github.io/extensions/attr_list</a>
+<p>See https://Python-Markdown.github.io/extensions/attr_list
 for documentation.</p>
 <p>Original code Copyright 2011 <a href="http://achinghead.com/">Waylan Limberg</a>.</p>
 <p>All changes Copyright 2011-2014 The Python Markdown Project</p>
 <p>License: <a href="https://opensource.org/licenses/bsd-license.php">BSD</a></p>
 
 
+
+
+
+  <p>Classes:</p>
+  <ul>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.attr_list.AttrListTreeprocessor" href="#markdown.extensions.attr_list.AttrListTreeprocessor">AttrListTreeprocessor</a></b>
+        –
+        <div class="doc-md-description">
+          
+        </div>
+      </li>
+  </ul>
 
 
 
@@ -212,11 +225,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.attr_list.AttrListTreeprocessor.assign_attrs" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.attr_list.AttrListTreeprocessor.assign_attrs</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.attr_list.AttrListTreeprocessor.assign_attrs</span>
 
 
 <a href="#markdown.extensions.attr_list.AttrListTreeprocessor.assign_attrs" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.attr_list.AttrListTreeprocessor.assign_attrs(elem, attrs)</code></pre>
+<pre class="codehilite"><code class="language-python">assign_attrs(elem, attrs)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -232,11 +245,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.attr_list.AttrListTreeprocessor.sanitize_name" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.attr_list.AttrListTreeprocessor.sanitize_name</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.attr_list.AttrListTreeprocessor.sanitize_name</span>
 
 
 <a href="#markdown.extensions.attr_list.AttrListTreeprocessor.sanitize_name" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.attr_list.AttrListTreeprocessor.sanitize_name(name)</code></pre>
+<pre class="codehilite"><code class="language-python">sanitize_name(name)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -267,7 +280,7 @@ See https://www.w3.org/TR/REC-xml-names/#NT-NCName</p>
 
 
 <a href="#markdown.extensions.attr_list.get_attrs" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.attr_list.get_attrs(str)</code></pre>
+<pre class="codehilite"><code class="language-python">get_attrs(str)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -306,11 +319,11 @@ See https://www.w3.org/TR/REC-xml-names/#NT-NCName</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.attr_list.AttrListTreeprocessor.assign_attrs"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;assign_attrs</a>
+        <a class="reference internal" href="#markdown.extensions.attr_list.AttrListTreeprocessor.assign_attrs"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;assign_attrs</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.attr_list.AttrListTreeprocessor.sanitize_name"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;sanitize_name</a>
+        <a class="reference internal" href="#markdown.extensions.attr_list.AttrListTreeprocessor.sanitize_name"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;sanitize_name</a>
     </li>
         </ul>
     </li>
@@ -324,13 +337,13 @@ See https://www.w3.org/TR/REC-xml-names/#NT-NCName</p>
             
             <h4>Previous topic</h4>
             <p class="topless">
-                <a href="../admonition/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> admonition</a>
+                <a href="../admonition/" title="previous page">admonition</a>
             </p>
 
             
             <h4>Next topic</h4>
             <p class="topless">
-                <a href="../codehilite/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> codehilite</a>
+                <a href="../codehilite/" title="next page">codehilite</a>
             </p>
 
             <div role="note" aria-label="source link">
@@ -356,10 +369,10 @@ See https://www.w3.org/TR/REC-xml-names/#NT-NCName</p>
                 <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../codehilite/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> codehilite" accesskey="N">next</a> |
+                <a href="../codehilite/" title="codehilite" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../admonition/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> admonition" accesskey="P">previous</a> |
+                <a href="../admonition/" title="admonition" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -372,25 +385,28 @@ See https://www.w3.org/TR/REC-xml-names/#NT-NCName</p>
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../../">markdown</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+            <a href="../">extensions</a>
          &#187; </li>
                 
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> attr_list</a>
+            <a href="./">attr_list</a>
          &#187; </li>
                 
                 
@@ -415,9 +431,6 @@ See https://www.w3.org/TR/REC-xml-names/#NT-NCName</p>
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -430,7 +443,7 @@ See https://www.w3.org/TR/REC-xml-names/#NT-NCName</p>
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-22 23:35:33.302529+00:00
+        Docs Build Date UTC : 2023-08-24 13:24:36.124255+00:00
         -->
     </body>
 </html>

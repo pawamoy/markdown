@@ -9,9 +9,9 @@
         <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/extensions/codehilite/">
         <link rel="shortcut icon" href="../../../../favicon.ico">
         <link rel="search" title="Search" href="../../../../search.html" />
-        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> def_list" href="../def_list/" />
-        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> attr_list" href="../attr_list/" />
-        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> codehilite &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="next" title="def_list" href="../def_list/" />
+        <link rel="prev" title="attr_list" href="../attr_list/" />
+        <title>codehilite &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../../../static/nature.css" type="text/css" />
         <link rel="stylesheet" href="../../../../static/pygments.css" type="text/css" />
         <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css" type="text/css" />
@@ -32,10 +32,10 @@
                 <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../def_list/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> def_list" accesskey="N">next</a> |
+                <a href="../def_list/" title="def_list" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../attr_list/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> attr_list" accesskey="P">previous</a> |
+                <a href="../attr_list/" title="attr_list" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -48,26 +48,29 @@
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../../">markdown</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+            <a href="../">extensions</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> codehilite</a>
+            <a href="./">codehilite</a>
          &#187; </li>
                 
                 
@@ -91,9 +94,6 @@
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -117,7 +117,7 @@
   
       <h2 id="markdown.extensions.codehilite--codehilite-extension-for-python-markdown">CodeHilite Extension for Python-Markdown<a class="headerlink" href="#markdown.extensions.codehilite--codehilite-extension-for-python-markdown" title="Permanent link">&para;</a></h2>
 <p>Adds code/syntax highlighting to standard Python-Markdown code blocks.</p>
-<p>See <a href="https://Python-Markdown.github.io/extensions/code_hilite">https://Python-Markdown.github.io/extensions/code_hilite</a>
+<p>See https://Python-Markdown.github.io/extensions/code_hilite
 for documentation.</p>
 <p>Original code Copyright 2006-2008 <a href="http://achinghead.com/">Waylan Limberg</a>.</p>
 <p>All changes Copyright 2008-2014 The Python Markdown Project</p>
@@ -137,17 +137,17 @@ for documentation.</p>
         </div>
       </li>
       <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.extensions.codehilite.HiliteTreeprocessor" href="#markdown.extensions.codehilite.HiliteTreeprocessor">HiliteTreeprocessor</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Highlight source code in code blocks.</p>
-        </div>
-      </li>
-      <li class="field-body">
         <b><a class="autorefs autorefs-internal" title="markdown.extensions.codehilite.CodeHiliteExtension" href="#markdown.extensions.codehilite.CodeHiliteExtension">CodeHiliteExtension</a></b>
         –
         <div class="doc-md-description">
           <p>Add source code highlighting to markdown code blocks.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.codehilite.HiliteTreeprocessor" href="#markdown.extensions.codehilite.HiliteTreeprocessor">HiliteTreeprocessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Highlight source code in code blocks.</p>
         </div>
       </li>
   </ul>
@@ -187,7 +187,7 @@ for documentation.</p>
 
 
 <a href="#markdown.extensions.codehilite.CodeHilite" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.codehilite.CodeHilite(src: <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, **options: <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>)</code></pre>
+<pre class="codehilite"><code class="language-python">CodeHilite(src: <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, **options: <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>)</code></pre>
 
   <div class="doc doc-contents ">
 
@@ -337,11 +337,11 @@ html = code.hilite()</p>
 
 
 <h3 id="markdown.extensions.codehilite.CodeHilite.hilite" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.codehilite.CodeHilite.hilite</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.codehilite.CodeHilite.hilite</span>
 
 
 <a href="#markdown.extensions.codehilite.CodeHilite.hilite" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.codehilite.CodeHilite.hilite(shebang = True)</code></pre>
+<pre class="codehilite"><code class="language-python">hilite(shebang = True)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -373,7 +373,7 @@ your liking. No styles are applied by default - only styling hooks
 
 
 <a href="#markdown.extensions.codehilite.CodeHiliteExtension" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.codehilite.CodeHiliteExtension(**kwargs)</code></pre>
+<pre class="codehilite"><code class="language-python">CodeHiliteExtension(**kwargs)</code></pre>
 
   <div class="doc doc-contents ">
           <p class="doc doc-class-bases">
@@ -390,6 +390,13 @@ your liking. No styles are applied by default - only styling hooks
   <p>Methods:</p>
   <ul>
         <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.codehilite.CodeHiliteExtension.extendMarkdown" href="#markdown.extensions.codehilite.CodeHiliteExtension.extendMarkdown">extendMarkdown</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Add <code>HilitePostprocessor</code> to Markdown instance.</p>
+          </div>
+        </li>
+        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.extensions.codehilite.CodeHiliteExtension.getConfig" href="#markdown.extensions.codehilite.CodeHiliteExtension.getConfig">getConfig</a></b>
           –
           <div class="doc-md-description">
@@ -397,17 +404,17 @@ your liking. No styles are applied by default - only styling hooks
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.codehilite.CodeHiliteExtension.getConfigs" href="#markdown.extensions.codehilite.CodeHiliteExtension.getConfigs">getConfigs</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return all configs settings as a dict.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.extensions.codehilite.CodeHiliteExtension.getConfigInfo" href="#markdown.extensions.codehilite.CodeHiliteExtension.getConfigInfo">getConfigInfo</a></b>
           –
           <div class="doc-md-description">
             <p>Return all <code>config</code> descriptions as a list of tuples.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.codehilite.CodeHiliteExtension.getConfigs" href="#markdown.extensions.codehilite.CodeHiliteExtension.getConfigs">getConfigs</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return all configs settings as a dict.</p>
           </div>
         </li>
         <li class="field-body">
@@ -422,13 +429,6 @@ your liking. No styles are applied by default - only styling hooks
           –
           <div class="doc-md-description">
             <p>Set multiple <code>config</code> settings given a dict or list of tuples.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.codehilite.CodeHiliteExtension.extendMarkdown" href="#markdown.extensions.codehilite.CodeHiliteExtension.extendMarkdown">extendMarkdown</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Add <code>HilitePostprocessor</code> to Markdown instance.</p>
           </div>
         </li>
   </ul>
@@ -453,11 +453,11 @@ your liking. No styles are applied by default - only styling hooks
 
 
 <h3 id="markdown.extensions.codehilite.CodeHiliteExtension.extendMarkdown" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.codehilite.CodeHiliteExtension.extendMarkdown</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.codehilite.CodeHiliteExtension.extendMarkdown</span>
 
 
 <a href="#markdown.extensions.codehilite.CodeHiliteExtension.extendMarkdown" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.codehilite.CodeHiliteExtension.extendMarkdown(md)</code></pre>
+<pre class="codehilite"><code class="language-python">extendMarkdown(md)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -473,11 +473,11 @@ your liking. No styles are applied by default - only styling hooks
 
 
 <h3 id="markdown.extensions.codehilite.CodeHiliteExtension.getConfig" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.codehilite.CodeHiliteExtension.getConfig</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.codehilite.CodeHiliteExtension.getConfig</span>
 
 
 <a href="#markdown.extensions.codehilite.CodeHiliteExtension.getConfig" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.codehilite.CodeHiliteExtension.getConfig(key, default = '')</code></pre>
+<pre class="codehilite"><code class="language-python">getConfig(key, default = '')</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -493,11 +493,11 @@ your liking. No styles are applied by default - only styling hooks
 
 
 <h3 id="markdown.extensions.codehilite.CodeHiliteExtension.getConfigInfo" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.codehilite.CodeHiliteExtension.getConfigInfo</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.codehilite.CodeHiliteExtension.getConfigInfo</span>
 
 
 <a href="#markdown.extensions.codehilite.CodeHiliteExtension.getConfigInfo" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.codehilite.CodeHiliteExtension.getConfigInfo()</code></pre>
+<pre class="codehilite"><code class="language-python">getConfigInfo()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -513,11 +513,11 @@ your liking. No styles are applied by default - only styling hooks
 
 
 <h3 id="markdown.extensions.codehilite.CodeHiliteExtension.getConfigs" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.codehilite.CodeHiliteExtension.getConfigs</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.codehilite.CodeHiliteExtension.getConfigs</span>
 
 
 <a href="#markdown.extensions.codehilite.CodeHiliteExtension.getConfigs" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.codehilite.CodeHiliteExtension.getConfigs()</code></pre>
+<pre class="codehilite"><code class="language-python">getConfigs()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -533,11 +533,11 @@ your liking. No styles are applied by default - only styling hooks
 
 
 <h3 id="markdown.extensions.codehilite.CodeHiliteExtension.setConfig" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.codehilite.CodeHiliteExtension.setConfig</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.codehilite.CodeHiliteExtension.setConfig</span>
 
 
 <a href="#markdown.extensions.codehilite.CodeHiliteExtension.setConfig" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.codehilite.CodeHiliteExtension.setConfig(key, value)</code></pre>
+<pre class="codehilite"><code class="language-python">setConfig(key, value)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -553,11 +553,11 @@ your liking. No styles are applied by default - only styling hooks
 
 
 <h3 id="markdown.extensions.codehilite.CodeHiliteExtension.setConfigs" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.codehilite.CodeHiliteExtension.setConfigs</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.codehilite.CodeHiliteExtension.setConfigs</span>
 
 
 <a href="#markdown.extensions.codehilite.CodeHiliteExtension.setConfigs" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.codehilite.CodeHiliteExtension.setConfigs(items)</code></pre>
+<pre class="codehilite"><code class="language-python">setConfigs(items)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -637,11 +637,11 @@ your liking. No styles are applied by default - only styling hooks
 
 
 <h3 id="markdown.extensions.codehilite.HiliteTreeprocessor.code_unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.codehilite.HiliteTreeprocessor.code_unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.codehilite.HiliteTreeprocessor.code_unescape</span>
 
 
 <a href="#markdown.extensions.codehilite.HiliteTreeprocessor.code_unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.codehilite.HiliteTreeprocessor.code_unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">code_unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -657,11 +657,11 @@ your liking. No styles are applied by default - only styling hooks
 
 
 <h3 id="markdown.extensions.codehilite.HiliteTreeprocessor.run" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.codehilite.HiliteTreeprocessor.run</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.codehilite.HiliteTreeprocessor.run</span>
 
 
 <a href="#markdown.extensions.codehilite.HiliteTreeprocessor.run" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.codehilite.HiliteTreeprocessor.run(root)</code></pre>
+<pre class="codehilite"><code class="language-python">run(root)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -691,7 +691,7 @@ your liking. No styles are applied by default - only styling hooks
 
 
 <a href="#markdown.extensions.codehilite.parse_hl_lines" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.codehilite.parse_hl_lines(expr)</code></pre>
+<pre class="codehilite"><code class="language-python">parse_hl_lines(expr)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -732,7 +732,7 @@ Returns a list of ints, the line numbers to emphasize.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.codehilite.CodeHilite.hilite"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;hilite</a>
+        <a class="reference internal" href="#markdown.extensions.codehilite.CodeHilite.hilite"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;hilite</a>
     </li>
         </ul>
     </li>
@@ -742,27 +742,27 @@ Returns a list of ints, the line numbers to emphasize.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.codehilite.CodeHiliteExtension.extendMarkdown"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;extendMarkdown</a>
+        <a class="reference internal" href="#markdown.extensions.codehilite.CodeHiliteExtension.extendMarkdown"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;extendMarkdown</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.codehilite.CodeHiliteExtension.getConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfig</a>
+        <a class="reference internal" href="#markdown.extensions.codehilite.CodeHiliteExtension.getConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getConfig</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.codehilite.CodeHiliteExtension.getConfigInfo"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfigInfo</a>
+        <a class="reference internal" href="#markdown.extensions.codehilite.CodeHiliteExtension.getConfigInfo"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getConfigInfo</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.codehilite.CodeHiliteExtension.getConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfigs</a>
+        <a class="reference internal" href="#markdown.extensions.codehilite.CodeHiliteExtension.getConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getConfigs</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.codehilite.CodeHiliteExtension.setConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;setConfig</a>
+        <a class="reference internal" href="#markdown.extensions.codehilite.CodeHiliteExtension.setConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;setConfig</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.codehilite.CodeHiliteExtension.setConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;setConfigs</a>
+        <a class="reference internal" href="#markdown.extensions.codehilite.CodeHiliteExtension.setConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;setConfigs</a>
     </li>
         </ul>
     </li>
@@ -772,11 +772,11 @@ Returns a list of ints, the line numbers to emphasize.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.codehilite.HiliteTreeprocessor.code_unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;code_unescape</a>
+        <a class="reference internal" href="#markdown.extensions.codehilite.HiliteTreeprocessor.code_unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;code_unescape</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.codehilite.HiliteTreeprocessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;run</a>
+        <a class="reference internal" href="#markdown.extensions.codehilite.HiliteTreeprocessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;run</a>
     </li>
         </ul>
     </li>
@@ -790,13 +790,13 @@ Returns a list of ints, the line numbers to emphasize.</p>
             
             <h4>Previous topic</h4>
             <p class="topless">
-                <a href="../attr_list/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> attr_list</a>
+                <a href="../attr_list/" title="previous page">attr_list</a>
             </p>
 
             
             <h4>Next topic</h4>
             <p class="topless">
-                <a href="../def_list/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> def_list</a>
+                <a href="../def_list/" title="next page">def_list</a>
             </p>
 
             <div role="note" aria-label="source link">
@@ -822,10 +822,10 @@ Returns a list of ints, the line numbers to emphasize.</p>
                 <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../def_list/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> def_list" accesskey="N">next</a> |
+                <a href="../def_list/" title="def_list" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../attr_list/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> attr_list" accesskey="P">previous</a> |
+                <a href="../attr_list/" title="attr_list" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -838,26 +838,29 @@ Returns a list of ints, the line numbers to emphasize.</p>
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../../">markdown</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+            <a href="../">extensions</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> codehilite</a>
+            <a href="./">codehilite</a>
          &#187; </li>
                 
                 
@@ -881,9 +884,6 @@ Returns a list of ints, the line numbers to emphasize.</p>
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -896,7 +896,7 @@ Returns a list of ints, the line numbers to emphasize.</p>
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-22 23:35:33.303204+00:00
+        Docs Build Date UTC : 2023-08-24 13:24:36.125089+00:00
         -->
     </body>
 </html>

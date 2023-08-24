@@ -9,9 +9,9 @@
         <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/blockprocessors/">
         <link rel="shortcut icon" href="../../../favicon.ico">
         <link rel="search" title="Search" href="../../../search.html" />
-        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> core" href="../core/" />
-        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> blockparser" href="../blockparser/" />
-        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> blockprocessors &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="next" title="core" href="../core/" />
+        <link rel="prev" title="blockparser" href="../blockparser/" />
+        <title>blockprocessors &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../../static/nature.css" type="text/css" />
         <link rel="stylesheet" href="../../../static/pygments.css" type="text/css" />
         <link rel="stylesheet" href="../../../assets/_mkdocstrings.css" type="text/css" />
@@ -32,10 +32,10 @@
                 <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../core/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> core" accesskey="N">next</a> |
+                <a href="../core/" title="core" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../blockparser/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> blockparser" accesskey="P">previous</a> |
+                <a href="../blockparser/" title="blockparser" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -48,17 +48,20 @@
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../">markdown</a>
          &#187; </li>
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> blockprocessors</a>
+            <a href="./">blockprocessors</a>
          &#187; </li>
                 
                 
@@ -70,9 +73,6 @@
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -94,20 +94,7 @@
 
   <div class="doc doc-contents first">
   
-      <p>Python Markdown</p>
-<p>A Python implementation of John Gruber&rsquo;s Markdown.</p>
-<p>Documentation: https://python-markdown.github.io/
-GitHub: https://github.com/Python-Markdown/markdown/
-PyPI: https://pypi.org/project/Markdown/</p>
-<p>Started by Manfred Stienstra (http://www.dwerg.net/).
-Maintained for a few years by Yuri Takhteyev (http://www.freewisdom.org).
-Currently maintained by Waylan Limberg (https://github.com/waylan),
-Dmitry Shachnev (https://github.com/mitya57) and Isaac Muse (https://github.com/facelessuser).</p>
-<p>Copyright 2007-2018 The Python Markdown Project (v. 1.7 and later)
-Copyright 2004, 2005, 2006 Yuri Takhteyev (v. 0.2-1.6b)
-Copyright 2004 Manfred Stienstra (the original version)</p>
-<p>License: BSD (see LICENSE.md for details).</p>
-<h2 id="markdown.blockprocessors--core-markdown-blockparser">CORE MARKDOWN BLOCKPARSER<a class="headerlink" href="#markdown.blockprocessors--core-markdown-blockparser" title="Permanent link">&para;</a></h2>
+      <h2 id="markdown.blockprocessors--core-markdown-blockparser">CORE MARKDOWN BLOCKPARSER<a class="headerlink" href="#markdown.blockprocessors--core-markdown-blockparser" title="Permanent link">&para;</a></h2>
 <p>This parser handles basic parsing of Markdown blocks.  It doesn&rsquo;t concern
 itself with inline elements such as <strong>bold</strong> or <em>italics</em>, but rather just
 catches blocks, lists, quotes, etc.</p>
@@ -129,10 +116,10 @@ as they need to alter how markdown blocks are parsed.</p>
         </div>
       </li>
       <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.ListIndentProcessor" href="#markdown.blockprocessors.ListIndentProcessor">ListIndentProcessor</a></b>
+        <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.BlockQuoteProcessor" href="#markdown.blockprocessors.BlockQuoteProcessor">BlockQuoteProcessor</a></b>
         –
         <div class="doc-md-description">
-          <p>Process children of list items.</p>
+          
         </div>
       </li>
       <li class="field-body">
@@ -143,31 +130,10 @@ as they need to alter how markdown blocks are parsed.</p>
         </div>
       </li>
       <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.OListProcessor" href="#markdown.blockprocessors.OListProcessor">OListProcessor</a></b>
+        <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.EmptyBlockProcessor" href="#markdown.blockprocessors.EmptyBlockProcessor">EmptyBlockProcessor</a></b>
         –
         <div class="doc-md-description">
-          <p>Process ordered list blocks.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.UListProcessor" href="#markdown.blockprocessors.UListProcessor">UListProcessor</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Process unordered list blocks.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.HashHeaderProcessor" href="#markdown.blockprocessors.HashHeaderProcessor">HashHeaderProcessor</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Process Hash Headers.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.SetextHeaderProcessor" href="#markdown.blockprocessors.SetextHeaderProcessor">SetextHeaderProcessor</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Process Setext-style Headers.</p>
+          <p>Process blocks that are empty or start with an empty line.</p>
         </div>
       </li>
       <li class="field-body">
@@ -178,10 +144,31 @@ as they need to alter how markdown blocks are parsed.</p>
         </div>
       </li>
       <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.EmptyBlockProcessor" href="#markdown.blockprocessors.EmptyBlockProcessor">EmptyBlockProcessor</a></b>
+        <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.HashHeaderProcessor" href="#markdown.blockprocessors.HashHeaderProcessor">HashHeaderProcessor</a></b>
         –
         <div class="doc-md-description">
-          <p>Process blocks that are empty or start with an empty line.</p>
+          <p>Process Hash Headers.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.ListIndentProcessor" href="#markdown.blockprocessors.ListIndentProcessor">ListIndentProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Process children of list items.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.OListProcessor" href="#markdown.blockprocessors.OListProcessor">OListProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Process ordered list blocks.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.ParagraphProcessor" href="#markdown.blockprocessors.ParagraphProcessor">ParagraphProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Process Paragraph blocks.</p>
         </div>
       </li>
       <li class="field-body">
@@ -192,10 +179,17 @@ as they need to alter how markdown blocks are parsed.</p>
         </div>
       </li>
       <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.ParagraphProcessor" href="#markdown.blockprocessors.ParagraphProcessor">ParagraphProcessor</a></b>
+        <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.SetextHeaderProcessor" href="#markdown.blockprocessors.SetextHeaderProcessor">SetextHeaderProcessor</a></b>
         –
         <div class="doc-md-description">
-          <p>Process Paragraph blocks.</p>
+          <p>Process Setext-style Headers.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.UListProcessor" href="#markdown.blockprocessors.UListProcessor">UListProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Process unordered list blocks.</p>
         </div>
       </li>
   </ul>
@@ -235,7 +229,7 @@ as they need to alter how markdown blocks are parsed.</p>
 
 
 <a href="#markdown.blockprocessors.BlockProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.BlockProcessor(parser)</code></pre>
+<pre class="codehilite"><code class="language-python">BlockProcessor(parser)</code></pre>
 
   <div class="doc doc-contents ">
 
@@ -255,17 +249,17 @@ test passes, the parser will call the processors <code>run</code> method.</p>
   <p>Methods:</p>
   <ul>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.BlockProcessor.lastChild" href="#markdown.blockprocessors.BlockProcessor.lastChild">lastChild</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return the last child of an <code>etree</code> element.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.BlockProcessor.detab" href="#markdown.blockprocessors.BlockProcessor.detab">detab</a></b>
           –
           <div class="doc-md-description">
             <p>Remove a tab from the front of each line of the given text.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.BlockProcessor.lastChild" href="#markdown.blockprocessors.BlockProcessor.lastChild">lastChild</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return the last child of an <code>etree</code> element.</p>
           </div>
         </li>
         <li class="field-body">
@@ -276,17 +270,17 @@ test passes, the parser will call the processors <code>run</code> method.</p>
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.BlockProcessor.test" href="#markdown.blockprocessors.BlockProcessor.test">test</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Test for block type. Must be overridden by subclasses.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.BlockProcessor.run" href="#markdown.blockprocessors.BlockProcessor.run">run</a></b>
           –
           <div class="doc-md-description">
             <p>Run processor. Must be overridden by subclasses.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.BlockProcessor.test" href="#markdown.blockprocessors.BlockProcessor.test">test</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Test for block type. Must be overridden by subclasses.</p>
           </div>
         </li>
   </ul>
@@ -311,11 +305,11 @@ test passes, the parser will call the processors <code>run</code> method.</p>
 
 
 <h3 id="markdown.blockprocessors.BlockProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.BlockProcessor.detab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.BlockProcessor.detab</span>
 
 
 <a href="#markdown.blockprocessors.BlockProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.BlockProcessor.detab(text, length = None)</code></pre>
+<pre class="codehilite"><code class="language-python">detab(text, length = None)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -331,11 +325,11 @@ test passes, the parser will call the processors <code>run</code> method.</p>
 
 
 <h3 id="markdown.blockprocessors.BlockProcessor.lastChild" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.BlockProcessor.lastChild</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.BlockProcessor.lastChild</span>
 
 
 <a href="#markdown.blockprocessors.BlockProcessor.lastChild" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.BlockProcessor.lastChild(parent)</code></pre>
+<pre class="codehilite"><code class="language-python">lastChild(parent)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -351,11 +345,11 @@ test passes, the parser will call the processors <code>run</code> method.</p>
 
 
 <h3 id="markdown.blockprocessors.BlockProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.BlockProcessor.looseDetab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.BlockProcessor.looseDetab</span>
 
 
 <a href="#markdown.blockprocessors.BlockProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.BlockProcessor.looseDetab(text, level = 1)</code></pre>
+<pre class="codehilite"><code class="language-python">looseDetab(text, level = 1)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -371,11 +365,11 @@ test passes, the parser will call the processors <code>run</code> method.</p>
 
 
 <h3 id="markdown.blockprocessors.BlockProcessor.run" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.BlockProcessor.run</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.BlockProcessor.run</span>
 
 
 <a href="#markdown.blockprocessors.BlockProcessor.run" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.BlockProcessor.run(parent, blocks)</code></pre>
+<pre class="codehilite"><code class="language-python">run(parent, blocks)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -407,11 +401,11 @@ the list of blocks.</p>
 
 
 <h3 id="markdown.blockprocessors.BlockProcessor.test" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.BlockProcessor.test</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.BlockProcessor.test</span>
 
 
 <a href="#markdown.blockprocessors.BlockProcessor.test" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.BlockProcessor.test(parent, block)</code></pre>
+<pre class="codehilite"><code class="language-python">test(parent, block)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -468,10 +462,10 @@ depending on the parent of the block (i.e. inside a list), the parent
   <p>Methods:</p>
   <ul>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.BlockQuoteProcessor.lastChild" href="#markdown.blockprocessors.BlockQuoteProcessor.lastChild">lastChild</a></b>
+          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.BlockQuoteProcessor.clean" href="#markdown.blockprocessors.BlockQuoteProcessor.clean">clean</a></b>
           –
           <div class="doc-md-description">
-            <p>Return the last child of an <code>etree</code> element.</p>
+            <p>Remove <code>&gt;</code> from beginning of a line.</p>
           </div>
         </li>
         <li class="field-body">
@@ -482,17 +476,17 @@ depending on the parent of the block (i.e. inside a list), the parent
           </div>
         </li>
         <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.BlockQuoteProcessor.lastChild" href="#markdown.blockprocessors.BlockQuoteProcessor.lastChild">lastChild</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return the last child of an <code>etree</code> element.</p>
+          </div>
+        </li>
+        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.BlockQuoteProcessor.looseDetab" href="#markdown.blockprocessors.BlockQuoteProcessor.looseDetab">looseDetab</a></b>
           –
           <div class="doc-md-description">
             <p>Remove a tab from front of lines but allowing dedented lines.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.BlockQuoteProcessor.clean" href="#markdown.blockprocessors.BlockQuoteProcessor.clean">clean</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Remove <code>&gt;</code> from beginning of a line.</p>
           </div>
         </li>
   </ul>
@@ -517,11 +511,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.BlockQuoteProcessor.clean" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.BlockQuoteProcessor.clean</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.BlockQuoteProcessor.clean</span>
 
 
 <a href="#markdown.blockprocessors.BlockQuoteProcessor.clean" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.BlockQuoteProcessor.clean(line)</code></pre>
+<pre class="codehilite"><code class="language-python">clean(line)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -537,11 +531,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.BlockQuoteProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.BlockQuoteProcessor.detab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.BlockQuoteProcessor.detab</span>
 
 
 <a href="#markdown.blockprocessors.BlockQuoteProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.BlockQuoteProcessor.detab(text, length = None)</code></pre>
+<pre class="codehilite"><code class="language-python">detab(text, length = None)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -557,11 +551,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.BlockQuoteProcessor.lastChild" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.BlockQuoteProcessor.lastChild</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.BlockQuoteProcessor.lastChild</span>
 
 
 <a href="#markdown.blockprocessors.BlockQuoteProcessor.lastChild" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.BlockQuoteProcessor.lastChild(parent)</code></pre>
+<pre class="codehilite"><code class="language-python">lastChild(parent)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -577,11 +571,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.BlockQuoteProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.BlockQuoteProcessor.looseDetab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.BlockQuoteProcessor.looseDetab</span>
 
 
 <a href="#markdown.blockprocessors.BlockQuoteProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.BlockQuoteProcessor.looseDetab(text, level = 1)</code></pre>
+<pre class="codehilite"><code class="language-python">looseDetab(text, level = 1)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -626,17 +620,17 @@ depending on the parent of the block (i.e. inside a list), the parent
   <p>Methods:</p>
   <ul>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.CodeBlockProcessor.lastChild" href="#markdown.blockprocessors.CodeBlockProcessor.lastChild">lastChild</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return the last child of an <code>etree</code> element.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.CodeBlockProcessor.detab" href="#markdown.blockprocessors.CodeBlockProcessor.detab">detab</a></b>
           –
           <div class="doc-md-description">
             <p>Remove a tab from the front of each line of the given text.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.CodeBlockProcessor.lastChild" href="#markdown.blockprocessors.CodeBlockProcessor.lastChild">lastChild</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return the last child of an <code>etree</code> element.</p>
           </div>
         </li>
         <li class="field-body">
@@ -668,11 +662,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.CodeBlockProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.CodeBlockProcessor.detab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.CodeBlockProcessor.detab</span>
 
 
 <a href="#markdown.blockprocessors.CodeBlockProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.CodeBlockProcessor.detab(text, length = None)</code></pre>
+<pre class="codehilite"><code class="language-python">detab(text, length = None)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -688,11 +682,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.CodeBlockProcessor.lastChild" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.CodeBlockProcessor.lastChild</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.CodeBlockProcessor.lastChild</span>
 
 
 <a href="#markdown.blockprocessors.CodeBlockProcessor.lastChild" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.CodeBlockProcessor.lastChild(parent)</code></pre>
+<pre class="codehilite"><code class="language-python">lastChild(parent)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -708,11 +702,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.CodeBlockProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.CodeBlockProcessor.looseDetab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.CodeBlockProcessor.looseDetab</span>
 
 
 <a href="#markdown.blockprocessors.CodeBlockProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.CodeBlockProcessor.looseDetab(text, level = 1)</code></pre>
+<pre class="codehilite"><code class="language-python">looseDetab(text, level = 1)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -757,17 +751,17 @@ depending on the parent of the block (i.e. inside a list), the parent
   <p>Methods:</p>
   <ul>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.EmptyBlockProcessor.lastChild" href="#markdown.blockprocessors.EmptyBlockProcessor.lastChild">lastChild</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return the last child of an <code>etree</code> element.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.EmptyBlockProcessor.detab" href="#markdown.blockprocessors.EmptyBlockProcessor.detab">detab</a></b>
           –
           <div class="doc-md-description">
             <p>Remove a tab from the front of each line of the given text.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.EmptyBlockProcessor.lastChild" href="#markdown.blockprocessors.EmptyBlockProcessor.lastChild">lastChild</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return the last child of an <code>etree</code> element.</p>
           </div>
         </li>
         <li class="field-body">
@@ -799,11 +793,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.EmptyBlockProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.EmptyBlockProcessor.detab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.EmptyBlockProcessor.detab</span>
 
 
 <a href="#markdown.blockprocessors.EmptyBlockProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.EmptyBlockProcessor.detab(text, length = None)</code></pre>
+<pre class="codehilite"><code class="language-python">detab(text, length = None)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -819,11 +813,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.EmptyBlockProcessor.lastChild" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.EmptyBlockProcessor.lastChild</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.EmptyBlockProcessor.lastChild</span>
 
 
 <a href="#markdown.blockprocessors.EmptyBlockProcessor.lastChild" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.EmptyBlockProcessor.lastChild(parent)</code></pre>
+<pre class="codehilite"><code class="language-python">lastChild(parent)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -839,11 +833,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.EmptyBlockProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.EmptyBlockProcessor.looseDetab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.EmptyBlockProcessor.looseDetab</span>
 
 
 <a href="#markdown.blockprocessors.EmptyBlockProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.EmptyBlockProcessor.looseDetab(text, level = 1)</code></pre>
+<pre class="codehilite"><code class="language-python">looseDetab(text, level = 1)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -888,17 +882,17 @@ depending on the parent of the block (i.e. inside a list), the parent
   <p>Methods:</p>
   <ul>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.HRProcessor.lastChild" href="#markdown.blockprocessors.HRProcessor.lastChild">lastChild</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return the last child of an <code>etree</code> element.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.HRProcessor.detab" href="#markdown.blockprocessors.HRProcessor.detab">detab</a></b>
           –
           <div class="doc-md-description">
             <p>Remove a tab from the front of each line of the given text.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.HRProcessor.lastChild" href="#markdown.blockprocessors.HRProcessor.lastChild">lastChild</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return the last child of an <code>etree</code> element.</p>
           </div>
         </li>
         <li class="field-body">
@@ -930,11 +924,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.HRProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.HRProcessor.detab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.HRProcessor.detab</span>
 
 
 <a href="#markdown.blockprocessors.HRProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.HRProcessor.detab(text, length = None)</code></pre>
+<pre class="codehilite"><code class="language-python">detab(text, length = None)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -950,11 +944,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.HRProcessor.lastChild" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.HRProcessor.lastChild</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.HRProcessor.lastChild</span>
 
 
 <a href="#markdown.blockprocessors.HRProcessor.lastChild" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.HRProcessor.lastChild(parent)</code></pre>
+<pre class="codehilite"><code class="language-python">lastChild(parent)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -970,11 +964,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.HRProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.HRProcessor.looseDetab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.HRProcessor.looseDetab</span>
 
 
 <a href="#markdown.blockprocessors.HRProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.HRProcessor.looseDetab(text, level = 1)</code></pre>
+<pre class="codehilite"><code class="language-python">looseDetab(text, level = 1)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1019,17 +1013,17 @@ depending on the parent of the block (i.e. inside a list), the parent
   <p>Methods:</p>
   <ul>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.HashHeaderProcessor.lastChild" href="#markdown.blockprocessors.HashHeaderProcessor.lastChild">lastChild</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return the last child of an <code>etree</code> element.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.HashHeaderProcessor.detab" href="#markdown.blockprocessors.HashHeaderProcessor.detab">detab</a></b>
           –
           <div class="doc-md-description">
             <p>Remove a tab from the front of each line of the given text.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.HashHeaderProcessor.lastChild" href="#markdown.blockprocessors.HashHeaderProcessor.lastChild">lastChild</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return the last child of an <code>etree</code> element.</p>
           </div>
         </li>
         <li class="field-body">
@@ -1061,11 +1055,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.HashHeaderProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.HashHeaderProcessor.detab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.HashHeaderProcessor.detab</span>
 
 
 <a href="#markdown.blockprocessors.HashHeaderProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.HashHeaderProcessor.detab(text, length = None)</code></pre>
+<pre class="codehilite"><code class="language-python">detab(text, length = None)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1081,11 +1075,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.HashHeaderProcessor.lastChild" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.HashHeaderProcessor.lastChild</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.HashHeaderProcessor.lastChild</span>
 
 
 <a href="#markdown.blockprocessors.HashHeaderProcessor.lastChild" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.HashHeaderProcessor.lastChild(parent)</code></pre>
+<pre class="codehilite"><code class="language-python">lastChild(parent)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1101,11 +1095,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.HashHeaderProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.HashHeaderProcessor.looseDetab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.HashHeaderProcessor.looseDetab</span>
 
 
 <a href="#markdown.blockprocessors.HashHeaderProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.HashHeaderProcessor.looseDetab(text, level = 1)</code></pre>
+<pre class="codehilite"><code class="language-python">looseDetab(text, level = 1)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1133,7 +1127,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <a href="#markdown.blockprocessors.ListIndentProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.ListIndentProcessor(*args)</code></pre>
+<pre class="codehilite"><code class="language-python">ListIndentProcessor(*args)</code></pre>
 
   <div class="doc doc-contents ">
           <p class="doc doc-class-bases">
@@ -1160,10 +1154,10 @@ depending on the parent of the block (i.e. inside a list), the parent
   <p>Methods:</p>
   <ul>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.ListIndentProcessor.lastChild" href="#markdown.blockprocessors.ListIndentProcessor.lastChild">lastChild</a></b>
+          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.ListIndentProcessor.create_item" href="#markdown.blockprocessors.ListIndentProcessor.create_item">create_item</a></b>
           –
           <div class="doc-md-description">
-            <p>Return the last child of an <code>etree</code> element.</p>
+            <p>Create a new <code>li</code> and parse the block with it as the parent.</p>
           </div>
         </li>
         <li class="field-body">
@@ -1174,24 +1168,24 @@ depending on the parent of the block (i.e. inside a list), the parent
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.ListIndentProcessor.looseDetab" href="#markdown.blockprocessors.ListIndentProcessor.looseDetab">looseDetab</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Remove a tab from front of lines but allowing dedented lines.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.ListIndentProcessor.create_item" href="#markdown.blockprocessors.ListIndentProcessor.create_item">create_item</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Create a new <code>li</code> and parse the block with it as the parent.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.ListIndentProcessor.get_level" href="#markdown.blockprocessors.ListIndentProcessor.get_level">get_level</a></b>
           –
           <div class="doc-md-description">
             <p>Get level of indent based on list level.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.ListIndentProcessor.lastChild" href="#markdown.blockprocessors.ListIndentProcessor.lastChild">lastChild</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return the last child of an <code>etree</code> element.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.ListIndentProcessor.looseDetab" href="#markdown.blockprocessors.ListIndentProcessor.looseDetab">looseDetab</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Remove a tab from front of lines but allowing dedented lines.</p>
           </div>
         </li>
   </ul>
@@ -1216,11 +1210,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.ListIndentProcessor.create_item" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.ListIndentProcessor.create_item</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.ListIndentProcessor.create_item</span>
 
 
 <a href="#markdown.blockprocessors.ListIndentProcessor.create_item" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.ListIndentProcessor.create_item(parent, block)</code></pre>
+<pre class="codehilite"><code class="language-python">create_item(parent, block)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1236,11 +1230,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.ListIndentProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.ListIndentProcessor.detab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.ListIndentProcessor.detab</span>
 
 
 <a href="#markdown.blockprocessors.ListIndentProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.ListIndentProcessor.detab(text, length = None)</code></pre>
+<pre class="codehilite"><code class="language-python">detab(text, length = None)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1256,11 +1250,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.ListIndentProcessor.get_level" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.ListIndentProcessor.get_level</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.ListIndentProcessor.get_level</span>
 
 
 <a href="#markdown.blockprocessors.ListIndentProcessor.get_level" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.ListIndentProcessor.get_level(parent, block)</code></pre>
+<pre class="codehilite"><code class="language-python">get_level(parent, block)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1276,11 +1270,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.ListIndentProcessor.lastChild" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.ListIndentProcessor.lastChild</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.ListIndentProcessor.lastChild</span>
 
 
 <a href="#markdown.blockprocessors.ListIndentProcessor.lastChild" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.ListIndentProcessor.lastChild(parent)</code></pre>
+<pre class="codehilite"><code class="language-python">lastChild(parent)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1296,11 +1290,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.ListIndentProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.ListIndentProcessor.looseDetab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.ListIndentProcessor.looseDetab</span>
 
 
 <a href="#markdown.blockprocessors.ListIndentProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.ListIndentProcessor.looseDetab(text, level = 1)</code></pre>
+<pre class="codehilite"><code class="language-python">looseDetab(text, level = 1)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1328,7 +1322,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <a href="#markdown.blockprocessors.OListProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.OListProcessor(parser)</code></pre>
+<pre class="codehilite"><code class="language-python">OListProcessor(parser)</code></pre>
 
   <div class="doc doc-contents ">
           <p class="doc doc-class-bases">
@@ -1345,13 +1339,6 @@ depending on the parent of the block (i.e. inside a list), the parent
   <p>Methods:</p>
   <ul>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.OListProcessor.lastChild" href="#markdown.blockprocessors.OListProcessor.lastChild">lastChild</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return the last child of an <code>etree</code> element.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.OListProcessor.detab" href="#markdown.blockprocessors.OListProcessor.detab">detab</a></b>
           –
           <div class="doc-md-description">
@@ -1359,17 +1346,24 @@ depending on the parent of the block (i.e. inside a list), the parent
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.OListProcessor.looseDetab" href="#markdown.blockprocessors.OListProcessor.looseDetab">looseDetab</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Remove a tab from front of lines but allowing dedented lines.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.OListProcessor.get_items" href="#markdown.blockprocessors.OListProcessor.get_items">get_items</a></b>
           –
           <div class="doc-md-description">
             <p>Break a block into list items.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.OListProcessor.lastChild" href="#markdown.blockprocessors.OListProcessor.lastChild">lastChild</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return the last child of an <code>etree</code> element.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.OListProcessor.looseDetab" href="#markdown.blockprocessors.OListProcessor.looseDetab">looseDetab</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Remove a tab from front of lines but allowing dedented lines.</p>
           </div>
         </li>
   </ul>
@@ -1394,11 +1388,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.OListProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.OListProcessor.detab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.OListProcessor.detab</span>
 
 
 <a href="#markdown.blockprocessors.OListProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.OListProcessor.detab(text, length = None)</code></pre>
+<pre class="codehilite"><code class="language-python">detab(text, length = None)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1414,11 +1408,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.OListProcessor.get_items" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.OListProcessor.get_items</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.OListProcessor.get_items</span>
 
 
 <a href="#markdown.blockprocessors.OListProcessor.get_items" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.OListProcessor.get_items(block)</code></pre>
+<pre class="codehilite"><code class="language-python">get_items(block)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1434,11 +1428,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.OListProcessor.lastChild" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.OListProcessor.lastChild</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.OListProcessor.lastChild</span>
 
 
 <a href="#markdown.blockprocessors.OListProcessor.lastChild" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.OListProcessor.lastChild(parent)</code></pre>
+<pre class="codehilite"><code class="language-python">lastChild(parent)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1454,11 +1448,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.OListProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.OListProcessor.looseDetab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.OListProcessor.looseDetab</span>
 
 
 <a href="#markdown.blockprocessors.OListProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.OListProcessor.looseDetab(text, level = 1)</code></pre>
+<pre class="codehilite"><code class="language-python">looseDetab(text, level = 1)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1503,17 +1497,17 @@ depending on the parent of the block (i.e. inside a list), the parent
   <p>Methods:</p>
   <ul>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.ParagraphProcessor.lastChild" href="#markdown.blockprocessors.ParagraphProcessor.lastChild">lastChild</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return the last child of an <code>etree</code> element.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.ParagraphProcessor.detab" href="#markdown.blockprocessors.ParagraphProcessor.detab">detab</a></b>
           –
           <div class="doc-md-description">
             <p>Remove a tab from the front of each line of the given text.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.ParagraphProcessor.lastChild" href="#markdown.blockprocessors.ParagraphProcessor.lastChild">lastChild</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return the last child of an <code>etree</code> element.</p>
           </div>
         </li>
         <li class="field-body">
@@ -1545,11 +1539,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.ParagraphProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.ParagraphProcessor.detab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.ParagraphProcessor.detab</span>
 
 
 <a href="#markdown.blockprocessors.ParagraphProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.ParagraphProcessor.detab(text, length = None)</code></pre>
+<pre class="codehilite"><code class="language-python">detab(text, length = None)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1565,11 +1559,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.ParagraphProcessor.lastChild" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.ParagraphProcessor.lastChild</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.ParagraphProcessor.lastChild</span>
 
 
 <a href="#markdown.blockprocessors.ParagraphProcessor.lastChild" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.ParagraphProcessor.lastChild(parent)</code></pre>
+<pre class="codehilite"><code class="language-python">lastChild(parent)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1585,11 +1579,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.ParagraphProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.ParagraphProcessor.looseDetab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.ParagraphProcessor.looseDetab</span>
 
 
 <a href="#markdown.blockprocessors.ParagraphProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.ParagraphProcessor.looseDetab(text, level = 1)</code></pre>
+<pre class="codehilite"><code class="language-python">looseDetab(text, level = 1)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1634,17 +1628,17 @@ depending on the parent of the block (i.e. inside a list), the parent
   <p>Methods:</p>
   <ul>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.ReferenceProcessor.lastChild" href="#markdown.blockprocessors.ReferenceProcessor.lastChild">lastChild</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return the last child of an <code>etree</code> element.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.ReferenceProcessor.detab" href="#markdown.blockprocessors.ReferenceProcessor.detab">detab</a></b>
           –
           <div class="doc-md-description">
             <p>Remove a tab from the front of each line of the given text.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.ReferenceProcessor.lastChild" href="#markdown.blockprocessors.ReferenceProcessor.lastChild">lastChild</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return the last child of an <code>etree</code> element.</p>
           </div>
         </li>
         <li class="field-body">
@@ -1676,11 +1670,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.ReferenceProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.ReferenceProcessor.detab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.ReferenceProcessor.detab</span>
 
 
 <a href="#markdown.blockprocessors.ReferenceProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.ReferenceProcessor.detab(text, length = None)</code></pre>
+<pre class="codehilite"><code class="language-python">detab(text, length = None)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1696,11 +1690,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.ReferenceProcessor.lastChild" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.ReferenceProcessor.lastChild</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.ReferenceProcessor.lastChild</span>
 
 
 <a href="#markdown.blockprocessors.ReferenceProcessor.lastChild" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.ReferenceProcessor.lastChild(parent)</code></pre>
+<pre class="codehilite"><code class="language-python">lastChild(parent)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1716,11 +1710,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.ReferenceProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.ReferenceProcessor.looseDetab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.ReferenceProcessor.looseDetab</span>
 
 
 <a href="#markdown.blockprocessors.ReferenceProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.ReferenceProcessor.looseDetab(text, level = 1)</code></pre>
+<pre class="codehilite"><code class="language-python">looseDetab(text, level = 1)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1765,17 +1759,17 @@ depending on the parent of the block (i.e. inside a list), the parent
   <p>Methods:</p>
   <ul>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.SetextHeaderProcessor.lastChild" href="#markdown.blockprocessors.SetextHeaderProcessor.lastChild">lastChild</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return the last child of an <code>etree</code> element.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.SetextHeaderProcessor.detab" href="#markdown.blockprocessors.SetextHeaderProcessor.detab">detab</a></b>
           –
           <div class="doc-md-description">
             <p>Remove a tab from the front of each line of the given text.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.SetextHeaderProcessor.lastChild" href="#markdown.blockprocessors.SetextHeaderProcessor.lastChild">lastChild</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return the last child of an <code>etree</code> element.</p>
           </div>
         </li>
         <li class="field-body">
@@ -1807,11 +1801,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.SetextHeaderProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.SetextHeaderProcessor.detab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.SetextHeaderProcessor.detab</span>
 
 
 <a href="#markdown.blockprocessors.SetextHeaderProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.SetextHeaderProcessor.detab(text, length = None)</code></pre>
+<pre class="codehilite"><code class="language-python">detab(text, length = None)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1827,11 +1821,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.SetextHeaderProcessor.lastChild" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.SetextHeaderProcessor.lastChild</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.SetextHeaderProcessor.lastChild</span>
 
 
 <a href="#markdown.blockprocessors.SetextHeaderProcessor.lastChild" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.SetextHeaderProcessor.lastChild(parent)</code></pre>
+<pre class="codehilite"><code class="language-python">lastChild(parent)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1847,11 +1841,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.SetextHeaderProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.SetextHeaderProcessor.looseDetab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.SetextHeaderProcessor.looseDetab</span>
 
 
 <a href="#markdown.blockprocessors.SetextHeaderProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.SetextHeaderProcessor.looseDetab(text, level = 1)</code></pre>
+<pre class="codehilite"><code class="language-python">looseDetab(text, level = 1)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1879,7 +1873,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <a href="#markdown.blockprocessors.UListProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.UListProcessor(parser)</code></pre>
+<pre class="codehilite"><code class="language-python">UListProcessor(parser)</code></pre>
 
   <div class="doc doc-contents ">
           <p class="doc doc-class-bases">
@@ -1896,13 +1890,6 @@ depending on the parent of the block (i.e. inside a list), the parent
   <p>Methods:</p>
   <ul>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.UListProcessor.lastChild" href="#markdown.blockprocessors.UListProcessor.lastChild">lastChild</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return the last child of an <code>etree</code> element.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.UListProcessor.detab" href="#markdown.blockprocessors.UListProcessor.detab">detab</a></b>
           –
           <div class="doc-md-description">
@@ -1910,17 +1897,24 @@ depending on the parent of the block (i.e. inside a list), the parent
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.UListProcessor.looseDetab" href="#markdown.blockprocessors.UListProcessor.looseDetab">looseDetab</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Remove a tab from front of lines but allowing dedented lines.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.UListProcessor.get_items" href="#markdown.blockprocessors.UListProcessor.get_items">get_items</a></b>
           –
           <div class="doc-md-description">
             <p>Break a block into list items.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.UListProcessor.lastChild" href="#markdown.blockprocessors.UListProcessor.lastChild">lastChild</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return the last child of an <code>etree</code> element.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.blockprocessors.UListProcessor.looseDetab" href="#markdown.blockprocessors.UListProcessor.looseDetab">looseDetab</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Remove a tab from front of lines but allowing dedented lines.</p>
           </div>
         </li>
   </ul>
@@ -1945,11 +1939,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.UListProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.UListProcessor.detab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.UListProcessor.detab</span>
 
 
 <a href="#markdown.blockprocessors.UListProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.UListProcessor.detab(text, length = None)</code></pre>
+<pre class="codehilite"><code class="language-python">detab(text, length = None)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1965,11 +1959,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.UListProcessor.get_items" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.UListProcessor.get_items</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.UListProcessor.get_items</span>
 
 
 <a href="#markdown.blockprocessors.UListProcessor.get_items" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.UListProcessor.get_items(block)</code></pre>
+<pre class="codehilite"><code class="language-python">get_items(block)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1985,11 +1979,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.UListProcessor.lastChild" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.UListProcessor.lastChild</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.UListProcessor.lastChild</span>
 
 
 <a href="#markdown.blockprocessors.UListProcessor.lastChild" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.UListProcessor.lastChild(parent)</code></pre>
+<pre class="codehilite"><code class="language-python">lastChild(parent)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2005,11 +1999,11 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <h3 id="markdown.blockprocessors.UListProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.UListProcessor.looseDetab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.blockprocessors.UListProcessor.looseDetab</span>
 
 
 <a href="#markdown.blockprocessors.UListProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.UListProcessor.looseDetab(text, level = 1)</code></pre>
+<pre class="codehilite"><code class="language-python">looseDetab(text, level = 1)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2039,7 +2033,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
 
 <a href="#markdown.blockprocessors.build_block_parser" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.blockprocessors.build_block_parser(md, **kwargs)</code></pre>
+<pre class="codehilite"><code class="language-python">build_block_parser(md, **kwargs)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -2078,23 +2072,23 @@ depending on the parent of the block (i.e. inside a list), the parent
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.BlockProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;detab</a>
+        <a class="reference internal" href="#markdown.blockprocessors.BlockProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;detab</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.BlockProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;lastChild</a>
+        <a class="reference internal" href="#markdown.blockprocessors.BlockProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;lastChild</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.BlockProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;looseDetab</a>
+        <a class="reference internal" href="#markdown.blockprocessors.BlockProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;looseDetab</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.BlockProcessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;run</a>
+        <a class="reference internal" href="#markdown.blockprocessors.BlockProcessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;run</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.BlockProcessor.test"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;test</a>
+        <a class="reference internal" href="#markdown.blockprocessors.BlockProcessor.test"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;test</a>
     </li>
         </ul>
     </li>
@@ -2104,19 +2098,19 @@ depending on the parent of the block (i.e. inside a list), the parent
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.BlockQuoteProcessor.clean"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;clean</a>
+        <a class="reference internal" href="#markdown.blockprocessors.BlockQuoteProcessor.clean"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;clean</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.BlockQuoteProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;detab</a>
+        <a class="reference internal" href="#markdown.blockprocessors.BlockQuoteProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;detab</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.BlockQuoteProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;lastChild</a>
+        <a class="reference internal" href="#markdown.blockprocessors.BlockQuoteProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;lastChild</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.BlockQuoteProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;looseDetab</a>
+        <a class="reference internal" href="#markdown.blockprocessors.BlockQuoteProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;looseDetab</a>
     </li>
         </ul>
     </li>
@@ -2126,15 +2120,15 @@ depending on the parent of the block (i.e. inside a list), the parent
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.CodeBlockProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;detab</a>
+        <a class="reference internal" href="#markdown.blockprocessors.CodeBlockProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;detab</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.CodeBlockProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;lastChild</a>
+        <a class="reference internal" href="#markdown.blockprocessors.CodeBlockProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;lastChild</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.CodeBlockProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;looseDetab</a>
+        <a class="reference internal" href="#markdown.blockprocessors.CodeBlockProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;looseDetab</a>
     </li>
         </ul>
     </li>
@@ -2144,15 +2138,15 @@ depending on the parent of the block (i.e. inside a list), the parent
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.EmptyBlockProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;detab</a>
+        <a class="reference internal" href="#markdown.blockprocessors.EmptyBlockProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;detab</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.EmptyBlockProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;lastChild</a>
+        <a class="reference internal" href="#markdown.blockprocessors.EmptyBlockProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;lastChild</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.EmptyBlockProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;looseDetab</a>
+        <a class="reference internal" href="#markdown.blockprocessors.EmptyBlockProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;looseDetab</a>
     </li>
         </ul>
     </li>
@@ -2162,15 +2156,15 @@ depending on the parent of the block (i.e. inside a list), the parent
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.HRProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;detab</a>
+        <a class="reference internal" href="#markdown.blockprocessors.HRProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;detab</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.HRProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;lastChild</a>
+        <a class="reference internal" href="#markdown.blockprocessors.HRProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;lastChild</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.HRProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;looseDetab</a>
+        <a class="reference internal" href="#markdown.blockprocessors.HRProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;looseDetab</a>
     </li>
         </ul>
     </li>
@@ -2180,15 +2174,15 @@ depending on the parent of the block (i.e. inside a list), the parent
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.HashHeaderProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;detab</a>
+        <a class="reference internal" href="#markdown.blockprocessors.HashHeaderProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;detab</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.HashHeaderProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;lastChild</a>
+        <a class="reference internal" href="#markdown.blockprocessors.HashHeaderProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;lastChild</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.HashHeaderProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;looseDetab</a>
+        <a class="reference internal" href="#markdown.blockprocessors.HashHeaderProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;looseDetab</a>
     </li>
         </ul>
     </li>
@@ -2198,23 +2192,23 @@ depending on the parent of the block (i.e. inside a list), the parent
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.ListIndentProcessor.create_item"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;create_item</a>
+        <a class="reference internal" href="#markdown.blockprocessors.ListIndentProcessor.create_item"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;create_item</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.ListIndentProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;detab</a>
+        <a class="reference internal" href="#markdown.blockprocessors.ListIndentProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;detab</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.ListIndentProcessor.get_level"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;get_level</a>
+        <a class="reference internal" href="#markdown.blockprocessors.ListIndentProcessor.get_level"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;get_level</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.ListIndentProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;lastChild</a>
+        <a class="reference internal" href="#markdown.blockprocessors.ListIndentProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;lastChild</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.ListIndentProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;looseDetab</a>
+        <a class="reference internal" href="#markdown.blockprocessors.ListIndentProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;looseDetab</a>
     </li>
         </ul>
     </li>
@@ -2224,19 +2218,19 @@ depending on the parent of the block (i.e. inside a list), the parent
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.OListProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;detab</a>
+        <a class="reference internal" href="#markdown.blockprocessors.OListProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;detab</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.OListProcessor.get_items"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;get_items</a>
+        <a class="reference internal" href="#markdown.blockprocessors.OListProcessor.get_items"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;get_items</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.OListProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;lastChild</a>
+        <a class="reference internal" href="#markdown.blockprocessors.OListProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;lastChild</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.OListProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;looseDetab</a>
+        <a class="reference internal" href="#markdown.blockprocessors.OListProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;looseDetab</a>
     </li>
         </ul>
     </li>
@@ -2246,15 +2240,15 @@ depending on the parent of the block (i.e. inside a list), the parent
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.ParagraphProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;detab</a>
+        <a class="reference internal" href="#markdown.blockprocessors.ParagraphProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;detab</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.ParagraphProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;lastChild</a>
+        <a class="reference internal" href="#markdown.blockprocessors.ParagraphProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;lastChild</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.ParagraphProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;looseDetab</a>
+        <a class="reference internal" href="#markdown.blockprocessors.ParagraphProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;looseDetab</a>
     </li>
         </ul>
     </li>
@@ -2264,15 +2258,15 @@ depending on the parent of the block (i.e. inside a list), the parent
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.ReferenceProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;detab</a>
+        <a class="reference internal" href="#markdown.blockprocessors.ReferenceProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;detab</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.ReferenceProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;lastChild</a>
+        <a class="reference internal" href="#markdown.blockprocessors.ReferenceProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;lastChild</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.ReferenceProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;looseDetab</a>
+        <a class="reference internal" href="#markdown.blockprocessors.ReferenceProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;looseDetab</a>
     </li>
         </ul>
     </li>
@@ -2282,15 +2276,15 @@ depending on the parent of the block (i.e. inside a list), the parent
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.SetextHeaderProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;detab</a>
+        <a class="reference internal" href="#markdown.blockprocessors.SetextHeaderProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;detab</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.SetextHeaderProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;lastChild</a>
+        <a class="reference internal" href="#markdown.blockprocessors.SetextHeaderProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;lastChild</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.SetextHeaderProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;looseDetab</a>
+        <a class="reference internal" href="#markdown.blockprocessors.SetextHeaderProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;looseDetab</a>
     </li>
         </ul>
     </li>
@@ -2300,19 +2294,19 @@ depending on the parent of the block (i.e. inside a list), the parent
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.UListProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;detab</a>
+        <a class="reference internal" href="#markdown.blockprocessors.UListProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;detab</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.UListProcessor.get_items"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;get_items</a>
+        <a class="reference internal" href="#markdown.blockprocessors.UListProcessor.get_items"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;get_items</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.UListProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;lastChild</a>
+        <a class="reference internal" href="#markdown.blockprocessors.UListProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;lastChild</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.blockprocessors.UListProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;looseDetab</a>
+        <a class="reference internal" href="#markdown.blockprocessors.UListProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;looseDetab</a>
     </li>
         </ul>
     </li>
@@ -2326,13 +2320,13 @@ depending on the parent of the block (i.e. inside a list), the parent
             
             <h4>Previous topic</h4>
             <p class="topless">
-                <a href="../blockparser/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> blockparser</a>
+                <a href="../blockparser/" title="previous page">blockparser</a>
             </p>
 
             
             <h4>Next topic</h4>
             <p class="topless">
-                <a href="../core/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> core</a>
+                <a href="../core/" title="next page">core</a>
             </p>
 
             <div role="note" aria-label="source link">
@@ -2358,10 +2352,10 @@ depending on the parent of the block (i.e. inside a list), the parent
                 <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../core/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> core" accesskey="N">next</a> |
+                <a href="../core/" title="core" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../blockparser/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> blockparser" accesskey="P">previous</a> |
+                <a href="../blockparser/" title="blockparser" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -2374,17 +2368,20 @@ depending on the parent of the block (i.e. inside a list), the parent
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../">markdown</a>
          &#187; </li>
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> blockprocessors</a>
+            <a href="./">blockprocessors</a>
          &#187; </li>
                 
                 
@@ -2396,9 +2393,6 @@ depending on the parent of the block (i.e. inside a list), the parent
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -2411,7 +2405,7 @@ depending on the parent of the block (i.e. inside a list), the parent
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-22 23:35:33.290167+00:00
+        Docs Build Date UTC : 2023-08-24 13:24:36.111556+00:00
         -->
     </body>
 </html>

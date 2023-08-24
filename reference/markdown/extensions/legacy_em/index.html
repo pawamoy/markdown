@@ -9,9 +9,9 @@
         <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/extensions/legacy_em/">
         <link rel="shortcut icon" href="../../../../favicon.ico">
         <link rel="search" title="Search" href="../../../../search.html" />
-        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> md_in_html" href="../md_in_html/" />
-        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> legacy_attrs" href="../legacy_attrs/" />
-        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> legacy_em &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="next" title="md_in_html" href="../md_in_html/" />
+        <link rel="prev" title="legacy_attrs" href="../legacy_attrs/" />
+        <title>legacy_em &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../../../static/nature.css" type="text/css" />
         <link rel="stylesheet" href="../../../../static/pygments.css" type="text/css" />
         <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css" type="text/css" />
@@ -32,10 +32,10 @@
                 <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../md_in_html/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> md_in_html" accesskey="N">next</a> |
+                <a href="../md_in_html/" title="md_in_html" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../legacy_attrs/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> legacy_attrs" accesskey="P">previous</a> |
+                <a href="../legacy_attrs/" title="legacy_attrs" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -48,19 +48,22 @@
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../../">markdown</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+            <a href="../">extensions</a>
          &#187; </li>
                 
                 
@@ -73,7 +76,7 @@
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> legacy_em</a>
+            <a href="./">legacy_em</a>
          &#187; </li>
                 
                 
@@ -91,9 +94,6 @@
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -127,17 +127,17 @@
   <p>Classes:</p>
   <ul>
       <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_em.LegacyUnderscoreProcessor" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor">LegacyUnderscoreProcessor</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Emphasis processor for handling strong and em matches inside underscores.</p>
-        </div>
-      </li>
-      <li class="field-body">
         <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_em.LegacyEmExtension" href="#markdown.extensions.legacy_em.LegacyEmExtension">LegacyEmExtension</a></b>
         –
         <div class="doc-md-description">
           <p>Add legacy_em extension to Markdown class.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_em.LegacyUnderscoreProcessor" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor">LegacyUnderscoreProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Emphasis processor for handling strong and em matches inside underscores.</p>
         </div>
       </li>
   </ul>
@@ -194,6 +194,13 @@
   <p>Methods:</p>
   <ul>
         <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_em.LegacyEmExtension.extendMarkdown" href="#markdown.extensions.legacy_em.LegacyEmExtension.extendMarkdown">extendMarkdown</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Modify inline patterns.</p>
+          </div>
+        </li>
+        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_em.LegacyEmExtension.getConfig" href="#markdown.extensions.legacy_em.LegacyEmExtension.getConfig">getConfig</a></b>
           –
           <div class="doc-md-description">
@@ -201,17 +208,17 @@
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_em.LegacyEmExtension.getConfigs" href="#markdown.extensions.legacy_em.LegacyEmExtension.getConfigs">getConfigs</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return all configs settings as a dict.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_em.LegacyEmExtension.getConfigInfo" href="#markdown.extensions.legacy_em.LegacyEmExtension.getConfigInfo">getConfigInfo</a></b>
           –
           <div class="doc-md-description">
             <p>Return all <code>config</code> descriptions as a list of tuples.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_em.LegacyEmExtension.getConfigs" href="#markdown.extensions.legacy_em.LegacyEmExtension.getConfigs">getConfigs</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return all configs settings as a dict.</p>
           </div>
         </li>
         <li class="field-body">
@@ -226,13 +233,6 @@
           –
           <div class="doc-md-description">
             <p>Set multiple <code>config</code> settings given a dict or list of tuples.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_em.LegacyEmExtension.extendMarkdown" href="#markdown.extensions.legacy_em.LegacyEmExtension.extendMarkdown">extendMarkdown</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Modify inline patterns.</p>
           </div>
         </li>
   </ul>
@@ -257,11 +257,11 @@
 
 
 <h3 id="markdown.extensions.legacy_em.LegacyEmExtension.extendMarkdown" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyEmExtension.extendMarkdown</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyEmExtension.extendMarkdown</span>
 
 
 <a href="#markdown.extensions.legacy_em.LegacyEmExtension.extendMarkdown" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.legacy_em.LegacyEmExtension.extendMarkdown(md)</code></pre>
+<pre class="codehilite"><code class="language-python">extendMarkdown(md)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -277,11 +277,11 @@
 
 
 <h3 id="markdown.extensions.legacy_em.LegacyEmExtension.getConfig" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyEmExtension.getConfig</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyEmExtension.getConfig</span>
 
 
 <a href="#markdown.extensions.legacy_em.LegacyEmExtension.getConfig" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.legacy_em.LegacyEmExtension.getConfig(key, default = '')</code></pre>
+<pre class="codehilite"><code class="language-python">getConfig(key, default = '')</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -297,11 +297,11 @@
 
 
 <h3 id="markdown.extensions.legacy_em.LegacyEmExtension.getConfigInfo" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyEmExtension.getConfigInfo</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyEmExtension.getConfigInfo</span>
 
 
 <a href="#markdown.extensions.legacy_em.LegacyEmExtension.getConfigInfo" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.legacy_em.LegacyEmExtension.getConfigInfo()</code></pre>
+<pre class="codehilite"><code class="language-python">getConfigInfo()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -317,11 +317,11 @@
 
 
 <h3 id="markdown.extensions.legacy_em.LegacyEmExtension.getConfigs" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyEmExtension.getConfigs</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyEmExtension.getConfigs</span>
 
 
 <a href="#markdown.extensions.legacy_em.LegacyEmExtension.getConfigs" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.legacy_em.LegacyEmExtension.getConfigs()</code></pre>
+<pre class="codehilite"><code class="language-python">getConfigs()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -337,11 +337,11 @@
 
 
 <h3 id="markdown.extensions.legacy_em.LegacyEmExtension.setConfig" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyEmExtension.setConfig</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyEmExtension.setConfig</span>
 
 
 <a href="#markdown.extensions.legacy_em.LegacyEmExtension.setConfig" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.legacy_em.LegacyEmExtension.setConfig(key, value)</code></pre>
+<pre class="codehilite"><code class="language-python">setConfig(key, value)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -357,11 +357,11 @@
 
 
 <h3 id="markdown.extensions.legacy_em.LegacyEmExtension.setConfigs" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyEmExtension.setConfigs</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyEmExtension.setConfigs</span>
 
 
 <a href="#markdown.extensions.legacy_em.LegacyEmExtension.setConfigs" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.legacy_em.LegacyEmExtension.setConfigs(items)</code></pre>
+<pre class="codehilite"><code class="language-python">setConfigs(items)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -406,41 +406,6 @@
   <p>Methods:</p>
   <ul>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_em.LegacyUnderscoreProcessor.getCompiledRegExp" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.getCompiledRegExp">getCompiledRegExp</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return a compiled regular expression.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_em.LegacyUnderscoreProcessor.handleMatch" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.handleMatch">handleMatch</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Parse patterns.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_em.LegacyUnderscoreProcessor.type" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.type">type</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return class name, to define pattern type</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_em.LegacyUnderscoreProcessor.unescape" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.unescape">unescape</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return unescaped text given text with an inline placeholder.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_single" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_single">build_single</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return single tag.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_double" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_double">build_double</a></b>
           –
           <div class="doc-md-description">
@@ -455,6 +420,34 @@
           </div>
         </li>
         <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_element" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_element">build_element</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Element builder.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_single" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_single">build_single</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return single tag.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_em.LegacyUnderscoreProcessor.getCompiledRegExp" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.getCompiledRegExp">getCompiledRegExp</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return a compiled regular expression.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_em.LegacyUnderscoreProcessor.handleMatch" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.handleMatch">handleMatch</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Parse patterns.</p>
+          </div>
+        </li>
+        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_em.LegacyUnderscoreProcessor.parse_sub_patterns" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.parse_sub_patterns">parse_sub_patterns</a></b>
           –
           <div class="doc-md-description">
@@ -462,10 +455,17 @@
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_element" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_element">build_element</a></b>
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_em.LegacyUnderscoreProcessor.type" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.type">type</a></b>
           –
           <div class="doc-md-description">
-            <p>Element builder.</p>
+            <p>Return class name, to define pattern type</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.legacy_em.LegacyUnderscoreProcessor.unescape" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.unescape">unescape</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return unescaped text given text with an inline placeholder.</p>
           </div>
         </li>
   </ul>
@@ -490,11 +490,11 @@
 
 
 <h3 id="markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_double" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_double</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_double</span>
 
 
 <a href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_double" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_double(m, tags, idx)</code></pre>
+<pre class="codehilite"><code class="language-python">build_double(m, tags, idx)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -510,11 +510,11 @@
 
 
 <h3 id="markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_double2" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_double2</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_double2</span>
 
 
 <a href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_double2" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_double2(m, tags, idx)</code></pre>
+<pre class="codehilite"><code class="language-python">build_double2(m, tags, idx)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -530,11 +530,11 @@
 
 
 <h3 id="markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_element" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_element</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_element</span>
 
 
 <a href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_element" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_element(m, builder, tags, index)</code></pre>
+<pre class="codehilite"><code class="language-python">build_element(m, builder, tags, index)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -550,11 +550,11 @@
 
 
 <h3 id="markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_single" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_single</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_single</span>
 
 
 <a href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_single" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_single(m, tag, idx)</code></pre>
+<pre class="codehilite"><code class="language-python">build_single(m, tag, idx)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -570,11 +570,11 @@
 
 
 <h3 id="markdown.extensions.legacy_em.LegacyUnderscoreProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.getCompiledRegExp</span>
 
 
 <a href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -590,11 +590,11 @@
 
 
 <h3 id="markdown.extensions.legacy_em.LegacyUnderscoreProcessor.handleMatch" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.handleMatch</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.handleMatch</span>
 
 
 <a href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.handleMatch" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.handleMatch(m, data)</code></pre>
+<pre class="codehilite"><code class="language-python">handleMatch(m, data)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -610,11 +610,11 @@
 
 
 <h3 id="markdown.extensions.legacy_em.LegacyUnderscoreProcessor.parse_sub_patterns" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.parse_sub_patterns</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.parse_sub_patterns</span>
 
 
 <a href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.parse_sub_patterns" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.parse_sub_patterns(data, parent, last, idx)</code></pre>
+<pre class="codehilite"><code class="language-python">parse_sub_patterns(data, parent, last, idx)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -638,11 +638,11 @@
 
 
 <h3 id="markdown.extensions.legacy_em.LegacyUnderscoreProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.type</span>
 
 
 <a href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -658,11 +658,11 @@
 
 
 <h3 id="markdown.extensions.legacy_em.LegacyUnderscoreProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.unescape</span>
 
 
 <a href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.legacy_em.LegacyUnderscoreProcessor.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -692,7 +692,7 @@
 
 
 <a href="#markdown.extensions.legacy_em.makeExtension" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.legacy_em.makeExtension(**kwargs)</code></pre>
+<pre class="codehilite"><code class="language-python">makeExtension(**kwargs)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -731,27 +731,27 @@
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyEmExtension.extendMarkdown"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;extendMarkdown</a>
+        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyEmExtension.extendMarkdown"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;extendMarkdown</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyEmExtension.getConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfig</a>
+        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyEmExtension.getConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getConfig</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyEmExtension.getConfigInfo"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfigInfo</a>
+        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyEmExtension.getConfigInfo"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getConfigInfo</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyEmExtension.getConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfigs</a>
+        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyEmExtension.getConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getConfigs</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyEmExtension.setConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;setConfig</a>
+        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyEmExtension.setConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;setConfig</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyEmExtension.setConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;setConfigs</a>
+        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyEmExtension.setConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;setConfigs</a>
     </li>
         </ul>
     </li>
@@ -761,39 +761,39 @@
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_double"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;build_double</a>
+        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_double"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;build_double</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_double2"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;build_double2</a>
+        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_double2"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;build_double2</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_element"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;build_element</a>
+        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_element"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;build_element</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_single"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;build_single</a>
+        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.build_single"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;build_single</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.handleMatch"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;handleMatch</a>
+        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.handleMatch"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;handleMatch</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.parse_sub_patterns"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;parse_sub_patterns</a>
+        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.parse_sub_patterns"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;parse_sub_patterns</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.extensions.legacy_em.LegacyUnderscoreProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -807,13 +807,13 @@
             
             <h4>Previous topic</h4>
             <p class="topless">
-                <a href="../legacy_attrs/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> legacy_attrs</a>
+                <a href="../legacy_attrs/" title="previous page">legacy_attrs</a>
             </p>
 
             
             <h4>Next topic</h4>
             <p class="topless">
-                <a href="../md_in_html/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> md_in_html</a>
+                <a href="../md_in_html/" title="next page">md_in_html</a>
             </p>
 
             <div role="note" aria-label="source link">
@@ -839,10 +839,10 @@
                 <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../md_in_html/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> md_in_html" accesskey="N">next</a> |
+                <a href="../md_in_html/" title="md_in_html" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../legacy_attrs/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> legacy_attrs" accesskey="P">previous</a> |
+                <a href="../legacy_attrs/" title="legacy_attrs" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -855,19 +855,22 @@
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../../">markdown</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+            <a href="../">extensions</a>
          &#187; </li>
                 
                 
@@ -880,7 +883,7 @@
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> legacy_em</a>
+            <a href="./">legacy_em</a>
          &#187; </li>
                 
                 
@@ -898,9 +901,6 @@
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -913,7 +913,7 @@
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-22 23:35:33.308500+00:00
+        Docs Build Date UTC : 2023-08-24 13:24:36.130525+00:00
         -->
     </body>
 </html>

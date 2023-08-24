@@ -9,9 +9,9 @@
         <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/extensions/footnotes/">
         <link rel="shortcut icon" href="../../../../favicon.ico">
         <link rel="search" title="Search" href="../../../../search.html" />
-        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> legacy_attrs" href="../legacy_attrs/" />
-        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> fenced_code" href="../fenced_code/" />
-        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> footnotes &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="next" title="legacy_attrs" href="../legacy_attrs/" />
+        <link rel="prev" title="fenced_code" href="../fenced_code/" />
+        <title>footnotes &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../../../static/nature.css" type="text/css" />
         <link rel="stylesheet" href="../../../../static/pygments.css" type="text/css" />
         <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css" type="text/css" />
@@ -32,10 +32,10 @@
                 <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../legacy_attrs/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> legacy_attrs" accesskey="N">next</a> |
+                <a href="../legacy_attrs/" title="legacy_attrs" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../fenced_code/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> fenced_code" accesskey="P">previous</a> |
+                <a href="../fenced_code/" title="fenced_code" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -48,19 +48,22 @@
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../../">markdown</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+            <a href="../">extensions</a>
          &#187; </li>
                 
                 
@@ -71,7 +74,7 @@
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> footnotes</a>
+            <a href="./">footnotes</a>
          &#187; </li>
                 
                 
@@ -91,9 +94,6 @@
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -117,7 +117,7 @@
   
       <h2 id="markdown.extensions.footnotes--footnotes-extension-for-python-markdown">Footnotes Extension for Python-Markdown<a class="headerlink" href="#markdown.extensions.footnotes--footnotes-extension-for-python-markdown" title="Permanent link">&para;</a></h2>
 <p>Adds footnote handling to Python-Markdown.</p>
-<p>See <a href="https://Python-Markdown.github.io/extensions/footnotes">https://Python-Markdown.github.io/extensions/footnotes</a>
+<p>See https://Python-Markdown.github.io/extensions/footnotes
 for documentation.</p>
 <p>Copyright The Python Markdown Project</p>
 <p>License: <a href="https://opensource.org/licenses/bsd-license.php">BSD</a></p>
@@ -129,17 +129,17 @@ for documentation.</p>
   <p>Classes:</p>
   <ul>
       <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteExtension" href="#markdown.extensions.footnotes.FootnoteExtension">FootnoteExtension</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Footnote Extension.</p>
-        </div>
-      </li>
-      <li class="field-body">
         <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteBlockProcessor" href="#markdown.extensions.footnotes.FootnoteBlockProcessor">FootnoteBlockProcessor</a></b>
         –
         <div class="doc-md-description">
           <p>Find all footnote references and store for later use.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteExtension" href="#markdown.extensions.footnotes.FootnoteExtension">FootnoteExtension</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Footnote Extension.</p>
         </div>
       </li>
       <li class="field-body">
@@ -157,17 +157,17 @@ for documentation.</p>
         </div>
       </li>
       <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteTreeprocessor" href="#markdown.extensions.footnotes.FootnoteTreeprocessor">FootnoteTreeprocessor</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Build and append footnote div to end of document.</p>
-        </div>
-      </li>
-      <li class="field-body">
         <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnotePostprocessor" href="#markdown.extensions.footnotes.FootnotePostprocessor">FootnotePostprocessor</a></b>
         –
         <div class="doc-md-description">
           <p>Replace placeholders with html entities.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteTreeprocessor" href="#markdown.extensions.footnotes.FootnoteTreeprocessor">FootnoteTreeprocessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Build and append footnote div to end of document.</p>
         </div>
       </li>
   </ul>
@@ -207,7 +207,7 @@ for documentation.</p>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteBlockProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteBlockProcessor(footnotes)</code></pre>
+<pre class="codehilite"><code class="language-python">FootnoteBlockProcessor(footnotes)</code></pre>
 
   <div class="doc doc-contents ">
           <p class="doc doc-class-bases">
@@ -223,6 +223,20 @@ for documentation.</p>
 
   <p>Methods:</p>
   <ul>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteBlockProcessor.detab" href="#markdown.extensions.footnotes.FootnoteBlockProcessor.detab">detab</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Remove one level of indent from a block.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteBlockProcessor.detectTabbed" href="#markdown.extensions.footnotes.FootnoteBlockProcessor.detectTabbed">detectTabbed</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Find indented text and remove indent before further processing.</p>
+          </div>
+        </li>
         <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteBlockProcessor.lastChild" href="#markdown.extensions.footnotes.FootnoteBlockProcessor.lastChild">lastChild</a></b>
           –
@@ -242,20 +256,6 @@ for documentation.</p>
           –
           <div class="doc-md-description">
             <p>Find, set, and remove footnote definitions.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteBlockProcessor.detectTabbed" href="#markdown.extensions.footnotes.FootnoteBlockProcessor.detectTabbed">detectTabbed</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Find indented text and remove indent before further processing.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteBlockProcessor.detab" href="#markdown.extensions.footnotes.FootnoteBlockProcessor.detab">detab</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Remove one level of indent from a block.</p>
           </div>
         </li>
   </ul>
@@ -280,11 +280,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnoteBlockProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteBlockProcessor.detab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteBlockProcessor.detab</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteBlockProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteBlockProcessor.detab(block)</code></pre>
+<pre class="codehilite"><code class="language-python">detab(block)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -301,11 +301,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnoteBlockProcessor.detectTabbed" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteBlockProcessor.detectTabbed</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteBlockProcessor.detectTabbed</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteBlockProcessor.detectTabbed" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteBlockProcessor.detectTabbed(blocks) -&gt; <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code></pre>
+<pre class="codehilite"><code class="language-python">detectTabbed(blocks) -&gt; <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -334,11 +334,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnoteBlockProcessor.lastChild" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteBlockProcessor.lastChild</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteBlockProcessor.lastChild</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteBlockProcessor.lastChild" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteBlockProcessor.lastChild(parent)</code></pre>
+<pre class="codehilite"><code class="language-python">lastChild(parent)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -354,11 +354,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnoteBlockProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteBlockProcessor.looseDetab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteBlockProcessor.looseDetab</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteBlockProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteBlockProcessor.looseDetab(text, level = 1)</code></pre>
+<pre class="codehilite"><code class="language-python">looseDetab(text, level = 1)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -374,11 +374,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnoteBlockProcessor.run" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteBlockProcessor.run</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteBlockProcessor.run</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteBlockProcessor.run" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteBlockProcessor.run(parent, blocks)</code></pre>
+<pre class="codehilite"><code class="language-python">run(parent, blocks)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -406,7 +406,7 @@ for documentation.</p>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteExtension" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteExtension(**kwargs)</code></pre>
+<pre class="codehilite"><code class="language-python">FootnoteExtension(**kwargs)</code></pre>
 
   <div class="doc doc-contents ">
           <p class="doc doc-class-bases">
@@ -423,59 +423,10 @@ for documentation.</p>
   <p>Methods:</p>
   <ul>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteExtension.getConfig" href="#markdown.extensions.footnotes.FootnoteExtension.getConfig">getConfig</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return a setting for the given key or an empty string.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteExtension.getConfigs" href="#markdown.extensions.footnotes.FootnoteExtension.getConfigs">getConfigs</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return all configs settings as a dict.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteExtension.getConfigInfo" href="#markdown.extensions.footnotes.FootnoteExtension.getConfigInfo">getConfigInfo</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return all <code>config</code> descriptions as a list of tuples.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteExtension.setConfig" href="#markdown.extensions.footnotes.FootnoteExtension.setConfig">setConfig</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Set a <code>config</code> setting for <code>key</code> with the given <code>value</code>.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteExtension.setConfigs" href="#markdown.extensions.footnotes.FootnoteExtension.setConfigs">setConfigs</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Set multiple <code>config</code> settings given a dict or list of tuples.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteExtension.extendMarkdown" href="#markdown.extensions.footnotes.FootnoteExtension.extendMarkdown">extendMarkdown</a></b>
           –
           <div class="doc-md-description">
             <p>Add pieces to Markdown.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteExtension.reset" href="#markdown.extensions.footnotes.FootnoteExtension.reset">reset</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Clear footnotes on reset, and prepare for distinct document.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteExtension.unique_ref" href="#markdown.extensions.footnotes.FootnoteExtension.unique_ref">unique_ref</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Get a unique reference if there are duplicates.</p>
           </div>
         </li>
         <li class="field-body">
@@ -486,10 +437,24 @@ for documentation.</p>
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteExtension.setFootnote" href="#markdown.extensions.footnotes.FootnoteExtension.setFootnote">setFootnote</a></b>
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteExtension.getConfig" href="#markdown.extensions.footnotes.FootnoteExtension.getConfig">getConfig</a></b>
           –
           <div class="doc-md-description">
-            <p>Store a footnote for later retrieval.</p>
+            <p>Return a setting for the given key or an empty string.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteExtension.getConfigInfo" href="#markdown.extensions.footnotes.FootnoteExtension.getConfigInfo">getConfigInfo</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return all <code>config</code> descriptions as a list of tuples.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteExtension.getConfigs" href="#markdown.extensions.footnotes.FootnoteExtension.getConfigs">getConfigs</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return all configs settings as a dict.</p>
           </div>
         </li>
         <li class="field-body">
@@ -520,6 +485,41 @@ for documentation.</p>
             <p>Return <code>div</code> of footnotes as <code>etree</code> Element.</p>
           </div>
         </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteExtension.reset" href="#markdown.extensions.footnotes.FootnoteExtension.reset">reset</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Clear footnotes on reset, and prepare for distinct document.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteExtension.setConfig" href="#markdown.extensions.footnotes.FootnoteExtension.setConfig">setConfig</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Set a <code>config</code> setting for <code>key</code> with the given <code>value</code>.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteExtension.setConfigs" href="#markdown.extensions.footnotes.FootnoteExtension.setConfigs">setConfigs</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Set multiple <code>config</code> settings given a dict or list of tuples.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteExtension.setFootnote" href="#markdown.extensions.footnotes.FootnoteExtension.setFootnote">setFootnote</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Store a footnote for later retrieval.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.footnotes.FootnoteExtension.unique_ref" href="#markdown.extensions.footnotes.FootnoteExtension.unique_ref">unique_ref</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Get a unique reference if there are duplicates.</p>
+          </div>
+        </li>
   </ul>
 
 
@@ -542,11 +542,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnoteExtension.extendMarkdown" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.extendMarkdown</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.extendMarkdown</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteExtension.extendMarkdown" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteExtension.extendMarkdown(md)</code></pre>
+<pre class="codehilite"><code class="language-python">extendMarkdown(md)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -562,11 +562,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnoteExtension.findFootnotesPlaceholder" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.findFootnotesPlaceholder</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.findFootnotesPlaceholder</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteExtension.findFootnotesPlaceholder" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteExtension.findFootnotesPlaceholder(root)</code></pre>
+<pre class="codehilite"><code class="language-python">findFootnotesPlaceholder(root)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -582,11 +582,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnoteExtension.getConfig" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.getConfig</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.getConfig</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteExtension.getConfig" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteExtension.getConfig(key, default = '')</code></pre>
+<pre class="codehilite"><code class="language-python">getConfig(key, default = '')</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -602,11 +602,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnoteExtension.getConfigInfo" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.getConfigInfo</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.getConfigInfo</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteExtension.getConfigInfo" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteExtension.getConfigInfo()</code></pre>
+<pre class="codehilite"><code class="language-python">getConfigInfo()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -622,11 +622,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnoteExtension.getConfigs" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.getConfigs</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.getConfigs</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteExtension.getConfigs" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteExtension.getConfigs()</code></pre>
+<pre class="codehilite"><code class="language-python">getConfigs()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -642,11 +642,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnoteExtension.get_separator" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.get_separator</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.get_separator</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteExtension.get_separator" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteExtension.get_separator()</code></pre>
+<pre class="codehilite"><code class="language-python">get_separator()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -662,11 +662,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnoteExtension.makeFootnoteId" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.makeFootnoteId</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.makeFootnoteId</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteExtension.makeFootnoteId" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteExtension.makeFootnoteId(id)</code></pre>
+<pre class="codehilite"><code class="language-python">makeFootnoteId(id)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -682,11 +682,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnoteExtension.makeFootnoteRefId" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.makeFootnoteRefId</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.makeFootnoteRefId</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteExtension.makeFootnoteRefId" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteExtension.makeFootnoteRefId(id, found = False)</code></pre>
+<pre class="codehilite"><code class="language-python">makeFootnoteRefId(id, found = False)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -702,11 +702,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnoteExtension.makeFootnotesDiv" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.makeFootnotesDiv</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.makeFootnotesDiv</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteExtension.makeFootnotesDiv" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteExtension.makeFootnotesDiv(root)</code></pre>
+<pre class="codehilite"><code class="language-python">makeFootnotesDiv(root)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -722,11 +722,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnoteExtension.reset" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.reset</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.reset</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteExtension.reset" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteExtension.reset()</code></pre>
+<pre class="codehilite"><code class="language-python">reset()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -742,11 +742,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnoteExtension.setConfig" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.setConfig</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.setConfig</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteExtension.setConfig" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteExtension.setConfig(key, value)</code></pre>
+<pre class="codehilite"><code class="language-python">setConfig(key, value)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -762,11 +762,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnoteExtension.setConfigs" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.setConfigs</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.setConfigs</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteExtension.setConfigs" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteExtension.setConfigs(items)</code></pre>
+<pre class="codehilite"><code class="language-python">setConfigs(items)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -782,11 +782,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnoteExtension.setFootnote" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.setFootnote</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.setFootnote</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteExtension.setFootnote" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteExtension.setFootnote(id, text)</code></pre>
+<pre class="codehilite"><code class="language-python">setFootnote(id, text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -802,11 +802,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnoteExtension.unique_ref" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.unique_ref</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteExtension.unique_ref</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteExtension.unique_ref" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteExtension.unique_ref(reference, found = False)</code></pre>
+<pre class="codehilite"><code class="language-python">unique_ref(reference, found = False)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -834,7 +834,7 @@ for documentation.</p>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteInlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteInlineProcessor(pattern, footnotes)</code></pre>
+<pre class="codehilite"><code class="language-python">FootnoteInlineProcessor(pattern, footnotes)</code></pre>
 
   <div class="doc doc-contents ">
           <p class="doc doc-class-bases">
@@ -893,11 +893,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnoteInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteInlineProcessor.getCompiledRegExp</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteInlineProcessor.getCompiledRegExp</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteInlineProcessor.getCompiledRegExp()</code></pre>
+<pre class="codehilite"><code class="language-python">getCompiledRegExp()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -913,11 +913,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnoteInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteInlineProcessor.type</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteInlineProcessor.type</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteInlineProcessor.type()</code></pre>
+<pre class="codehilite"><code class="language-python">type()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -933,11 +933,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnoteInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteInlineProcessor.unescape</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnoteInlineProcessor.unescape</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteInlineProcessor.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -965,7 +965,7 @@ for documentation.</p>
 
 
 <a href="#markdown.extensions.footnotes.FootnotePostTreeprocessor" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnotePostTreeprocessor(footnotes)</code></pre>
+<pre class="codehilite"><code class="language-python">FootnotePostTreeprocessor(footnotes)</code></pre>
 
   <div class="doc doc-contents ">
           <p class="doc doc-class-bases">
@@ -1031,11 +1031,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnotePostTreeprocessor.add_duplicates" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnotePostTreeprocessor.add_duplicates</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnotePostTreeprocessor.add_duplicates</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnotePostTreeprocessor.add_duplicates" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnotePostTreeprocessor.add_duplicates(li, duplicates)</code></pre>
+<pre class="codehilite"><code class="language-python">add_duplicates(li, duplicates)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1051,11 +1051,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnotePostTreeprocessor.get_num_duplicates" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnotePostTreeprocessor.get_num_duplicates</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnotePostTreeprocessor.get_num_duplicates</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnotePostTreeprocessor.get_num_duplicates" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnotePostTreeprocessor.get_num_duplicates(li)</code></pre>
+<pre class="codehilite"><code class="language-python">get_num_duplicates(li)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1071,11 +1071,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnotePostTreeprocessor.handle_duplicates" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnotePostTreeprocessor.handle_duplicates</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnotePostTreeprocessor.handle_duplicates</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnotePostTreeprocessor.handle_duplicates" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnotePostTreeprocessor.handle_duplicates(parent)</code></pre>
+<pre class="codehilite"><code class="language-python">handle_duplicates(parent)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1091,11 +1091,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.footnotes.FootnotePostTreeprocessor.run" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnotePostTreeprocessor.run</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.footnotes.FootnotePostTreeprocessor.run</span>
 
 
 <a href="#markdown.extensions.footnotes.FootnotePostTreeprocessor.run" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnotePostTreeprocessor.run(root)</code></pre>
+<pre class="codehilite"><code class="language-python">run(root)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1123,7 +1123,7 @@ for documentation.</p>
 
 
 <a href="#markdown.extensions.footnotes.FootnotePostprocessor" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnotePostprocessor(footnotes)</code></pre>
+<pre class="codehilite"><code class="language-python">FootnotePostprocessor(footnotes)</code></pre>
 
   <div class="doc doc-contents ">
           <p class="doc doc-class-bases">
@@ -1167,7 +1167,7 @@ for documentation.</p>
 
 
 <a href="#markdown.extensions.footnotes.FootnoteTreeprocessor" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.FootnoteTreeprocessor(footnotes)</code></pre>
+<pre class="codehilite"><code class="language-python">FootnoteTreeprocessor(footnotes)</code></pre>
 
   <div class="doc doc-contents ">
           <p class="doc doc-class-bases">
@@ -1213,7 +1213,7 @@ for documentation.</p>
 
 
 <a href="#markdown.extensions.footnotes.makeExtension" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.footnotes.makeExtension(**kwargs)</code></pre>
+<pre class="codehilite"><code class="language-python">makeExtension(**kwargs)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1252,23 +1252,23 @@ for documentation.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteBlockProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;detab</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteBlockProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;detab</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteBlockProcessor.detectTabbed"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;detectTabbed</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteBlockProcessor.detectTabbed"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;detectTabbed</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteBlockProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;lastChild</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteBlockProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;lastChild</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteBlockProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;looseDetab</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteBlockProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;looseDetab</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteBlockProcessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;run</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteBlockProcessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;run</a>
     </li>
         </ul>
     </li>
@@ -1278,59 +1278,59 @@ for documentation.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.extendMarkdown"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;extendMarkdown</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.extendMarkdown"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;extendMarkdown</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.findFootnotesPlaceholder"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;findFootnotesPlaceholder</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.findFootnotesPlaceholder"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;findFootnotesPlaceholder</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.getConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfig</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.getConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getConfig</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.getConfigInfo"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfigInfo</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.getConfigInfo"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getConfigInfo</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.getConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfigs</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.getConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getConfigs</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.get_separator"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;get_separator</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.get_separator"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;get_separator</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.makeFootnoteId"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;makeFootnoteId</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.makeFootnoteId"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;makeFootnoteId</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.makeFootnoteRefId"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;makeFootnoteRefId</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.makeFootnoteRefId"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;makeFootnoteRefId</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.makeFootnotesDiv"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;makeFootnotesDiv</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.makeFootnotesDiv"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;makeFootnotesDiv</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.reset"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;reset</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.reset"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;reset</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.setConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;setConfig</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.setConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;setConfig</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.setConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;setConfigs</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.setConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;setConfigs</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.setFootnote"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;setFootnote</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.setFootnote"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;setFootnote</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.unique_ref"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unique_ref</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteExtension.unique_ref"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unique_ref</a>
     </li>
         </ul>
     </li>
@@ -1340,15 +1340,15 @@ for documentation.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getCompiledRegExp</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteInlineProcessor.getCompiledRegExp"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getCompiledRegExp</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;type</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteInlineProcessor.type"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;type</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;unescape</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnoteInlineProcessor.unescape"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;unescape</a>
     </li>
         </ul>
     </li>
@@ -1358,19 +1358,19 @@ for documentation.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnotePostTreeprocessor.add_duplicates"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;add_duplicates</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnotePostTreeprocessor.add_duplicates"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;add_duplicates</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnotePostTreeprocessor.get_num_duplicates"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;get_num_duplicates</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnotePostTreeprocessor.get_num_duplicates"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;get_num_duplicates</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnotePostTreeprocessor.handle_duplicates"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;handle_duplicates</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnotePostTreeprocessor.handle_duplicates"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;handle_duplicates</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.footnotes.FootnotePostTreeprocessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;run</a>
+        <a class="reference internal" href="#markdown.extensions.footnotes.FootnotePostTreeprocessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;run</a>
     </li>
         </ul>
     </li>
@@ -1392,13 +1392,13 @@ for documentation.</p>
             
             <h4>Previous topic</h4>
             <p class="topless">
-                <a href="../fenced_code/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> fenced_code</a>
+                <a href="../fenced_code/" title="previous page">fenced_code</a>
             </p>
 
             
             <h4>Next topic</h4>
             <p class="topless">
-                <a href="../legacy_attrs/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> legacy_attrs</a>
+                <a href="../legacy_attrs/" title="next page">legacy_attrs</a>
             </p>
 
             <div role="note" aria-label="source link">
@@ -1424,10 +1424,10 @@ for documentation.</p>
                 <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../legacy_attrs/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> legacy_attrs" accesskey="N">next</a> |
+                <a href="../legacy_attrs/" title="legacy_attrs" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../fenced_code/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> fenced_code" accesskey="P">previous</a> |
+                <a href="../fenced_code/" title="fenced_code" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -1440,19 +1440,22 @@ for documentation.</p>
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../../">markdown</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+            <a href="../">extensions</a>
          &#187; </li>
                 
                 
@@ -1463,7 +1466,7 @@ for documentation.</p>
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> footnotes</a>
+            <a href="./">footnotes</a>
          &#187; </li>
                 
                 
@@ -1483,9 +1486,6 @@ for documentation.</p>
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -1498,7 +1498,7 @@ for documentation.</p>
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-22 23:35:33.306643+00:00
+        Docs Build Date UTC : 2023-08-24 13:24:36.128566+00:00
         -->
     </body>
 </html>

@@ -9,9 +9,9 @@
         <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/extensions/sane_lists/">
         <link rel="shortcut icon" href="../../../../favicon.ico">
         <link rel="search" title="Search" href="../../../../search.html" />
-        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> smarty" href="../smarty/" />
-        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> nl2br" href="../nl2br/" />
-        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> sane_lists &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="next" title="smarty" href="../smarty/" />
+        <link rel="prev" title="nl2br" href="../nl2br/" />
+        <title>sane_lists &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../../../static/nature.css" type="text/css" />
         <link rel="stylesheet" href="../../../../static/pygments.css" type="text/css" />
         <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css" type="text/css" />
@@ -32,10 +32,10 @@
                 <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../smarty/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> smarty" accesskey="N">next</a> |
+                <a href="../smarty/" title="smarty" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../nl2br/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> nl2br" accesskey="P">previous</a> |
+                <a href="../nl2br/" title="nl2br" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -48,19 +48,22 @@
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../../">markdown</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+            <a href="../">extensions</a>
          &#187; </li>
                 
                 
@@ -77,7 +80,7 @@
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> sane_lists</a>
+            <a href="./">sane_lists</a>
          &#187; </li>
                 
                 
@@ -91,9 +94,6 @@
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -117,7 +117,7 @@
   
       <h2 id="markdown.extensions.sane_lists--sane-list-extension-for-python-markdown">Sane List Extension for Python-Markdown<a class="headerlink" href="#markdown.extensions.sane_lists--sane-list-extension-for-python-markdown" title="Permanent link">&para;</a></h2>
 <p>Modify the behavior of Lists in Python-Markdown to act in a sane manor.</p>
-<p>See <a href="https://Python-Markdown.github.io/extensions/sane_lists">https://Python-Markdown.github.io/extensions/sane_lists</a>
+<p>See https://Python-Markdown.github.io/extensions/sane_lists
 for documentation.</p>
 <p>Original code Copyright 2011 <a href="http://achinghead.com">Waylan Limberg</a></p>
 <p>All changes Copyright 2011-2014 The Python Markdown Project</p>
@@ -177,6 +177,13 @@ for documentation.</p>
   <p>Methods:</p>
   <ul>
         <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.sane_lists.SaneListExtension.extendMarkdown" href="#markdown.extensions.sane_lists.SaneListExtension.extendMarkdown">extendMarkdown</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Override existing Processors.</p>
+          </div>
+        </li>
+        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.extensions.sane_lists.SaneListExtension.getConfig" href="#markdown.extensions.sane_lists.SaneListExtension.getConfig">getConfig</a></b>
           –
           <div class="doc-md-description">
@@ -184,17 +191,17 @@ for documentation.</p>
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.sane_lists.SaneListExtension.getConfigs" href="#markdown.extensions.sane_lists.SaneListExtension.getConfigs">getConfigs</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return all configs settings as a dict.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.extensions.sane_lists.SaneListExtension.getConfigInfo" href="#markdown.extensions.sane_lists.SaneListExtension.getConfigInfo">getConfigInfo</a></b>
           –
           <div class="doc-md-description">
             <p>Return all <code>config</code> descriptions as a list of tuples.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.sane_lists.SaneListExtension.getConfigs" href="#markdown.extensions.sane_lists.SaneListExtension.getConfigs">getConfigs</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return all configs settings as a dict.</p>
           </div>
         </li>
         <li class="field-body">
@@ -209,13 +216,6 @@ for documentation.</p>
           –
           <div class="doc-md-description">
             <p>Set multiple <code>config</code> settings given a dict or list of tuples.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.sane_lists.SaneListExtension.extendMarkdown" href="#markdown.extensions.sane_lists.SaneListExtension.extendMarkdown">extendMarkdown</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Override existing Processors.</p>
           </div>
         </li>
   </ul>
@@ -240,11 +240,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.sane_lists.SaneListExtension.extendMarkdown" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.sane_lists.SaneListExtension.extendMarkdown</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.sane_lists.SaneListExtension.extendMarkdown</span>
 
 
 <a href="#markdown.extensions.sane_lists.SaneListExtension.extendMarkdown" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.sane_lists.SaneListExtension.extendMarkdown(md)</code></pre>
+<pre class="codehilite"><code class="language-python">extendMarkdown(md)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -260,11 +260,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.sane_lists.SaneListExtension.getConfig" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.sane_lists.SaneListExtension.getConfig</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.sane_lists.SaneListExtension.getConfig</span>
 
 
 <a href="#markdown.extensions.sane_lists.SaneListExtension.getConfig" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.sane_lists.SaneListExtension.getConfig(key, default = '')</code></pre>
+<pre class="codehilite"><code class="language-python">getConfig(key, default = '')</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -280,11 +280,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.sane_lists.SaneListExtension.getConfigInfo" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.sane_lists.SaneListExtension.getConfigInfo</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.sane_lists.SaneListExtension.getConfigInfo</span>
 
 
 <a href="#markdown.extensions.sane_lists.SaneListExtension.getConfigInfo" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.sane_lists.SaneListExtension.getConfigInfo()</code></pre>
+<pre class="codehilite"><code class="language-python">getConfigInfo()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -300,11 +300,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.sane_lists.SaneListExtension.getConfigs" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.sane_lists.SaneListExtension.getConfigs</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.sane_lists.SaneListExtension.getConfigs</span>
 
 
 <a href="#markdown.extensions.sane_lists.SaneListExtension.getConfigs" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.sane_lists.SaneListExtension.getConfigs()</code></pre>
+<pre class="codehilite"><code class="language-python">getConfigs()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -320,11 +320,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.sane_lists.SaneListExtension.setConfig" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.sane_lists.SaneListExtension.setConfig</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.sane_lists.SaneListExtension.setConfig</span>
 
 
 <a href="#markdown.extensions.sane_lists.SaneListExtension.setConfig" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.sane_lists.SaneListExtension.setConfig(key, value)</code></pre>
+<pre class="codehilite"><code class="language-python">setConfig(key, value)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -340,11 +340,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.sane_lists.SaneListExtension.setConfigs" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.sane_lists.SaneListExtension.setConfigs</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.sane_lists.SaneListExtension.setConfigs</span>
 
 
 <a href="#markdown.extensions.sane_lists.SaneListExtension.setConfigs" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.sane_lists.SaneListExtension.setConfigs(items)</code></pre>
+<pre class="codehilite"><code class="language-python">setConfigs(items)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -393,27 +393,27 @@ for documentation.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.sane_lists.SaneListExtension.extendMarkdown"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;extendMarkdown</a>
+        <a class="reference internal" href="#markdown.extensions.sane_lists.SaneListExtension.extendMarkdown"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;extendMarkdown</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.sane_lists.SaneListExtension.getConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfig</a>
+        <a class="reference internal" href="#markdown.extensions.sane_lists.SaneListExtension.getConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getConfig</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.sane_lists.SaneListExtension.getConfigInfo"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfigInfo</a>
+        <a class="reference internal" href="#markdown.extensions.sane_lists.SaneListExtension.getConfigInfo"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getConfigInfo</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.sane_lists.SaneListExtension.getConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfigs</a>
+        <a class="reference internal" href="#markdown.extensions.sane_lists.SaneListExtension.getConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getConfigs</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.sane_lists.SaneListExtension.setConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;setConfig</a>
+        <a class="reference internal" href="#markdown.extensions.sane_lists.SaneListExtension.setConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;setConfig</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.sane_lists.SaneListExtension.setConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;setConfigs</a>
+        <a class="reference internal" href="#markdown.extensions.sane_lists.SaneListExtension.setConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;setConfigs</a>
     </li>
         </ul>
     </li>
@@ -423,13 +423,13 @@ for documentation.</p>
             
             <h4>Previous topic</h4>
             <p class="topless">
-                <a href="../nl2br/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> nl2br</a>
+                <a href="../nl2br/" title="previous page">nl2br</a>
             </p>
 
             
             <h4>Next topic</h4>
             <p class="topless">
-                <a href="../smarty/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> smarty</a>
+                <a href="../smarty/" title="next page">smarty</a>
             </p>
 
             <div role="note" aria-label="source link">
@@ -455,10 +455,10 @@ for documentation.</p>
                 <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../smarty/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> smarty" accesskey="N">next</a> |
+                <a href="../smarty/" title="smarty" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../nl2br/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> nl2br" accesskey="P">previous</a> |
+                <a href="../nl2br/" title="nl2br" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -471,19 +471,22 @@ for documentation.</p>
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../../">markdown</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+            <a href="../">extensions</a>
          &#187; </li>
                 
                 
@@ -500,7 +503,7 @@ for documentation.</p>
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> sane_lists</a>
+            <a href="./">sane_lists</a>
          &#187; </li>
                 
                 
@@ -514,9 +517,6 @@ for documentation.</p>
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -529,7 +529,7 @@ for documentation.</p>
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-22 23:35:33.311876+00:00
+        Docs Build Date UTC : 2023-08-24 13:24:36.133892+00:00
         -->
     </body>
 </html>

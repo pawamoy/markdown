@@ -9,9 +9,9 @@
         <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/extensions/extra/">
         <link rel="shortcut icon" href="../../../../favicon.ico">
         <link rel="search" title="Search" href="../../../../search.html" />
-        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> fenced_code" href="../fenced_code/" />
-        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> def_list" href="../def_list/" />
-        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extra &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="next" title="fenced_code" href="../fenced_code/" />
+        <link rel="prev" title="def_list" href="../def_list/" />
+        <title>extra &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../../../static/nature.css" type="text/css" />
         <link rel="stylesheet" href="../../../../static/pygments.css" type="text/css" />
         <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css" type="text/css" />
@@ -32,10 +32,10 @@
                 <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../fenced_code/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> fenced_code" accesskey="N">next</a> |
+                <a href="../fenced_code/" title="fenced_code" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../def_list/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> def_list" accesskey="P">previous</a> |
+                <a href="../def_list/" title="def_list" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -48,19 +48,22 @@
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../../">markdown</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+            <a href="../">extensions</a>
          &#187; </li>
                 
                 
@@ -69,7 +72,7 @@
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extra</a>
+            <a href="./">extra</a>
          &#187; </li>
                 
                 
@@ -91,9 +94,6 @@
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -131,7 +131,7 @@ additional extensions, we suggest creating your own clone of Extra
 under a different name. You could also edit the <code>extensions</code> global
 variable defined below, but be aware that such changes may be lost
 when you upgrade to any future version of Python-Markdown.</p>
-<p>See <a href="https://Python-Markdown.github.io/extensions/extra">https://Python-Markdown.github.io/extensions/extra</a>
+<p>See https://Python-Markdown.github.io/extensions/extra
 for documentation.</p>
 <p>Copyright The Python Markdown Project</p>
 <p>License: <a href="https://opensource.org/licenses/bsd-license.php">BSD</a></p>
@@ -173,7 +173,7 @@ for documentation.</p>
 
 
 <a href="#markdown.extensions.extra.ExtraExtension" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.extra.ExtraExtension(**kwargs)</code></pre>
+<pre class="codehilite"><code class="language-python">ExtraExtension(**kwargs)</code></pre>
 
   <div class="doc doc-contents ">
           <p class="doc doc-class-bases">
@@ -190,6 +190,13 @@ for documentation.</p>
   <p>Methods:</p>
   <ul>
         <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.extra.ExtraExtension.extendMarkdown" href="#markdown.extensions.extra.ExtraExtension.extendMarkdown">extendMarkdown</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Register extension instances.</p>
+          </div>
+        </li>
+        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.extensions.extra.ExtraExtension.getConfig" href="#markdown.extensions.extra.ExtraExtension.getConfig">getConfig</a></b>
           –
           <div class="doc-md-description">
@@ -197,17 +204,17 @@ for documentation.</p>
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.extra.ExtraExtension.getConfigs" href="#markdown.extensions.extra.ExtraExtension.getConfigs">getConfigs</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return all configs settings as a dict.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.extensions.extra.ExtraExtension.getConfigInfo" href="#markdown.extensions.extra.ExtraExtension.getConfigInfo">getConfigInfo</a></b>
           –
           <div class="doc-md-description">
             <p>Return all <code>config</code> descriptions as a list of tuples.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.extra.ExtraExtension.getConfigs" href="#markdown.extensions.extra.ExtraExtension.getConfigs">getConfigs</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return all configs settings as a dict.</p>
           </div>
         </li>
         <li class="field-body">
@@ -222,13 +229,6 @@ for documentation.</p>
           –
           <div class="doc-md-description">
             <p>Set multiple <code>config</code> settings given a dict or list of tuples.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.extra.ExtraExtension.extendMarkdown" href="#markdown.extensions.extra.ExtraExtension.extendMarkdown">extendMarkdown</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Register extension instances.</p>
           </div>
         </li>
   </ul>
@@ -253,11 +253,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.extra.ExtraExtension.extendMarkdown" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.extra.ExtraExtension.extendMarkdown</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.extra.ExtraExtension.extendMarkdown</span>
 
 
 <a href="#markdown.extensions.extra.ExtraExtension.extendMarkdown" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.extra.ExtraExtension.extendMarkdown(md)</code></pre>
+<pre class="codehilite"><code class="language-python">extendMarkdown(md)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -273,11 +273,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.extra.ExtraExtension.getConfig" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.extra.ExtraExtension.getConfig</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.extra.ExtraExtension.getConfig</span>
 
 
 <a href="#markdown.extensions.extra.ExtraExtension.getConfig" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.extra.ExtraExtension.getConfig(key, default = '')</code></pre>
+<pre class="codehilite"><code class="language-python">getConfig(key, default = '')</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -293,11 +293,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.extra.ExtraExtension.getConfigInfo" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.extra.ExtraExtension.getConfigInfo</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.extra.ExtraExtension.getConfigInfo</span>
 
 
 <a href="#markdown.extensions.extra.ExtraExtension.getConfigInfo" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.extra.ExtraExtension.getConfigInfo()</code></pre>
+<pre class="codehilite"><code class="language-python">getConfigInfo()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -313,11 +313,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.extra.ExtraExtension.getConfigs" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.extra.ExtraExtension.getConfigs</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.extra.ExtraExtension.getConfigs</span>
 
 
 <a href="#markdown.extensions.extra.ExtraExtension.getConfigs" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.extra.ExtraExtension.getConfigs()</code></pre>
+<pre class="codehilite"><code class="language-python">getConfigs()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -333,11 +333,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.extra.ExtraExtension.setConfig" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.extra.ExtraExtension.setConfig</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.extra.ExtraExtension.setConfig</span>
 
 
 <a href="#markdown.extensions.extra.ExtraExtension.setConfig" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.extra.ExtraExtension.setConfig(key, value)</code></pre>
+<pre class="codehilite"><code class="language-python">setConfig(key, value)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -353,11 +353,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.extra.ExtraExtension.setConfigs" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.extra.ExtraExtension.setConfigs</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.extra.ExtraExtension.setConfigs</span>
 
 
 <a href="#markdown.extensions.extra.ExtraExtension.setConfigs" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.extra.ExtraExtension.setConfigs(items)</code></pre>
+<pre class="codehilite"><code class="language-python">setConfigs(items)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -406,27 +406,27 @@ for documentation.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.extra.ExtraExtension.extendMarkdown"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;extendMarkdown</a>
+        <a class="reference internal" href="#markdown.extensions.extra.ExtraExtension.extendMarkdown"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;extendMarkdown</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.extra.ExtraExtension.getConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfig</a>
+        <a class="reference internal" href="#markdown.extensions.extra.ExtraExtension.getConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getConfig</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.extra.ExtraExtension.getConfigInfo"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfigInfo</a>
+        <a class="reference internal" href="#markdown.extensions.extra.ExtraExtension.getConfigInfo"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getConfigInfo</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.extra.ExtraExtension.getConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfigs</a>
+        <a class="reference internal" href="#markdown.extensions.extra.ExtraExtension.getConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getConfigs</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.extra.ExtraExtension.setConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;setConfig</a>
+        <a class="reference internal" href="#markdown.extensions.extra.ExtraExtension.setConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;setConfig</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.extra.ExtraExtension.setConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;setConfigs</a>
+        <a class="reference internal" href="#markdown.extensions.extra.ExtraExtension.setConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;setConfigs</a>
     </li>
         </ul>
     </li>
@@ -436,13 +436,13 @@ for documentation.</p>
             
             <h4>Previous topic</h4>
             <p class="topless">
-                <a href="../def_list/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> def_list</a>
+                <a href="../def_list/" title="previous page">def_list</a>
             </p>
 
             
             <h4>Next topic</h4>
             <p class="topless">
-                <a href="../fenced_code/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> fenced_code</a>
+                <a href="../fenced_code/" title="next page">fenced_code</a>
             </p>
 
             <div role="note" aria-label="source link">
@@ -468,10 +468,10 @@ for documentation.</p>
                 <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../fenced_code/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> fenced_code" accesskey="N">next</a> |
+                <a href="../fenced_code/" title="fenced_code" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../def_list/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> def_list" accesskey="P">previous</a> |
+                <a href="../def_list/" title="def_list" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -484,19 +484,22 @@ for documentation.</p>
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../../">markdown</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+            <a href="../">extensions</a>
          &#187; </li>
                 
                 
@@ -505,7 +508,7 @@ for documentation.</p>
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extra</a>
+            <a href="./">extra</a>
          &#187; </li>
                 
                 
@@ -527,9 +530,6 @@ for documentation.</p>
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -542,7 +542,7 @@ for documentation.</p>
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-22 23:35:33.305075+00:00
+        Docs Build Date UTC : 2023-08-24 13:24:36.126932+00:00
         -->
     </body>
 </html>

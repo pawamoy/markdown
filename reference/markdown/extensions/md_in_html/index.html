@@ -9,9 +9,9 @@
         <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/extensions/md_in_html/">
         <link rel="shortcut icon" href="../../../../favicon.ico">
         <link rel="search" title="Search" href="../../../../search.html" />
-        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> meta" href="../meta/" />
-        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> legacy_em" href="../legacy_em/" />
-        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> md_in_html &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="next" title="meta" href="../meta/" />
+        <link rel="prev" title="legacy_em" href="../legacy_em/" />
+        <title>md_in_html &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../../../static/nature.css" type="text/css" />
         <link rel="stylesheet" href="../../../../static/pygments.css" type="text/css" />
         <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css" type="text/css" />
@@ -32,10 +32,10 @@
                 <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../meta/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> meta" accesskey="N">next</a> |
+                <a href="../meta/" title="meta" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../legacy_em/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> legacy_em" accesskey="P">previous</a> |
+                <a href="../legacy_em/" title="legacy_em" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -48,19 +48,22 @@
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../../">markdown</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+            <a href="../">extensions</a>
          &#187; </li>
                 
                 
@@ -74,7 +77,7 @@
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> md_in_html</a>
+            <a href="./">md_in_html</a>
          &#187; </li>
                 
                 
@@ -91,9 +94,6 @@
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -118,7 +118,7 @@
       <h2 id="markdown.extensions.md_in_html--python-markdown-markdown-in-html-extension">Python-Markdown Markdown in HTML Extension<a class="headerlink" href="#markdown.extensions.md_in_html--python-markdown-markdown-in-html-extension" title="Permanent link">&para;</a></h2>
 <p>An implementation of <a href="http://michelf.com/projects/php-markdown/extra/">PHP Markdown Extra</a>&rsquo;s
 parsing of Markdown syntax in raw HTML.</p>
-<p>See <a href="https://Python-Markdown.github.io/extensions/raw_html">https://Python-Markdown.github.io/extensions/raw_html</a>
+<p>See https://Python-Markdown.github.io/extensions/raw_html
 for documentation.</p>
 <p>Copyright The Python Markdown Project</p>
 <p>License: <a href="https://opensource.org/licenses/bsd-license.php">BSD</a></p>
@@ -144,10 +144,10 @@ for documentation.</p>
         </div>
       </li>
       <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.extensions.md_in_html.MarkdownInHtmlProcessor" href="#markdown.extensions.md_in_html.MarkdownInHtmlProcessor">MarkdownInHtmlProcessor</a></b>
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.md_in_html.MarkdownInHTMLPostprocessor" href="#markdown.extensions.md_in_html.MarkdownInHTMLPostprocessor">MarkdownInHTMLPostprocessor</a></b>
         –
         <div class="doc-md-description">
-          <p>Process Markdown Inside HTML Blocks which have been stored in the <code>HtmlStash</code>.</p>
+          
         </div>
       </li>
       <li class="field-body">
@@ -155,6 +155,13 @@ for documentation.</p>
         –
         <div class="doc-md-description">
           <p>Add Markdown parsing in HTML to Markdown class.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.md_in_html.MarkdownInHtmlProcessor" href="#markdown.extensions.md_in_html.MarkdownInHtmlProcessor">MarkdownInHtmlProcessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Process Markdown Inside HTML Blocks which have been stored in the <code>HtmlStash</code>.</p>
         </div>
       </li>
   </ul>
@@ -181,7 +188,7 @@ for documentation.</p>
 
 
 <a href="#markdown.extensions.md_in_html.HTMLExtractorExtra" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.md_in_html.HTMLExtractorExtra(md, *args, **kwargs)</code></pre>
+<pre class="codehilite"><code class="language-python">HTMLExtractorExtra(md, *args, **kwargs)</code></pre>
 
   <div class="doc doc-contents ">
           <p class="doc doc-class-bases">
@@ -206,27 +213,6 @@ Markdown.</p>
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.md_in_html.HTMLExtractorExtra.get_endtag_text" href="#markdown.extensions.md_in_html.HTMLExtractorExtra.get_endtag_text">get_endtag_text</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Returns the text of the end tag.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.md_in_html.HTMLExtractorExtra.get_starttag_text" href="#markdown.extensions.md_in_html.HTMLExtractorExtra.get_starttag_text">get_starttag_text</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return full source of start tag: <code>&lt;...&gt;</code>.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.md_in_html.HTMLExtractorExtra.reset" href="#markdown.extensions.md_in_html.HTMLExtractorExtra.reset">reset</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Reset this instance.  Loses all unprocessed data.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.extensions.md_in_html.HTMLExtractorExtra.close" href="#markdown.extensions.md_in_html.HTMLExtractorExtra.close">close</a></b>
           –
           <div class="doc-md-description">
@@ -241,10 +227,31 @@ Markdown.</p>
           </div>
         </li>
         <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.md_in_html.HTMLExtractorExtra.get_endtag_text" href="#markdown.extensions.md_in_html.HTMLExtractorExtra.get_endtag_text">get_endtag_text</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Returns the text of the end tag.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.md_in_html.HTMLExtractorExtra.get_starttag_text" href="#markdown.extensions.md_in_html.HTMLExtractorExtra.get_starttag_text">get_starttag_text</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return full source of start tag: <code>&lt;...&gt;</code>.</p>
+          </div>
+        </li>
+        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.extensions.md_in_html.HTMLExtractorExtra.get_state" href="#markdown.extensions.md_in_html.HTMLExtractorExtra.get_state">get_state</a></b>
           –
           <div class="doc-md-description">
             <p>Return state from tag and <code>markdown</code> attribute. One of &lsquo;block&rsquo;, &lsquo;span&rsquo;, or &lsquo;off&rsquo;.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.md_in_html.HTMLExtractorExtra.reset" href="#markdown.extensions.md_in_html.HTMLExtractorExtra.reset">reset</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Reset this instance.  Loses all unprocessed data.</p>
           </div>
         </li>
   </ul>
@@ -287,7 +294,7 @@ Markdown.</p>
   </span>
 
 <a href="#markdown.extensions.md_in_html.HTMLExtractorExtra.line_offset" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python doc-signature">markdown.extensions.md_in_html.HTMLExtractorExtra.line_offset</code></pre>
+<pre class="codehilite"><code class="language-python doc-signature">line_offset</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -304,11 +311,11 @@ Markdown.</p>
 
 
 <h3 id="markdown.extensions.md_in_html.HTMLExtractorExtra.at_line_start" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.HTMLExtractorExtra.at_line_start</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.HTMLExtractorExtra.at_line_start</span>
 
 
 <a href="#markdown.extensions.md_in_html.HTMLExtractorExtra.at_line_start" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.md_in_html.HTMLExtractorExtra.at_line_start()</code></pre>
+<pre class="codehilite"><code class="language-python">at_line_start()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -325,11 +332,11 @@ Markdown.</p>
 
 
 <h3 id="markdown.extensions.md_in_html.HTMLExtractorExtra.close" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.HTMLExtractorExtra.close</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.HTMLExtractorExtra.close</span>
 
 
 <a href="#markdown.extensions.md_in_html.HTMLExtractorExtra.close" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.md_in_html.HTMLExtractorExtra.close()</code></pre>
+<pre class="codehilite"><code class="language-python">close()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -345,11 +352,11 @@ Markdown.</p>
 
 
 <h3 id="markdown.extensions.md_in_html.HTMLExtractorExtra.get_element" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.HTMLExtractorExtra.get_element</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.HTMLExtractorExtra.get_element</span>
 
 
 <a href="#markdown.extensions.md_in_html.HTMLExtractorExtra.get_element" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.md_in_html.HTMLExtractorExtra.get_element()</code></pre>
+<pre class="codehilite"><code class="language-python">get_element()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -365,11 +372,11 @@ Markdown.</p>
 
 
 <h3 id="markdown.extensions.md_in_html.HTMLExtractorExtra.get_endtag_text" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.HTMLExtractorExtra.get_endtag_text</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.HTMLExtractorExtra.get_endtag_text</span>
 
 
 <a href="#markdown.extensions.md_in_html.HTMLExtractorExtra.get_endtag_text" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.md_in_html.HTMLExtractorExtra.get_endtag_text(tag)</code></pre>
+<pre class="codehilite"><code class="language-python">get_endtag_text(tag)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -386,11 +393,11 @@ Markdown.</p>
 
 
 <h3 id="markdown.extensions.md_in_html.HTMLExtractorExtra.get_starttag_text" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.HTMLExtractorExtra.get_starttag_text</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.HTMLExtractorExtra.get_starttag_text</span>
 
 
 <a href="#markdown.extensions.md_in_html.HTMLExtractorExtra.get_starttag_text" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.md_in_html.HTMLExtractorExtra.get_starttag_text()</code></pre>
+<pre class="codehilite"><code class="language-python">get_starttag_text()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -406,11 +413,11 @@ Markdown.</p>
 
 
 <h3 id="markdown.extensions.md_in_html.HTMLExtractorExtra.get_state" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.HTMLExtractorExtra.get_state</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.HTMLExtractorExtra.get_state</span>
 
 
 <a href="#markdown.extensions.md_in_html.HTMLExtractorExtra.get_state" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.md_in_html.HTMLExtractorExtra.get_state(tag, attrs)</code></pre>
+<pre class="codehilite"><code class="language-python">get_state(tag, attrs)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -426,11 +433,11 @@ Markdown.</p>
 
 
 <h3 id="markdown.extensions.md_in_html.HTMLExtractorExtra.reset" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.HTMLExtractorExtra.reset</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.HTMLExtractorExtra.reset</span>
 
 
 <a href="#markdown.extensions.md_in_html.HTMLExtractorExtra.reset" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.md_in_html.HTMLExtractorExtra.reset()</code></pre>
+<pre class="codehilite"><code class="language-python">reset()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -552,11 +559,11 @@ Markdown.</p>
 
 
 <h3 id="markdown.extensions.md_in_html.MarkdownInHTMLPostprocessor.run" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.MarkdownInHTMLPostprocessor.run</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.MarkdownInHTMLPostprocessor.run</span>
 
 
 <a href="#markdown.extensions.md_in_html.MarkdownInHTMLPostprocessor.run" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.md_in_html.MarkdownInHTMLPostprocessor.run(text)</code></pre>
+<pre class="codehilite"><code class="language-python">run(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -572,11 +579,11 @@ Markdown.</p>
 
 
 <h3 id="markdown.extensions.md_in_html.MarkdownInHTMLPostprocessor.stash_to_string" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.MarkdownInHTMLPostprocessor.stash_to_string</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.MarkdownInHTMLPostprocessor.stash_to_string</span>
 
 
 <a href="#markdown.extensions.md_in_html.MarkdownInHTMLPostprocessor.stash_to_string" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.md_in_html.MarkdownInHTMLPostprocessor.stash_to_string(text)</code></pre>
+<pre class="codehilite"><code class="language-python">stash_to_string(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -621,6 +628,13 @@ Markdown.</p>
   <p>Methods:</p>
   <ul>
         <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.md_in_html.MarkdownInHtmlExtension.extendMarkdown" href="#markdown.extensions.md_in_html.MarkdownInHtmlExtension.extendMarkdown">extendMarkdown</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Register extension instances.</p>
+          </div>
+        </li>
+        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfig" href="#markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfig">getConfig</a></b>
           –
           <div class="doc-md-description">
@@ -628,17 +642,17 @@ Markdown.</p>
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfigs" href="#markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfigs">getConfigs</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return all configs settings as a dict.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfigInfo" href="#markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfigInfo">getConfigInfo</a></b>
           –
           <div class="doc-md-description">
             <p>Return all <code>config</code> descriptions as a list of tuples.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfigs" href="#markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfigs">getConfigs</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return all configs settings as a dict.</p>
           </div>
         </li>
         <li class="field-body">
@@ -653,13 +667,6 @@ Markdown.</p>
           –
           <div class="doc-md-description">
             <p>Set multiple <code>config</code> settings given a dict or list of tuples.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.md_in_html.MarkdownInHtmlExtension.extendMarkdown" href="#markdown.extensions.md_in_html.MarkdownInHtmlExtension.extendMarkdown">extendMarkdown</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Register extension instances.</p>
           </div>
         </li>
   </ul>
@@ -684,11 +691,11 @@ Markdown.</p>
 
 
 <h3 id="markdown.extensions.md_in_html.MarkdownInHtmlExtension.extendMarkdown" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.MarkdownInHtmlExtension.extendMarkdown</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.MarkdownInHtmlExtension.extendMarkdown</span>
 
 
 <a href="#markdown.extensions.md_in_html.MarkdownInHtmlExtension.extendMarkdown" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.md_in_html.MarkdownInHtmlExtension.extendMarkdown(md)</code></pre>
+<pre class="codehilite"><code class="language-python">extendMarkdown(md)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -704,11 +711,11 @@ Markdown.</p>
 
 
 <h3 id="markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfig" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfig</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfig</span>
 
 
 <a href="#markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfig" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfig(key, default = '')</code></pre>
+<pre class="codehilite"><code class="language-python">getConfig(key, default = '')</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -724,11 +731,11 @@ Markdown.</p>
 
 
 <h3 id="markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfigInfo" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfigInfo</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfigInfo</span>
 
 
 <a href="#markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfigInfo" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfigInfo()</code></pre>
+<pre class="codehilite"><code class="language-python">getConfigInfo()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -744,11 +751,11 @@ Markdown.</p>
 
 
 <h3 id="markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfigs" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfigs</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfigs</span>
 
 
 <a href="#markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfigs" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfigs()</code></pre>
+<pre class="codehilite"><code class="language-python">getConfigs()</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -764,11 +771,11 @@ Markdown.</p>
 
 
 <h3 id="markdown.extensions.md_in_html.MarkdownInHtmlExtension.setConfig" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.MarkdownInHtmlExtension.setConfig</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.MarkdownInHtmlExtension.setConfig</span>
 
 
 <a href="#markdown.extensions.md_in_html.MarkdownInHtmlExtension.setConfig" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.md_in_html.MarkdownInHtmlExtension.setConfig(key, value)</code></pre>
+<pre class="codehilite"><code class="language-python">setConfig(key, value)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -784,11 +791,11 @@ Markdown.</p>
 
 
 <h3 id="markdown.extensions.md_in_html.MarkdownInHtmlExtension.setConfigs" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.MarkdownInHtmlExtension.setConfigs</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.MarkdownInHtmlExtension.setConfigs</span>
 
 
 <a href="#markdown.extensions.md_in_html.MarkdownInHtmlExtension.setConfigs" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.md_in_html.MarkdownInHtmlExtension.setConfigs(items)</code></pre>
+<pre class="codehilite"><code class="language-python">setConfigs(items)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -833,17 +840,17 @@ Markdown.</p>
   <p>Methods:</p>
   <ul>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.md_in_html.MarkdownInHtmlProcessor.lastChild" href="#markdown.extensions.md_in_html.MarkdownInHtmlProcessor.lastChild">lastChild</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return the last child of an <code>etree</code> element.</p>
-          </div>
-        </li>
-        <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.extensions.md_in_html.MarkdownInHtmlProcessor.detab" href="#markdown.extensions.md_in_html.MarkdownInHtmlProcessor.detab">detab</a></b>
           –
           <div class="doc-md-description">
             <p>Remove a tab from the front of each line of the given text.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.md_in_html.MarkdownInHtmlProcessor.lastChild" href="#markdown.extensions.md_in_html.MarkdownInHtmlProcessor.lastChild">lastChild</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return the last child of an <code>etree</code> element.</p>
           </div>
         </li>
         <li class="field-body">
@@ -882,11 +889,11 @@ Markdown.</p>
 
 
 <h3 id="markdown.extensions.md_in_html.MarkdownInHtmlProcessor.detab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.MarkdownInHtmlProcessor.detab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.MarkdownInHtmlProcessor.detab</span>
 
 
 <a href="#markdown.extensions.md_in_html.MarkdownInHtmlProcessor.detab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.md_in_html.MarkdownInHtmlProcessor.detab(text, length = None)</code></pre>
+<pre class="codehilite"><code class="language-python">detab(text, length = None)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -902,11 +909,11 @@ Markdown.</p>
 
 
 <h3 id="markdown.extensions.md_in_html.MarkdownInHtmlProcessor.lastChild" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.MarkdownInHtmlProcessor.lastChild</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.MarkdownInHtmlProcessor.lastChild</span>
 
 
 <a href="#markdown.extensions.md_in_html.MarkdownInHtmlProcessor.lastChild" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.md_in_html.MarkdownInHtmlProcessor.lastChild(parent)</code></pre>
+<pre class="codehilite"><code class="language-python">lastChild(parent)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -922,11 +929,11 @@ Markdown.</p>
 
 
 <h3 id="markdown.extensions.md_in_html.MarkdownInHtmlProcessor.looseDetab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.MarkdownInHtmlProcessor.looseDetab</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.MarkdownInHtmlProcessor.looseDetab</span>
 
 
 <a href="#markdown.extensions.md_in_html.MarkdownInHtmlProcessor.looseDetab" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.md_in_html.MarkdownInHtmlProcessor.looseDetab(text, level = 1)</code></pre>
+<pre class="codehilite"><code class="language-python">looseDetab(text, level = 1)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -942,11 +949,11 @@ Markdown.</p>
 
 
 <h3 id="markdown.extensions.md_in_html.MarkdownInHtmlProcessor.parse_element_content" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.MarkdownInHtmlProcessor.parse_element_content</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.md_in_html.MarkdownInHtmlProcessor.parse_element_content</span>
 
 
 <a href="#markdown.extensions.md_in_html.MarkdownInHtmlProcessor.parse_element_content" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.md_in_html.MarkdownInHtmlProcessor.parse_element_content(element)</code></pre>
+<pre class="codehilite"><code class="language-python">parse_element_content(element)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -1002,31 +1009,31 @@ been disabled, the text content of it and its children are wrapped in an <code>A
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.md_in_html.HTMLExtractorExtra.at_line_start"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;at_line_start</a>
+        <a class="reference internal" href="#markdown.extensions.md_in_html.HTMLExtractorExtra.at_line_start"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;at_line_start</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.md_in_html.HTMLExtractorExtra.close"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;close</a>
+        <a class="reference internal" href="#markdown.extensions.md_in_html.HTMLExtractorExtra.close"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;close</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.md_in_html.HTMLExtractorExtra.get_element"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;get_element</a>
+        <a class="reference internal" href="#markdown.extensions.md_in_html.HTMLExtractorExtra.get_element"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;get_element</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.md_in_html.HTMLExtractorExtra.get_endtag_text"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;get_endtag_text</a>
+        <a class="reference internal" href="#markdown.extensions.md_in_html.HTMLExtractorExtra.get_endtag_text"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;get_endtag_text</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.md_in_html.HTMLExtractorExtra.get_starttag_text"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;get_starttag_text</a>
+        <a class="reference internal" href="#markdown.extensions.md_in_html.HTMLExtractorExtra.get_starttag_text"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;get_starttag_text</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.md_in_html.HTMLExtractorExtra.get_state"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;get_state</a>
+        <a class="reference internal" href="#markdown.extensions.md_in_html.HTMLExtractorExtra.get_state"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;get_state</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.md_in_html.HTMLExtractorExtra.reset"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;reset</a>
+        <a class="reference internal" href="#markdown.extensions.md_in_html.HTMLExtractorExtra.reset"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;reset</a>
     </li>
         </ul>
     </li>
@@ -1040,11 +1047,11 @@ been disabled, the text content of it and its children are wrapped in an <code>A
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.md_in_html.MarkdownInHTMLPostprocessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;run</a>
+        <a class="reference internal" href="#markdown.extensions.md_in_html.MarkdownInHTMLPostprocessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;run</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.md_in_html.MarkdownInHTMLPostprocessor.stash_to_string"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;stash_to_string</a>
+        <a class="reference internal" href="#markdown.extensions.md_in_html.MarkdownInHTMLPostprocessor.stash_to_string"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;stash_to_string</a>
     </li>
         </ul>
     </li>
@@ -1054,27 +1061,27 @@ been disabled, the text content of it and its children are wrapped in an <code>A
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.md_in_html.MarkdownInHtmlExtension.extendMarkdown"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;extendMarkdown</a>
+        <a class="reference internal" href="#markdown.extensions.md_in_html.MarkdownInHtmlExtension.extendMarkdown"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;extendMarkdown</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfig</a>
+        <a class="reference internal" href="#markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getConfig</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfigInfo"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfigInfo</a>
+        <a class="reference internal" href="#markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfigInfo"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getConfigInfo</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;getConfigs</a>
+        <a class="reference internal" href="#markdown.extensions.md_in_html.MarkdownInHtmlExtension.getConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;getConfigs</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.md_in_html.MarkdownInHtmlExtension.setConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;setConfig</a>
+        <a class="reference internal" href="#markdown.extensions.md_in_html.MarkdownInHtmlExtension.setConfig"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;setConfig</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.md_in_html.MarkdownInHtmlExtension.setConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;setConfigs</a>
+        <a class="reference internal" href="#markdown.extensions.md_in_html.MarkdownInHtmlExtension.setConfigs"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;setConfigs</a>
     </li>
         </ul>
     </li>
@@ -1084,19 +1091,19 @@ been disabled, the text content of it and its children are wrapped in an <code>A
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.md_in_html.MarkdownInHtmlProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;detab</a>
+        <a class="reference internal" href="#markdown.extensions.md_in_html.MarkdownInHtmlProcessor.detab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;detab</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.md_in_html.MarkdownInHtmlProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;lastChild</a>
+        <a class="reference internal" href="#markdown.extensions.md_in_html.MarkdownInHtmlProcessor.lastChild"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;lastChild</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.md_in_html.MarkdownInHtmlProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;looseDetab</a>
+        <a class="reference internal" href="#markdown.extensions.md_in_html.MarkdownInHtmlProcessor.looseDetab"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;looseDetab</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.md_in_html.MarkdownInHtmlProcessor.parse_element_content"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;parse_element_content</a>
+        <a class="reference internal" href="#markdown.extensions.md_in_html.MarkdownInHtmlProcessor.parse_element_content"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;parse_element_content</a>
     </li>
         </ul>
     </li>
@@ -1106,13 +1113,13 @@ been disabled, the text content of it and its children are wrapped in an <code>A
             
             <h4>Previous topic</h4>
             <p class="topless">
-                <a href="../legacy_em/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> legacy_em</a>
+                <a href="../legacy_em/" title="previous page">legacy_em</a>
             </p>
 
             
             <h4>Next topic</h4>
             <p class="topless">
-                <a href="../meta/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> meta</a>
+                <a href="../meta/" title="next page">meta</a>
             </p>
 
             <div role="note" aria-label="source link">
@@ -1138,10 +1145,10 @@ been disabled, the text content of it and its children are wrapped in an <code>A
                 <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../meta/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> meta" accesskey="N">next</a> |
+                <a href="../meta/" title="meta" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../legacy_em/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> legacy_em" accesskey="P">previous</a> |
+                <a href="../legacy_em/" title="legacy_em" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -1154,19 +1161,22 @@ been disabled, the text content of it and its children are wrapped in an <code>A
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../../">markdown</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+            <a href="../">extensions</a>
          &#187; </li>
                 
                 
@@ -1180,7 +1190,7 @@ been disabled, the text content of it and its children are wrapped in an <code>A
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> md_in_html</a>
+            <a href="./">md_in_html</a>
          &#187; </li>
                 
                 
@@ -1197,9 +1207,6 @@ been disabled, the text content of it and its children are wrapped in an <code>A
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -1212,7 +1219,7 @@ been disabled, the text content of it and its children are wrapped in an <code>A
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-22 23:35:33.309455+00:00
+        Docs Build Date UTC : 2023-08-24 13:24:36.131442+00:00
         -->
     </body>
 </html>

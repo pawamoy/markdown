@@ -9,9 +9,9 @@
         <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/postprocessors/">
         <link rel="shortcut icon" href="../../../favicon.ico">
         <link rel="search" title="Search" href="../../../search.html" />
-        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> preprocessors" href="../preprocessors/" />
-        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> inlinepatterns" href="../inlinepatterns/" />
-        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> postprocessors &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="next" title="preprocessors" href="../preprocessors/" />
+        <link rel="prev" title="inlinepatterns" href="../inlinepatterns/" />
+        <title>postprocessors &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../../static/nature.css" type="text/css" />
         <link rel="stylesheet" href="../../../static/pygments.css" type="text/css" />
         <link rel="stylesheet" href="../../../assets/_mkdocstrings.css" type="text/css" />
@@ -32,10 +32,10 @@
                 <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../preprocessors/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> preprocessors" accesskey="N">next</a> |
+                <a href="../preprocessors/" title="preprocessors" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../inlinepatterns/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> inlinepatterns" accesskey="P">previous</a> |
+                <a href="../inlinepatterns/" title="inlinepatterns" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -48,12 +48,15 @@
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../">markdown</a>
          &#187; </li>
                 
                 
@@ -63,16 +66,13 @@
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> postprocessors</a>
+            <a href="./">postprocessors</a>
          &#187; </li>
                 
                 
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -94,20 +94,7 @@
 
   <div class="doc doc-contents first">
   
-      <p>Python Markdown</p>
-<p>A Python implementation of John Gruber&rsquo;s Markdown.</p>
-<p>Documentation: https://python-markdown.github.io/
-GitHub: https://github.com/Python-Markdown/markdown/
-PyPI: https://pypi.org/project/Markdown/</p>
-<p>Started by Manfred Stienstra (http://www.dwerg.net/).
-Maintained for a few years by Yuri Takhteyev (http://www.freewisdom.org).
-Currently maintained by Waylan Limberg (https://github.com/waylan),
-Dmitry Shachnev (https://github.com/mitya57) and Isaac Muse (https://github.com/facelessuser).</p>
-<p>Copyright 2007-2018 The Python Markdown Project (v. 1.7 and later)
-Copyright 2004, 2005, 2006 Yuri Takhteyev (v. 0.2-1.6b)
-Copyright 2004 Manfred Stienstra (the original version)</p>
-<p>License: BSD (see LICENSE.md for details).</p>
-<h2 id="markdown.postprocessors--post-processors">POST-PROCESSORS<a class="headerlink" href="#markdown.postprocessors--post-processors" title="Permanent link">&para;</a></h2>
+      <h2 id="markdown.postprocessors--post-processors">POST-PROCESSORS<a class="headerlink" href="#markdown.postprocessors--post-processors" title="Permanent link">&para;</a></h2>
 <p>Markdown also allows post-processors, which are similar to preprocessors in
 that they need to implement a &ldquo;run&rdquo; method. However, they are run after core
 processing.</p>
@@ -118,6 +105,13 @@ processing.</p>
 
   <p>Classes:</p>
   <ul>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.postprocessors.AndSubstitutePostprocessor" href="#markdown.postprocessors.AndSubstitutePostprocessor">AndSubstitutePostprocessor</a></b>
+        –
+        <div class="doc-md-description">
+          <p>Restore valid entities</p>
+        </div>
+      </li>
       <li class="field-body">
         <b><a class="autorefs autorefs-internal" title="markdown.postprocessors.Postprocessor" href="#markdown.postprocessors.Postprocessor">Postprocessor</a></b>
         –
@@ -130,13 +124,6 @@ processing.</p>
         –
         <div class="doc-md-description">
           <p>Restore raw html to the document.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.postprocessors.AndSubstitutePostprocessor" href="#markdown.postprocessors.AndSubstitutePostprocessor">AndSubstitutePostprocessor</a></b>
-        –
-        <div class="doc-md-description">
-          <p>Restore valid entities</p>
         </div>
       </li>
       <li class="field-body">
@@ -275,11 +262,11 @@ text string, modifies it as necessary and returns a text string.</p>
 
 
 <h3 id="markdown.postprocessors.Postprocessor.run" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.postprocessors.Postprocessor.run</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.postprocessors.Postprocessor.run</span>
 
 
 <a href="#markdown.postprocessors.Postprocessor.run" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.postprocessors.Postprocessor.run(text)</code></pre>
+<pre class="codehilite"><code class="language-python">run(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -361,11 +348,11 @@ takes the html document as a single text string and returns a
 
 
 <h3 id="markdown.postprocessors.RawHtmlPostprocessor.run" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.postprocessors.RawHtmlPostprocessor.run</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.postprocessors.RawHtmlPostprocessor.run</span>
 
 
 <a href="#markdown.postprocessors.RawHtmlPostprocessor.run" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.postprocessors.RawHtmlPostprocessor.run(text)</code></pre>
+<pre class="codehilite"><code class="language-python">run(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -381,11 +368,11 @@ takes the html document as a single text string and returns a
 
 
 <h3 id="markdown.postprocessors.RawHtmlPostprocessor.stash_to_string" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.postprocessors.RawHtmlPostprocessor.stash_to_string</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.postprocessors.RawHtmlPostprocessor.stash_to_string</span>
 
 
 <a href="#markdown.postprocessors.RawHtmlPostprocessor.stash_to_string" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.postprocessors.RawHtmlPostprocessor.stash_to_string(text)</code></pre>
+<pre class="codehilite"><code class="language-python">stash_to_string(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -459,7 +446,7 @@ takes the html document as a single text string and returns a
 
 
 <a href="#markdown.postprocessors.build_postprocessors" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.postprocessors.build_postprocessors(md, **kwargs)</code></pre>
+<pre class="codehilite"><code class="language-python">build_postprocessors(md, **kwargs)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -502,7 +489,7 @@ takes the html document as a single text string and returns a
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.postprocessors.Postprocessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;run</a>
+        <a class="reference internal" href="#markdown.postprocessors.Postprocessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;run</a>
     </li>
         </ul>
     </li>
@@ -512,11 +499,11 @@ takes the html document as a single text string and returns a
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.postprocessors.RawHtmlPostprocessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;run</a>
+        <a class="reference internal" href="#markdown.postprocessors.RawHtmlPostprocessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;run</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.postprocessors.RawHtmlPostprocessor.stash_to_string"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;stash_to_string</a>
+        <a class="reference internal" href="#markdown.postprocessors.RawHtmlPostprocessor.stash_to_string"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;stash_to_string</a>
     </li>
         </ul>
     </li>
@@ -534,13 +521,13 @@ takes the html document as a single text string and returns a
             
             <h4>Previous topic</h4>
             <p class="topless">
-                <a href="../inlinepatterns/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> inlinepatterns</a>
+                <a href="../inlinepatterns/" title="previous page">inlinepatterns</a>
             </p>
 
             
             <h4>Next topic</h4>
             <p class="topless">
-                <a href="../preprocessors/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> preprocessors</a>
+                <a href="../preprocessors/" title="next page">preprocessors</a>
             </p>
 
             <div role="note" aria-label="source link">
@@ -566,10 +553,10 @@ takes the html document as a single text string and returns a
                 <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../preprocessors/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> preprocessors" accesskey="N">next</a> |
+                <a href="../preprocessors/" title="preprocessors" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../inlinepatterns/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> inlinepatterns" accesskey="P">previous</a> |
+                <a href="../inlinepatterns/" title="inlinepatterns" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -582,12 +569,15 @@ takes the html document as a single text string and returns a
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../">markdown</a>
          &#187; </li>
                 
                 
@@ -597,16 +587,13 @@ takes the html document as a single text string and returns a
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> postprocessors</a>
+            <a href="./">postprocessors</a>
          &#187; </li>
                 
                 
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -619,7 +606,7 @@ takes the html document as a single text string and returns a
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-22 23:35:33.295816+00:00
+        Docs Build Date UTC : 2023-08-24 13:24:36.117320+00:00
         -->
     </body>
 </html>

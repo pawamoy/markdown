@@ -9,9 +9,9 @@
         <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/extensions/toc/">
         <link rel="shortcut icon" href="../../../../favicon.ico">
         <link rel="search" title="Search" href="../../../../search.html" />
-        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> wikilinks" href="../wikilinks/" />
-        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> tables" href="../tables/" />
-        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> toc &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="next" title="wikilinks" href="../wikilinks/" />
+        <link rel="prev" title="tables" href="../tables/" />
+        <title>toc &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../../../static/nature.css" type="text/css" />
         <link rel="stylesheet" href="../../../../static/pygments.css" type="text/css" />
         <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css" type="text/css" />
@@ -32,10 +32,10 @@
                 <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../wikilinks/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> wikilinks" accesskey="N">next</a> |
+                <a href="../wikilinks/" title="wikilinks" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../tables/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> tables" accesskey="P">previous</a> |
+                <a href="../tables/" title="tables" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -48,19 +48,22 @@
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../../">markdown</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+            <a href="../">extensions</a>
          &#187; </li>
                 
                 
@@ -80,7 +83,7 @@
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> toc</a>
+            <a href="./">toc</a>
          &#187; </li>
                 
                 
@@ -91,9 +94,6 @@
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -116,7 +116,7 @@
   <div class="doc doc-contents first">
   
       <h2 id="markdown.extensions.toc--table-of-contents-extension-for-python-markdown">Table of Contents Extension for Python-Markdown<a class="headerlink" href="#markdown.extensions.toc--table-of-contents-extension-for-python-markdown" title="Permanent link">&para;</a></h2>
-<p>See <a href="https://Python-Markdown.github.io/extensions/toc">https://Python-Markdown.github.io/extensions/toc</a>
+<p>See https://Python-Markdown.github.io/extensions/toc
 for documentation.</p>
 <p>Original code Copyright 2008 <a href="https://codezen.org/">Jack Miller</a></p>
 <p>All changes Copyright 2008-2014 The Python Markdown Project</p>
@@ -126,9 +126,36 @@ for documentation.</p>
 
 
 
+  <p>Classes:</p>
+  <ul>
+      <li class="field-body">
+        <b><a class="autorefs autorefs-internal" title="markdown.extensions.toc.TocTreeprocessor" href="#markdown.extensions.toc.TocTreeprocessor">TocTreeprocessor</a></b>
+        –
+        <div class="doc-md-description">
+          
+        </div>
+      </li>
+  </ul>
+
+
+
 
   <p>Functions:</p>
   <ul>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.toc.get_name" href="#markdown.extensions.toc.get_name">get_name</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Get title name.</p>
+          </div>
+        </li>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.toc.nest_toc_tokens" href="#markdown.extensions.toc.nest_toc_tokens">nest_toc_tokens</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Given an unsorted list with errors and skips, return a nested one.</p>
+          </div>
+        </li>
         <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.extensions.toc.slugify" href="#markdown.extensions.toc.slugify">slugify</a></b>
           –
@@ -141,20 +168,6 @@ for documentation.</p>
           –
           <div class="doc-md-description">
             <p>Slugify a string, to make it URL friendly while preserving Unicode characters.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.toc.unique" href="#markdown.extensions.toc.unique">unique</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Ensure id is unique in set of ids. Append &lsquo;_1&rsquo;, &lsquo;_2&rsquo;&hellip; if not</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.toc.get_name" href="#markdown.extensions.toc.get_name">get_name</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Get title name.</p>
           </div>
         </li>
         <li class="field-body">
@@ -172,10 +185,10 @@ for documentation.</p>
           </div>
         </li>
         <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.toc.nest_toc_tokens" href="#markdown.extensions.toc.nest_toc_tokens">nest_toc_tokens</a></b>
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.toc.unique" href="#markdown.extensions.toc.unique">unique</a></b>
           –
           <div class="doc-md-description">
-            <p>Given an unsorted list with errors and skips, return a nested one.</p>
+            <p>Ensure id is unique in set of ids. Append &lsquo;_1&rsquo;, &lsquo;_2&rsquo;&hellip; if not</p>
           </div>
         </li>
   </ul>
@@ -201,7 +214,7 @@ for documentation.</p>
 
 
 <a href="#markdown.extensions.toc.TocTreeprocessor" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.toc.TocTreeprocessor(md, config)</code></pre>
+<pre class="codehilite"><code class="language-python">TocTreeprocessor(md, config)</code></pre>
 
   <div class="doc doc-contents ">
           <p class="doc doc-class-bases">
@@ -215,6 +228,13 @@ for documentation.</p>
 
   <p>Methods:</p>
   <ul>
+        <li class="field-body">
+          <b><a class="autorefs autorefs-internal" title="markdown.extensions.toc.TocTreeprocessor.build_toc_div" href="#markdown.extensions.toc.TocTreeprocessor.build_toc_div">build_toc_div</a></b>
+          –
+          <div class="doc-md-description">
+            <p>Return a string div given a toc list.</p>
+          </div>
+        </li>
         <li class="field-body">
           <b><a class="autorefs autorefs-internal" title="markdown.extensions.toc.TocTreeprocessor.iterparent" href="#markdown.extensions.toc.TocTreeprocessor.iterparent">iterparent</a></b>
           –
@@ -234,13 +254,6 @@ for documentation.</p>
           –
           <div class="doc-md-description">
             <p>Adjust header level according to base level.</p>
-          </div>
-        </li>
-        <li class="field-body">
-          <b><a class="autorefs autorefs-internal" title="markdown.extensions.toc.TocTreeprocessor.build_toc_div" href="#markdown.extensions.toc.TocTreeprocessor.build_toc_div">build_toc_div</a></b>
-          –
-          <div class="doc-md-description">
-            <p>Return a string div given a toc list.</p>
           </div>
         </li>
   </ul>
@@ -265,11 +278,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.toc.TocTreeprocessor.build_toc_div" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.toc.TocTreeprocessor.build_toc_div</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.toc.TocTreeprocessor.build_toc_div</span>
 
 
 <a href="#markdown.extensions.toc.TocTreeprocessor.build_toc_div" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.toc.TocTreeprocessor.build_toc_div(toc_list)</code></pre>
+<pre class="codehilite"><code class="language-python">build_toc_div(toc_list)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -285,11 +298,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.toc.TocTreeprocessor.iterparent" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.toc.TocTreeprocessor.iterparent</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.toc.TocTreeprocessor.iterparent</span>
 
 
 <a href="#markdown.extensions.toc.TocTreeprocessor.iterparent" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.toc.TocTreeprocessor.iterparent(node)</code></pre>
+<pre class="codehilite"><code class="language-python">iterparent(node)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -305,11 +318,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.toc.TocTreeprocessor.replace_marker" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.toc.TocTreeprocessor.replace_marker</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.toc.TocTreeprocessor.replace_marker</span>
 
 
 <a href="#markdown.extensions.toc.TocTreeprocessor.replace_marker" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.toc.TocTreeprocessor.replace_marker(root, elem)</code></pre>
+<pre class="codehilite"><code class="language-python">replace_marker(root, elem)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -325,11 +338,11 @@ for documentation.</p>
 
 
 <h3 id="markdown.extensions.toc.TocTreeprocessor.set_level" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.toc.TocTreeprocessor.set_level</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.extensions.toc.TocTreeprocessor.set_level</span>
 
 
 <a href="#markdown.extensions.toc.TocTreeprocessor.set_level" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.extensions.toc.TocTreeprocessor.set_level(elem)</code></pre>
+<pre class="codehilite"><code class="language-python">set_level(elem)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -359,7 +372,7 @@ for documentation.</p>
 
 
 <a href="#markdown.extensions.toc.get_name" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.toc.get_name(el)</code></pre>
+<pre class="codehilite"><code class="language-python">get_name(el)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -379,7 +392,7 @@ for documentation.</p>
 
 
 <a href="#markdown.extensions.toc.nest_toc_tokens" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.toc.nest_toc_tokens(toc_list)</code></pre>
+<pre class="codehilite"><code class="language-python">nest_toc_tokens(toc_list)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -406,7 +419,7 @@ for documentation.</p>
 
 
 <a href="#markdown.extensions.toc.slugify" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.toc.slugify(value, separator, unicode = False)</code></pre>
+<pre class="codehilite"><code class="language-python">slugify(value, separator, unicode = False)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -426,7 +439,7 @@ for documentation.</p>
 
 
 <a href="#markdown.extensions.toc.slugify_unicode" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.toc.slugify_unicode(value, separator)</code></pre>
+<pre class="codehilite"><code class="language-python">slugify_unicode(value, separator)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -446,7 +459,7 @@ for documentation.</p>
 
 
 <a href="#markdown.extensions.toc.stashedHTML2text" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.toc.stashedHTML2text(text, md, strip_entities = True)</code></pre>
+<pre class="codehilite"><code class="language-python">stashedHTML2text(text, md, strip_entities = True)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -466,7 +479,7 @@ for documentation.</p>
 
 
 <a href="#markdown.extensions.toc.unescape" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.toc.unescape(text)</code></pre>
+<pre class="codehilite"><code class="language-python">unescape(text)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -486,7 +499,7 @@ for documentation.</p>
 
 
 <a href="#markdown.extensions.toc.unique" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.extensions.toc.unique(id, ids)</code></pre>
+<pre class="codehilite"><code class="language-python">unique(id, ids)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -525,19 +538,19 @@ for documentation.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.toc.TocTreeprocessor.build_toc_div"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;build_toc_div</a>
+        <a class="reference internal" href="#markdown.extensions.toc.TocTreeprocessor.build_toc_div"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;build_toc_div</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.toc.TocTreeprocessor.iterparent"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;iterparent</a>
+        <a class="reference internal" href="#markdown.extensions.toc.TocTreeprocessor.iterparent"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;iterparent</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.toc.TocTreeprocessor.replace_marker"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;replace_marker</a>
+        <a class="reference internal" href="#markdown.extensions.toc.TocTreeprocessor.replace_marker"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;replace_marker</a>
     </li>
             
     <li>
-        <a class="reference internal" href="#markdown.extensions.toc.TocTreeprocessor.set_level"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;set_level</a>
+        <a class="reference internal" href="#markdown.extensions.toc.TocTreeprocessor.set_level"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;set_level</a>
     </li>
         </ul>
     </li>
@@ -575,13 +588,13 @@ for documentation.</p>
             
             <h4>Previous topic</h4>
             <p class="topless">
-                <a href="../tables/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> tables</a>
+                <a href="../tables/" title="previous page">tables</a>
             </p>
 
             
             <h4>Next topic</h4>
             <p class="topless">
-                <a href="../wikilinks/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> wikilinks</a>
+                <a href="../wikilinks/" title="next page">wikilinks</a>
             </p>
 
             <div role="note" aria-label="source link">
@@ -607,10 +620,10 @@ for documentation.</p>
                 <a href="../../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../wikilinks/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> wikilinks" accesskey="N">next</a> |
+                <a href="../wikilinks/" title="wikilinks" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../tables/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> tables" accesskey="P">previous</a> |
+                <a href="../tables/" title="tables" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -623,19 +636,22 @@ for documentation.</p>
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../../">markdown</a>
          &#187; </li>
                 
                 
                 
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> extensions</a>
+            <a href="../">extensions</a>
          &#187; </li>
                 
                 
@@ -655,7 +671,7 @@ for documentation.</p>
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> toc</a>
+            <a href="./">toc</a>
          &#187; </li>
                 
                 
@@ -666,9 +682,6 @@ for documentation.</p>
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -681,7 +694,7 @@ for documentation.</p>
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-22 23:35:33.314166+00:00
+        Docs Build Date UTC : 2023-08-24 13:24:36.136155+00:00
         -->
     </body>
 </html>

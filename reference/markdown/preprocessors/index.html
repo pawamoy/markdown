@@ -9,9 +9,9 @@
         <link rel="canonical" href="https://Python-Markdown.github.io/reference/markdown/preprocessors/">
         <link rel="shortcut icon" href="../../../favicon.ico">
         <link rel="search" title="Search" href="../../../search.html" />
-        <link rel="next" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> serializers" href="../serializers/" />
-        <link rel="prev" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> postprocessors" href="../postprocessors/" />
-        <title><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> preprocessors &#8212; Python-Markdown 3.4.4 documentation</title>
+        <link rel="next" title="serializers" href="../serializers/" />
+        <link rel="prev" title="postprocessors" href="../postprocessors/" />
+        <title>preprocessors &#8212; Python-Markdown 3.4.4 documentation</title>
         <link rel="stylesheet" href="../../../static/nature.css" type="text/css" />
         <link rel="stylesheet" href="../../../static/pygments.css" type="text/css" />
         <link rel="stylesheet" href="../../../assets/_mkdocstrings.css" type="text/css" />
@@ -32,10 +32,10 @@
                 <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../serializers/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> serializers" accesskey="N">next</a> |
+                <a href="../serializers/" title="serializers" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../postprocessors/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> postprocessors" accesskey="P">previous</a> |
+                <a href="../postprocessors/" title="postprocessors" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -48,12 +48,15 @@
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../">markdown</a>
          &#187; </li>
                 
                 
@@ -64,15 +67,12 @@
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> preprocessors</a>
+            <a href="./">preprocessors</a>
          &#187; </li>
                 
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -94,20 +94,7 @@
 
   <div class="doc doc-contents first">
   
-      <p>Python Markdown</p>
-<p>A Python implementation of John Gruber&rsquo;s Markdown.</p>
-<p>Documentation: https://python-markdown.github.io/
-GitHub: https://github.com/Python-Markdown/markdown/
-PyPI: https://pypi.org/project/Markdown/</p>
-<p>Started by Manfred Stienstra (http://www.dwerg.net/).
-Maintained for a few years by Yuri Takhteyev (http://www.freewisdom.org).
-Currently maintained by Waylan Limberg (https://github.com/waylan),
-Dmitry Shachnev (https://github.com/mitya57) and Isaac Muse (https://github.com/facelessuser).</p>
-<p>Copyright 2007-2018 The Python Markdown Project (v. 1.7 and later)
-Copyright 2004, 2005, 2006 Yuri Takhteyev (v. 0.2-1.6b)
-Copyright 2004 Manfred Stienstra (the original version)</p>
-<p>License: BSD (see LICENSE.md for details).</p>
-<h2 id="markdown.preprocessors--pre-processors">PRE-PROCESSORS<a class="headerlink" href="#markdown.preprocessors--pre-processors" title="Permanent link">&para;</a></h2>
+      <h2 id="markdown.preprocessors--pre-processors">PRE-PROCESSORS<a class="headerlink" href="#markdown.preprocessors--pre-processors" title="Permanent link">&para;</a></h2>
 <p>Preprocessors work on source text before we start doing anything too
 complicated.</p>
 
@@ -118,10 +105,10 @@ complicated.</p>
   <p>Classes:</p>
   <ul>
       <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.preprocessors.Preprocessor" href="#markdown.preprocessors.Preprocessor">Preprocessor</a></b>
+        <b><a class="autorefs autorefs-internal" title="markdown.preprocessors.HtmlBlockPreprocessor" href="#markdown.preprocessors.HtmlBlockPreprocessor">HtmlBlockPreprocessor</a></b>
         –
         <div class="doc-md-description">
-          <p>Preprocessors are run after the text is broken into lines.</p>
+          <p>Remove html blocks from the text and store them for later retrieval.</p>
         </div>
       </li>
       <li class="field-body">
@@ -132,10 +119,10 @@ complicated.</p>
         </div>
       </li>
       <li class="field-body">
-        <b><a class="autorefs autorefs-internal" title="markdown.preprocessors.HtmlBlockPreprocessor" href="#markdown.preprocessors.HtmlBlockPreprocessor">HtmlBlockPreprocessor</a></b>
+        <b><a class="autorefs autorefs-internal" title="markdown.preprocessors.Preprocessor" href="#markdown.preprocessors.Preprocessor">Preprocessor</a></b>
         –
         <div class="doc-md-description">
-          <p>Remove html blocks from the text and store them for later retrieval.</p>
+          <p>Preprocessors are run after the text is broken into lines.</p>
         </div>
       </li>
   </ul>
@@ -312,11 +299,11 @@ either the same pointer or a pointer to a new list.</p>
 
 
 <h3 id="markdown.preprocessors.Preprocessor.run" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <span class="doc doc-object-name doc-function-name">markdown.preprocessors.Preprocessor.run</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <span class="doc doc-object-name doc-function-name">markdown.preprocessors.Preprocessor.run</span>
 
 
 <a href="#markdown.preprocessors.Preprocessor.run" class="headerlink" title="Permanent link">&para;</a></h3>
-<pre class="codehilite"><code class="language-python">markdown.preprocessors.Preprocessor.run(lines)</code></pre>
+<pre class="codehilite"><code class="language-python">run(lines)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -348,7 +335,7 @@ the (possibly modified) list of lines.</p>
 
 
 <a href="#markdown.preprocessors.build_preprocessors" class="headerlink" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-python">markdown.preprocessors.build_preprocessors(md, **kwargs)</code></pre>
+<pre class="codehilite"><code class="language-python">build_preprocessors(md, **kwargs)</code></pre>
 
   <div class="doc doc-contents ">
   
@@ -395,7 +382,7 @@ the (possibly modified) list of lines.</p>
         <ul>
             
     <li>
-        <a class="reference internal" href="#markdown.preprocessors.Preprocessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;run</a>
+        <a class="reference internal" href="#markdown.preprocessors.Preprocessor.run"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;run</a>
     </li>
         </ul>
     </li>
@@ -409,13 +396,13 @@ the (possibly modified) list of lines.</p>
             
             <h4>Previous topic</h4>
             <p class="topless">
-                <a href="../postprocessors/" title="previous page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> postprocessors</a>
+                <a href="../postprocessors/" title="previous page">postprocessors</a>
             </p>
 
             
             <h4>Next topic</h4>
             <p class="topless">
-                <a href="../serializers/" title="next page"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> serializers</a>
+                <a href="../serializers/" title="next page">serializers</a>
             </p>
 
             <div role="note" aria-label="source link">
@@ -441,10 +428,10 @@ the (possibly modified) list of lines.</p>
                 <a href="../../../sitemap.html" title="Sitemap" accesskey="I">index</a>
             </li>
             <li class="right">
-                <a href="../serializers/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> serializers" accesskey="N">next</a> |
+                <a href="../serializers/" title="serializers" accesskey="N">next</a> |
             </li>
             <li class="right">
-                <a href="../postprocessors/" title="<code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> postprocessors" accesskey="P">previous</a> |
+                <a href="../postprocessors/" title="postprocessors" accesskey="P">previous</a> |
             </li>
             <li><img src="../../../py.png"
             alt="icon" style="vertical-align: middle; margin-top: -1px"/></li>
@@ -457,12 +444,15 @@ the (possibly modified) list of lines.</p>
                     
                     
                     
+                    
+                    
+                    
         <li class="nav-item">
             API Reference
          &#187; </li>
                 
         <li class="nav-item">
-            <a href="../"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> markdown</a>
+            <a href="../">markdown</a>
          &#187; </li>
                 
                 
@@ -473,15 +463,12 @@ the (possibly modified) list of lines.</p>
                 
                 
         <li class="nav-item">
-            <a href="./"><code class="doc-symbol doc-symbol-nav doc-symbol-module"></code> preprocessors</a>
+            <a href="./">preprocessors</a>
          &#187; </li>
                 
                 
                 
                 
-                    
-                    
-                    
                     
                     
                     
@@ -494,7 +481,7 @@ the (possibly modified) list of lines.</p>
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-22 23:35:33.296527+00:00
+        Docs Build Date UTC : 2023-08-24 13:24:36.118058+00:00
         -->
     </body>
 </html>
