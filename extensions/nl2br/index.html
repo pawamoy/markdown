@@ -89,24 +89,24 @@
 <p>The New-Line-to-Break (<code>nl2br</code>) Extension will cause newlines to be treated as
 hard breaks; like StackOverflow and <a href="https://github.github.com/github-flavored-markdown/">GitHub</a> flavored Markdown do.</p>
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<pre class="codehilite"><code class="language-pycon">&gt;&gt;&gt; import markdown
-&gt;&gt;&gt; text = &quot;&quot;&quot;
-... Line 1
-... Line 2
-... &quot;&quot;&quot;
-&gt;&gt;&gt; html = markdown.markdown(text, extensions=['nl2br'])
-&gt;&gt;&gt; print html
-&lt;p&gt;Line 1&lt;br /&gt;
-Line 2&lt;/p&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">markdown</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="gp">... </span><span class="s2">Line 1</span>
+<span class="gp">... </span><span class="s2">Line 2</span>
+<span class="gp">... </span><span class="s2">&quot;&quot;&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">html</span> <span class="o">=</span> <span class="n">markdown</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">extensions</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;nl2br&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">html</span>
+<span class="go">&lt;p&gt;Line 1&lt;br /&gt;</span>
+<span class="go">Line 2&lt;/p&gt;</span>
+</code></pre></div>
 
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>See <a href="../">Extensions</a> for general extension usage. Use <code>nl2br</code> as the name
 of the extension.</p>
 <p>This extension does not accept any special configuration options.</p>
 <p>A trivial example:</p>
-<pre class="codehilite"><code class="language-python">markdown.markdown(some_text, extensions=['nl2br'])
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">markdown</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">some_text</span><span class="p">,</span> <span class="n">extensions</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;nl2br&#39;</span><span class="p">])</span>
+</code></pre></div>
 
                     </div>
                 </div>
@@ -224,7 +224,7 @@ of the extension.</p>
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-24 21:36:12.807159+00:00
+        Docs Build Date UTC : 2023-08-27 18:09:27.173839+00:00
         -->
     </body>
 </html>

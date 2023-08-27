@@ -93,25 +93,25 @@ Specifically, any defined abbreviation is wrapped in  an <code>&lt;abbr&gt;</cod
 <p>Abbreviations are defined using the syntax established in
 <a href="http://www.michelf.com/projects/php-markdown/extra/#abbr">PHP Markdown Extra</a>.</p>
 <p>Thus, the following text (taken from the above referenced PHP documentation):</p>
-<pre class="codehilite"><code class="language-md">The HTML specification
+<div class="codehilite"><pre><span></span><code>The HTML specification
 is maintained by the W3C.
 
 *[HTML]: Hyper Text Markup Language
 *[W3C]:  World Wide Web Consortium
-</code></pre>
+</code></pre></div>
 
 <p>will be rendered as:</p>
-<pre class="codehilite"><code class="language-html">&lt;p&gt;The &lt;abbr title=&quot;Hyper Text Markup Language&quot;&gt;HTML&lt;/abbr&gt; specification
-is maintained by the &lt;abbr title=&quot;World Wide Web Consortium&quot;&gt;W3C&lt;/abbr&gt;.&lt;/p&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>The <span class="p">&lt;</span><span class="nt">abbr</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;Hyper Text Markup Language&quot;</span><span class="p">&gt;</span>HTML<span class="p">&lt;/</span><span class="nt">abbr</span><span class="p">&gt;</span> specification
+is maintained by the <span class="p">&lt;</span><span class="nt">abbr</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;World Wide Web Consortium&quot;</span><span class="p">&gt;</span>W3C<span class="p">&lt;/</span><span class="nt">abbr</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
 
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>See <a href="../">Extensions</a> for general extension usage. Use <code>abbr</code> as the name
 of the extension.</p>
 <p>This extension does not accept any special configuration options.</p>
 <p>A trivial example:</p>
-<pre class="codehilite"><code class="language-python">markdown.markdown(some_text, extensions=['abbr'])
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">markdown</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">some_text</span><span class="p">,</span> <span class="n">extensions</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;abbr&#39;</span><span class="p">])</span>
+</code></pre></div>
 
                     </div>
                 </div>
@@ -229,7 +229,7 @@ of the extension.</p>
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-24 21:36:12.800075+00:00
+        Docs Build Date UTC : 2023-08-27 18:09:27.166343+00:00
         -->
     </body>
 </html>

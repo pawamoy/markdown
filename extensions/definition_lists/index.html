@@ -93,32 +93,32 @@ Markdown documents.</p>
 <p>Definition lists are defined using the syntax established in
 <a href="http://www.michelf.com/projects/php-markdown/extra/#def-list">PHP Markdown Extra</a>.</p>
 <p>Thus, the following text (taken from the above referenced PHP documentation):</p>
-<pre class="codehilite"><code class="language-md">Apple
+<div class="codehilite"><pre><span></span><code>Apple
 :   Pomaceous fruit of plants of the genus Malus in
     the family Rosaceae.
 
 Orange
 :   The fruit of an evergreen tree of the genus Citrus.
-</code></pre>
+</code></pre></div>
 
 <p>will be rendered as:</p>
-<pre class="codehilite"><code class="language-html">&lt;dl&gt;
-&lt;dt&gt;Apple&lt;/dt&gt;
-&lt;dd&gt;Pomaceous fruit of plants of the genus Malus in
-the family Rosaceae.&lt;/dd&gt;
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">dl</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">dt</span><span class="p">&gt;</span>Apple<span class="p">&lt;/</span><span class="nt">dt</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">dd</span><span class="p">&gt;</span>Pomaceous fruit of plants of the genus Malus in
+the family Rosaceae.<span class="p">&lt;/</span><span class="nt">dd</span><span class="p">&gt;</span>
 
-&lt;dt&gt;Orange&lt;/dt&gt;
-&lt;dd&gt;The fruit of an evergreen tree of the genus Citrus.&lt;/dd&gt;
-&lt;/dl&gt;
-</code></pre>
+<span class="p">&lt;</span><span class="nt">dt</span><span class="p">&gt;</span>Orange<span class="p">&lt;/</span><span class="nt">dt</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">dd</span><span class="p">&gt;</span>The fruit of an evergreen tree of the genus Citrus.<span class="p">&lt;/</span><span class="nt">dd</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">dl</span><span class="p">&gt;</span>
+</code></pre></div>
 
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>See <a href="../">Extensions</a> for general extension usage. Use <code>def_list</code> as the
 name of the extension.</p>
 <p>This extension does not accept any special configuration options.</p>
 <p>A trivial example:</p>
-<pre class="codehilite"><code class="language-python">markdown.markdown(some_text, extensions=['def_list'])
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">markdown</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">some_text</span><span class="p">,</span> <span class="n">extensions</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;def_list&#39;</span><span class="p">])</span>
+</code></pre></div>
 
                     </div>
                 </div>
@@ -236,7 +236,7 @@ name of the extension.</p>
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-24 21:36:12.802862+00:00
+        Docs Build Date UTC : 2023-08-27 18:09:27.169272+00:00
         -->
     </body>
 </html>

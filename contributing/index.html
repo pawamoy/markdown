@@ -175,23 +175,23 @@ arguments on the first line and further indentation should be used to clearly
 distinguish itself as a continuation line. The closing parenthesis, bracket or
 brace should be on a line by itself and should line up under the first character
 of the line that starts the multi-line construct.</p>
-<pre class="codehilite"><code class="language-python">my_list = [
-    1, 2, 3,
-    4, 5, 6,
-]
-result = some_function_that_takes_arguments(
-    'a', 'b', 'c',
-    'd', 'e', 'f',
-)
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span>
+<span class="p">]</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">some_function_that_takes_arguments</span><span class="p">(</span>
+    <span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
 
 <p>When the conditional part of an <code>if</code>-statement is long enough to require that it
 be written across multiple lines, extra indentation should be included on the
 conditional continuation line.</p>
-<pre class="codehilite"><code class="language-python">if (this_is_one_thing
-        and that_is_another_thing):
-    do_something()
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="k">if</span> <span class="p">(</span><span class="n">this_is_one_thing</span>
+        <span class="ow">and</span> <span class="n">that_is_another_thing</span><span class="p">):</span>
+    <span class="n">do_something</span><span class="p">()</span>
+</code></pre></div>
 
 <h3 id="documentation-style-guide">Documentation Style Guide<a class="headerlink" href="#documentation-style-guide" title="Permanent link">&para;</a></h3>
 <p>Documentation should be in American English. The tone of the documentation
@@ -209,31 +209,31 @@ the basic Markdown syntax, the following extensions are supported: <a href="../e
 documentation.</p>
 <h4 id="headers">Headers<a class="headerlink" href="#headers" title="Permanent link">&para;</a></h4>
 <p>Headers should use the hash style. For example:</p>
-<pre class="codehilite"><code class="language-md">## Some important topic
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="gu">## Some important topic</span>
+</code></pre></div>
 
 <p>The underline style should not be used. Don&rsquo;t do this:</p>
-<pre class="codehilite"><code class="language-md">Some important topic
-====================
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="gh">Some important topic</span>
+<span class="gh">====================</span>
+</code></pre></div>
 
 <h4 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h4>
 <p>Links should always use the reference style, with the referenced hyperlinks kept
 at the end of the document.</p>
-<pre class="codehilite"><code class="language-md">Here is a link to [some other thing][other-thing].
+<div class="codehilite"><pre><span></span><code>Here is a link to [<span class="nt">some other thing</span>][<span class="nl">other-thing</span>].
 
 More text...
 
-[other-thing]: http://example.com/other/thing
-</code></pre>
+[<span class="nl">other-thing</span>]: <span class="na">http://example.com/other/thing</span>
+</code></pre></div>
 
 <p>This style helps keep the documentation source consistent and readable.</p>
 <p>If you are linking to another document within Python-Markdown&rsquo;s documentation,
 you should use a relative link, and link to the <code>.md</code> suffix. If applicable, it
 is preferred that the link includes a hash fragment pointing to the specific
 section of the page. For example:</p>
-<pre class="codehilite"><code class="language-md">[authentication]: reference.md#Markdown
-</code></pre>
+<div class="codehilite"><pre><span></span><code>[<span class="nl">authentication</span>]: <span class="na">reference.md#Markdown</span>
+</code></pre></div>
 
 <p>Linking in this style ensures that the links work when browsing the
 documentation on GitHub. If your Markdown editor makes links clickable, they
@@ -242,10 +242,10 @@ converted into regular links which point to the built HTML pages.</p>
 <h4 id="notes-and-warnings">Notes and Warnings<a class="headerlink" href="#notes-and-warnings" title="Permanent link">&para;</a></h4>
 <p>If you want to draw attention to a note or warning, use the syntax defined in
 Python-Markdown&rsquo;s <a href="../extensions/admonition/#syntax">Admonition Extension</a>:</p>
-<pre class="codehilite"><code class="language-md">!!! note
+<div class="codehilite"><pre><span></span><code>!!! note
 
     This is the content of the note.
-</code></pre>
+</code></pre></div>
 
 <h4 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">&para;</a></h4>
 <p>Any commit/pull request which changes the behavior of the Markdown library in
@@ -287,8 +287,8 @@ to <a href="https://help.github.com/articles/configuring-a-remote-for-a-fork">co
 environment</a>, which isolates any experimental code from the general system. To
 create a virtual environment, use the following command from the root of the
 local working copy of your GitHub fork:</p>
-<pre class="codehilite"><code class="language-sh">virtualenv venv
-</code></pre>
+<div class="codehilite"><pre><span></span><code>virtualenv<span class="w"> </span>venv
+</code></pre></div>
 
 <p>That creates a virtual environment which is contained in the <code>venv</code> directory
 within your local working copy. Note that the repository is configured so that
@@ -296,53 +296,53 @@ git will ignore any files within a directory named <code>venv</code> or <code>EN
 very reason.</p>
 <p>On Posix systems (Linux, BSD, MacOS, etc.), use the following command to
 activate the environment:</p>
-<pre class="codehilite"><code class="language-sh">source venv/bin/activate
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>venv/bin/activate
+</code></pre></div>
 
 <p>On Windows, use this command instead:</p>
-<pre class="codehilite"><code class="language-sh">venv/Scripts/activate
-</code></pre>
+<div class="codehilite"><pre><span></span><code>venv/Scripts/activate
+</code></pre></div>
 
 <p>See the <a href="https://virtualenv.pypa.io/en/stable/user_guide.html">User Guide</a> for more information on using virtual environments.</p>
 <p>To be able to run the Markdown library directly while working on it, install the
 working copy into the environment in <a href="https://setuptools.readthedocs.io/en/latest/setuptools.html#development-mode">Development Mode</a> after activating the
 virtual environment for the first time:</p>
-<pre class="codehilite"><code class="language-sh">pip install -e .
-</code></pre>
+<div class="codehilite"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
+</code></pre></div>
 
 <p>Now any saved changes will immediately be available within the virtual
 environment.</p>
 <p>You can run the command line script with the following command:</p>
-<pre class="codehilite"><code class="language-sh">python -m markdown
-</code></pre>
+<div class="codehilite"><pre><span></span><code>python<span class="w"> </span>-m<span class="w"> </span>markdown
+</code></pre></div>
 
 <p>Before building the documentation for the first time, you will need to install
 some optional dependencies with the command:</p>
-<pre class="codehilite"><code class="language-sh">pip install -e .[docs]
-</code></pre>
+<div class="codehilite"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.<span class="o">[</span>docs<span class="o">]</span>
+</code></pre></div>
 
 <p>To build the documentation and serve it locally on a development server, run:</p>
-<pre class="codehilite"><code class="language-sh">mkdocs serve
-</code></pre>
+<div class="codehilite"><pre><span></span><code>mkdocs<span class="w"> </span>serve
+</code></pre></div>
 
 <p>Then point your browser at <code>http://127.0.0.1:8000/</code>. For a complete list of
 options available, view MkDocs&rsquo; help with the command:</p>
-<pre class="codehilite"><code class="language-sh">mkdocs --help
-</code></pre>
+<div class="codehilite"><pre><span></span><code>mkdocs<span class="w"> </span>--help
+</code></pre></div>
 
 <p>Before running tests for the first time, you will need to install some optional
 dependencies with the command:</p>
-<pre class="codehilite"><code class="language-sh">pip install -e .[testing]
-</code></pre>
+<div class="codehilite"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.<span class="o">[</span>testing<span class="o">]</span>
+</code></pre></div>
 
 <p>And you can directly run the tests with:</p>
-<pre class="codehilite"><code class="language-sh">python -m unittest discover tests
-</code></pre>
+<div class="codehilite"><pre><span></span><code>python<span class="w"> </span>-m<span class="w"> </span>unittest<span class="w"> </span>discover<span class="w"> </span>tests
+</code></pre></div>
 
 <p>To get a coverage report after running the tests, use these commands instead:</p>
-<pre class="codehilite"><code class="language-sh">coverage run --source=markdown -m unittest discover tests
-coverage report --show-missing
-</code></pre>
+<div class="codehilite"><pre><span></span><code>coverage<span class="w"> </span>run<span class="w"> </span>--source<span class="o">=</span>markdown<span class="w"> </span>-m<span class="w"> </span>unittest<span class="w"> </span>discover<span class="w"> </span>tests
+coverage<span class="w"> </span>report<span class="w"> </span>--show-missing
+</code></pre></div>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -361,8 +361,8 @@ a spellchecker for the documentation. While it is generally fine to leave those
 tests for the continuous integration server to run when a pull request is
 submitted, for more advanced changes, you may want to run those tests locally.
 To do so, simply install tox:</p>
-<pre class="codehilite"><code class="language-sh">pip install tox
-</code></pre>
+<div class="codehilite"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>tox
+</code></pre></div>
 
 <p>Then, to run all configured test environments, simply call the command <code>tox</code>
 with no arguments. See help (<code>tox -h</code>) for more options.</p>
@@ -440,8 +440,8 @@ following steps:</p>
 </li>
 <li>
 <p>Create a pull request with a commit message in the following format:</p>
-<pre class="codehilite"><code>Bump version to X.X.X
-</code></pre>
+<div class="codehilite"><pre><span></span><code>Bump version to X.X.X
+</code></pre></div>
 
 </li>
 <li>
@@ -464,9 +464,9 @@ deploy manually:</p>
   <a href="https://github.com/Python-Markdown/Python-Markdown.github.io"><code>Python-Markdown/Python-Markdown.github.io</code></a>
   repositories are in sibling directories named <code>markdown</code> and <code>Python-Markdown.github.io</code>
   respectively.</p>
-<pre class="codehilite"><code>cd Python-Markdown.github.io
+<div class="codehilite"><pre><span></span><code>cd Python-Markdown.github.io
 mkdocs gh-deploy --config-file ../markdown/mkdocs.yml --remote-branch master
-</code></pre>
+</code></pre></div>
 
 </li>
 </ul>
@@ -831,7 +831,7 @@ label from the same group.</p>
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-24 21:36:12.794119+00:00
+        Docs Build Date UTC : 2023-08-27 18:09:27.160395+00:00
         -->
     </body>
 </html>

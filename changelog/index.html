@@ -126,10 +126,10 @@ blocks.</p>
 <p>The former behavior is available by setting the <code>use_align_attribute</code>
 configuration option to <code>True</code> when enabling the extension.</p>
 <p>For example, to configure the old <code>align</code> behavior:</p>
-<pre class="codehilite"><code class="language-python">from markdown.extensions.tables import TableExtension
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">markdown.extensions.tables</span> <span class="kn">import</span> <span class="n">TableExtension</span>
 
-markdown.markdown(src, extensions=[TableExtension(use_align_attribute=True)])
-</code></pre>
+<span class="n">markdown</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">extensions</span><span class="o">=</span><span class="p">[</span><span class="n">TableExtension</span><span class="p">(</span><span class="n">use_align_attribute</span><span class="o">=</span><span class="kc">True</span><span class="p">)])</span>
+</code></pre></div>
 
 <h4 id="backslash-unescaping-moved-to-treeprocessor-1131">Backslash unescaping moved to Treeprocessor (<a class="gh-link gh-issue" href="https://github.com/Python-Markdown/markdown/issues/1131" title="GitHub Issue Python-Markdown/markdown #1131">#1131</a>).<a class="headerlink" href="#backslash-unescaping-moved-to-treeprocessor-1131" title="Permanent link">&para;</a></h4>
 <p>Unescaping backslash escapes has been moved to a Treeprocessor, which  enables
@@ -326,10 +326,10 @@ instance of the prefix. Similarly, if you are using a third party syntax highlig
 the prefix, or requires a different prefix, then you will want to redefine the prefix globally using the <code>lang_prefix</code>
 configuration option of either the <code>fenced_code</code> or <code>codehilite</code> extensions.</p>
 <p>For example, to configure <code>fenced_code</code> to not apply any prefix (the previous behavior), set the option to an empty string:</p>
-<pre class="codehilite"><code class="language-python">from markdown.extensions.fenced_code import FencedCodeExtension
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">markdown.extensions.fenced_code</span> <span class="kn">import</span> <span class="n">FencedCodeExtension</span>
 
-markdown.markdown(src, extensions=[FencedCodeExtension(lang_prefix='')])
-</code></pre>
+<span class="n">markdown</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">extensions</span><span class="o">=</span><span class="p">[</span><span class="n">FencedCodeExtension</span><span class="p">(</span><span class="n">lang_prefix</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)])</span>
+</code></pre></div>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -603,27 +603,27 @@ Whitelist</a> provides a curated list
 of tags, attributes, and styles suitable for filtering user-provided HTML using
 bleach.</p>
 <p>If your code previously looked like this:</p>
-<pre class="codehilite"><code class="language-python">html = markdown.markdown(text, safe_mode=True)
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">html</span> <span class="o">=</span> <span class="n">markdown</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">safe_mode</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
 
 <p>Then it is recommended that you change your code to read something like this:</p>
-<pre class="codehilite"><code class="language-python">import bleach
-from bleach_whitelist import markdown_tags, markdown_attrs
-html = bleach.clean(markdown.markdown(text), markdown_tags, markdown_attrs)
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">bleach</span>
+<span class="kn">from</span> <span class="nn">bleach_whitelist</span> <span class="kn">import</span> <span class="n">markdown_tags</span><span class="p">,</span> <span class="n">markdown_attrs</span>
+<span class="n">html</span> <span class="o">=</span> <span class="n">bleach</span><span class="o">.</span><span class="n">clean</span><span class="p">(</span><span class="n">markdown</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">text</span><span class="p">),</span> <span class="n">markdown_tags</span><span class="p">,</span> <span class="n">markdown_attrs</span><span class="p">)</span>
+</code></pre></div>
 
 <p>If you are not interested in sanitizing untrusted text, but simply desire to
 escape raw HTML, then that can be accomplished through an extension which
 removes HTML parsing:</p>
-<pre class="codehilite"><code class="language-python">from markdown.extensions import Extension
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">markdown.extensions</span> <span class="kn">import</span> <span class="n">Extension</span>
 
-class EscapeHtml(Extension):
-    def extendMarkdown(self, md):
-        md.preprocessors.deregister('html_block')
-        md.inlinePatterns.deregister('html')
+<span class="k">class</span> <span class="nc">EscapeHtml</span><span class="p">(</span><span class="n">Extension</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">extendMarkdown</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">md</span><span class="p">):</span>
+        <span class="n">md</span><span class="o">.</span><span class="n">preprocessors</span><span class="o">.</span><span class="n">deregister</span><span class="p">(</span><span class="s1">&#39;html_block&#39;</span><span class="p">)</span>
+        <span class="n">md</span><span class="o">.</span><span class="n">inlinePatterns</span><span class="o">.</span><span class="n">deregister</span><span class="p">(</span><span class="s1">&#39;html&#39;</span><span class="p">)</span>
 
-html = markdown.markdown(text, extensions=[EscapeHtml()])
-</code></pre>
+<span class="n">html</span> <span class="o">=</span> <span class="n">markdown</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">extensions</span><span class="o">=</span><span class="p">[</span><span class="n">EscapeHtml</span><span class="p">()])</span>
+</code></pre></div>
 
 <p>As the HTML would not be parsed with the above Extension, then the serializer
 will escape the raw HTML, which is exactly what happened in previous versions
@@ -633,12 +633,12 @@ with <code>safe_mode="escape"</code>.</p>
 all except the <code>text</code> argument on the <code>markdown.markdown()</code> wrapper function.
 Using positional arguments will raise an error. Only keyword arguments should be
 used. For example, if your code previously looked like this:</p>
-<pre class="codehilite"><code class="language-python">html = markdown.markdown(text, [SomeExtension()])
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">html</span> <span class="o">=</span> <span class="n">markdown</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="p">[</span><span class="n">SomeExtension</span><span class="p">()])</span>
+</code></pre></div>
 
 <p>Then it is recommended that you change it to read something like this:</p>
-<pre class="codehilite"><code class="language-python">html = markdown.markdown(text, extensions=[SomeExtension()])
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">html</span> <span class="o">=</span> <span class="n">markdown</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">extensions</span><span class="o">=</span><span class="p">[</span><span class="n">SomeExtension</span><span class="p">()])</span>
+</code></pre></div>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -926,7 +926,7 @@ handle nested brackets and logic that is too much for regular expression.</p>
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-24 21:36:12.793127+00:00
+        Docs Build Date UTC : 2023-08-27 18:09:27.159325+00:00
         -->
     </body>
 </html>

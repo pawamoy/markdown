@@ -97,14 +97,15 @@
       <h2 id="markdown.inlinepatterns--inline-patterns">INLINE PATTERNS<a class="headerlink" href="#markdown.inlinepatterns--inline-patterns" title="Permanent link">&para;</a></h2>
 <p>Inline patterns such as <em>emphasis</em> are handled by means of auxiliary
 objects, one per pattern.  Pattern objects must be instances of classes
-that extend markdown.Pattern.  Each pattern object uses a single regular</p>
+that extend markdown.Pattern.  Each pattern object uses a single regular
+expression and needs support the following methods:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">pattern</span><span class="p">.</span><span class="n">getCompiledRegExp</span><span class="p">()</span><span class="w"> </span><span class="p">#</span><span class="w"> </span><span class="n">returns</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">regular</span><span class="w"> </span><span class="n">expression</span>
 
-<details class="expression-and-needs-support-the-following-methods" open>
-  <summary>expression and needs support the following methods</summary>
-  <p>pattern.getCompiledRegExp() # returns a regular expression</p>
-<p>pattern.handleMatch(m) # takes a match object and returns
-                       # an ElementTree element or just plain text</p>
-</details>      <p>All of python markdown&rsquo;s built-in patterns subclass from Pattern,
+<span class="n">pattern</span><span class="p">.</span><span class="n">handleMatch</span><span class="p">(</span><span class="n">m</span><span class="p">)</span><span class="w"> </span><span class="p">#</span><span class="w"> </span><span class="n">takes</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">match</span><span class="w"> </span><span class="n">object</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">returns</span>
+<span class="w">                       </span><span class="p">#</span><span class="w"> </span><span class="n">an</span><span class="w"> </span><span class="n">ElementTree</span><span class="w"> </span><span class="n">element</span><span class="w"> </span><span class="k">or</span><span class="w"> </span><span class="n">just</span><span class="w"> </span><span class="n">plain</span><span class="w"> </span><span class="n">text</span>
+</code></pre></div>
+
+<p>All of python markdown&rsquo;s built-in patterns subclass from Pattern,
 but you can add additional patterns that don&rsquo;t.</p>
 <p>Also note that all the regular expressions used by inline must
 capture the whole block.  For this reason, they all start with
@@ -352,7 +353,8 @@ So, we apply the expressions in the following order:</p>
 
 
 <h2 id="markdown.inlinepatterns.AsteriskProcessor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code>markdown.inlinepatterns.AsteriskProcessor</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <code>markdown.inlinepatterns.AsteriskProcessor</code>
+
 
 <a href="#markdown.inlinepatterns.AsteriskProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -456,7 +458,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AsteriskProcessor.build_double" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.AsteriskProcessor.build_double(m, tags, idx)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">AsteriskProcessor</span><span class="o">.</span><span class="n">build_double</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">tags</span><span class="p">,</span> <span class="n">idx</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.AsteriskProcessor.build_double" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -475,7 +477,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AsteriskProcessor.build_double2" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.AsteriskProcessor.build_double2(m, tags, idx)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">AsteriskProcessor</span><span class="o">.</span><span class="n">build_double2</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">tags</span><span class="p">,</span> <span class="n">idx</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.AsteriskProcessor.build_double2" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -494,7 +496,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AsteriskProcessor.build_element" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.AsteriskProcessor.build_element(m, builder, tags, index)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">AsteriskProcessor</span><span class="o">.</span><span class="n">build_element</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">builder</span><span class="p">,</span> <span class="n">tags</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.AsteriskProcessor.build_element" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -513,7 +515,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AsteriskProcessor.build_single" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.AsteriskProcessor.build_single(m, tag, idx)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">AsteriskProcessor</span><span class="o">.</span><span class="n">build_single</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">tag</span><span class="p">,</span> <span class="n">idx</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.AsteriskProcessor.build_single" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -532,7 +534,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AsteriskProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.AsteriskProcessor.getCompiledRegExp()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">AsteriskProcessor</span><span class="o">.</span><span class="n">getCompiledRegExp</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.AsteriskProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -551,7 +553,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AsteriskProcessor.handleMatch" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.AsteriskProcessor.handleMatch(m, data)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">AsteriskProcessor</span><span class="o">.</span><span class="n">handleMatch</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.AsteriskProcessor.handleMatch" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -570,7 +572,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AsteriskProcessor.parse_sub_patterns" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.AsteriskProcessor.parse_sub_patterns(data, parent, last, idx)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">AsteriskProcessor</span><span class="o">.</span><span class="n">parse_sub_patterns</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">parent</span><span class="p">,</span> <span class="n">last</span><span class="p">,</span> <span class="n">idx</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.AsteriskProcessor.parse_sub_patterns" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -597,7 +599,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AsteriskProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.AsteriskProcessor.type()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">AsteriskProcessor</span><span class="o">.</span><span class="n">type</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.AsteriskProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -616,7 +618,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AsteriskProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.AsteriskProcessor.unescape(text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">AsteriskProcessor</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.AsteriskProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -643,7 +645,8 @@ So, we apply the expressions in the following order:</p>
 
 
 <h2 id="markdown.inlinepatterns.AutolinkInlineProcessor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code>markdown.inlinepatterns.AutolinkInlineProcessor</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <code>markdown.inlinepatterns.AutolinkInlineProcessor</code>
+
 
 <a href="#markdown.inlinepatterns.AutolinkInlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -705,7 +708,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AutolinkInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.AutolinkInlineProcessor.getCompiledRegExp()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">AutolinkInlineProcessor</span><span class="o">.</span><span class="n">getCompiledRegExp</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.AutolinkInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -724,7 +727,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AutolinkInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.AutolinkInlineProcessor.type()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">AutolinkInlineProcessor</span><span class="o">.</span><span class="n">type</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.AutolinkInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -743,7 +746,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AutolinkInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.AutolinkInlineProcessor.unescape(text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">AutolinkInlineProcessor</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.AutolinkInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -770,7 +773,8 @@ So, we apply the expressions in the following order:</p>
 
 
 <h2 id="markdown.inlinepatterns.AutomailInlineProcessor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code>markdown.inlinepatterns.AutomailInlineProcessor</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <code>markdown.inlinepatterns.AutomailInlineProcessor</code>
+
 
 <a href="#markdown.inlinepatterns.AutomailInlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -832,7 +836,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AutomailInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.AutomailInlineProcessor.getCompiledRegExp()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">AutomailInlineProcessor</span><span class="o">.</span><span class="n">getCompiledRegExp</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.AutomailInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -851,7 +855,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AutomailInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.AutomailInlineProcessor.type()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">AutomailInlineProcessor</span><span class="o">.</span><span class="n">type</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.AutomailInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -870,7 +874,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.AutomailInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.AutomailInlineProcessor.unescape(text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">AutomailInlineProcessor</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.AutomailInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -897,7 +901,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h2 id="markdown.inlinepatterns.BacktickInlineProcessor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code class="codehilite language-python">markdown.inlinepatterns.BacktickInlineProcessor(pattern)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">BacktickInlineProcessor</span><span class="p">(</span><span class="n">pattern</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.BacktickInlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -959,7 +963,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.BacktickInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.BacktickInlineProcessor.getCompiledRegExp()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">BacktickInlineProcessor</span><span class="o">.</span><span class="n">getCompiledRegExp</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.BacktickInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -978,7 +982,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.BacktickInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.BacktickInlineProcessor.type()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">BacktickInlineProcessor</span><span class="o">.</span><span class="n">type</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.BacktickInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -997,7 +1001,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.BacktickInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.BacktickInlineProcessor.unescape(text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">BacktickInlineProcessor</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.BacktickInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1024,7 +1028,8 @@ So, we apply the expressions in the following order:</p>
 
 
 <h2 id="markdown.inlinepatterns.DoubleTagInlineProcessor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code>markdown.inlinepatterns.DoubleTagInlineProcessor</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <code>markdown.inlinepatterns.DoubleTagInlineProcessor</code>
+
 
 <a href="#markdown.inlinepatterns.DoubleTagInlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -1087,7 +1092,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.DoubleTagInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.DoubleTagInlineProcessor.getCompiledRegExp()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">DoubleTagInlineProcessor</span><span class="o">.</span><span class="n">getCompiledRegExp</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.DoubleTagInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1106,7 +1111,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.DoubleTagInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.DoubleTagInlineProcessor.type()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">DoubleTagInlineProcessor</span><span class="o">.</span><span class="n">type</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.DoubleTagInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1125,7 +1130,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.DoubleTagInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.DoubleTagInlineProcessor.unescape(text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">DoubleTagInlineProcessor</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.DoubleTagInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1152,7 +1157,8 @@ So, we apply the expressions in the following order:</p>
 
 
 <h2 id="markdown.inlinepatterns.DoubleTagPattern" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code>markdown.inlinepatterns.DoubleTagPattern</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <code>markdown.inlinepatterns.DoubleTagPattern</code>
+
 
 <a href="#markdown.inlinepatterns.DoubleTagPattern" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -1215,7 +1221,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.DoubleTagPattern.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.DoubleTagPattern.getCompiledRegExp()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">DoubleTagPattern</span><span class="o">.</span><span class="n">getCompiledRegExp</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.DoubleTagPattern.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1234,7 +1240,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.DoubleTagPattern.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.DoubleTagPattern.type()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">DoubleTagPattern</span><span class="o">.</span><span class="n">type</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.DoubleTagPattern.type" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1253,7 +1259,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.DoubleTagPattern.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.DoubleTagPattern.unescape(text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">DoubleTagPattern</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.DoubleTagPattern.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1280,7 +1286,8 @@ So, we apply the expressions in the following order:</p>
 
 
 <h2 id="markdown.inlinepatterns.EmStrongItem" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code>markdown.inlinepatterns.EmStrongItem</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <code>markdown.inlinepatterns.EmStrongItem</code>
+
 
 <a href="#markdown.inlinepatterns.EmStrongItem" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -1307,7 +1314,8 @@ So, we apply the expressions in the following order:</p>
 
 
 <h2 id="markdown.inlinepatterns.EscapeInlineProcessor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code>markdown.inlinepatterns.EscapeInlineProcessor</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <code>markdown.inlinepatterns.EscapeInlineProcessor</code>
+
 
 <a href="#markdown.inlinepatterns.EscapeInlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -1369,7 +1377,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.EscapeInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.EscapeInlineProcessor.getCompiledRegExp()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">EscapeInlineProcessor</span><span class="o">.</span><span class="n">getCompiledRegExp</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.EscapeInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1388,7 +1396,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.EscapeInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.EscapeInlineProcessor.type()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">EscapeInlineProcessor</span><span class="o">.</span><span class="n">type</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.EscapeInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1407,7 +1415,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.EscapeInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.EscapeInlineProcessor.unescape(text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">EscapeInlineProcessor</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.EscapeInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1434,7 +1442,8 @@ So, we apply the expressions in the following order:</p>
 
 
 <h2 id="markdown.inlinepatterns.HtmlInlineProcessor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code>markdown.inlinepatterns.HtmlInlineProcessor</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <code>markdown.inlinepatterns.HtmlInlineProcessor</code>
+
 
 <a href="#markdown.inlinepatterns.HtmlInlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -1503,7 +1512,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.HtmlInlineProcessor.backslash_unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.HtmlInlineProcessor.backslash_unescape(text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">HtmlInlineProcessor</span><span class="o">.</span><span class="n">backslash_unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.HtmlInlineProcessor.backslash_unescape" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1522,7 +1531,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.HtmlInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.HtmlInlineProcessor.getCompiledRegExp()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">HtmlInlineProcessor</span><span class="o">.</span><span class="n">getCompiledRegExp</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.HtmlInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1541,7 +1550,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.HtmlInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.HtmlInlineProcessor.type()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">HtmlInlineProcessor</span><span class="o">.</span><span class="n">type</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.HtmlInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1560,7 +1569,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.HtmlInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.HtmlInlineProcessor.unescape(text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">HtmlInlineProcessor</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.HtmlInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1587,7 +1596,8 @@ So, we apply the expressions in the following order:</p>
 
 
 <h2 id="markdown.inlinepatterns.ImageInlineProcessor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code>markdown.inlinepatterns.ImageInlineProcessor</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <code>markdown.inlinepatterns.ImageInlineProcessor</code>
+
 
 <a href="#markdown.inlinepatterns.ImageInlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -1663,7 +1673,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.ImageInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ImageInlineProcessor.getCompiledRegExp()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ImageInlineProcessor</span><span class="o">.</span><span class="n">getCompiledRegExp</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.ImageInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1682,7 +1692,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.ImageInlineProcessor.getLink" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ImageInlineProcessor.getLink(data, index)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ImageInlineProcessor</span><span class="o">.</span><span class="n">getLink</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.ImageInlineProcessor.getLink" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1701,7 +1711,7 @@ So, we apply the expressions in the following order:</p>
 
 
 <h3 id="markdown.inlinepatterns.ImageInlineProcessor.getText" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ImageInlineProcessor.getText(data, index)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ImageInlineProcessor</span><span class="o">.</span><span class="n">getText</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.ImageInlineProcessor.getText" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1721,7 +1731,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ImageInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ImageInlineProcessor.type()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ImageInlineProcessor</span><span class="o">.</span><span class="n">type</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.ImageInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1740,7 +1750,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ImageInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ImageInlineProcessor.unescape(text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ImageInlineProcessor</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.ImageInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1767,7 +1777,8 @@ resolving nested square brackets.</p>
 
 
 <h2 id="markdown.inlinepatterns.ImageReferenceInlineProcessor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code>markdown.inlinepatterns.ImageReferenceInlineProcessor</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <code>markdown.inlinepatterns.ImageReferenceInlineProcessor</code>
+
 
 <a href="#markdown.inlinepatterns.ImageReferenceInlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -1850,7 +1861,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ImageReferenceInlineProcessor.evalId" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ImageReferenceInlineProcessor.evalId(data, index, text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ImageReferenceInlineProcessor</span><span class="o">.</span><span class="n">evalId</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.evalId" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1870,7 +1881,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ImageReferenceInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ImageReferenceInlineProcessor.getCompiledRegExp()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ImageReferenceInlineProcessor</span><span class="o">.</span><span class="n">getCompiledRegExp</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1889,7 +1900,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ImageReferenceInlineProcessor.getLink" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ImageReferenceInlineProcessor.getLink(data, index)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ImageReferenceInlineProcessor</span><span class="o">.</span><span class="n">getLink</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.getLink" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1908,7 +1919,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ImageReferenceInlineProcessor.getText" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ImageReferenceInlineProcessor.getText(data, index)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ImageReferenceInlineProcessor</span><span class="o">.</span><span class="n">getText</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.getText" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1928,7 +1939,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ImageReferenceInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ImageReferenceInlineProcessor.type()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ImageReferenceInlineProcessor</span><span class="o">.</span><span class="n">type</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1947,7 +1958,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ImageReferenceInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ImageReferenceInlineProcessor.unescape(text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ImageReferenceInlineProcessor</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.ImageReferenceInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -1974,7 +1985,7 @@ resolving nested square brackets.</p>
 
 
 <h2 id="markdown.inlinepatterns.InlineProcessor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code class="codehilite language-python">markdown.inlinepatterns.InlineProcessor(pattern: str, md: Markdown | None = None)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">InlineProcessor</span><span class="p">(</span><span class="n">pattern</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">md</span><span class="p">:</span> <span class="n">Markdown</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.InlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -2060,7 +2071,7 @@ efficient and flexible search approach.</p>
 
 
 <h3 id="markdown.inlinepatterns.InlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.InlineProcessor.getCompiledRegExp()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">InlineProcessor</span><span class="o">.</span><span class="n">getCompiledRegExp</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.InlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2079,7 +2090,7 @@ efficient and flexible search approach.</p>
 
 
 <h3 id="markdown.inlinepatterns.InlineProcessor.handleMatch" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.InlineProcessor.handleMatch(m: Match, data: str) -&gt; tuple[etree.ElementTree | str | None, int | None, int | None]</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">InlineProcessor</span><span class="o">.</span><span class="n">handleMatch</span><span class="p">(</span><span class="n">m</span><span class="p">:</span> <span class="n">Match</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="n">etree</span><span class="o">.</span><span class="n">ElementTree</span> <span class="o">|</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span><span class="p">]</span></code>
 
 <a href="#markdown.inlinepatterns.InlineProcessor.handleMatch" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2151,7 +2162,7 @@ assumed that the processor did not find a valid region of text.</p>
 
 
 <h3 id="markdown.inlinepatterns.InlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.InlineProcessor.type()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">InlineProcessor</span><span class="o">.</span><span class="n">type</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.InlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2170,7 +2181,7 @@ assumed that the processor did not find a valid region of text.</p>
 
 
 <h3 id="markdown.inlinepatterns.InlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.InlineProcessor.unescape(text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">InlineProcessor</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.InlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2197,7 +2208,8 @@ assumed that the processor did not find a valid region of text.</p>
 
 
 <h2 id="markdown.inlinepatterns.LinkInlineProcessor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code>markdown.inlinepatterns.LinkInlineProcessor</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <code>markdown.inlinepatterns.LinkInlineProcessor</code>
+
 
 <a href="#markdown.inlinepatterns.LinkInlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -2273,7 +2285,7 @@ assumed that the processor did not find a valid region of text.</p>
 
 
 <h3 id="markdown.inlinepatterns.LinkInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.LinkInlineProcessor.getCompiledRegExp()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">LinkInlineProcessor</span><span class="o">.</span><span class="n">getCompiledRegExp</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.LinkInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2292,7 +2304,7 @@ assumed that the processor did not find a valid region of text.</p>
 
 
 <h3 id="markdown.inlinepatterns.LinkInlineProcessor.getLink" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.LinkInlineProcessor.getLink(data, index)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">LinkInlineProcessor</span><span class="o">.</span><span class="n">getLink</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.LinkInlineProcessor.getLink" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2311,7 +2323,7 @@ assumed that the processor did not find a valid region of text.</p>
 
 
 <h3 id="markdown.inlinepatterns.LinkInlineProcessor.getText" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.LinkInlineProcessor.getText(data, index)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">LinkInlineProcessor</span><span class="o">.</span><span class="n">getText</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.LinkInlineProcessor.getText" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2331,7 +2343,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.LinkInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.LinkInlineProcessor.type()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">LinkInlineProcessor</span><span class="o">.</span><span class="n">type</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.LinkInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2350,7 +2362,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.LinkInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.LinkInlineProcessor.unescape(text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">LinkInlineProcessor</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.LinkInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2377,7 +2389,7 @@ resolving nested square brackets.</p>
 
 
 <h2 id="markdown.inlinepatterns.Pattern" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code class="codehilite language-python">markdown.inlinepatterns.Pattern(pattern: str, md: Markdown | None = None)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">Pattern</span><span class="p">(</span><span class="n">pattern</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">md</span><span class="p">:</span> <span class="n">Markdown</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.Pattern" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -2459,7 +2471,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.Pattern.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.Pattern.getCompiledRegExp()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">Pattern</span><span class="o">.</span><span class="n">getCompiledRegExp</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.Pattern.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2478,7 +2490,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.Pattern.handleMatch" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.Pattern.handleMatch(m: Match)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">Pattern</span><span class="o">.</span><span class="n">handleMatch</span><span class="p">(</span><span class="n">m</span><span class="p">:</span> <span class="n">Match</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.Pattern.handleMatch" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2512,7 +2524,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.Pattern.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.Pattern.type()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">Pattern</span><span class="o">.</span><span class="n">type</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.Pattern.type" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2531,7 +2543,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.Pattern.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.Pattern.unescape(text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">Pattern</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.Pattern.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2558,7 +2570,8 @@ resolving nested square brackets.</p>
 
 
 <h2 id="markdown.inlinepatterns.ReferenceInlineProcessor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code>markdown.inlinepatterns.ReferenceInlineProcessor</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <code>markdown.inlinepatterns.ReferenceInlineProcessor</code>
+
 
 <a href="#markdown.inlinepatterns.ReferenceInlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -2641,7 +2654,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ReferenceInlineProcessor.evalId" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ReferenceInlineProcessor.evalId(data, index, text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ReferenceInlineProcessor</span><span class="o">.</span><span class="n">evalId</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.ReferenceInlineProcessor.evalId" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2661,7 +2674,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ReferenceInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ReferenceInlineProcessor.getCompiledRegExp()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ReferenceInlineProcessor</span><span class="o">.</span><span class="n">getCompiledRegExp</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.ReferenceInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2680,7 +2693,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ReferenceInlineProcessor.getLink" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ReferenceInlineProcessor.getLink(data, index)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ReferenceInlineProcessor</span><span class="o">.</span><span class="n">getLink</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.ReferenceInlineProcessor.getLink" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2699,7 +2712,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ReferenceInlineProcessor.getText" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ReferenceInlineProcessor.getText(data, index)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ReferenceInlineProcessor</span><span class="o">.</span><span class="n">getText</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.ReferenceInlineProcessor.getText" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2719,7 +2732,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ReferenceInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ReferenceInlineProcessor.type()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ReferenceInlineProcessor</span><span class="o">.</span><span class="n">type</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.ReferenceInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2738,7 +2751,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ReferenceInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ReferenceInlineProcessor.unescape(text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ReferenceInlineProcessor</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.ReferenceInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2765,7 +2778,8 @@ resolving nested square brackets.</p>
 
 
 <h2 id="markdown.inlinepatterns.ShortImageReferenceInlineProcessor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code>markdown.inlinepatterns.ShortImageReferenceInlineProcessor</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <code>markdown.inlinepatterns.ShortImageReferenceInlineProcessor</code>
+
 
 <a href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -2848,7 +2862,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ShortImageReferenceInlineProcessor.evalId" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ShortImageReferenceInlineProcessor.evalId(data, index, text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ShortImageReferenceInlineProcessor</span><span class="o">.</span><span class="n">evalId</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.evalId" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2867,7 +2881,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getCompiledRegExp()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ShortImageReferenceInlineProcessor</span><span class="o">.</span><span class="n">getCompiledRegExp</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2886,7 +2900,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getLink" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getLink(data, index)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ShortImageReferenceInlineProcessor</span><span class="o">.</span><span class="n">getLink</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getLink" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2905,7 +2919,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getText" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getText(data, index)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ShortImageReferenceInlineProcessor</span><span class="o">.</span><span class="n">getText</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.getText" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2925,7 +2939,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ShortImageReferenceInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ShortImageReferenceInlineProcessor.type()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ShortImageReferenceInlineProcessor</span><span class="o">.</span><span class="n">type</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2944,7 +2958,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ShortImageReferenceInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ShortImageReferenceInlineProcessor.unescape(text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ShortImageReferenceInlineProcessor</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.ShortImageReferenceInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2971,7 +2985,8 @@ resolving nested square brackets.</p>
 
 
 <h2 id="markdown.inlinepatterns.ShortReferenceInlineProcessor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code>markdown.inlinepatterns.ShortReferenceInlineProcessor</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <code>markdown.inlinepatterns.ShortReferenceInlineProcessor</code>
+
 
 <a href="#markdown.inlinepatterns.ShortReferenceInlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -3054,7 +3069,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ShortReferenceInlineProcessor.evalId" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ShortReferenceInlineProcessor.evalId(data, index, text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ShortReferenceInlineProcessor</span><span class="o">.</span><span class="n">evalId</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.evalId" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -3073,7 +3088,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ShortReferenceInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ShortReferenceInlineProcessor.getCompiledRegExp()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ShortReferenceInlineProcessor</span><span class="o">.</span><span class="n">getCompiledRegExp</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -3092,7 +3107,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ShortReferenceInlineProcessor.getLink" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ShortReferenceInlineProcessor.getLink(data, index)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ShortReferenceInlineProcessor</span><span class="o">.</span><span class="n">getLink</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.getLink" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -3111,7 +3126,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ShortReferenceInlineProcessor.getText" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ShortReferenceInlineProcessor.getText(data, index)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ShortReferenceInlineProcessor</span><span class="o">.</span><span class="n">getText</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.getText" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -3131,7 +3146,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ShortReferenceInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ShortReferenceInlineProcessor.type()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ShortReferenceInlineProcessor</span><span class="o">.</span><span class="n">type</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -3150,7 +3165,7 @@ resolving nested square brackets.</p>
 
 
 <h3 id="markdown.inlinepatterns.ShortReferenceInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.ShortReferenceInlineProcessor.unescape(text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">ShortReferenceInlineProcessor</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.ShortReferenceInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -3177,7 +3192,7 @@ resolving nested square brackets.</p>
 
 
 <h2 id="markdown.inlinepatterns.SimpleTagInlineProcessor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code class="codehilite language-python">markdown.inlinepatterns.SimpleTagInlineProcessor(pattern, tag)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">SimpleTagInlineProcessor</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">tag</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.SimpleTagInlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -3240,7 +3255,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SimpleTagInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.SimpleTagInlineProcessor.getCompiledRegExp()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">SimpleTagInlineProcessor</span><span class="o">.</span><span class="n">getCompiledRegExp</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.SimpleTagInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -3259,7 +3274,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SimpleTagInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.SimpleTagInlineProcessor.type()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">SimpleTagInlineProcessor</span><span class="o">.</span><span class="n">type</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.SimpleTagInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -3278,7 +3293,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SimpleTagInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.SimpleTagInlineProcessor.unescape(text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">SimpleTagInlineProcessor</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.SimpleTagInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -3305,7 +3320,7 @@ of a Pattern.</p>
 
 
 <h2 id="markdown.inlinepatterns.SimpleTagPattern" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code class="codehilite language-python">markdown.inlinepatterns.SimpleTagPattern(pattern, tag)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">SimpleTagPattern</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">tag</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.SimpleTagPattern" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -3368,7 +3383,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SimpleTagPattern.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.SimpleTagPattern.getCompiledRegExp()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">SimpleTagPattern</span><span class="o">.</span><span class="n">getCompiledRegExp</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.SimpleTagPattern.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -3387,7 +3402,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SimpleTagPattern.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.SimpleTagPattern.type()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">SimpleTagPattern</span><span class="o">.</span><span class="n">type</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.SimpleTagPattern.type" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -3406,7 +3421,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SimpleTagPattern.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.SimpleTagPattern.unescape(text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">SimpleTagPattern</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.SimpleTagPattern.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -3433,7 +3448,8 @@ of a Pattern.</p>
 
 
 <h2 id="markdown.inlinepatterns.SimpleTextInlineProcessor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code>markdown.inlinepatterns.SimpleTextInlineProcessor</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <code>markdown.inlinepatterns.SimpleTextInlineProcessor</code>
+
 
 <a href="#markdown.inlinepatterns.SimpleTextInlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -3495,7 +3511,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SimpleTextInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.SimpleTextInlineProcessor.getCompiledRegExp()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">SimpleTextInlineProcessor</span><span class="o">.</span><span class="n">getCompiledRegExp</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.SimpleTextInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -3514,7 +3530,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SimpleTextInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.SimpleTextInlineProcessor.type()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">SimpleTextInlineProcessor</span><span class="o">.</span><span class="n">type</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.SimpleTextInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -3533,7 +3549,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SimpleTextInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.SimpleTextInlineProcessor.unescape(text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">SimpleTextInlineProcessor</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.SimpleTextInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -3560,7 +3576,8 @@ of a Pattern.</p>
 
 
 <h2 id="markdown.inlinepatterns.SimpleTextPattern" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code>markdown.inlinepatterns.SimpleTextPattern</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <code>markdown.inlinepatterns.SimpleTextPattern</code>
+
 
 <a href="#markdown.inlinepatterns.SimpleTextPattern" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -3622,7 +3639,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SimpleTextPattern.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.SimpleTextPattern.getCompiledRegExp()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">SimpleTextPattern</span><span class="o">.</span><span class="n">getCompiledRegExp</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.SimpleTextPattern.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -3641,7 +3658,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SimpleTextPattern.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.SimpleTextPattern.type()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">SimpleTextPattern</span><span class="o">.</span><span class="n">type</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.SimpleTextPattern.type" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -3660,7 +3677,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SimpleTextPattern.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.SimpleTextPattern.unescape(text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">SimpleTextPattern</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.SimpleTextPattern.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -3687,7 +3704,8 @@ of a Pattern.</p>
 
 
 <h2 id="markdown.inlinepatterns.SubstituteTagInlineProcessor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code>markdown.inlinepatterns.SubstituteTagInlineProcessor</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <code>markdown.inlinepatterns.SubstituteTagInlineProcessor</code>
+
 
 <a href="#markdown.inlinepatterns.SubstituteTagInlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -3749,7 +3767,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SubstituteTagInlineProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.SubstituteTagInlineProcessor.getCompiledRegExp()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">SubstituteTagInlineProcessor</span><span class="o">.</span><span class="n">getCompiledRegExp</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.SubstituteTagInlineProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -3768,7 +3786,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SubstituteTagInlineProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.SubstituteTagInlineProcessor.type()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">SubstituteTagInlineProcessor</span><span class="o">.</span><span class="n">type</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.SubstituteTagInlineProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -3787,7 +3805,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SubstituteTagInlineProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.SubstituteTagInlineProcessor.unescape(text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">SubstituteTagInlineProcessor</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.SubstituteTagInlineProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -3814,7 +3832,8 @@ of a Pattern.</p>
 
 
 <h2 id="markdown.inlinepatterns.SubstituteTagPattern" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code>markdown.inlinepatterns.SubstituteTagPattern</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <code>markdown.inlinepatterns.SubstituteTagPattern</code>
+
 
 <a href="#markdown.inlinepatterns.SubstituteTagPattern" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -3876,7 +3895,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SubstituteTagPattern.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.SubstituteTagPattern.getCompiledRegExp()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">SubstituteTagPattern</span><span class="o">.</span><span class="n">getCompiledRegExp</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.SubstituteTagPattern.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -3895,7 +3914,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SubstituteTagPattern.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.SubstituteTagPattern.type()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">SubstituteTagPattern</span><span class="o">.</span><span class="n">type</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.SubstituteTagPattern.type" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -3914,7 +3933,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.SubstituteTagPattern.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.SubstituteTagPattern.unescape(text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">SubstituteTagPattern</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.SubstituteTagPattern.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -3941,7 +3960,8 @@ of a Pattern.</p>
 
 
 <h2 id="markdown.inlinepatterns.UnderscoreProcessor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code>markdown.inlinepatterns.UnderscoreProcessor</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <code>markdown.inlinepatterns.UnderscoreProcessor</code>
+
 
 <a href="#markdown.inlinepatterns.UnderscoreProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -4045,7 +4065,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.UnderscoreProcessor.build_double" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.UnderscoreProcessor.build_double(m, tags, idx)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">UnderscoreProcessor</span><span class="o">.</span><span class="n">build_double</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">tags</span><span class="p">,</span> <span class="n">idx</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.UnderscoreProcessor.build_double" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -4064,7 +4084,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.UnderscoreProcessor.build_double2" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.UnderscoreProcessor.build_double2(m, tags, idx)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">UnderscoreProcessor</span><span class="o">.</span><span class="n">build_double2</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">tags</span><span class="p">,</span> <span class="n">idx</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.UnderscoreProcessor.build_double2" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -4083,7 +4103,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.UnderscoreProcessor.build_element" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.UnderscoreProcessor.build_element(m, builder, tags, index)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">UnderscoreProcessor</span><span class="o">.</span><span class="n">build_element</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">builder</span><span class="p">,</span> <span class="n">tags</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.UnderscoreProcessor.build_element" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -4102,7 +4122,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.UnderscoreProcessor.build_single" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.UnderscoreProcessor.build_single(m, tag, idx)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">UnderscoreProcessor</span><span class="o">.</span><span class="n">build_single</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">tag</span><span class="p">,</span> <span class="n">idx</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.UnderscoreProcessor.build_single" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -4121,7 +4141,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.UnderscoreProcessor.getCompiledRegExp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.UnderscoreProcessor.getCompiledRegExp()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">UnderscoreProcessor</span><span class="o">.</span><span class="n">getCompiledRegExp</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.UnderscoreProcessor.getCompiledRegExp" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -4140,7 +4160,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.UnderscoreProcessor.handleMatch" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.UnderscoreProcessor.handleMatch(m, data)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">UnderscoreProcessor</span><span class="o">.</span><span class="n">handleMatch</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.UnderscoreProcessor.handleMatch" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -4159,7 +4179,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.UnderscoreProcessor.parse_sub_patterns" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.UnderscoreProcessor.parse_sub_patterns(data, parent, last, idx)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">UnderscoreProcessor</span><span class="o">.</span><span class="n">parse_sub_patterns</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">parent</span><span class="p">,</span> <span class="n">last</span><span class="p">,</span> <span class="n">idx</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.UnderscoreProcessor.parse_sub_patterns" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -4186,7 +4206,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.UnderscoreProcessor.type" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.UnderscoreProcessor.type()</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">UnderscoreProcessor</span><span class="o">.</span><span class="n">type</span><span class="p">()</span></code>
 
 <a href="#markdown.inlinepatterns.UnderscoreProcessor.type" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -4205,7 +4225,7 @@ of a Pattern.</p>
 
 
 <h3 id="markdown.inlinepatterns.UnderscoreProcessor.unescape" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.inlinepatterns.UnderscoreProcessor.unescape(text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">UnderscoreProcessor</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.UnderscoreProcessor.unescape" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -4234,7 +4254,7 @@ of a Pattern.</p>
 
 
 <h2 id="markdown.inlinepatterns.build_inlinepatterns" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code><code class="codehilite language-python">markdown.inlinepatterns.build_inlinepatterns(md, **kwargs)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">build_inlinepatterns</span><span class="p">(</span><span class="n">md</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.build_inlinepatterns" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -4253,7 +4273,7 @@ of a Pattern.</p>
 
 
 <h2 id="markdown.inlinepatterns.dequote" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code><code class="codehilite language-python">markdown.inlinepatterns.dequote(string)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">inlinepatterns</span><span class="o">.</span><span class="n">dequote</span><span class="p">(</span><span class="n">string</span><span class="p">)</span></code>
 
 <a href="#markdown.inlinepatterns.dequote" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -4930,7 +4950,7 @@ of a Pattern.</p>
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-24 21:36:12.815430+00:00
+        Docs Build Date UTC : 2023-08-27 18:09:27.182670+00:00
         -->
     </body>
 </html>

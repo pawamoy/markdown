@@ -141,17 +141,17 @@ default substitutions. Just pass a dict mapping (a subset of) the
 keys to the substitution strings.</p>
 <p>For example, one might use the following configuration to get correct quotes for
 the German language:</p>
-<pre class="codehilite"><code class="language-python">extension_configs = {
-    'smarty': {
-        'substitutions': {
-            'left-single-quote': '&amp;sbquo;', # sb is not a typo!
-            'right-single-quote': '&amp;lsquo;',
-            'left-double-quote': '&amp;bdquo;',
-            'right-double-quote': '&amp;ldquo;'
-        }
-    }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">extension_configs</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;smarty&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;substitutions&#39;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s1">&#39;left-single-quote&#39;</span><span class="p">:</span> <span class="s1">&#39;&amp;sbquo;&#39;</span><span class="p">,</span> <span class="c1"># sb is not a typo!</span>
+            <span class="s1">&#39;right-single-quote&#39;</span><span class="p">:</span> <span class="s1">&#39;&amp;lsquo;&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;left-double-quote&#39;</span><span class="p">:</span> <span class="s1">&#39;&amp;bdquo;&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;right-double-quote&#39;</span><span class="p">:</span> <span class="s1">&#39;&amp;ldquo;&#39;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -206,8 +206,8 @@ configuring extensions.</p>
 </tbody>
 </table>
 <p>A trivial example:</p>
-<pre class="codehilite"><code class="language-python">markdown.markdown(some_text, extensions=['smarty'])
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">markdown</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">some_text</span><span class="p">,</span> <span class="n">extensions</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;smarty&#39;</span><span class="p">])</span>
+</code></pre></div>
 
 <h2 id="further-reading">Further reading<a class="headerlink" href="#further-reading" title="Permanent link">&para;</a></h2>
 <p>SmartyPants extension is based on the original SmartyPants implementation
@@ -329,7 +329,7 @@ by John Gruber. Please read its <a href="https://daringfireball.net/projects/sma
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-24 21:36:12.808163+00:00
+        Docs Build Date UTC : 2023-08-27 18:09:27.174927+00:00
         -->
     </body>
 </html>

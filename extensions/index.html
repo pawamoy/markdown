@@ -68,13 +68,13 @@
 to change and/or extend the behavior of the parser without having to edit the
 actual source files.</p>
 <p>To use an extension, pass it to markdown with the <code>extensions</code> keyword.</p>
-<pre class="codehilite"><code class="language-python">markdown.markdown(some_text, extensions=[MyExtClass(), 'myext', 'path.to.my.ext:MyExtClass'])
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">markdown</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">some_text</span><span class="p">,</span> <span class="n">extensions</span><span class="o">=</span><span class="p">[</span><span class="n">MyExtClass</span><span class="p">(),</span> <span class="s1">&#39;myext&#39;</span><span class="p">,</span> <span class="s1">&#39;path.to.my.ext:MyExtClass&#39;</span><span class="p">])</span>
+</code></pre></div>
 
 <p>See the <a href="../reference/#extensions">Library Reference</a> for more details.</p>
 <p>From the command line, specify an extension with the <code>-x</code> option.</p>
-<pre class="codehilite"><code class="language-bash">python -m markdown -x myext -x path.to.module:MyExtClass input.txt &gt; output.html
-</code></pre>
+<div class="codehilite"><pre><span></span><code>python<span class="w"> </span>-m<span class="w"> </span>markdown<span class="w"> </span>-x<span class="w"> </span>myext<span class="w"> </span>-x<span class="w"> </span>path.to.module:MyExtClass<span class="w"> </span>input.txt<span class="w"> </span>&gt;<span class="w"> </span>output.html
+</code></pre></div>
 
 <p>See the <a href="../cli/">Command Line docs</a> or use the <code>--help</code> option for more details.</p>
 <div class="admonition seealso">
@@ -287,7 +287,7 @@ each extension for support.</p>
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-24 21:36:12.799658+00:00
+        Docs Build Date UTC : 2023-08-27 18:09:27.165895+00:00
         -->
     </body>
 </html>

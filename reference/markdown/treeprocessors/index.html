@@ -168,7 +168,7 @@
 
 
 <h2 id="markdown.treeprocessors.InlineProcessor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code class="codehilite language-python">markdown.treeprocessors.InlineProcessor(md)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">treeprocessors</span><span class="o">.</span><span class="n">InlineProcessor</span><span class="p">(</span><span class="n">md</span><span class="p">)</span></code>
 
 <a href="#markdown.treeprocessors.InlineProcessor" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -216,7 +216,7 @@
 
 
 <h3 id="markdown.treeprocessors.InlineProcessor.run" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.treeprocessors.InlineProcessor.run(tree: etree.ElementTree, ancestors: Sequence[str] | None = None) -&gt; etree.ElementTree</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">treeprocessors</span><span class="o">.</span><span class="n">InlineProcessor</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">tree</span><span class="p">:</span> <span class="n">etree</span><span class="o">.</span><span class="n">ElementTree</span><span class="p">,</span> <span class="n">ancestors</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">etree</span><span class="o">.</span><span class="n">ElementTree</span></code>
 
 <a href="#markdown.treeprocessors.InlineProcessor.run" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -228,8 +228,8 @@
 patterns and append newly created Elements to tree.  If you don&rsquo;t
 want to process your data with inline patterns, instead of normal
 string, use subclass <code>AtomicString</code>:</p>
-<pre class="codehilite"><code>node.text = markdown.AtomicString(&quot;This will not be processed.&quot;)
-</code></pre>
+<div class="codehilite"><pre><span></span><code>node.text = markdown.AtomicString(&quot;This will not be processed.&quot;)
+</code></pre></div>
 
 
 
@@ -286,7 +286,8 @@ string, use subclass <code>AtomicString</code>:</p>
 
 
 <h2 id="markdown.treeprocessors.PrettifyTreeprocessor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code>markdown.treeprocessors.PrettifyTreeprocessor</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <code>markdown.treeprocessors.PrettifyTreeprocessor</code>
+
 
 <a href="#markdown.treeprocessors.PrettifyTreeprocessor" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -334,7 +335,7 @@ string, use subclass <code>AtomicString</code>:</p>
 
 
 <h3 id="markdown.treeprocessors.PrettifyTreeprocessor.run" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.treeprocessors.PrettifyTreeprocessor.run(root)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">treeprocessors</span><span class="o">.</span><span class="n">PrettifyTreeprocessor</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">root</span><span class="p">)</span></code>
 
 <a href="#markdown.treeprocessors.PrettifyTreeprocessor.run" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -361,7 +362,8 @@ string, use subclass <code>AtomicString</code>:</p>
 
 
 <h2 id="markdown.treeprocessors.Treeprocessor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code>markdown.treeprocessors.Treeprocessor</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <code>markdown.treeprocessors.Treeprocessor</code>
+
 
 <a href="#markdown.treeprocessors.Treeprocessor" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -413,7 +415,7 @@ object.</p>
 
 
 <h3 id="markdown.treeprocessors.Treeprocessor.run" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.treeprocessors.Treeprocessor.run(root)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">treeprocessors</span><span class="o">.</span><span class="n">Treeprocessor</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">root</span><span class="p">)</span></code>
 
 <a href="#markdown.treeprocessors.Treeprocessor.run" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -443,7 +445,8 @@ modify the current tree and return <code>None</code>.</p>
 
 
 <h2 id="markdown.treeprocessors.UnescapeTreeprocessor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code>markdown.treeprocessors.UnescapeTreeprocessor</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <code>markdown.treeprocessors.UnescapeTreeprocessor</code>
+
 
 <a href="#markdown.treeprocessors.UnescapeTreeprocessor" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -491,7 +494,7 @@ modify the current tree and return <code>None</code>.</p>
 
 
 <h3 id="markdown.treeprocessors.UnescapeTreeprocessor.run" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.treeprocessors.UnescapeTreeprocessor.run(root)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">treeprocessors</span><span class="o">.</span><span class="n">UnescapeTreeprocessor</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">root</span><span class="p">)</span></code>
 
 <a href="#markdown.treeprocessors.UnescapeTreeprocessor.run" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -520,7 +523,7 @@ modify the current tree and return <code>None</code>.</p>
 
 
 <h2 id="markdown.treeprocessors.build_treeprocessors" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code><code class="codehilite language-python">markdown.treeprocessors.build_treeprocessors(md, **kwargs)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">treeprocessors</span><span class="o">.</span><span class="n">build_treeprocessors</span><span class="p">(</span><span class="n">md</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 <a href="#markdown.treeprocessors.build_treeprocessors" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -539,7 +542,7 @@ modify the current tree and return <code>None</code>.</p>
 
 
 <h2 id="markdown.treeprocessors.isString" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code><code class="codehilite language-python">markdown.treeprocessors.isString(s)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">treeprocessors</span><span class="o">.</span><span class="n">isString</span><span class="p">(</span><span class="n">s</span><span class="p">)</span></code>
 
 <a href="#markdown.treeprocessors.isString" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -710,7 +713,7 @@ modify the current tree and return <code>None</code>.</p>
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-24 21:36:12.820577+00:00
+        Docs Build Date UTC : 2023-08-27 18:09:27.188091+00:00
         -->
     </body>
 </html>

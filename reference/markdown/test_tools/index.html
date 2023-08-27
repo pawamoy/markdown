@@ -148,7 +148,8 @@
 
 
 <h2 id="markdown.test_tools.Kwargs" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code>markdown.test_tools.Kwargs</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <code>markdown.test_tools.Kwargs</code>
+
 
 <a href="#markdown.test_tools.Kwargs" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -175,7 +176,8 @@
 
 
 <h2 id="markdown.test_tools.LegacyTestCase" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code>markdown.test_tools.LegacyTestCase</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <code>markdown.test_tools.LegacyTestCase</code>
+
 
 <a href="#markdown.test_tools.LegacyTestCase" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -224,7 +226,8 @@ a separate <code>Unitttest</code> for each set of test files using the naming sc
 
 
 <h2 id="markdown.test_tools.TestCase" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code>markdown.test_tools.TestCase</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>          <code>markdown.test_tools.TestCase</code>
+
 
 <a href="#markdown.test_tools.TestCase" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -289,7 +292,7 @@ necessary.</p>
 
 
 <h3 id="markdown.test_tools.TestCase.assertMarkdownRenders" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.test_tools.TestCase.assertMarkdownRenders(source, expected, expected_attrs = None, **kwargs)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">test_tools</span><span class="o">.</span><span class="n">TestCase</span><span class="o">.</span><span class="n">assertMarkdownRenders</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">expected</span><span class="p">,</span> <span class="n">expected_attrs</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 <a href="#markdown.test_tools.TestCase.assertMarkdownRenders" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -313,7 +316,7 @@ attribute of the <code>Markdown</code> instance using <code>TestCase.assertEqual
 
 
 <h3 id="markdown.test_tools.TestCase.dedent" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code><code class="codehilite language-python">markdown.test_tools.TestCase.dedent(text)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">test_tools</span><span class="o">.</span><span class="n">TestCase</span><span class="o">.</span><span class="n">dedent</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code>
 
 <a href="#markdown.test_tools.TestCase.dedent" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -340,7 +343,7 @@ attribute of the <code>Markdown</code> instance using <code>TestCase.assertEqual
 
 
 <h2 id="markdown.test_tools.recursionlimit" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code><code class="codehilite language-python">markdown.test_tools.recursionlimit(limit)</code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <code class="codehilite language-python"><span class="n">markdown</span><span class="o">.</span><span class="n">test_tools</span><span class="o">.</span><span class="n">recursionlimit</span><span class="p">(</span><span class="n">limit</span><span class="p">)</span></code>
 
 <a href="#markdown.test_tools.recursionlimit" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -351,12 +354,12 @@ attribute of the <code>Markdown</code> instance using <code>TestCase.assertEqual
       <p>A context manager which temporarily modifies the Python recursion limit.</p>
 <p>The testing framework, coverage, etc. may add an arbitrary number of levels to the depth. To maintain consistency
 in the tests, the current stack depth is determined when called, then added to the provided limit.</p>
+<p>Example usage:</p>
+<div class="codehilite"><pre><span></span><code>with recursionlimit(20):
+    # test code here
+</code></pre></div>
 
-<details class="example-usage" open>
-  <summary>Example usage</summary>
-  <p>with recursionlimit(20):
-    # test code here</p>
-</details>      <p>See https://stackoverflow.com/a/50120316/866026</p>
+<p>See https://stackoverflow.com/a/50120316/866026</p>
 
 
 
@@ -521,7 +524,7 @@ in the tests, the current stack depth is determined when called, then added to t
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-24 21:36:12.819942+00:00
+        Docs Build Date UTC : 2023-08-27 18:09:27.187412+00:00
         -->
     </body>
 </html>

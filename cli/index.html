@@ -74,22 +74,22 @@ system to run the command line script. See the
 <p>Python-Markdown&rsquo;s command line script takes advantage of Python&rsquo;s <code>-m</code> flag.
 Therefore, assuming the python executable is on your system path, use the
 following format:</p>
-<pre class="codehilite"><code class="language-bash">python -m markdown [options] [args]
-</code></pre>
+<div class="codehilite"><pre><span></span><code>python<span class="w"> </span>-m<span class="w"> </span>markdown<span class="w"> </span><span class="o">[</span>options<span class="o">]</span><span class="w"> </span><span class="o">[</span>args<span class="o">]</span>
+</code></pre></div>
 
 <p>That will run the module as a script with the options and arguments provided.</p>
 <p>At its most basic usage, one would simply pass in a file name as the only argument:</p>
-<pre class="codehilite"><code class="language-bash">python -m markdown input_file.txt
-</code></pre>
+<div class="codehilite"><pre><span></span><code>python<span class="w"> </span>-m<span class="w"> </span>markdown<span class="w"> </span>input_file.txt
+</code></pre></div>
 
 <p>Piping input and output (on <code>STDIN</code> and <code>STDOUT</code>) is fully supported as well.
 For example:</p>
-<pre class="codehilite"><code class="language-bash">echo &quot;Some **Markdown** text.&quot; | python -m markdown &gt; output.html
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Some **Markdown** text.&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>python<span class="w"> </span>-m<span class="w"> </span>markdown<span class="w"> </span>&gt;<span class="w"> </span>output.html
+</code></pre></div>
 
 <p>Use the <code>--help</code> option for a list all available options and arguments:</p>
-<pre class="codehilite"><code class="language-bash">python -m markdown --help
-</code></pre>
+<div class="codehilite"><pre><span></span><code>python<span class="w"> </span>-m<span class="w"> </span>markdown<span class="w"> </span>--help
+</code></pre></div>
 
 <p>If you don&rsquo;t want to call the python executable directly (using the <code>-m</code> flag),
 follow the instructions below to use a wrapper script:</p>
@@ -145,16 +145,16 @@ preferred name.</p>
 </div>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>To use <code>markdown_py</code> from the command line, run it as</p>
-<pre class="codehilite"><code class="language-bash">markdown_py input_file.txt
-</code></pre>
+<div class="codehilite"><pre><span></span><code>markdown_py<span class="w"> </span>input_file.txt
+</code></pre></div>
 
 <p>or</p>
-<pre class="codehilite"><code class="language-bash">markdown_py input_file.txt &gt; output_file.html
-</code></pre>
+<div class="codehilite"><pre><span></span><code>markdown_py<span class="w"> </span>input_file.txt<span class="w"> </span>&gt;<span class="w"> </span>output_file.html
+</code></pre></div>
 
 <p>For a complete list of options, run</p>
-<pre class="codehilite"><code class="language-bash">markdown_py --help
-</code></pre>
+<div class="codehilite"><pre><span></span><code>markdown_py<span class="w"> </span>--help
+</code></pre></div>
 
 <h2 id="using-extensions">Using Extensions<a class="headerlink" href="#using-extensions" title="Permanent link">&para;</a></h2>
 <p>To load a Python-Markdown extension from the command line use the <code>-x</code>
@@ -164,42 +164,42 @@ then be invoked by the name assigned to an entry point or using Python&rsquo;s d
 notation to point to an extension</p>
 <p>For example, to load an extension with the assigned entry point name <code>myext</code>,
 run the following command:</p>
-<pre class="codehilite"><code class="language-bash">python -m markdown -x myext input.txt
-</code></pre>
+<div class="codehilite"><pre><span></span><code>python<span class="w"> </span>-m<span class="w"> </span>markdown<span class="w"> </span>-x<span class="w"> </span>myext<span class="w"> </span>input.txt
+</code></pre></div>
 
 <p>And to load an extension with Python&rsquo;s dot notation:</p>
-<pre class="codehilite"><code class="language-bash">python -m markdown -x path.to.module:MyExtClass input.txt
-</code></pre>
+<div class="codehilite"><pre><span></span><code>python<span class="w"> </span>-m<span class="w"> </span>markdown<span class="w"> </span>-x<span class="w"> </span>path.to.module:MyExtClass<span class="w"> </span>input.txt
+</code></pre></div>
 
 <p>To load multiple extensions, specify an <code>-x</code> option for each extension:</p>
-<pre class="codehilite"><code class="language-bash">python -m markdown -x myext -x path.to.module:MyExtClass input.txt
-</code></pre>
+<div class="codehilite"><pre><span></span><code>python<span class="w"> </span>-m<span class="w"> </span>markdown<span class="w"> </span>-x<span class="w"> </span>myext<span class="w"> </span>-x<span class="w"> </span>path.to.module:MyExtClass<span class="w"> </span>input.txt
+</code></pre></div>
 
 <p>If the extension supports configuration options (see the documentation for the
 extension you are using to determine what settings it supports, if any), you
 can pass them in as well:</p>
-<pre class="codehilite"><code class="language-bash">python -m markdown -x myext -c config.yml input.txt
-</code></pre>
+<div class="codehilite"><pre><span></span><code>python<span class="w"> </span>-m<span class="w"> </span>markdown<span class="w"> </span>-x<span class="w"> </span>myext<span class="w"> </span>-c<span class="w"> </span>config.yml<span class="w"> </span>input.txt
+</code></pre></div>
 
 <p>The <code>-c</code> (or <code>--extension_configs</code>) option accepts a file name. The file must be
 in either the <a href="https://yaml.org/">YAML</a> or <a href="https://json.org/">JSON</a> format and contain YAML or JSON data that would
 map to a Python Dictionary in the format required by the
 <a href="../reference/#extension_configs"><code>extension_configs</code></a> keyword of the <code>markdown.Markdown</code> class. Therefore,
 the file <code>config.yaml</code> referenced in the above example might look like this:</p>
-<pre class="codehilite"><code class="language-yaml">myext:
-    option1: 'value1'
-    option2: True
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="nt">myext</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">option1</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;value1&#39;</span>
+<span class="w">    </span><span class="nt">option2</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">True</span>
+</code></pre></div>
 
 <p>Similarly, a JSON configuration file might look like this:</p>
-<pre class="codehilite"><code class="language-json">{
-  &quot;myext&quot;:
-  {
-    &quot;option1&quot;: &quot;value1&quot;,
-    &quot;option2&quot;: &quot;value2&quot;
-  }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;myext&quot;</span><span class="p">:</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;option1&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;value1&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;option2&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;value2&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
 <p>Note that while the <code>--extension_configs</code> option does specify the
 <code>myext</code> extension, you still need to load the extension with the <code>-x</code> option,
@@ -305,7 +305,7 @@ dependencies. The format of your configuration file is automatically detected.</
 
         <!--
         MkDocs version      : 1.5.2
-        Docs Build Date UTC : 2023-08-24 21:36:12.793683+00:00
+        Docs Build Date UTC : 2023-08-27 18:09:27.159919+00:00
         -->
     </body>
 </html>
