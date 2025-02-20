@@ -35,6 +35,7 @@ sizes = [10, 50, 100, 500, 1000, 5000, 10000, 50000]
 plt.figure(figsize=(10, 6))
 
 
+print("Running benchmark for baseline")
 plt.plot(sizes, benchmark(sizes), label="1-baseline")
 
 for patch in sorted(Path(".").glob("*.patch")):
